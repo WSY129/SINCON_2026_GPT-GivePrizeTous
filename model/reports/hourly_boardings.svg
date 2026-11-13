@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="340" viewBox="0 0 1100 340">
+<rect width="100%" height="100%" fill="#fff"/>
+<g font-family="Arial, sans-serif" fill="#172b4d">
+<text x="82" y="28" font-size="20" font-weight="bold">Average boardings by hour</text>
+<text x="82" y="46" font-size="12">Mean boardings / station-hour; all training dates</text>
+<line x1="82" y1="275.0" x2="1062" y2="275.0" stroke="#e3e8ef"/>
+<text x="72" y="279.0" font-size="12" text-anchor="end">0</text>
+<line x1="82" y1="220.0" x2="1062" y2="220.0" stroke="#e3e8ef"/>
+<text x="72" y="224.0" font-size="12" text-anchor="end">178</text>
+<line x1="82" y1="165.0" x2="1062" y2="165.0" stroke="#e3e8ef"/>
+<text x="72" y="169.0" font-size="12" text-anchor="end">355</text>
+<line x1="82" y1="110.0" x2="1062" y2="110.0" stroke="#e3e8ef"/>
+<text x="72" y="114.0" font-size="12" text-anchor="end">533</text>
+<line x1="82" y1="55.0" x2="1062" y2="55.0" stroke="#e3e8ef"/>
+<text x="72" y="59.0" font-size="12" text-anchor="end">711</text>
+<polyline points="82.00,187.87 139.65,71.30 197.29,79.04 254.94,166.48 312.59,186.53 370.24,182.44 427.88,176.20 485.53,180.41 543.18,183.33 600.82,169.31 658.47,154.90 716.12,125.26 773.76,121.64 831.41,197.77 889.06,208.52 946.71,218.85 1004.35,234.67 1062.00,255.58" fill="none" stroke="#007e87" stroke-width="1.7"/>
+<text x="82.0" y="300" font-size="12" text-anchor="middle">6</text>
+<text x="197.29411764705884" y="300" font-size="12" text-anchor="middle">8</text>
+<text x="370.2352941176471" y="300" font-size="12" text-anchor="middle">11</text>
+<text x="543.1764705882354" y="300" font-size="12" text-anchor="middle">14</text>
+<text x="716.1176470588235" y="300" font-size="12" text-anchor="middle">17</text>
+<text x="889.0588235294118" y="300" font-size="12" text-anchor="middle">20</text>
+<text x="1062.0" y="300" font-size="12" text-anchor="middle">23</text>
+<text x="82" y="325" font-size="11" fill="#56657a">Source: supplied train.csv; no target values from test.csv are available.</text>
+</g></svg>

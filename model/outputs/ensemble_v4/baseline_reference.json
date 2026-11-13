@@ -1,0 +1,1020 @@
+{
+  "ensemble_v2": {
+    "scores": {
+      "oof_rmsle": 0.22276095854327352,
+      "weighted_rmsle": 0.2206182768622979,
+      "fold34_rmsle": 0.21736465498683724,
+      "fold4_rmsle": 0.2243977366047803
+    },
+    "stations": [
+      {
+        "version": "ensemble_v2",
+        "station_id": 3107,
+        "rmsle": 0.4548935693651652,
+        "mbe": -20.599988141767493,
+        "log_sse": 458.13894502181364
+      },
+      {
+        "version": "ensemble_v2",
+        "station_id": 3108,
+        "rmsle": 0.18286789504537818,
+        "mbe": -27.26847198412373,
+        "log_sse": 74.03763682285697
+      },
+      {
+        "version": "ensemble_v2",
+        "station_id": 3109,
+        "rmsle": 0.16038538917624642,
+        "mbe": -59.82477030240497,
+        "log_sse": 56.95176935753228
+      },
+      {
+        "version": "ensemble_v2",
+        "station_id": 3110,
+        "rmsle": 0.19620948513533992,
+        "mbe": -14.768167498278768,
+        "log_sse": 85.23493079436443
+      },
+      {
+        "version": "ensemble_v2",
+        "station_id": 3111,
+        "rmsle": 0.22240528752286667,
+        "mbe": -4.333608634798641,
+        "log_sse": 109.5135437867376
+      },
+      {
+        "version": "ensemble_v2",
+        "station_id": 3112,
+        "rmsle": 0.1962028504428779,
+        "mbe": -14.165538882745441,
+        "log_sse": 85.22916656750944
+      },
+      {
+        "version": "ensemble_v2",
+        "station_id": 3113,
+        "rmsle": 0.1239841717449492,
+        "mbe": -24.161979948611478,
+        "log_sse": 34.033773703024266
+      },
+      {
+        "version": "ensemble_v2",
+        "station_id": 3114,
+        "rmsle": 0.17005883958887463,
+        "mbe": -62.0518173406062,
+        "log_sse": 64.0288997540045
+      },
+      {
+        "version": "ensemble_v2",
+        "station_id": 3115,
+        "rmsle": 0.16072326332860176,
+        "mbe": -25.02263109948109,
+        "log_sse": 57.19197576823906
+      },
+      {
+        "version": "ensemble_v2",
+        "station_id": 3116,
+        "rmsle": 0.12119946041627375,
+        "mbe": -52.43996553175174,
+        "log_sse": 32.52213058030374
+      },
+      {
+        "version": "ensemble_v2",
+        "station_id": 3117,
+        "rmsle": 0.13322965885261462,
+        "mbe": -20.942162777924256,
+        "log_sse": 39.298814383536744
+      },
+      {
+        "version": "ensemble_v2",
+        "station_id": 3118,
+        "rmsle": 0.13325668848646904,
+        "mbe": -15.414239170303945,
+        "log_sse": 39.314761888404995
+      },
+      {
+        "version": "ensemble_v2",
+        "station_id": 3119,
+        "rmsle": 0.10586300302044131,
+        "mbe": -28.014955602297253,
+        "log_sse": 24.812243554432207
+      },
+      {
+        "version": "ensemble_v2",
+        "station_id": 3120,
+        "rmsle": 0.12306805921667442,
+        "mbe": 4.4504410594526425,
+        "log_sse": 33.53268429938056
+      },
+      {
+        "version": "ensemble_v2",
+        "station_id": 3121,
+        "rmsle": 0.13414375446841828,
+        "mbe": -10.496951223659195,
+        "log_sse": 39.8399267544236
+      },
+      {
+        "version": "ensemble_v2",
+        "station_id": 3122,
+        "rmsle": 0.25772714873371927,
+        "mbe": 0.14820329154308384,
+        "log_sse": 147.06114899242965
+      },
+      {
+        "version": "ensemble_v2",
+        "station_id": 3123,
+        "rmsle": 0.1168346245896991,
+        "mbe": -20.33656305126372,
+        "log_sse": 30.22182951967725
+      },
+      {
+        "version": "ensemble_v2",
+        "station_id": 3124,
+        "rmsle": 0.18070062886860722,
+        "mbe": -26.772447492500007,
+        "log_sse": 72.29311604355141
+      },
+      {
+        "version": "ensemble_v2",
+        "station_id": 3125,
+        "rmsle": 0.23421567276657282,
+        "mbe": -92.34492892843939,
+        "log_sse": 121.4533567520693
+      },
+      {
+        "version": "ensemble_v2",
+        "station_id": 3126,
+        "rmsle": 0.13154793298712172,
+        "mbe": -48.14363509993717,
+        "log_sse": 38.31295710242996
+      },
+      {
+        "version": "ensemble_v2",
+        "station_id": 3127,
+        "rmsle": 0.8747307049348284,
+        "mbe": -112.59711009982767,
+        "log_sse": 1694.0505268289007
+      },
+      {
+        "version": "ensemble_v2",
+        "station_id": 3128,
+        "rmsle": 0.1622612326933361,
+        "mbe": -21.670044309192587,
+        "log_sse": 58.29175870424637
+      },
+      {
+        "version": "ensemble_v2",
+        "station_id": 3129,
+        "rmsle": 0.1796417132785343,
+        "mbe": -22.640409577185338,
+        "log_sse": 71.44831536131873
+      },
+      {
+        "version": "ensemble_v2",
+        "station_id": 3130,
+        "rmsle": 0.17776082847518884,
+        "mbe": -8.76427435759992,
+        "log_sse": 69.95999147837071
+      },
+      {
+        "version": "ensemble_v2",
+        "station_id": 3131,
+        "rmsle": 0.1387777728576096,
+        "mbe": -20.539389731970655,
+        "log_sse": 42.64002430985068
+      },
+      {
+        "version": "ensemble_v2",
+        "station_id": 3132,
+        "rmsle": 0.16739512203710766,
+        "mbe": -25.24286523241242,
+        "log_sse": 62.03877491634542
+      },
+      {
+        "version": "ensemble_v2",
+        "station_id": 3133,
+        "rmsle": 0.2218882603043967,
+        "mbe": -57.5057298233538,
+        "log_sse": 109.00496173485853
+      },
+      {
+        "version": "ensemble_v2",
+        "station_id": 3134,
+        "rmsle": 0.14192289012960593,
+        "mbe": -35.877816488536936,
+        "log_sse": 44.594624328426804
+      },
+      {
+        "version": "ensemble_v2",
+        "station_id": 3135,
+        "rmsle": 0.2260398355664123,
+        "mbe": -39.59651208522622,
+        "log_sse": 113.12213208004002
+      },
+      {
+        "version": "ensemble_v2",
+        "station_id": 3136,
+        "rmsle": 0.29271164400390637,
+        "mbe": -116.11326273563812,
+        "log_sse": 189.69575586952973
+      },
+      {
+        "version": "ensemble_v2",
+        "station_id": 3137,
+        "rmsle": 0.23102146442039978,
+        "mbe": -30.12074740363618,
+        "log_sse": 118.16321028880253
+      },
+      {
+        "version": "ensemble_v2",
+        "station_id": 3138,
+        "rmsle": 0.1728549734884019,
+        "mbe": -8.439845880122514,
+        "log_sse": 66.15175587732294
+      },
+      {
+        "version": "ensemble_v2",
+        "station_id": 3139,
+        "rmsle": 0.17806942911508664,
+        "mbe": -24.050158027263507,
+        "log_sse": 70.20310959001552
+      },
+      {
+        "version": "ensemble_v2",
+        "station_id": 3201,
+        "rmsle": 0.22046245810638418,
+        "mbe": -1.981244794815691,
+        "log_sse": 107.60858169156056
+      },
+      {
+        "version": "ensemble_v2",
+        "station_id": 3202,
+        "rmsle": 0.2162777951705712,
+        "mbe": -8.672019900226577,
+        "log_sse": 103.56225149002961
+      },
+      {
+        "version": "ensemble_v2",
+        "station_id": 3203,
+        "rmsle": 0.12686896168170686,
+        "mbe": -29.713504302702546,
+        "log_sse": 35.635953832162414
+      },
+      {
+        "version": "ensemble_v2",
+        "station_id": 3204,
+        "rmsle": 0.16045680115148392,
+        "mbe": -13.216468933664869,
+        "log_sse": 57.00249646918782
+      },
+      {
+        "version": "ensemble_v2",
+        "station_id": 3205,
+        "rmsle": 0.1442951047753114,
+        "mbe": -29.027612358966746,
+        "log_sse": 46.09786505832947
+      },
+      {
+        "version": "ensemble_v2",
+        "station_id": 3206,
+        "rmsle": 0.1936575698776867,
+        "mbe": -23.228060543079707,
+        "log_sse": 83.03220517724148
+      },
+      {
+        "version": "ensemble_v2",
+        "station_id": 3207,
+        "rmsle": 0.16775082403070168,
+        "mbe": -14.947107818100864,
+        "log_sse": 62.30271046403648
+      },
+      {
+        "version": "ensemble_v2",
+        "station_id": 3208,
+        "rmsle": 0.293622375092436,
+        "mbe": -24.94970906488413,
+        "log_sse": 190.87801552899992
+      },
+      {
+        "version": "ensemble_v2",
+        "station_id": 3209,
+        "rmsle": 0.26904153160384464,
+        "mbe": -33.96002921469036,
+        "log_sse": 160.25672744122193
+      },
+      {
+        "version": "ensemble_v2",
+        "station_id": 3210,
+        "rmsle": 0.2273127410349777,
+        "mbe": -42.78073339922188,
+        "log_sse": 114.39977607235232
+      },
+      {
+        "version": "ensemble_v2",
+        "station_id": 3211,
+        "rmsle": 0.15030946739913786,
+        "mbe": -72.46297673577925,
+        "log_sse": 50.02076028144485
+      },
+      {
+        "version": "ensemble_v2",
+        "station_id": 3212,
+        "rmsle": 0.13221380478882802,
+        "mbe": -13.526902125309666,
+        "log_sse": 38.70180525129865
+      },
+      {
+        "version": "ensemble_v2",
+        "station_id": 3213,
+        "rmsle": 0.1638677616074242,
+        "mbe": -6.284739640517653,
+        "log_sse": 59.451752253419926
+      },
+      {
+        "version": "ensemble_v2",
+        "station_id": 3214,
+        "rmsle": 0.19107354981202218,
+        "mbe": -13.002197621206736,
+        "log_sse": 80.83115058321684
+      },
+      {
+        "version": "ensemble_v2",
+        "station_id": 3215,
+        "rmsle": 0.17311948731018975,
+        "mbe": -14.94611991335515,
+        "log_sse": 66.35437014680609
+      },
+      {
+        "version": "ensemble_v2",
+        "station_id": 3216,
+        "rmsle": 0.18353733360635732,
+        "mbe": -11.370317083452164,
+        "log_sse": 74.58069955971149
+      },
+      {
+        "version": "ensemble_v2",
+        "station_id": 3217,
+        "rmsle": 0.23291067078993738,
+        "mbe": -4.280261611125744,
+        "log_sse": 120.10370057715035
+      },
+      {
+        "version": "ensemble_v2",
+        "station_id": 3218,
+        "rmsle": 0.15559742378280267,
+        "mbe": -33.16046695097243,
+        "log_sse": 53.60217604928903
+      },
+      {
+        "version": "ensemble_v2",
+        "station_id": 3219,
+        "rmsle": 0.12421513663414605,
+        "mbe": -37.73865744187515,
+        "log_sse": 34.16069197425361
+      },
+      {
+        "version": "ensemble_v2",
+        "station_id": 3220,
+        "rmsle": 0.13632466147294034,
+        "mbe": -8.114243058283867,
+        "log_sse": 41.145891103125884
+      },
+      {
+        "version": "ensemble_v2",
+        "station_id": 3221,
+        "rmsle": 0.168987476574551,
+        "mbe": -10.180439459680217,
+        "log_sse": 63.22468266722221
+      },
+      {
+        "version": "ensemble_v2",
+        "station_id": 3222,
+        "rmsle": 0.18056344424222903,
+        "mbe": -22.707199057331973,
+        "log_sse": 72.18339047610905
+      },
+      {
+        "version": "ensemble_v2",
+        "station_id": 3223,
+        "rmsle": 0.14762913315220327,
+        "mbe": -27.95616794686185,
+        "log_sse": 48.252715154969906
+      },
+      {
+        "version": "ensemble_v2",
+        "station_id": 3224,
+        "rmsle": 0.16888269896279434,
+        "mbe": -17.064218827745602,
+        "log_sse": 63.14630434383261
+      },
+      {
+        "version": "ensemble_v2",
+        "station_id": 3225,
+        "rmsle": 0.17821382100337116,
+        "mbe": -22.0182090730511,
+        "log_sse": 70.31700751652025
+      },
+      {
+        "version": "ensemble_v2",
+        "station_id": 3226,
+        "rmsle": 0.514411778697178,
+        "mbe": -64.98124369934854,
+        "log_sse": 585.8675244301414
+      },
+      {
+        "version": "ensemble_v2",
+        "station_id": 3227,
+        "rmsle": 0.2623618870664369,
+        "mbe": -7.8130865639983265,
+        "log_sse": 152.39794416412687
+      },
+      {
+        "version": "ensemble_v2",
+        "station_id": 3753,
+        "rmsle": 0.23861770258456932,
+        "mbe": -54.64086437104436,
+        "log_sse": 126.0616352826379
+      },
+      {
+        "version": "ensemble_v2",
+        "station_id": 3754,
+        "rmsle": 0.4454598361933876,
+        "mbe": -53.9772311005336,
+        "log_sse": 439.3339069744275
+      },
+      {
+        "version": "ensemble_v2",
+        "station_id": 3755,
+        "rmsle": 0.14709636856240627,
+        "mbe": -25.201017918077252,
+        "log_sse": 47.90507440036343
+      },
+      {
+        "version": "ensemble_v2",
+        "station_id": 3756,
+        "rmsle": 0.10827978775500471,
+        "mbe": -34.549103465734774,
+        "log_sse": 25.958070533899274
+      },
+      {
+        "version": "ensemble_v2",
+        "station_id": 3757,
+        "rmsle": 0.12483701445284393,
+        "mbe": -29.533425967375653,
+        "log_sse": 34.50359631298404
+      },
+      {
+        "version": "ensemble_v2",
+        "station_id": 3758,
+        "rmsle": 0.11375432166258631,
+        "mbe": -32.79154618118844,
+        "log_sse": 28.64926117297015
+      },
+      {
+        "version": "ensemble_v2",
+        "station_id": 3759,
+        "rmsle": 0.19823868119666263,
+        "mbe": -26.727820420565354,
+        "log_sse": 87.00704443581878
+      },
+      {
+        "version": "ensemble_v2",
+        "station_id": 3760,
+        "rmsle": 0.10974692669102208,
+        "mbe": -14.655218380817557,
+        "log_sse": 26.66627485072781
+      },
+      {
+        "version": "ensemble_v2",
+        "station_id": 3761,
+        "rmsle": 0.11719322940770255,
+        "mbe": -7.989172002414112,
+        "log_sse": 30.407636184080165
+      },
+      {
+        "version": "ensemble_v2",
+        "station_id": 3762,
+        "rmsle": 0.128603559250195,
+        "mbe": -34.60420667283079,
+        "log_sse": 36.61707025032598
+      },
+      {
+        "version": "ensemble_v2",
+        "station_id": 3763,
+        "rmsle": 0.14222313498784375,
+        "mbe": -39.05578961287514,
+        "log_sse": 44.78350815845572
+      }
+    ],
+    "source": "/Users/hongtaeyang/Desktop/SINCON/outputs/ensemble_v2/oof_predictions.csv.gz",
+    "source_sha256": "1501d1d040e29f110d78d997ce14f99c63c29ff6aac31a638c6f33a3c2d4d7cf"
+  },
+  "ensemble_v3": {
+    "scores": {
+      "oof_rmsle": 0.22243673641983436,
+      "weighted_rmsle": 0.22052944349560627,
+      "fold34_rmsle": 0.2176371660758893,
+      "fold4_rmsle": 0.22436370590405388
+    },
+    "stations": [
+      {
+        "version": "ensemble_v3",
+        "station_id": 3107,
+        "rmsle": 0.4472524899821313,
+        "mbe": -19.920210866134457,
+        "log_sse": 442.87702460660927
+      },
+      {
+        "version": "ensemble_v3",
+        "station_id": 3108,
+        "rmsle": 0.17134144814839206,
+        "mbe": -15.781463091093274,
+        "log_sse": 64.9983725638441
+      },
+      {
+        "version": "ensemble_v3",
+        "station_id": 3109,
+        "rmsle": 0.14153389202140768,
+        "mbe": -44.77952117344732,
+        "log_sse": 44.35049949587065
+      },
+      {
+        "version": "ensemble_v3",
+        "station_id": 3110,
+        "rmsle": 0.22981714897052846,
+        "mbe": -20.497757669256377,
+        "log_sse": 116.93445122152576
+      },
+      {
+        "version": "ensemble_v3",
+        "station_id": 3111,
+        "rmsle": 0.22852253431264477,
+        "mbe": -4.948711313351445,
+        "log_sse": 115.62072279672404
+      },
+      {
+        "version": "ensemble_v3",
+        "station_id": 3112,
+        "rmsle": 0.19956441526479773,
+        "mbe": -14.471850840784812,
+        "log_sse": 88.17466622971713
+      },
+      {
+        "version": "ensemble_v3",
+        "station_id": 3113,
+        "rmsle": 0.12451539918127179,
+        "mbe": -24.96682944235721,
+        "log_sse": 34.326043378063005
+      },
+      {
+        "version": "ensemble_v3",
+        "station_id": 3114,
+        "rmsle": 0.16490088111448634,
+        "mbe": -59.13218798327663,
+        "log_sse": 60.20375351142738
+      },
+      {
+        "version": "ensemble_v3",
+        "station_id": 3115,
+        "rmsle": 0.14754507628832156,
+        "mbe": -19.310160318551652,
+        "log_sse": 48.19778267475556
+      },
+      {
+        "version": "ensemble_v3",
+        "station_id": 3116,
+        "rmsle": 0.11679965203508531,
+        "mbe": -42.33190943869971,
+        "log_sse": 30.20373939615466
+      },
+      {
+        "version": "ensemble_v3",
+        "station_id": 3117,
+        "rmsle": 0.1364180201083097,
+        "mbe": -23.495229908998418,
+        "log_sse": 41.20226592954042
+      },
+      {
+        "version": "ensemble_v3",
+        "station_id": 3118,
+        "rmsle": 0.13337033705440007,
+        "mbe": -16.844406075082222,
+        "log_sse": 39.38185002849349
+      },
+      {
+        "version": "ensemble_v3",
+        "station_id": 3119,
+        "rmsle": 0.10779187618479319,
+        "mbe": -31.93426412790584,
+        "log_sse": 25.724662097163254
+      },
+      {
+        "version": "ensemble_v3",
+        "station_id": 3120,
+        "rmsle": 0.12428633011200191,
+        "mbe": 4.5653665512891655,
+        "log_sse": 34.19986136189886
+      },
+      {
+        "version": "ensemble_v3",
+        "station_id": 3121,
+        "rmsle": 0.13018400308261316,
+        "mbe": -6.683188410042906,
+        "log_sse": 37.52259449417103
+      },
+      {
+        "version": "ensemble_v3",
+        "station_id": 3122,
+        "rmsle": 0.25385815003973744,
+        "mbe": -6.601066394501463,
+        "log_sse": 142.67892819629765
+      },
+      {
+        "version": "ensemble_v3",
+        "station_id": 3123,
+        "rmsle": 0.10551766461130686,
+        "mbe": -21.280829958646166,
+        "log_sse": 24.650626284683668
+      },
+      {
+        "version": "ensemble_v3",
+        "station_id": 3124,
+        "rmsle": 0.18001104142641874,
+        "mbe": -27.698545940069415,
+        "log_sse": 71.7424007284284
+      },
+      {
+        "version": "ensemble_v3",
+        "station_id": 3125,
+        "rmsle": 0.21853815422872092,
+        "mbe": -76.6239856773324,
+        "log_sse": 105.7382596260834
+      },
+      {
+        "version": "ensemble_v3",
+        "station_id": 3126,
+        "rmsle": 0.1371648358557804,
+        "mbe": -50.96555818836079,
+        "log_sse": 41.6546215204898
+      },
+      {
+        "version": "ensemble_v3",
+        "station_id": 3127,
+        "rmsle": 0.8632330898661829,
+        "mbe": -109.21409416753923,
+        "log_sse": 1649.809407511977
+      },
+      {
+        "version": "ensemble_v3",
+        "station_id": 3128,
+        "rmsle": 0.16472582779682787,
+        "mbe": -22.510758905981707,
+        "log_sse": 60.07600073217732
+      },
+      {
+        "version": "ensemble_v3",
+        "station_id": 3129,
+        "rmsle": 0.18894626679264315,
+        "mbe": -28.415818123525703,
+        "log_sse": 79.04133150101698
+      },
+      {
+        "version": "ensemble_v3",
+        "station_id": 3130,
+        "rmsle": 0.18141695723049633,
+        "mbe": -10.528956472760814,
+        "log_sse": 72.86741678888862
+      },
+      {
+        "version": "ensemble_v3",
+        "station_id": 3131,
+        "rmsle": 0.14467188959893382,
+        "mbe": -26.149694642705104,
+        "log_sse": 46.33892178723918
+      },
+      {
+        "version": "ensemble_v3",
+        "station_id": 3132,
+        "rmsle": 0.16365957149240679,
+        "mbe": -23.896816520866814,
+        "log_sse": 59.300784125147146
+      },
+      {
+        "version": "ensemble_v3",
+        "station_id": 3133,
+        "rmsle": 0.2136623068863421,
+        "mbe": -51.81190286232899,
+        "log_sse": 101.07260118416146
+      },
+      {
+        "version": "ensemble_v3",
+        "station_id": 3134,
+        "rmsle": 0.14873104778748295,
+        "mbe": -43.387523115776716,
+        "log_sse": 48.97572701118105
+      },
+      {
+        "version": "ensemble_v3",
+        "station_id": 3135,
+        "rmsle": 0.22717697221601055,
+        "mbe": -41.10841665982031,
+        "log_sse": 114.26316002538815
+      },
+      {
+        "version": "ensemble_v3",
+        "station_id": 3136,
+        "rmsle": 0.23566653271980928,
+        "mbe": -85.75469488816462,
+        "log_sse": 122.96271422220775
+      },
+      {
+        "version": "ensemble_v3",
+        "station_id": 3137,
+        "rmsle": 0.24466305040698397,
+        "mbe": -33.014137174647054,
+        "log_sse": 132.53005823107313
+      },
+      {
+        "version": "ensemble_v3",
+        "station_id": 3138,
+        "rmsle": 0.16507600526264674,
+        "mbe": -5.805834117801162,
+        "log_sse": 60.33169375483004
+      },
+      {
+        "version": "ensemble_v3",
+        "station_id": 3139,
+        "rmsle": 0.18182494852097028,
+        "mbe": -24.34746969884373,
+        "log_sse": 73.19553055690284
+      },
+      {
+        "version": "ensemble_v3",
+        "station_id": 3201,
+        "rmsle": 0.22383348720785917,
+        "mbe": -0.7915662450004176,
+        "log_sse": 110.9245660103267
+      },
+      {
+        "version": "ensemble_v3",
+        "station_id": 3202,
+        "rmsle": 0.2262835533699855,
+        "mbe": -8.66112824510877,
+        "log_sse": 113.36620180800404
+      },
+      {
+        "version": "ensemble_v3",
+        "station_id": 3203,
+        "rmsle": 0.13725337870545826,
+        "mbe": -36.73021536506042,
+        "log_sse": 41.70841678486557
+      },
+      {
+        "version": "ensemble_v3",
+        "station_id": 3204,
+        "rmsle": 0.15782346309331421,
+        "mbe": -12.18481675641862,
+        "log_sse": 55.146855543125504
+      },
+      {
+        "version": "ensemble_v3",
+        "station_id": 3205,
+        "rmsle": 0.1483106941478603,
+        "mbe": -31.765242560780756,
+        "log_sse": 48.69928126494504
+      },
+      {
+        "version": "ensemble_v3",
+        "station_id": 3206,
+        "rmsle": 0.19886124958510926,
+        "mbe": -21.615118310538985,
+        "log_sse": 87.55439364262416
+      },
+      {
+        "version": "ensemble_v3",
+        "station_id": 3207,
+        "rmsle": 0.1763856740423696,
+        "mbe": -19.33959537986676,
+        "log_sse": 68.88175990034166
+      },
+      {
+        "version": "ensemble_v3",
+        "station_id": 3208,
+        "rmsle": 0.27434178893479033,
+        "mbe": -21.767442748692478,
+        "log_sse": 166.63320558325347
+      },
+      {
+        "version": "ensemble_v3",
+        "station_id": 3209,
+        "rmsle": 0.27473718667644864,
+        "mbe": -35.438428812422,
+        "log_sse": 167.113875138758
+      },
+      {
+        "version": "ensemble_v3",
+        "station_id": 3210,
+        "rmsle": 0.22500251620074319,
+        "mbe": -38.50053901373189,
+        "log_sse": 112.08625690481787
+      },
+      {
+        "version": "ensemble_v3",
+        "station_id": 3211,
+        "rmsle": 0.14119274343472496,
+        "mbe": -63.47647189001999,
+        "log_sse": 44.136955228153695
+      },
+      {
+        "version": "ensemble_v3",
+        "station_id": 3212,
+        "rmsle": 0.13418744741861796,
+        "mbe": -11.777593815221751,
+        "log_sse": 39.86588409301973
+      },
+      {
+        "version": "ensemble_v3",
+        "station_id": 3213,
+        "rmsle": 0.16090411614834071,
+        "mbe": -5.759974498233943,
+        "log_sse": 57.32075798996189
+      },
+      {
+        "version": "ensemble_v3",
+        "station_id": 3214,
+        "rmsle": 0.19285107516738542,
+        "mbe": -11.655548639761392,
+        "log_sse": 82.34206334578143
+      },
+      {
+        "version": "ensemble_v3",
+        "station_id": 3215,
+        "rmsle": 0.1788390775208185,
+        "mbe": -18.016293386015473,
+        "log_sse": 70.8112822457731
+      },
+      {
+        "version": "ensemble_v3",
+        "station_id": 3216,
+        "rmsle": 0.182707290997474,
+        "mbe": -10.747591360319495,
+        "log_sse": 73.90764656256931
+      },
+      {
+        "version": "ensemble_v3",
+        "station_id": 3217,
+        "rmsle": 0.2362716142482203,
+        "mbe": -5.194450757392529,
+        "log_sse": 123.59494639860404
+      },
+      {
+        "version": "ensemble_v3",
+        "station_id": 3218,
+        "rmsle": 0.15878529787908355,
+        "mbe": -34.30229846954462,
+        "log_sse": 55.821074601124145
+      },
+      {
+        "version": "ensemble_v3",
+        "station_id": 3219,
+        "rmsle": 0.132835490870549,
+        "mbe": -45.88952300637903,
+        "log_sse": 39.06662254349082
+      },
+      {
+        "version": "ensemble_v3",
+        "station_id": 3220,
+        "rmsle": 0.13578704189407736,
+        "mbe": -7.985731538227481,
+        "log_sse": 40.82199933240545
+      },
+      {
+        "version": "ensemble_v3",
+        "station_id": 3221,
+        "rmsle": 0.1743548365661541,
+        "mbe": -12.372223929130623,
+        "log_sse": 67.30473440129883
+      },
+      {
+        "version": "ensemble_v3",
+        "station_id": 3222,
+        "rmsle": 0.17218147641575388,
+        "mbe": -20.735148797491533,
+        "log_sse": 65.6372642570493
+      },
+      {
+        "version": "ensemble_v3",
+        "station_id": 3223,
+        "rmsle": 0.15328264976610068,
+        "mbe": -31.518703315154777,
+        "log_sse": 52.01919357256803
+      },
+      {
+        "version": "ensemble_v3",
+        "station_id": 3224,
+        "rmsle": 0.1744596459755545,
+        "mbe": -20.818136025799078,
+        "log_sse": 67.3856761156496
+      },
+      {
+        "version": "ensemble_v3",
+        "station_id": 3225,
+        "rmsle": 0.18557035379614029,
+        "mbe": -24.22075442345581,
+        "log_sse": 76.24209264456663
+      },
+      {
+        "version": "ensemble_v3",
+        "station_id": 3226,
+        "rmsle": 0.5317874549183204,
+        "mbe": -65.666711604357,
+        "log_sse": 626.114544419629
+      },
+      {
+        "version": "ensemble_v3",
+        "station_id": 3227,
+        "rmsle": 0.27043905852842426,
+        "mbe": -8.4897993293408,
+        "log_sse": 161.92594761231743
+      },
+      {
+        "version": "ensemble_v3",
+        "station_id": 3753,
+        "rmsle": 0.24276147612052576,
+        "mbe": -55.70799001645578,
+        "log_sse": 130.47795931411156
+      },
+      {
+        "version": "ensemble_v3",
+        "station_id": 3754,
+        "rmsle": 0.4633894929564477,
+        "mbe": -55.518057571302464,
+        "log_sse": 475.41182631190827
+      },
+      {
+        "version": "ensemble_v3",
+        "station_id": 3755,
+        "rmsle": 0.1511390603765589,
+        "mbe": -27.258989226706333,
+        "log_sse": 50.574436475321185
+      },
+      {
+        "version": "ensemble_v3",
+        "station_id": 3756,
+        "rmsle": 0.10813352037680578,
+        "mbe": -34.79765461554707,
+        "log_sse": 25.88798811918549
+      },
+      {
+        "version": "ensemble_v3",
+        "station_id": 3757,
+        "rmsle": 0.12398865287871526,
+        "mbe": -26.304262931132605,
+        "log_sse": 34.0362338984903
+      },
+      {
+        "version": "ensemble_v3",
+        "station_id": 3758,
+        "rmsle": 0.11125315644852285,
+        "mbe": -32.19477029971545,
+        "log_sse": 27.403264310947534
+      },
+      {
+        "version": "ensemble_v3",
+        "station_id": 3759,
+        "rmsle": 0.1952066180299446,
+        "mbe": -25.2760416288556,
+        "log_sse": 84.36585092203276
+      },
+      {
+        "version": "ensemble_v3",
+        "station_id": 3760,
+        "rmsle": 0.11165406056041006,
+        "mbe": -11.05625758013561,
+        "log_sse": 27.601117136535766
+      },
+      {
+        "version": "ensemble_v3",
+        "station_id": 3761,
+        "rmsle": 0.117963321667647,
+        "mbe": -6.031660025464773,
+        "log_sse": 30.80857440312657
+      },
+      {
+        "version": "ensemble_v3",
+        "station_id": 3762,
+        "rmsle": 0.13062115447953504,
+        "mbe": -36.28743640279011,
+        "log_sse": 37.77501559861236
+      },
+      {
+        "version": "ensemble_v3",
+        "station_id": 3763,
+        "rmsle": 0.13620871253130917,
+        "mbe": -34.15564390732182,
+        "log_sse": 41.075928799933116
+      }
+    ],
+    "source": "/Users/hongtaeyang/Desktop/SINCON/outputs/ensemble_v3/oof_predictions.csv.gz",
+    "source_sha256": "0f5d72512d0e391ae0d4037a1b3adcc3b94c3c06b9dcacc70fc027812afcc1ff"
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "models": [
+    {
+      "fold": 3,
+      "model": "lightgbm",
+      "best_iteration": 43,
+      "diagnostic_minimum": 400,
+      "below_diagnostic_minimum": true,
+      "note": "Early optimum alone does not establish underfitting or overfitting. Never force a higher best iteration.",
+      "retry_result": {
+        "name": "lightgbm",
+        "seed": 2026,
+        "best_iteration": 75,
+        "seconds": 40.73052477836609,
+        "rows": 1061472,
+        "device": "cpu"
+      }
+    },
+    {
+      "fold": 3,
+      "model": "catboost_cpu",
+      "best_iteration": 29,
+      "diagnostic_minimum": 400,
+      "below_diagnostic_minimum": true,
+      "note": "Early optimum alone does not establish underfitting or overfitting. Never force a higher best iteration.",
+      "retry_result": {
+        "name": "catboost_cpu",
+        "seed": 2026,
+        "best_iteration": 45,
+        "seconds": 151.44919538497925,
+        "rows": 1061472,
+        "device": "cpu"
+      }
+    },
+    {
+      "fold": 3,
+      "model": "xgboost",
+      "best_iteration": 39,
+      "diagnostic_minimum": 400,
+      "below_diagnostic_minimum": true,
+      "note": "Early optimum alone does not establish underfitting or overfitting. Never force a higher best iteration.",
+      "retry_result": {
+        "name": "xgboost",
+        "seed": 2026,
+        "best_iteration": 79,
+        "seconds": 23.705729007720947,
+        "rows": 1061472,
+        "device": "cpu"
+      }
+    },
+    {
+      "fold": 3,
+      "model": "tabm_v5",
+      "best_iteration": 1,
+      "diagnostic_minimum": 8,
+      "below_diagnostic_minimum": true,
+      "note": "Early optimum alone does not establish underfitting or overfitting. Never force a higher best iteration.",
+      "retry_result": {
+        "name": "tabm_v5",
+        "seed": 2026,
+        "best_iteration": 3,
+        "seconds": 96.24811029434204,
+        "rows": 1061472,
+        "device": "cpu"
+      }
+    },
+    {
+      "fold": 4,
+      "model": "lightgbm",
+      "best_iteration": 28,
+      "diagnostic_minimum": 400,
+      "below_diagnostic_minimum": true,
+      "note": "Early optimum alone does not establish underfitting or overfitting. Never force a higher best iteration.",
+      "retry_result": {
+        "name": "lightgbm",
+        "seed": 2026,
+        "best_iteration": 88,
+        "seconds": 50.53909635543823,
+        "rows": 1200000,
+        "device": "cpu"
+      }
+    },
+    {
+      "fold": 4,
+      "model": "catboost_cpu",
+      "best_iteration": 21,
+      "diagnostic_minimum": 400,
+      "below_diagnostic_minimum": true,
+      "note": "Early optimum alone does not establish underfitting or overfitting. Never force a higher best iteration.",
+      "retry_result": {
+        "name": "catboost_cpu",
+        "seed": 2026,
+        "best_iteration": 42,
+        "seconds": 167.71154356002808,
+        "rows": 1200000,
+        "device": "cpu"
+      }
+    },
+    {
+      "fold": 4,
+      "model": "xgboost",
+      "best_iteration": 40,
+      "diagnostic_minimum": 400,
+      "below_diagnostic_minimum": true,
+      "note": "Early optimum alone does not establish underfitting or overfitting. Never force a higher best iteration.",
+      "retry_result": {
+        "name": "xgboost",
+        "seed": 2026,
+        "best_iteration": 92,
+        "seconds": 27.541528463363647,
+        "rows": 1200000,
+        "device": "cpu"
+      }
+    },
+    {
+      "fold": 4,
+      "model": "tabm_v5",
+      "best_iteration": 4,
+      "diagnostic_minimum": 8,
+      "below_diagnostic_minimum": true,
+      "note": "Early optimum alone does not establish underfitting or overfitting. Never force a higher best iteration.",
+      "retry_result": {
+        "name": "tabm_v5",
+        "seed": 2026,
+        "best_iteration": 4,
+        "seconds": 117.33640766143799,
+        "rows": 1200000,
+        "device": "cpu"
+      }
+    }
+  ],
+  "policy": "Original CV fits kept; half-rate trials diagnose low iteration counts without forcing convergence or selecting on Public."
+}

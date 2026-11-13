@@ -1,0 +1,574 @@
+{
+  "status": "posthoc_diagnostic_only_not_deployed",
+  "warning": "Alternatives were inspected after seeing audit results. Do not reinterpret their audit score as a fresh unbiased test or select a deployment from it.",
+  "fit_populations": {
+    "original_frozen": "Original deployment plan, fitted development folds 1+2 only.",
+    "frozen_weights_no_bias": "Diagnostic removal of the existing scalar calibration; no fit.",
+    "replace_small_with_large_same_weights": "Posthoc structural ablation of the excluded near-duplicate, weights and bias unchanged; no audit fit.",
+    "replace_small_with_large_no_bias": "Same structural ablation without scalar calibration; no fit.",
+    "refit_dev1_only": {
+      "training_folds": [
+        1
+      ],
+      "training_rows": 157140,
+      "correlation_cutoff": 0.95,
+      "audit_used_for_fit": false,
+      "excluded_station_ids": []
+    },
+    "refit_dev1_only_no_bias": {
+      "same_weights_as": "refit_dev1_only",
+      "bias": 0.0,
+      "audit_used_for_fit": false
+    },
+    "refit_dev2_only": {
+      "training_folds": [
+        2
+      ],
+      "training_rows": 157194,
+      "correlation_cutoff": 0.95,
+      "audit_used_for_fit": false,
+      "excluded_station_ids": []
+    },
+    "refit_dev2_only_no_bias": {
+      "same_weights_as": "refit_dev2_only",
+      "bias": 0.0,
+      "audit_used_for_fit": false
+    },
+    "refit_pooled_no_correlation_filter": {
+      "training_folds": [
+        1,
+        2
+      ],
+      "training_rows": 314334,
+      "correlation_cutoff": 1.01,
+      "audit_used_for_fit": false,
+      "excluded_station_ids": []
+    },
+    "refit_pooled_no_correlation_filter_no_bias": {
+      "same_weights_as": "refit_pooled_no_correlation_filter",
+      "bias": 0.0,
+      "audit_used_for_fit": false
+    },
+    "refit_pooled_existing_stations_only": {
+      "training_folds": [
+        1,
+        2
+      ],
+      "training_rows": 301104,
+      "correlation_cutoff": 0.95,
+      "audit_used_for_fit": false,
+      "excluded_station_ids": [
+        3107,
+        3108,
+        3109
+      ]
+    },
+    "refit_pooled_existing_stations_only_no_bias": {
+      "same_weights_as": "refit_pooled_existing_stations_only",
+      "bias": 0.0,
+      "audit_used_for_fit": false
+    }
+  },
+  "plans": {
+    "original_frozen": {
+      "weights": {
+        "catboost": 0.522625155795227,
+        "weekday_mean": 0.0818476542409859,
+        "seasonal7": 0.22370889055427606,
+        "lightgbm_small": 0.08314847846977277,
+        "xgboost": 0.08866982093973776,
+        "mlp": 0.0
+      },
+      "bias": -0.05617285669038133,
+      "bias_space": "log1p",
+      "blend_space": "log1p",
+      "retained": [
+        "catboost",
+        "weekday_mean",
+        "seasonal7",
+        "lightgbm_small",
+        "xgboost",
+        "mlp"
+      ],
+      "excluded": {
+        "lightgbm_large": {
+          "reason": "residual_correlation_above_threshold",
+          "with": [
+            "lightgbm_small"
+          ]
+        }
+      },
+      "individual_scores": {
+        "seasonal7": 0.3980915516418474,
+        "weekday_mean": 0.38941375647148424,
+        "lightgbm_small": 0.4751374912093806,
+        "lightgbm_large": 0.4914651171468589,
+        "catboost": 0.3529034438629931,
+        "xgboost": 0.562404196866159,
+        "mlp": 0.5781451682905607
+      },
+      "development_score": 0.32461480281195726,
+      "metric": "rmsle",
+      "fit_folds": [
+        1,
+        2
+      ],
+      "audit_fold_used_for_tuning": false
+    },
+    "frozen_weights_no_bias": {
+      "weights": {
+        "catboost": 0.522625155795227,
+        "weekday_mean": 0.0818476542409859,
+        "seasonal7": 0.22370889055427606,
+        "lightgbm_small": 0.08314847846977277,
+        "xgboost": 0.08866982093973776,
+        "mlp": 0.0
+      },
+      "bias": 0.0,
+      "bias_space": "log1p",
+      "blend_space": "log1p",
+      "retained": [
+        "catboost",
+        "weekday_mean",
+        "seasonal7",
+        "lightgbm_small",
+        "xgboost",
+        "mlp"
+      ],
+      "excluded": {
+        "lightgbm_large": {
+          "reason": "residual_correlation_above_threshold",
+          "with": [
+            "lightgbm_small"
+          ]
+        }
+      },
+      "individual_scores": {
+        "seasonal7": 0.3980915516418474,
+        "weekday_mean": 0.38941375647148424,
+        "lightgbm_small": 0.4751374912093806,
+        "lightgbm_large": 0.4914651171468589,
+        "catboost": 0.3529034438629931,
+        "xgboost": 0.562404196866159,
+        "mlp": 0.5781451682905607
+      },
+      "development_score": 0.32461480281195726,
+      "metric": "rmsle",
+      "fit_folds": [
+        1,
+        2
+      ],
+      "audit_fold_used_for_tuning": false
+    },
+    "replace_small_with_large_same_weights": {
+      "weights": {
+        "catboost": 0.522625155795227,
+        "weekday_mean": 0.0818476542409859,
+        "seasonal7": 0.22370889055427606,
+        "xgboost": 0.08866982093973776,
+        "mlp": 0.0,
+        "lightgbm_large": 0.08314847846977277
+      },
+      "bias": -0.05617285669038133,
+      "bias_space": "log1p",
+      "blend_space": "log1p",
+      "retained": [
+        "catboost",
+        "weekday_mean",
+        "seasonal7",
+        "lightgbm_small",
+        "xgboost",
+        "mlp"
+      ],
+      "excluded": {
+        "lightgbm_large": {
+          "reason": "residual_correlation_above_threshold",
+          "with": [
+            "lightgbm_small"
+          ]
+        }
+      },
+      "individual_scores": {
+        "seasonal7": 0.3980915516418474,
+        "weekday_mean": 0.38941375647148424,
+        "lightgbm_small": 0.4751374912093806,
+        "lightgbm_large": 0.4914651171468589,
+        "catboost": 0.3529034438629931,
+        "xgboost": 0.562404196866159,
+        "mlp": 0.5781451682905607
+      },
+      "development_score": 0.32461480281195726,
+      "metric": "rmsle",
+      "fit_folds": [
+        1,
+        2
+      ],
+      "audit_fold_used_for_tuning": false
+    },
+    "replace_small_with_large_no_bias": {
+      "weights": {
+        "catboost": 0.522625155795227,
+        "weekday_mean": 0.0818476542409859,
+        "seasonal7": 0.22370889055427606,
+        "xgboost": 0.08866982093973776,
+        "mlp": 0.0,
+        "lightgbm_large": 0.08314847846977277
+      },
+      "bias": 0.0,
+      "bias_space": "log1p",
+      "blend_space": "log1p",
+      "retained": [
+        "catboost",
+        "weekday_mean",
+        "seasonal7",
+        "lightgbm_small",
+        "xgboost",
+        "mlp"
+      ],
+      "excluded": {
+        "lightgbm_large": {
+          "reason": "residual_correlation_above_threshold",
+          "with": [
+            "lightgbm_small"
+          ]
+        }
+      },
+      "individual_scores": {
+        "seasonal7": 0.3980915516418474,
+        "weekday_mean": 0.38941375647148424,
+        "lightgbm_small": 0.4751374912093806,
+        "lightgbm_large": 0.4914651171468589,
+        "catboost": 0.3529034438629931,
+        "xgboost": 0.562404196866159,
+        "mlp": 0.5781451682905607
+      },
+      "development_score": 0.32461480281195726,
+      "metric": "rmsle",
+      "fit_folds": [
+        1,
+        2
+      ],
+      "audit_fold_used_for_tuning": false
+    },
+    "refit_dev1_only": {
+      "weights": {
+        "catboost": 0.45150807244613184,
+        "weekday_mean": 0.1828106258603645,
+        "seasonal7": 0.3281019203755266,
+        "mlp": 0.0,
+        "lightgbm_small": 0.037579381317977,
+        "xgboost": 0.0
+      },
+      "bias": -0.10804283258163427,
+      "bias_space": "log1p",
+      "blend_space": "log1p",
+      "retained": [
+        "catboost",
+        "weekday_mean",
+        "seasonal7",
+        "mlp",
+        "lightgbm_small",
+        "xgboost"
+      ],
+      "excluded": {
+        "lightgbm_large": {
+          "reason": "residual_correlation_above_threshold",
+          "with": [
+            "lightgbm_small"
+          ]
+        }
+      },
+      "individual_scores": {
+        "seasonal7": 0.46306695243068724,
+        "weekday_mean": 0.45448265041669894,
+        "lightgbm_small": 0.6324885563453014,
+        "lightgbm_large": 0.6579577851089516,
+        "catboost": 0.4476824370528872,
+        "xgboost": 0.7583778267085753,
+        "mlp": 0.6254722857755509
+      },
+      "development_score": 0.3870788062339282,
+      "metric": "rmsle"
+    },
+    "refit_dev1_only_no_bias": {
+      "weights": {
+        "catboost": 0.45150807244613184,
+        "weekday_mean": 0.1828106258603645,
+        "seasonal7": 0.3281019203755266,
+        "mlp": 0.0,
+        "lightgbm_small": 0.037579381317977,
+        "xgboost": 0.0
+      },
+      "bias": 0.0,
+      "bias_space": "log1p",
+      "blend_space": "log1p",
+      "retained": [
+        "catboost",
+        "weekday_mean",
+        "seasonal7",
+        "mlp",
+        "lightgbm_small",
+        "xgboost"
+      ],
+      "excluded": {
+        "lightgbm_large": {
+          "reason": "residual_correlation_above_threshold",
+          "with": [
+            "lightgbm_small"
+          ]
+        }
+      },
+      "individual_scores": {
+        "seasonal7": 0.46306695243068724,
+        "weekday_mean": 0.45448265041669894,
+        "lightgbm_small": 0.6324885563453014,
+        "lightgbm_large": 0.6579577851089516,
+        "catboost": 0.4476824370528872,
+        "xgboost": 0.7583778267085753,
+        "mlp": 0.6254722857755509
+      },
+      "development_score": 0.3870788062339282,
+      "metric": "rmsle"
+    },
+    "refit_dev2_only": {
+      "weights": {
+        "catboost": 0.46616334852214736,
+        "lightgbm_large": 0.467466437227946,
+        "xgboost": 0.0,
+        "weekday_mean": 0.0,
+        "seasonal7": 0.057235041775070356,
+        "mlp": 0.009135172474836408
+      },
+      "bias": 0.032197470353630235,
+      "bias_space": "log1p",
+      "blend_space": "log1p",
+      "retained": [
+        "catboost",
+        "lightgbm_large",
+        "xgboost",
+        "weekday_mean",
+        "seasonal7",
+        "mlp"
+      ],
+      "excluded": {
+        "lightgbm_small": {
+          "reason": "residual_correlation_above_threshold",
+          "with": [
+            "lightgbm_large"
+          ]
+        }
+      },
+      "individual_scores": {
+        "seasonal7": 0.3202217765205638,
+        "weekday_mean": 0.31104747442360675,
+        "lightgbm_small": 0.22700081226080895,
+        "lightgbm_large": 0.22412767839141456,
+        "catboost": 0.22065398963185057,
+        "xgboost": 0.23989362356341776,
+        "mlp": 0.5266000943862261
+      },
+      "development_score": 0.2136545481810664,
+      "metric": "rmsle"
+    },
+    "refit_dev2_only_no_bias": {
+      "weights": {
+        "catboost": 0.46616334852214736,
+        "lightgbm_large": 0.467466437227946,
+        "xgboost": 0.0,
+        "weekday_mean": 0.0,
+        "seasonal7": 0.057235041775070356,
+        "mlp": 0.009135172474836408
+      },
+      "bias": 0.0,
+      "bias_space": "log1p",
+      "blend_space": "log1p",
+      "retained": [
+        "catboost",
+        "lightgbm_large",
+        "xgboost",
+        "weekday_mean",
+        "seasonal7",
+        "mlp"
+      ],
+      "excluded": {
+        "lightgbm_small": {
+          "reason": "residual_correlation_above_threshold",
+          "with": [
+            "lightgbm_large"
+          ]
+        }
+      },
+      "individual_scores": {
+        "seasonal7": 0.3202217765205638,
+        "weekday_mean": 0.31104747442360675,
+        "lightgbm_small": 0.22700081226080895,
+        "lightgbm_large": 0.22412767839141456,
+        "catboost": 0.22065398963185057,
+        "xgboost": 0.23989362356341776,
+        "mlp": 0.5266000943862261
+      },
+      "development_score": 0.2136545481810664,
+      "metric": "rmsle"
+    },
+    "refit_pooled_no_correlation_filter": {
+      "weights": {
+        "catboost": 0.506180649971233,
+        "weekday_mean": 0.09137804083152654,
+        "seasonal7": 0.2179082002029327,
+        "lightgbm_small": 0.0,
+        "lightgbm_large": 0.08910449392109467,
+        "xgboost": 0.09542861507321232,
+        "mlp": 0.0
+      },
+      "bias": -0.05598881376863781,
+      "bias_space": "log1p",
+      "blend_space": "log1p",
+      "retained": [
+        "catboost",
+        "weekday_mean",
+        "seasonal7",
+        "lightgbm_small",
+        "lightgbm_large",
+        "xgboost",
+        "mlp"
+      ],
+      "excluded": {},
+      "individual_scores": {
+        "seasonal7": 0.3980915516418474,
+        "weekday_mean": 0.38941375647148424,
+        "lightgbm_small": 0.4751374912093806,
+        "lightgbm_large": 0.4914651171468589,
+        "catboost": 0.3529034438629931,
+        "xgboost": 0.562404196866159,
+        "mlp": 0.5781451682905607
+      },
+      "development_score": 0.32462301604668775,
+      "metric": "rmsle"
+    },
+    "refit_pooled_no_correlation_filter_no_bias": {
+      "weights": {
+        "catboost": 0.506180649971233,
+        "weekday_mean": 0.09137804083152654,
+        "seasonal7": 0.2179082002029327,
+        "lightgbm_small": 0.0,
+        "lightgbm_large": 0.08910449392109467,
+        "xgboost": 0.09542861507321232,
+        "mlp": 0.0
+      },
+      "bias": 0.0,
+      "bias_space": "log1p",
+      "blend_space": "log1p",
+      "retained": [
+        "catboost",
+        "weekday_mean",
+        "seasonal7",
+        "lightgbm_small",
+        "lightgbm_large",
+        "xgboost",
+        "mlp"
+      ],
+      "excluded": {},
+      "individual_scores": {
+        "seasonal7": 0.3980915516418474,
+        "weekday_mean": 0.38941375647148424,
+        "lightgbm_small": 0.4751374912093806,
+        "lightgbm_large": 0.4914651171468589,
+        "catboost": 0.3529034438629931,
+        "xgboost": 0.562404196866159,
+        "mlp": 0.5781451682905607
+      },
+      "development_score": 0.32462301604668775,
+      "metric": "rmsle"
+    },
+    "refit_pooled_existing_stations_only": {
+      "weights": {
+        "lightgbm_large": 0.5018217187499999,
+        "catboost": 0.337404375,
+        "weekday_mean": 0.0,
+        "seasonal7": 0.16077390625000001,
+        "mlp": 0.0
+      },
+      "bias": -0.04825861884362485,
+      "bias_space": "log1p",
+      "blend_space": "log1p",
+      "retained": [
+        "lightgbm_large",
+        "catboost",
+        "weekday_mean",
+        "seasonal7",
+        "mlp"
+      ],
+      "excluded": {
+        "lightgbm_small": {
+          "reason": "residual_correlation_above_threshold",
+          "with": [
+            "lightgbm_large"
+          ]
+        },
+        "xgboost": {
+          "reason": "residual_correlation_above_threshold",
+          "with": [
+            "lightgbm_large",
+            "catboost"
+          ]
+        }
+      },
+      "individual_scores": {
+        "seasonal7": 0.32493750848087355,
+        "weekday_mean": 0.31486051685791616,
+        "lightgbm_small": 0.2704713385873344,
+        "lightgbm_large": 0.2675827577168762,
+        "catboost": 0.27010286391719207,
+        "xgboost": 0.27704643242596844,
+        "mlp": 0.538101554847277
+      },
+      "development_score": 0.2563728139888401,
+      "metric": "rmsle"
+    },
+    "refit_pooled_existing_stations_only_no_bias": {
+      "weights": {
+        "lightgbm_large": 0.5018217187499999,
+        "catboost": 0.337404375,
+        "weekday_mean": 0.0,
+        "seasonal7": 0.16077390625000001,
+        "mlp": 0.0
+      },
+      "bias": 0.0,
+      "bias_space": "log1p",
+      "blend_space": "log1p",
+      "retained": [
+        "lightgbm_large",
+        "catboost",
+        "weekday_mean",
+        "seasonal7",
+        "mlp"
+      ],
+      "excluded": {
+        "lightgbm_small": {
+          "reason": "residual_correlation_above_threshold",
+          "with": [
+            "lightgbm_large"
+          ]
+        },
+        "xgboost": {
+          "reason": "residual_correlation_above_threshold",
+          "with": [
+            "lightgbm_large",
+            "catboost"
+          ]
+        }
+      },
+      "individual_scores": {
+        "seasonal7": 0.32493750848087355,
+        "weekday_mean": 0.31486051685791616,
+        "lightgbm_small": 0.2704713385873344,
+        "lightgbm_large": 0.2675827577168762,
+        "catboost": 0.27010286391719207,
+        "xgboost": 0.27704643242596844,
+        "mlp": 0.538101554847277
+      },
+      "development_score": 0.2563728139888401,
+      "metric": "rmsle"
+    }
+  }
+}

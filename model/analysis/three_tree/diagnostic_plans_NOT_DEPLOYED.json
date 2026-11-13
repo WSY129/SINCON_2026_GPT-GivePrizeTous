@@ -1,0 +1,98 @@
+{
+  "current_all_development": {
+    "weights": {
+      "lightgbm_large": 0.5,
+      "xgboost": 0.3891159419804635,
+      "catboost": 0.11088405801953646
+    },
+    "bias": 0.0,
+    "bias_space": "log1p",
+    "blend_space": "log1p",
+    "retained": [
+      "lightgbm_large",
+      "xgboost",
+      "catboost"
+    ],
+    "excluded": {},
+    "individual_scores": {
+      "lightgbm_large": 0.4914651171468589,
+      "xgboost": 0.562404196866159,
+      "catboost": 0.3529034438629931
+    },
+    "metric": "rmsle",
+    "policy": {
+      "method": "primary_constrained_log_mse",
+      "primary_model": "lightgbm_large",
+      "primary_min_weight": 0.5,
+      "bias_correction": false
+    },
+    "optimizer": "SLSQP: convex quadratic log-MSE",
+    "correlation_filter_applied": false,
+    "bias_correction_applied": false,
+    "development_score": 0.34271531312973147
+  },
+  "warm_development_only": {
+    "weights": {
+      "lightgbm_large": 0.5355564578700931,
+      "xgboost": 0.0,
+      "catboost": 0.46444354212990685
+    },
+    "bias": 0.0,
+    "bias_space": "log1p",
+    "blend_space": "log1p",
+    "retained": [
+      "lightgbm_large",
+      "xgboost",
+      "catboost"
+    ],
+    "excluded": {},
+    "individual_scores": {
+      "lightgbm_large": 0.26909468466711733,
+      "xgboost": 0.2852205679869635,
+      "catboost": 0.27062791989751994
+    },
+    "metric": "rmsle",
+    "policy": {
+      "method": "primary_constrained_log_mse",
+      "primary_model": "lightgbm_large",
+      "primary_min_weight": 0.5,
+      "bias_correction": false
+    },
+    "optimizer": "SLSQP: convex quadratic log-MSE",
+    "correlation_filter_applied": false,
+    "bias_correction_applied": false,
+    "development_score": 0.2643895158871943
+  },
+  "development_fold2_only": {
+    "weights": {
+      "lightgbm_large": 0.5,
+      "xgboost": 9.032244608594944e-18,
+      "catboost": 0.49999999999999994
+    },
+    "bias": 0.0,
+    "bias_space": "log1p",
+    "blend_space": "log1p",
+    "retained": [
+      "lightgbm_large",
+      "xgboost",
+      "catboost"
+    ],
+    "excluded": {},
+    "individual_scores": {
+      "lightgbm_large": 0.22412767839141456,
+      "xgboost": 0.23989362356341776,
+      "catboost": 0.22065398963185057
+    },
+    "metric": "rmsle",
+    "policy": {
+      "method": "primary_constrained_log_mse",
+      "primary_model": "lightgbm_large",
+      "primary_min_weight": 0.5,
+      "bias_correction": false
+    },
+    "optimizer": "SLSQP: convex quadratic log-MSE",
+    "correlation_filter_applied": false,
+    "bias_correction_applied": false,
+    "development_score": 0.21669379391938223
+  }
+}

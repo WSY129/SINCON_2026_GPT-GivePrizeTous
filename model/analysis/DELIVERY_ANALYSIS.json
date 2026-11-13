@@ -1,0 +1,9 @@
+{
+  "date_kst": "2026-11-11",
+  "official_measured_local_rmsle": 0.30770066230494014,
+  "original_pipeline_submission_unchanged": true,
+  "original_pipeline_submission_sha256": "5edc90101865f2e0c026e8a9224fa8ed013771b618c6911df744f5807a47bac0",
+  "official_source_sha256": "2deecb2c8f21b518b14c4904ef8d081a28b474536a29f0d1d0f0252032e75d4a",
+  "official_submission_sha256": "dbb6e0518317de743d1e4f151880f0cc2cd7e7ccf24dd8f84c89738c24c132eb",
+  "scope": "official source reproduction + original pipeline posthoc analysis; no Kaggle submission"
+}

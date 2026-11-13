@@ -1,0 +1,20 @@
+{
+ "configs/ensemble_v16.json": "f5eab8279a8889ce81c375b17dc1464225aa0f41a8ed13d9bd59db96fdb165f7",
+ "outputs/ensemble_v16/RESULTS_V16.md": "954bb4eac01bc61ee82a80bd3656e8c7084f609c7101f1998fa93a7208eaf9e9",
+ "outputs/ensemble_v16/VALIDATION_V16.csv": "0403bd3149d67c82ac191ac49a0c94c97600983cd21064c680af4517e9cca93a",
+ "outputs/ensemble_v16/experiments_v16.json": "3990cd043a94ff9dc392c6aa287b821bfddd207daf6d77528abebc7659b3afd5",
+ "outputs/ensemble_v16/external/README.md": "dfe6e60db0a7478587bf36238a1def80e02423f1325ba4cf104cd82fd376a8f5",
+ "outputs/ensemble_v16/external/mart_closure_calendar.csv": "60b4be6ebda908c9e22416fa3bc12489bce079abd640476585cb74fcaa3813a2",
+ "outputs/ensemble_v16/gates_v16.json": "62398a2375814ce823a24fc33fa2f14f7b5d44a13a757f7620fa2f79a7b3bbd0",
+ "outputs/ensemble_v16/gates_v16e.json": "7455dd833015054f6f923276ffb5f1f219ccc82eb161641954dcee6a2850f2f8",
+ "outputs/ensemble_v16/oof_v16.npz": "5deeb72ae2e06286a2c53a43d2e93f39d6f1df905465f0a697decdb6e3520079",
+ "outputs/ensemble_v16/submission_ensemble_v16.csv": "2110633a7075f1c675d3b9413333e9101449176a805774179d93f72942df2741",
+ "outputs/ensemble_v16/submission_ensemble_v16e.csv": "eca2c7d24629d81aed9f9d2976ff667f5c2ef95ab8c07e99e1d34f225050975f",
+ "outputs/ensemble_v16/v15_preserved_before.json": "d184c04cf829371e56086586a88f0e3c0ad95e2fe0951936754bc1072066345a",
+ "src/v16/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+ "src/v16/extras.py": "1857356e03da45d55621696b16b6a635fe652528547c77b6c9aafb55d04f74b3",
+ "src/v16/report.py": "7ed43aeecdb44c99b44aedc1faffe1598b5c2e7d78f2dafb8396a29f0ec75193",
+ "src/v16/run.py": "d49e575c33977c6c1ed5e064cc7a2d57d66e7b18b0dd3f513d355b3859457c1f",
+ "src/v16/tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+ "src/v16/tests/test_v16.py": "353579e7aeef875dc8edb9a6877da96640871a76726a4a3191e9cc8024a5f0e1"
+}

@@ -1,0 +1,901 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-11-13T10:52:19Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 368923408,
+  "lat": 37.4856250,
+  "lon": 126.6847090,
+  "tags": {
+    "addr:city": "인천광역시",
+    "addr:country": "KR",
+    "addr:district": "서해구",
+    "addr:subdistrict": "가좌동",
+    "amenity": "school",
+    "education": "school",
+    "isced:level": "2",
+    "name": "가정여자중학교",
+    "name:en": "Gajeong Girls Middle School",
+    "name:ko": "가정여자중학교",
+    "name:ko-Latn": "Gajeongyeojajunghakgyo",
+    "wikidata": "Q17345861"
+  }
+},
+{
+  "type": "node",
+  "id": 368923567,
+  "lat": 37.5667210,
+  "lon": 126.6786450,
+  "tags": {
+    "addr:city": "인천광역시",
+    "addr:country": "KR",
+    "addr:district": "서해구",
+    "addr:subdistrict": "검암동",
+    "amenity": "school",
+    "education": "school",
+    "isced:level": "2",
+    "name": "검암중학교",
+    "name:en": "Geomam Middle School",
+    "name:ko": "검암중학교",
+    "name:ko-Latn": "Geomamjunghakgyo"
+  }
+},
+{
+  "type": "node",
+  "id": 368932071,
+  "lat": 37.5898600,
+  "lon": 126.6777150,
+  "tags": {
+    "addr:city": "인천광역시",
+    "addr:country": "KR",
+    "addr:district": "검단구",
+    "addr:subdistrict": "당하동",
+    "amenity": "school",
+    "education": "school",
+    "isced:level": "1",
+    "name": "인천당하초등학교",
+    "name:en": "Incheon Dangha Elementary School",
+    "name:ko": "인천당하초등학교",
+    "name:ko-Latn": "Incheondanghachodeunghakgyo",
+    "wikidata": "Q21060015"
+  }
+},
+{
+  "type": "node",
+  "id": 4693258479,
+  "lat": 37.4924867,
+  "lon": 126.6810190,
+  "tags": {
+    "addr:city": "인천광역시",
+    "addr:country": "KR",
+    "addr:district": "서해구",
+    "addr:subdistrict": "가좌동",
+    "amenity": "school",
+    "education": "school",
+    "isced:level": "3",
+    "name": "가림고등학교"
+  }
+},
+{
+  "type": "node",
+  "id": 10146421885,
+  "lat": 37.5841198,
+  "lon": 126.6830556,
+  "tags": {
+    "addr:city": "인천광역시",
+    "addr:country": "KR",
+    "addr:district": "검단구",
+    "addr:subdistrict": "당하동",
+    "amenity": "school",
+    "education": "school",
+    "name": "인천서희학교"
+  }
+},
+{
+  "type": "way",
+  "id": 228171574,
+  "center": {
+    "lat": 37.5627567,
+    "lon": 126.6763184
+  },
+  "tags": {
+    "addr:city": "인천광역시",
+    "addr:country": "KR",
+    "addr:district": "서해구",
+    "addr:subdistrict": "검암동",
+    "amenity": "school",
+    "education": "school",
+    "isced:level": "2",
+    "name": "간재울중학교",
+    "name:en": "Ganjaeul Middle School",
+    "name:ko": "간재울중학교",
+    "wikidata": "Q17986967"
+  }
+},
+{
+  "type": "way",
+  "id": 369021420,
+  "center": {
+    "lat": 37.5603244,
+    "lon": 126.6724501
+  },
+  "tags": {
+    "addr:city": "인천광역시",
+    "addr:country": "KR",
+    "addr:district": "서해구",
+    "addr:housenumber": "433",
+    "addr:street": "승학로 (Seunghak-ro)",
+    "addr:subdistrict": "검암동",
+    "amenity": "school",
+    "education": "school",
+    "isced:level": "1",
+    "name": "인천간재울초등학교",
+    "name:ko": "인천간재울초등학교"
+  }
+},
+{
+  "type": "way",
+  "id": 379563181,
+  "center": {
+    "lat": 37.5490973,
+    "lon": 126.6711897
+  },
+  "tags": {
+    "addr:city": "인천광역시",
+    "addr:country": "KR",
+    "addr:district": "서해구",
+    "addr:housenumber": "10",
+    "addr:street": "대평로 56번길",
+    "addr:subdistrict": "연희동",
+    "amenity": "school",
+    "education": "school",
+    "isced:level": "2",
+    "name": "서곶중학교",
+    "phone": "+82 32 562 0382",
+    "website": "https://seogot.icems.kr/",
+    "wheelchair": "limited",
+    "wikidata": "Q12600799"
+  }
+},
+{
+  "type": "way",
+  "id": 383998270,
+  "center": {
+    "lat": 37.5479610,
+    "lon": 126.6698756
+  },
+  "tags": {
+    "addr:city": "인천광역시",
+    "addr:country": "KR",
+    "addr:district": "서해구",
+    "addr:housenumber": "9",
+    "addr:street": "대평로 56번길",
+    "addr:subdistrict": "연희동",
+    "amenity": "school",
+    "education": "school",
+    "isced:level": "1",
+    "name": "서곶초등학교",
+    "phone": "+82 32 562 2101",
+    "website": "https://sg.icees.kr/",
+    "wikidata": "Q16097370"
+  }
+},
+{
+  "type": "way",
+  "id": 385854219,
+  "center": {
+    "lat": 37.5481189,
+    "lon": 126.6712838
+  },
+  "tags": {
+    "addr:city": "인천광역시",
+    "addr:country": "KR",
+    "addr:district": "서해구",
+    "addr:housenumber": "10",
+    "addr:street": "대평로 56번길",
+    "addr:subdistrict": "연희동",
+    "amenity": "school",
+    "education": "school",
+    "isced:level": "3",
+    "name": "인천디자인고등학교",
+    "phone": "+82 32 560 1500",
+    "website": "https://indigo.icehs.kr/",
+    "wikidata": "Q12613501"
+  }
+},
+{
+  "type": "way",
+  "id": 430308235,
+  "center": {
+    "lat": 37.4546319,
+    "lon": 126.7368968
+  },
+  "tags": {
+    "amenity": "school",
+    "education": "school",
+    "isced:level": "2",
+    "name": "만수중학교",
+    "name:en": "Mansu Middle School",
+    "wikidata": "Q17987667"
+  }
+},
+{
+  "type": "way",
+  "id": 430308795,
+  "center": {
+    "lat": 37.4538910,
+    "lon": 126.7360558
+  },
+  "tags": {
+    "amenity": "school",
+    "education": "school",
+    "isced:level": "1",
+    "name": "인수초등학교",
+    "name:en": "Insu Elementary School"
+  }
+},
+{
+  "type": "way",
+  "id": 430310862,
+  "center": {
+    "lat": 37.4591490,
+    "lon": 126.7329904
+  },
+  "tags": {
+    "amenity": "school",
+    "education": "school",
+    "isced:level": "2",
+    "name": "만수여자중학교",
+    "name:en": "Mansu Girls’ Middle School",
+    "name:ko": "만수여자중학교",
+    "wikidata": "Q17987657"
+  }
+},
+{
+  "type": "way",
+  "id": 430311016,
+  "center": {
+    "lat": 37.4597395,
+    "lon": 126.7338523
+  },
+  "tags": {
+    "amenity": "school",
+    "education": "school",
+    "isced:level": "1",
+    "name": "새말초등학교",
+    "name:en": "Saemal Elementary School",
+    "name:ko": "새말초등학교"
+  }
+},
+{
+  "type": "way",
+  "id": 430311210,
+  "center": {
+    "lat": 37.4594664,
+    "lon": 126.7287320
+  },
+  "tags": {
+    "amenity": "school",
+    "education": "school",
+    "isced:level": "1",
+    "name": "인천만수북초등학교",
+    "name:en": "Mansoobuk Elementary School",
+    "name:ko": "인천만수북초등학교",
+    "wikidata": "Q12613500"
+  }
+},
+{
+  "type": "way",
+  "id": 439090949,
+  "center": {
+    "lat": 37.4715350,
+    "lon": 126.7073645
+  },
+  "tags": {
+    "amenity": "school",
+    "education": "school",
+    "isced:level": "1",
+    "name": "동암초등학교",
+    "name:en": "Dongarm Elementary School"
+  }
+},
+{
+  "type": "way",
+  "id": 439090966,
+  "center": {
+    "lat": 37.4739943,
+    "lon": 126.7057659
+  },
+  "tags": {
+    "amenity": "school",
+    "education": "school",
+    "isced:level": "2",
+    "name": "동암중학교",
+    "name:en": "Dongarm Middle School"
+  }
+},
+{
+  "type": "way",
+  "id": 439095300,
+  "center": {
+    "lat": 37.4798255,
+    "lon": 126.7047439
+  },
+  "tags": {
+    "amenity": "school",
+    "education": "school",
+    "isced:level": "1",
+    "name": "백운초등학교",
+    "name:en": "Baekwoon Elementary School"
+  }
+},
+{
+  "type": "way",
+  "id": 439095566,
+  "center": {
+    "lat": 37.4782824,
+    "lon": 126.7088777
+  },
+  "tags": {
+    "amenity": "school",
+    "education": "school",
+    "isced:level": "3",
+    "name": "제일고등학교",
+    "name:en": "Jeil High School",
+    "wikidata": "Q12616387"
+  }
+},
+{
+  "type": "way",
+  "id": 468421138,
+  "center": {
+    "lat": 37.5574661,
+    "lon": 126.6784208
+  },
+  "tags": {
+    "addr:city": "인천광역시",
+    "addr:country": "KR",
+    "addr:district": "서해구",
+    "addr:subdistrict": "공촌동",
+    "amenity": "school",
+    "education": "school",
+    "isced:level": "3",
+    "name": "대인고등학교",
+    "school": "high_school",
+    "wikidata": "Q12591685"
+  }
+},
+{
+  "type": "way",
+  "id": 469211270,
+  "center": {
+    "lat": 37.4952972,
+    "lon": 126.6702479
+  },
+  "tags": {
+    "addr:city": "인천광역시",
+    "addr:country": "KR",
+    "addr:district": "서해구",
+    "addr:subdistrict": "가좌동",
+    "amenity": "school",
+    "education": "school",
+    "isced:level": "1",
+    "name": "봉화초등학교"
+  }
+},
+{
+  "type": "way",
+  "id": 469211273,
+  "center": {
+    "lat": 37.4949939,
+    "lon": 126.6779697
+  },
+  "tags": {
+    "addr:city": "인천광역시",
+    "addr:country": "KR",
+    "addr:district": "서해구",
+    "addr:subdistrict": "가좌동",
+    "amenity": "school",
+    "education": "school",
+    "isced:level": "1",
+    "name": "건지초등학교"
+  }
+},
+{
+  "type": "way",
+  "id": 469211274,
+  "center": {
+    "lat": 37.4954826,
+    "lon": 126.6795824
+  },
+  "tags": {
+    "addr:city": "인천광역시",
+    "addr:country": "KR",
+    "addr:district": "서해구",
+    "addr:subdistrict": "가좌동",
+    "amenity": "school",
+    "education": "school",
+    "isced:level": "2",
+    "name": "가좌중학교",
+    "wikidata": "Q17986964"
+  }
+},
+{
+  "type": "way",
+  "id": 469426252,
+  "center": {
+    "lat": 37.6028525,
+    "lon": 126.6660001
+  },
+  "tags": {
+    "addr:city": "인천광역시",
+    "addr:country": "KR",
+    "addr:district": "검단구",
+    "addr:subdistrict": "마전동",
+    "amenity": "school",
+    "education": "school",
+    "isced:level": "1",
+    "name": "능내초등학교",
+    "name:en": "Neungnae Elementary School"
+  }
+},
+{
+  "type": "way",
+  "id": 469426259,
+  "center": {
+    "lat": 37.5978461,
+    "lon": 126.6653126
+  },
+  "tags": {
+    "addr:city": "인천광역시",
+    "addr:country": "KR",
+    "addr:district": "검단구",
+    "addr:subdistrict": "마전동",
+    "amenity": "school",
+    "education": "school",
+    "isced:level": "2",
+    "name": "마전중학교",
+    "name:en": "Majeon Middle School",
+    "wikidata": "Q17987634"
+  }
+},
+{
+  "type": "way",
+  "id": 469430987,
+  "center": {
+    "lat": 37.5974569,
+    "lon": 126.6707551
+  },
+  "tags": {
+    "addr:city": "인천광역시",
+    "addr:country": "KR",
+    "addr:district": "검단구",
+    "addr:subdistrict": "마전동",
+    "amenity": "school",
+    "education": "school",
+    "isced:level": "1",
+    "name": "마전초등학교",
+    "name:en": "Majeon Elementary School"
+  }
+},
+{
+  "type": "way",
+  "id": 469922274,
+  "center": {
+    "lat": 37.5983124,
+    "lon": 126.6642259
+  },
+  "tags": {
+    "addr:city": "인천광역시",
+    "addr:country": "KR",
+    "addr:district": "검단구",
+    "addr:housenumber": "99",
+    "addr:postcode": "22636",
+    "addr:street": "완정로",
+    "addr:subdistrict": "마전동",
+    "amenity": "school",
+    "education": "school",
+    "grades": "0-6",
+    "isced:level": "1",
+    "name": "완정초등학교",
+    "name:en": "Wanjeong Elementary School"
+  }
+},
+{
+  "type": "way",
+  "id": 471350715,
+  "center": {
+    "lat": 37.5647072,
+    "lon": 126.6848085
+  },
+  "tags": {
+    "addr:city": "인천광역시",
+    "addr:country": "KR",
+    "addr:district": "서해구",
+    "addr:housenumber": "22",
+    "addr:postcode": "22705",
+    "addr:street": "승학로572번길",
+    "addr:subdistrict": "검암동",
+    "amenity": "school",
+    "education": "school",
+    "isced:level": "1",
+    "name": "인천은지초등학교",
+    "name:ko": "인천은지초등학교",
+    "wikidata": "Q20444285",
+    "wikipedia": "ko:인천은지초등학교"
+  }
+},
+{
+  "type": "way",
+  "id": 471492023,
+  "center": {
+    "lat": 37.4924755,
+    "lon": 126.6810656
+  },
+  "tags": {
+    "addr:city": "인천광역시",
+    "addr:country": "KR",
+    "addr:district": "서해구",
+    "addr:subdistrict": "가좌동",
+    "amenity": "school",
+    "education": "school",
+    "isced:level": "3",
+    "name": "가림고등학교"
+  }
+},
+{
+  "type": "way",
+  "id": 471492046,
+  "center": {
+    "lat": 37.4904156,
+    "lon": 126.6809181
+  },
+  "tags": {
+    "addr:city": "인천광역시",
+    "addr:country": "KR",
+    "addr:district": "서해구",
+    "addr:subdistrict": "가좌동",
+    "amenity": "school",
+    "education": "school",
+    "isced:level": "1",
+    "name": "가림초등학교"
+  }
+},
+{
+  "type": "way",
+  "id": 471492047,
+  "center": {
+    "lat": 37.4893426,
+    "lon": 126.6808736
+  },
+  "tags": {
+    "addr:city": "인천광역시",
+    "addr:country": "KR",
+    "addr:district": "서해구",
+    "addr:subdistrict": "가좌동",
+    "amenity": "school",
+    "education": "school",
+    "isced:level": "3",
+    "name": "가좌고등학교"
+  }
+},
+{
+  "type": "way",
+  "id": 475591493,
+  "center": {
+    "lat": 37.4901096,
+    "lon": 126.6842872
+  },
+  "tags": {
+    "addr:city": "인천광역시",
+    "addr:country": "KR",
+    "addr:district": "서해구",
+    "addr:subdistrict": "가좌동",
+    "amenity": "school",
+    "education": "school",
+    "isced:level": "1",
+    "name": "가좌초등학교",
+    "name:en": "Gajwa Elementary School"
+  }
+},
+{
+  "type": "way",
+  "id": 478857853,
+  "center": {
+    "lat": 37.4507138,
+    "lon": 126.7359924
+  },
+  "tags": {
+    "amenity": "school",
+    "education": "school",
+    "name": "건설기술교육원",
+    "name:en": "Korea Institute Of Construction Technology Education",
+    "name:zh": "建筑技术教育中心",
+    "school": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 485787201,
+  "center": {
+    "lat": 37.6038016,
+    "lon": 126.6650078
+  },
+  "tags": {
+    "addr:city": "인천광역시",
+    "addr:country": "KR",
+    "addr:district": "검단구",
+    "addr:subdistrict": "마전동",
+    "amenity": "school",
+    "education": "school",
+    "isced:level": "3",
+    "name": "검단고등학교",
+    "name:en": "Geomdan High School",
+    "wikidata": "Q12583421"
+  }
+},
+{
+  "type": "way",
+  "id": 543019051,
+  "center": {
+    "lat": 37.5487234,
+    "lon": 126.6840060
+  },
+  "tags": {
+    "addr:city": "인천광역시",
+    "addr:country": "KR",
+    "addr:district": "서해구",
+    "addr:subdistrict": "공촌동",
+    "amenity": "school",
+    "education": "school",
+    "isced:level": "1",
+    "name": "공촌초등학교"
+  }
+},
+{
+  "type": "way",
+  "id": 553291705,
+  "center": {
+    "lat": 37.5895154,
+    "lon": 126.6719222
+  },
+  "tags": {
+    "addr:city": "인천광역시",
+    "addr:country": "KR",
+    "addr:district": "검단구",
+    "addr:subdistrict": "당하동",
+    "amenity": "school",
+    "education": "school",
+    "isced:level": "1",
+    "name": "백석초등학교"
+  }
+},
+{
+  "type": "way",
+  "id": 609759634,
+  "center": {
+    "lat": 37.4856036,
+    "lon": 126.6848456
+  },
+  "tags": {
+    "addr:city": "인천광역시",
+    "addr:country": "KR",
+    "addr:district": "서해구",
+    "addr:subdistrict": "가좌동",
+    "amenity": "school",
+    "education": "school"
+  }
+},
+{
+  "type": "way",
+  "id": 609759650,
+  "center": {
+    "lat": 37.4895841,
+    "lon": 126.6881595
+  },
+  "tags": {
+    "addr:city": "인천광역시",
+    "addr:country": "KR",
+    "addr:district": "서해구",
+    "addr:subdistrict": "가좌동",
+    "amenity": "school",
+    "education": "school",
+    "isced:level": "2",
+    "name": "동인천여자중학교",
+    "name:en": "Dong-Incheon Girls' Middle School",
+    "wikidata": "Q17987562"
+  }
+},
+{
+  "type": "way",
+  "id": 616516021,
+  "center": {
+    "lat": 37.5604919,
+    "lon": 126.6761820
+  },
+  "tags": {
+    "addr:city": "인천광역시",
+    "addr:country": "KR",
+    "addr:district": "서해구",
+    "addr:subdistrict": "검암동",
+    "amenity": "school",
+    "education": "school",
+    "isced:level": "3",
+    "name": "서인천고등학교",
+    "name:en": "Seoincheon High School",
+    "name:ko": "서인천고등학교",
+    "wikidata": "Q16095938"
+  }
+},
+{
+  "type": "way",
+  "id": 657108383,
+  "center": {
+    "lat": 37.4890646,
+    "lon": 126.6872787
+  },
+  "tags": {
+    "addr:city": "인천광역시",
+    "addr:country": "KR",
+    "addr:district": "서해구",
+    "addr:subdistrict": "가좌동",
+    "amenity": "school",
+    "education": "school",
+    "isced:level": "2",
+    "name": "제물포중학교",
+    "name:en": "Jemulpo Middle School",
+    "wikidata": "Q17990932"
+  }
+},
+{
+  "type": "way",
+  "id": 846404247,
+  "center": {
+    "lat": 37.5791117,
+    "lon": 126.6741911
+  },
+  "tags": {
+    "addr:city": "인천광역시",
+    "addr:country": "KR",
+    "addr:district": "검단구",
+    "addr:subdistrict": "백석동",
+    "amenity": "school",
+    "building:levels": "4",
+    "education": "school",
+    "isced:level": "2",
+    "name": "백석중학교",
+    "name:en": "Baekseok Middle School",
+    "name:ko": "백석중학교",
+    "website": "http://baksuk.icems.kr/main.do"
+  }
+},
+{
+  "type": "way",
+  "id": 846404248,
+  "center": {
+    "lat": 37.5802499,
+    "lon": 126.6743640
+  },
+  "tags": {
+    "addr:city": "인천광역시",
+    "addr:country": "KR",
+    "addr:district": "검단구",
+    "addr:subdistrict": "백석동",
+    "amenity": "school",
+    "education": "school",
+    "isced:level": "3",
+    "name": "백석고등학교",
+    "name:en": "Baekseok High School",
+    "name:ko": "백석고등학교",
+    "website": "http://i-baekseok.icehs.kr/main.do"
+  }
+},
+{
+  "type": "way",
+  "id": 846404249,
+  "center": {
+    "lat": 37.5814833,
+    "lon": 126.6730560
+  },
+  "tags": {
+    "addr:city": "인천광역시",
+    "addr:country": "KR",
+    "addr:district": "검단구",
+    "addr:subdistrict": "백석동",
+    "amenity": "school",
+    "education": "school",
+    "isced:level": "3",
+    "name": "한국주얼리고등학교",
+    "name:en": "Korea Jewelry High School",
+    "name:ko": "한국주얼리고등학교",
+    "operator": "학교법인 한진학원",
+    "website": "http://koreajewelry.icehs.kr/main.do"
+  }
+},
+{
+  "type": "way",
+  "id": 921530275,
+  "center": {
+    "lat": 37.5670104,
+    "lon": 126.6788533
+  },
+  "tags": {
+    "addr:city": "인천광역시",
+    "addr:country": "KR",
+    "addr:district": "서해구",
+    "addr:housenumber": "12",
+    "addr:street": "검암로29번길",
+    "addr:subdistrict": "검암동",
+    "amenity": "school",
+    "check_date": "2024-03-30",
+    "education": "school",
+    "isced:level": "2",
+    "name": "검암중학교",
+    "wikidata": "Q17986974",
+    "wikipedia": "ko:검암중학교"
+  }
+},
+{
+  "type": "way",
+  "id": 921530277,
+  "center": {
+    "lat": 37.5678699,
+    "lon": 126.6785223
+  },
+  "tags": {
+    "addr:city": "인천광역시",
+    "addr:country": "KR",
+    "addr:district": "서해구",
+    "addr:housenumber": "45",
+    "addr:street": "승학로599번길",
+    "addr:subdistrict": "검암동",
+    "amenity": "school",
+    "check_date": "2024-03-30",
+    "education": "school",
+    "isced:level": "1",
+    "name": "인천검암초등학교"
+  }
+},
+{
+  "type": "way",
+  "id": 936685223,
+  "center": {
+    "lat": 37.4523200,
+    "lon": 126.7307954
+  },
+  "tags": {
+    "amenity": "school",
+    "education": "school",
+    "isced:level": "3",
+    "name": "문일여자고등학교",
+    "name:en": "Moonil Girls' High School",
+    "wikidata": "Q12595779"
+  }
+},
+{
+  "type": "way",
+  "id": 1104014882,
+  "center": {
+    "lat": 37.5797273,
+    "lon": 126.6728092
+  },
+  "tags": {
+    "addr:city": "인천광역시",
+    "addr:country": "KR",
+    "addr:district": "검단구",
+    "addr:subdistrict": "백석동",
+    "amenity": "school",
+    "education": "school",
+    "isced:level": "1",
+    "name": "인천한들초등학교"
+  }
+}
+
+  ]
+}

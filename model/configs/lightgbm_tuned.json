@@ -1,0 +1,68 @@
+{
+  "seed": 2026,
+  "official_metric_verified": true,
+  "competition_rules_verified": true,
+  "rules_evidence": "user-supplied official Overview, Data and Rules on 2026-11-11",
+  "selection_metric": "rmsle",
+  "training_loss": "log_mse",
+  "horizon_days": 123,
+  "fold_origins": [
+    "2025-06-26",
+    "2025-10-27",
+    "2026-02-27"
+  ],
+  "fold_roles": [
+    "development",
+    "development",
+    "audit"
+  ],
+  "origin_stride_days": 28,
+  "max_training_rows": 220000,
+  "threads": 4,
+  "device": "cpu",
+  "models": [
+    "lightgbm_large"
+  ],
+  "correlation_cutoff": 0.95,
+  "use_external_data": true,
+  "external_data_allowlist": [
+    "preannounced_korean_holidays"
+  ],
+  "use_pretrained_weights": false,
+  "ensemble_policy": {
+    "method": "primary_constrained_log_mse",
+    "primary_model": "lightgbm_large",
+    "primary_min_weight": 1.0,
+    "bias_correction": false
+  },
+  "evaluation_context": {
+    "status": "reused_validation_after_prior_diagnostics",
+    "policy_selection_has_seen_audit": true,
+    "weight_fit_uses_audit": false,
+    "hyperparameter_selection_uses_audit": false,
+    "note": "Hyperparameters and common boosting iteration selected using first two development folds, known stations only. Fold 3 already examined in earlier work; reused comparison only."
+  },
+  "lightgbm_params": {
+    "learning_rate": 0.055,
+    "num_leaves": 127,
+    "min_child_samples": 80,
+    "reg_lambda": 10.0,
+    "reg_alpha": 0.1,
+    "max_depth": -1,
+    "colsample_bytree": 0.9,
+    "subsample": 0.75,
+    "subsample_freq": 1,
+    "min_split_gain": 0.0,
+    "n_estimators": 173
+  },
+  "tuning": {
+    "method": "16-candidate bounded development search with early stopping",
+    "max_rounds": 1000,
+    "patience": 100,
+    "min_delta": 1e-05,
+    "actual_trials": 16,
+    "selected_iteration": 173,
+    "selected_trial": 10,
+    "search_output": "outputs/lightgbm_tuned"
+  }
+}

@@ -1,0 +1,17 @@
+fold,model,best_iteration,executed_iterations,configured_cap,reached_cap,early_stopped
+1,lightgbm,1,151,3000,False,True
+1,catboost,1,151,3500,False,True
+1,xgboost,1,151,3000,False,True
+1,tabm,1,6,30,False,True
+2,lightgbm,16,166,3000,False,True
+2,catboost,36,186,3500,False,True
+2,xgboost,7,157,3000,False,True
+2,tabm,2,7,30,False,True
+3,lightgbm,999,1149,3000,False,True
+3,catboost,1823,1973,3500,False,True
+3,xgboost,59,209,3000,False,True
+3,tabm,12,17,30,False,True
+4,lightgbm,3000,3000,3000,True,False
+4,catboost,3500,3500,3500,True,False
+4,xgboost,3000,3000,3000,True,False
+4,tabm,12,17,30,False,True

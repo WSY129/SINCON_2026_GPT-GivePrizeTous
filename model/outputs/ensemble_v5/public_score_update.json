@@ -1,0 +1,7 @@
+{
+  "source": "user reported Kaggle submission result",
+  "v2_public_rmsle": 0.18265,
+  "v4_public_rmsle": 0.18678,
+  "difference": 0.00413,
+  "causes_status": "hypotheses requiring isolated ablation; public reversal alone does not establish causal attribution"
+}

@@ -1,0 +1,53 @@
+{
+  "name": "ensemble_v13",
+  "information": "v13 = v12 + corrections fitted on local out-of-fold residuals (nested, date-blocked). No leaderboard score is read or stored. v13e = v13 + the event-specific entries below, which rest on realised facts of the evaluation period (allowed by the organisers) and on ridership before the cutoff only; they cannot be validated on any fold.",
+  "extras": [
+    {
+      "name": "SSG 랜더스페셜 매치 '최광야구 1429' (23,000석 매진, 17:30 시작)",
+      "station": 3127,
+      "date": "2026-10-17",
+      "weight_on_scenarios": 1.0,
+      "scenarios": [
+        {"p": 0.3, "note": "ends about 20:20", "hours": {"20": 4000, "21": 2200, "22": 150}},
+        {"p": 0.5, "note": "ends about 20:45", "hours": {"20": 1500, "21": 4500, "22": 300}},
+        {"p": 0.2, "note": "ends about 21:10", "hours": {"20": 350, "21": 5000, "22": 1000}}
+      ],
+      "basis": "Held and sold out (press of 2026-11-05). v12/v13 treat the day as an ordinary Saturday (21h: 66). Crowd leaving by this station taken from the home-game relation of the training period (boardings in the two hours after the end = 0.263 x attendance + 204, i.e. about 6,300 for 23,000) and from the same event a year earlier (2025-10-24, 18:00 start, 21,000+ tickets: 391 / 5,279 / 1,140 boardings at 20 / 21 / 22h). The end time is not published; the three scenarios shift it between 20:20 and 21:10 and the forecast is their mean in log space.",
+      "sources": ["https://isplus.com/article/view/isp202611050060", "https://etoday.co.kr/news/view/2635362"]
+    },
+    {
+      "name": "PLAVE World Tour [KEEP IT MANIC] in Incheon, 문학 주경기장 (토)",
+      "station": 3127,
+      "date": "2026-09-12",
+      "weight_on_scenarios": 0.8,
+      "scenarios": [
+        {"p": 0.25, "note": "leaving crowd peaks in the 21h cell", "hours": {"21": 7300, "22": 850, "23": 90}},
+        {"p": 0.60, "note": "peaks in the 22h cell (19:00 start, about three hours)", "hours": {"21": 430, "22": 7300, "23": 850}},
+        {"p": 0.15, "note": "peaks late", "hours": {"21": 250, "22": 3000, "23": 4500}}
+      ],
+      "basis": "Held as announced (19:00, report of 2026-09-15: about three hours, venue filled). All nine earlier main-stadium concert days before the cutoff have 6,131-10,189 boardings in the peak hour (geometric mean 7,324; hour before 429, hour after 847). v12/v13 have 548 / 695 / 248 at 21 / 22 / 23h. Weight 0.8 on the scenario mean and 0.2 on the existing forecast because the crowd of a first stadium show is not published.",
+      "sources": ["https://www.wikitree.co.kr/articles/1159055", "https://www.wikitree.co.kr/articles/1141589"]
+    },
+    {
+      "name": "PLAVE World Tour [KEEP IT MANIC] in Incheon, 문학 주경기장 (일)",
+      "station": 3127,
+      "date": "2026-09-13",
+      "weight_on_scenarios": 0.8,
+      "scenarios": [
+        {"p": 0.25, "hours": {"21": 7300, "22": 850, "23": 90}},
+        {"p": 0.60, "hours": {"21": 430, "22": 7300, "23": 850}},
+        {"p": 0.15, "hours": {"21": 250, "22": 3000, "23": 4500}}
+      ],
+      "basis": "Same as the Saturday show.",
+      "sources": ["https://www.wikitree.co.kr/articles/1159055"]
+    },
+    {
+      "name": "2026 인천송도국제마라톤 (08:00 출발, 인천대 송도캠퍼스)",
+      "station": 3136,
+      "date": "2026-09-20",
+      "multiply": {"10": 1.8, "11": 1.8},
+      "basis": "The 2025 race (2025-09-28) gave 713 and 746 boardings at 10h and 11h against 242 and 261 on the neighbouring Sundays (x2.9). One earlier race only, so about 55 % of that log effect is applied.",
+      "sources": ["team share v3: events_venues_added.csv"]
+    }
+  ]
+}

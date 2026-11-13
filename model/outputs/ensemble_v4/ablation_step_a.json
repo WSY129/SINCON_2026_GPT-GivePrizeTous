@@ -1,0 +1,190 @@
+{
+  "models": {
+    "lightgbm": {
+      "oof_rmsle": 0.2145134157081739,
+      "weighted_rmsle": 0.2145134157081739,
+      "fold34_rmsle": 0.2145134157081739,
+      "fold4_rmsle": 0.21759605748377986
+    },
+    "catboost_cpu": {
+      "oof_rmsle": 0.21595196269132408,
+      "weighted_rmsle": 0.21595196269132405,
+      "fold34_rmsle": 0.21595196269132408,
+      "fold4_rmsle": 0.21786250942255714
+    },
+    "xgboost": {
+      "oof_rmsle": 0.2135754123070717,
+      "weighted_rmsle": 0.2135754123070717,
+      "fold34_rmsle": 0.2135754123070717,
+      "fold4_rmsle": 0.2158621648186577
+    },
+    "tabm_v4": {
+      "oof_rmsle": 0.21066251154040924,
+      "weighted_rmsle": 0.21066251154040921,
+      "fold34_rmsle": 0.21066251154040924,
+      "fold4_rmsle": 0.20969004631854116
+    }
+  },
+  "global": {
+    "oof_rmsle": 0.2077049846711122,
+    "weighted_rmsle": 0.2077049846711122,
+    "fold34_rmsle": 0.2077049846711122,
+    "fold4_rmsle": 0.2095561776908395
+  },
+  "ensemble": {
+    "oof_rmsle": null,
+    "weighted_rmsle": null,
+    "fold34_rmsle": 0.20753198282123825,
+    "fold4_rmsle": 0.20925107762235318
+  },
+  "global_weights": {
+    "lightgbm": 0.03258539493726605,
+    "catboost_cpu": 0.13824998262248467,
+    "xgboost": 0.2390600789797966,
+    "tabm_v4": 0.5901045434604527
+  },
+  "all_fold_weights": {
+    "lightgbm": 0.03258539493726605,
+    "catboost_cpu": 0.13824998262248467,
+    "xgboost": 0.2390600789797966,
+    "tabm_v4": 0.5901045434604527
+  },
+  "bucket_weights": {
+    "new_stations": [
+      0.03258539493726605,
+      0.13824998262248467,
+      0.2390600789797966,
+      0.5901045434604527
+    ],
+    "high_spike": [
+      0.03258539493726605,
+      0.13824998262248467,
+      0.2390600789797966,
+      0.5901045434604527
+    ],
+    "late_or_low": [
+      0.03258539493726605,
+      0.13824998262248467,
+      0.2390600789797966,
+      0.5901045434604527
+    ],
+    "regular": [
+      0.0,
+      0.3065942085192414,
+      0.05688552171983756,
+      0.6365202697609211
+    ]
+  },
+  "model_order": [
+    "lightgbm",
+    "catboost_cpu",
+    "xgboost",
+    "tabm_v4"
+  ],
+  "purged_chronological_check": {
+    "fit_rows": 75402,
+    "test_rows": 157194,
+    "global_rmsle": 0.2098806712927184,
+    "raw_bucket_rmsle": 0.21044097579885462,
+    "training_selected_single": "tabm_v4",
+    "single_rmsle": 0.20969004631854116,
+    "buckets": [
+      {
+        "bucket": "new_stations",
+        "rows": 6642,
+        "bucket_rmsle": 0.288757435870885,
+        "global_rmsle": 0.28167265187027235,
+        "training_selected_single": "tabm_v4",
+        "single_rmsle": 0.275607364962018,
+        "fallback_global": true,
+        "fit_weights": [
+          0.7642440105840488,
+          0.0,
+          0.0,
+          0.23575598941595133
+        ]
+      },
+      {
+        "bucket": "high_spike",
+        "rows": 1365,
+        "bucket_rmsle": 1.0417605551235258,
+        "global_rmsle": 1.0352788455523094,
+        "training_selected_single": "tabm_v4",
+        "single_rmsle": 1.0417605551235258,
+        "fallback_global": true,
+        "fit_weights": [
+          2.862293735361732e-17,
+          4.163336342344337e-17,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "bucket": "late_or_low",
+        "rows": 25296,
+        "bucket_rmsle": 0.23907983556412832,
+        "global_rmsle": 0.23810359956724536,
+        "training_selected_single": "tabm_v4",
+        "single_rmsle": 0.23686079635623603,
+        "fallback_global": true,
+        "fit_weights": [
+          0.0,
+          0.4826757573550548,
+          0.05697923553722201,
+          0.46034500710772314
+        ]
+      },
+      {
+        "bucket": "regular",
+        "rows": 123891,
+        "bucket_rmsle": 0.16760555344992012,
+        "global_rmsle": 0.1680860391539262,
+        "training_selected_single": "tabm_v4",
+        "single_rmsle": 0.1682404300246419,
+        "fallback_global": false,
+        "fit_weights": [
+          0.0,
+          0.38652229176451514,
+          0.0,
+          0.613477708235485
+        ]
+      }
+    ]
+  },
+  "lofo_global_rmsle": 0.20907393817812275,
+  "limitations": "Fold 3+4 blend scores fit weights on those labels. Bucket fallback is selected using Fold 4; its selected score is not independent. Purged checks remove repeated dates but still reuse early-stopping and feature-design decisions.",
+  "gate": {
+    "v3_fold4": 0.224363706,
+    "fold4_improved": true,
+    "stations": [
+      {
+        "model": "ensemble",
+        "station_id": 3107,
+        "rmsle": 0.4158566696615307,
+        "log_sse": 382.88200812018255,
+        "mbe": -17.46332809192753
+      },
+      {
+        "model": "ensemble",
+        "station_id": 3127,
+        "rmsle": 0.8305692663214544,
+        "log_sse": 1527.3175078332788,
+        "mbe": -96.4562403169458
+      },
+      {
+        "model": "ensemble",
+        "station_id": 3226,
+        "rmsle": 0.4840505654791415,
+        "log_sse": 518.7511591686582,
+        "mbe": -57.834793629455525
+      },
+      {
+        "model": "ensemble",
+        "station_id": 3754,
+        "rmsle": 0.4018618589519923,
+        "log_sse": 357.54539944829696,
+        "mbe": -44.11469185740885
+      }
+    ]
+  }
+}

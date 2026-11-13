@@ -1,0 +1,7 @@
+{
+ "n_train": 2977668,
+ "rounds": 2302,
+ "model": "lgb",
+ "seed": 2026,
+ "seconds": 136.4
+}

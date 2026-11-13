@@ -1,0 +1,521 @@
+{
+  "name": "ensemble_v19",
+  "information": "v19 = v15 + five corrections that passed the nested, date-blocked test (v17 steps + damping of the excess growth of stations 3108 / 3109). v19e = v19 + the entries below; they rest on realised facts of the evaluation period (events, and for one entry the hourly bus boardings of one stop on 2026-10-31) and on ridership before the cutoff only, and cannot be validated on any fold. No subway ridership of the evaluation period and no leaderboard score is read or stored.",
+  "extras": [
+    {
+      "name": "SSG 랜더스페셜 매치 '최광야구 1429' (17:30~20:23, 관중 23,300명 매진, 경기 후 시상식·불꽃놀이)",
+      "station": 3127,
+      "date": "2026-10-17",
+      "weight_on_scenarios": 1.0,
+      "scenarios": [
+        {
+          "p": 0.2,
+          "note": "most leave after the game or a short ceremony (wave by 20:39)",
+          "hours": {
+            "20": 5000,
+            "21": 1300,
+            "22": 150
+          }
+        },
+        {
+          "p": 0.35,
+          "note": "a third leaves at the end of the game, the rest after fireworks ending about 20:45-20:50",
+          "hours": {
+            "20": 3700,
+            "21": 2530,
+            "22": 200
+          }
+        },
+        {
+          "p": 0.45,
+          "note": "a quarter leaves at the end of the game, the rest after fireworks ending about 21:00",
+          "hours": {
+            "20": 1840,
+            "21": 4560,
+            "22": 300
+          }
+        }
+      ],
+      "basis": "Game 17:30-20:23 (2 h 53 min), attendance 23,300, sold out (namu.wiki, page opened and checked 2026-11-13); awards ceremony and fireworks after the game (club notice of 2026-10-13, checked), their end is not documented.  Crowd leaving by this station from the home-game relation of the training period (boardings in the two hours after the end = 0.263 x attendance + 204, about 6,300).  The scenarios differ in how many stay for the fireworks and when these end.  Split of the leaving crowd between hour cells: outputs/ensemble_v15/external/exit_split_by_end_minute.csv (home games of the training period: an end at :30-:39 puts 78 % into the hour of the end, :40-:49 37 %, :50-:59 18 %, :00-:09 95 %).  v18e: replay chapters reported by a teammate tool (awards at 2:41, fireworks at 3:07 of the video) put the fireworks about 25 minutes after the ceremony began, i.e. near 21:00; weight moved from (0.3, 0.4, 0.3) to (0.2, 0.35, 0.45).",
+      "sources": [
+        "https://namu.wiki/w/SSG%20%EB%9E%9C%EB%8D%94%EC%8A%A4/2026%EB%85%84/%EC%B5%9C%EA%B4%91%EC%95%BC%EA%B5%AC%201429",
+        "https://www.ssglanders.com/media/news/detail?idx=19943"
+      ]
+    },
+    {
+      "name": "PLAVE World Tour [KEEP IT MANIC] in Incheon, 문학 주경기장 (토, 155분 → 21:35 종료)",
+      "station": 3127,
+      "date": "2026-09-12",
+      "weight_on_scenarios": 0.9,
+      "scenarios": [
+        {
+          "p": 0.55,
+          "note": "ends 21:35 as documented: 78 % of the leaving crowd in the 21h cell",
+          "hours": {
+            "21": 5850,
+            "22": 1640,
+            "23": 150
+          }
+        },
+        {
+          "p": 0.4,
+          "note": "a start a few minutes late or a slower exit than at ball games moves the wave past 21:40: 37 % in the 21h cell",
+          "hours": {
+            "21": 2800,
+            "22": 4450,
+            "23": 250
+          }
+        },
+        {
+          "p": 0.05,
+          "note": "later",
+          "hours": {
+            "21": 1350,
+            "22": 5900,
+            "23": 300
+          }
+        }
+      ],
+      "basis": "Running time including the encore: 155 minutes on 12 September and 170 minutes on 13 September (namu.wiki, page opened and checked 2026-11-13); start 19:00, so 21:35 and 21:50.  Crowd leaving by this station taken as 7,500 over two hours (attendance about 25,000 a day by a press headline that was not opened here; nine earlier main-stadium concert days: 8,100-11,300).  21:35 is five minutes before the minute at which the crowd tips into the next hour, hence the second scenario.  Split of the leaving crowd between hour cells: outputs/ensemble_v15/external/exit_split_by_end_minute.csv (home games of the training period: an end at :30-:39 puts 78 % into the hour of the end, :40-:49 37 %, :50-:59 18 %, :00-:09 95 %).  Weight 0.9 on the scenario mean.",
+      "sources": [
+        "https://namu.wiki/w/KEEP%20IT%20MANIC",
+        "https://mksupporters.co.kr/mkfriends/news/1article151"
+      ]
+    },
+    {
+      "name": "PLAVE World Tour [KEEP IT MANIC] in Incheon, 문학 주경기장 (일, 170분 → 21:50 종료)",
+      "station": 3127,
+      "date": "2026-09-13",
+      "weight_on_scenarios": 0.9,
+      "scenarios": [
+        {
+          "p": 0.6,
+          "note": "ends 21:50-21:59: 18 % in the 21h cell, 79 % in the 22h cell",
+          "hours": {
+            "21": 1335,
+            "22": 5925,
+            "23": 340
+          }
+        },
+        {
+          "p": 0.4,
+          "note": "the wave starts after 22:00",
+          "hours": {
+            "21": 400,
+            "22": 7100,
+            "23": 450
+          }
+        }
+      ],
+      "basis": "See the Saturday entry: 170 minutes from 19:00 gives 21:50.",
+      "sources": [
+        "https://namu.wiki/w/KEEP%20IT%20MANIC"
+      ]
+    },
+    {
+      "name": "Sustainable Wave Festival, 문학 주경기장 (토; 이틀 합계 약 4만 명, 13:10~21:10)",
+      "station": 3127,
+      "date": "2026-08-29",
+      "weight_on_scenarios": 1.0,
+      "scenarios": [
+        {
+          "p": 0.24,
+          "note": "8 % of 20,000 leave by this station in the hour of the end (all-day festival, Pentaport 2025 ratio), ends on time",
+          "hours": {
+            "20": 350,
+            "21": 1600,
+            "22": 450
+          }
+        },
+        {
+          "p": 0.32,
+          "note": "15 %, ends on time",
+          "hours": {
+            "20": 450,
+            "21": 3000,
+            "22": 750
+          }
+        },
+        {
+          "p": 0.24,
+          "note": "24 % (stadium concert / ball game ratio), ends on time",
+          "hours": {
+            "20": 550,
+            "21": 4800,
+            "22": 1100
+          }
+        },
+        {
+          "p": 0.2,
+          "note": "overruns to 21:40 or later, 15 %",
+          "hours": {
+            "20": 400,
+            "21": 650,
+            "22": 3000,
+            "23": 300
+          }
+        }
+      ],
+      "basis": "Attendance about 40,000 over the two days (KOCCA), official running time 13:10-21:10 (ticket page: 480 minutes).  The forecast without this entry has about 100 / 270 / 270 boardings at 20 / 21 / 22h.  Share of the attendance leaving by the station in the peak hour: 8 % at the all-day festival next to a station (Pentaport 2025, about 50,000 a day, 4,000-4,100 boardings), 24 % at ball games and stadium concerts at this station.  Daily attendance is not published; both days get the same entry.  Split of the leaving crowd between hour cells: outputs/ensemble_v15/external/exit_split_by_end_minute.csv (home games of the training period: an end before :40 puts 79-95 % into the hour of the end, an end at :40-:49 37 %, at :50-:59 18 %).",
+      "sources": [
+        "https://www.kocca.kr/n_content/2026/kocca_vol41/sub_4_1_1.html",
+        "https://nol.yanolja.com/ticket/products/26008404",
+        "outputs/ensemble_v15/external/events_2026_jul_oct_venues.csv"
+      ]
+    },
+    {
+      "name": "Sustainable Wave Festival, 문학 주경기장 (일; 이틀 합계 약 4만 명, 13:10~21:10)",
+      "station": 3127,
+      "date": "2026-08-30",
+      "weight_on_scenarios": 1.0,
+      "scenarios": [
+        {
+          "p": 0.24,
+          "note": "8 % of 20,000 leave by this station in the hour of the end (all-day festival, Pentaport 2025 ratio), ends on time",
+          "hours": {
+            "20": 350,
+            "21": 1600,
+            "22": 450
+          }
+        },
+        {
+          "p": 0.32,
+          "note": "15 %, ends on time",
+          "hours": {
+            "20": 450,
+            "21": 3000,
+            "22": 750
+          }
+        },
+        {
+          "p": 0.24,
+          "note": "24 % (stadium concert / ball game ratio), ends on time",
+          "hours": {
+            "20": 550,
+            "21": 4800,
+            "22": 1100
+          }
+        },
+        {
+          "p": 0.2,
+          "note": "overruns to 21:40 or later, 15 %",
+          "hours": {
+            "20": 400,
+            "21": 650,
+            "22": 3000,
+            "23": 300
+          }
+        }
+      ],
+      "basis": "Attendance about 40,000 over the two days (KOCCA), official running time 13:10-21:10 (ticket page: 480 minutes).  The forecast without this entry has about 100 / 270 / 270 boardings at 20 / 21 / 22h.  Share of the attendance leaving by the station in the peak hour: 8 % at the all-day festival next to a station (Pentaport 2025, about 50,000 a day, 4,000-4,100 boardings), 24 % at ball games and stadium concerts at this station.  Daily attendance is not published; both days get the same entry.  Split of the leaving crowd between hour cells: outputs/ensemble_v15/external/exit_split_by_end_minute.csv (home games of the training period: an end before :40 puts 79-95 % into the hour of the end, an end at :40-:49 37 %, at :50-:59 18 %).",
+      "sources": [
+        "https://www.kocca.kr/n_content/2026/kocca_vol41/sub_4_1_1.html",
+        "https://nol.yanolja.com/ticket/products/26008404",
+        "outputs/ensemble_v15/external/events_2026_jul_oct_venues.csv"
+      ]
+    },
+    {
+      "name": "불꽃야구2 19번째 직관 (14:00 시작)",
+      "station": 3127,
+      "date": "2026-10-31",
+      "weight_on_scenarios": 1.0,
+      "scenarios": [
+        {
+          "p": 0.85,
+          "note": "ends 17:30-17:39: 78 % of the leaving crowd in the 17h cell (bus boardings at the ballpark stop: 75 at 17h, 19 at 18h)",
+          "hours": {
+            "17": 1700,
+            "18": 430
+          }
+        },
+        {
+          "p": 0.15,
+          "note": "ends 17:40-17:49",
+          "hours": {
+            "17": 800,
+            "18": 1250
+          }
+        }
+      ],
+      "basis": "Listed since v10 with start + 190 minutes, which puts nearly all of the leaving crowd into the 17h cell (about 1,460 / 180 at 17 / 18h).  The five earlier fan games of the training period had 1,061-2,223 boardings in the peak hour; four ended early in an hour, one (2025-07-27) about four hours after the start.  The entry only moves part of the crowd to the 18h cell for that case.  Split of the leaving crowd between hour cells: outputs/ensemble_v15/external/exit_split_by_end_minute.csv (home games of the training period: an end before :40 puts 79-95 % into the hour of the end, an end at :40-:49 37 %, at :50-:59 18 %).  v19e: hourly bus boardings of the stop 문학경기장(야구장) (ARS 37144) on 2026-10-31 from the transport-card statistics site (outputs/ensemble_v19/external/stcis_bus_stop_37144_20261031.csv): 18 / 75 / 19 / 7 at 16 / 17 / 18 / 19h, i.e. four fifths of the leaving passengers in the 17h cell, the share the split curve gives for an end at :30-:39.",
+      "sources": [
+        "https://isplus.com/article/view/isp202611040165",
+        "outputs/ensemble_v15/external/events_2026_jul_oct_venues.csv",
+        "https://www.stcis.go.kr (정류장별 이용량, 조회 2026-11-13)"
+      ]
+    },
+    {
+      "name": "2026 이슬라이브 페스티벌, 송도달빛축제공원 (14:00~21:30)",
+      "station": 3139,
+      "date": "2026-09-12",
+      "weight_on_scenarios": 1.0,
+      "scenarios": [
+        {
+          "p": 0.25,
+          "note": "ends 21:30 as on the ticket page: more than half of the leaving crowd in the 21h cell",
+          "hours": {
+            "21": 1350,
+            "22": 750,
+            "23": 120
+          }
+        },
+        {
+          "p": 0.75,
+          "note": "crowd leaves as at the festivals that close at 22:00: forecast kept",
+          "hours": {}
+        }
+      ],
+      "basis": "The retrained model answers the festival flag at this station with the profile of the festivals that close at 22:00 (beer festival, Pentaport): about 600 / 1,290 / 340 boardings at 21 / 22 / 23h.  The ticket page gives 14:00 start and 450 minutes, i.e. an end at 21:30.  The entry keeps the size of the crowd and moves part of it to the 21h cell.  Split of the leaving crowd between hour cells: outputs/ensemble_v15/external/exit_split_by_end_minute.csv (home games of the training period: an end before :40 puts 79-95 % into the hour of the end, an end at :40-:49 37 %, at :50-:59 18 %).  v18e: the co-organiser announced the day before that the programme runs to 22:20 (attendance about 20,000 by its own report); probability of the 21:30 end lowered from 0.6 to 0.25.",
+      "sources": [
+        "https://nol.yanolja.com/ticket/products/26010722",
+        "outputs/ensemble_v15/external/events_2026_jul_oct_venues.csv"
+      ]
+    },
+    {
+      "name": "가재울 둘째 토요일 오전 급증 (원인 미확인, 2026-03~06 네 달 연속)",
+      "station": 3216,
+      "date": "2026-07-11",
+      "weight_on_scenarios": 1.0,
+      "scenarios": [
+        {
+          "p": 0.6,
+          "note": "the monthly gathering takes place again",
+          "hours": {
+            "11": 366,
+            "12": 993
+          }
+        },
+        {
+          "p": 0.4,
+          "note": "it does not: forecast kept",
+          "hours": {}
+        }
+      ],
+      "basis": "Training data: on the second Saturday of March, April, May and June 2026 the 12h boardings were 791 / 1,192 / 932 / 1,105 (other Saturdays of those months: 208) and the 11h boardings 225 / 406 / 373 / 528 (219); nothing of the kind on any second Saturday before March 2026.  The cause is not identified and nobody could confirm that it continued, so the entry is the probability-weighted mean in log space (p = probability that it took place; lower in August and on the long weekend of 10 October).",
+      "sources": [
+        "outputs/ensemble_v15/external/events_venues_added.csv (rows 가재울, confidence data / low)"
+      ]
+    },
+    {
+      "name": "가재울 둘째 토요일 오전 급증 (원인 미확인, 2026-03~06 네 달 연속)",
+      "station": 3216,
+      "date": "2026-08-08",
+      "weight_on_scenarios": 1.0,
+      "scenarios": [
+        {
+          "p": 0.5,
+          "note": "the monthly gathering takes place again",
+          "hours": {
+            "11": 366,
+            "12": 993
+          }
+        },
+        {
+          "p": 0.5,
+          "note": "it does not: forecast kept",
+          "hours": {}
+        }
+      ],
+      "basis": "Training data: on the second Saturday of March, April, May and June 2026 the 12h boardings were 791 / 1,192 / 932 / 1,105 (other Saturdays of those months: 208) and the 11h boardings 225 / 406 / 373 / 528 (219); nothing of the kind on any second Saturday before March 2026.  The cause is not identified and nobody could confirm that it continued, so the entry is the probability-weighted mean in log space (p = probability that it took place; lower in August and on the long weekend of 10 October).",
+      "sources": [
+        "outputs/ensemble_v15/external/events_venues_added.csv (rows 가재울, confidence data / low)"
+      ]
+    },
+    {
+      "name": "가재울 둘째 토요일 오전 급증 (원인 미확인, 2026-03~06 네 달 연속)",
+      "station": 3216,
+      "date": "2026-09-12",
+      "weight_on_scenarios": 1.0,
+      "scenarios": [
+        {
+          "p": 0.6,
+          "note": "the monthly gathering takes place again",
+          "hours": {
+            "11": 366,
+            "12": 993
+          }
+        },
+        {
+          "p": 0.4,
+          "note": "it does not: forecast kept",
+          "hours": {}
+        }
+      ],
+      "basis": "Training data: on the second Saturday of March, April, May and June 2026 the 12h boardings were 791 / 1,192 / 932 / 1,105 (other Saturdays of those months: 208) and the 11h boardings 225 / 406 / 373 / 528 (219); nothing of the kind on any second Saturday before March 2026.  The cause is not identified and nobody could confirm that it continued, so the entry is the probability-weighted mean in log space (p = probability that it took place; lower in August and on the long weekend of 10 October).",
+      "sources": [
+        "outputs/ensemble_v15/external/events_venues_added.csv (rows 가재울, confidence data / low)"
+      ]
+    },
+    {
+      "name": "가재울 둘째 토요일 오전 급증 (원인 미확인, 2026-03~06 네 달 연속)",
+      "station": 3216,
+      "date": "2026-10-10",
+      "weight_on_scenarios": 1.0,
+      "scenarios": [
+        {
+          "p": 0.5,
+          "note": "the monthly gathering takes place again",
+          "hours": {
+            "11": 366,
+            "12": 993
+          }
+        },
+        {
+          "p": 0.5,
+          "note": "it does not: forecast kept",
+          "hours": {}
+        }
+      ],
+      "basis": "Training data: on the second Saturday of March, April, May and June 2026 the 12h boardings were 791 / 1,192 / 932 / 1,105 (other Saturdays of those months: 208) and the 11h boardings 225 / 406 / 373 / 528 (219); nothing of the kind on any second Saturday before March 2026.  The cause is not identified and nobody could confirm that it continued, so the entry is the probability-weighted mean in log space (p = probability that it took place; lower in August and on the long weekend of 10 October).",
+      "sources": [
+        "outputs/ensemble_v15/external/events_venues_added.csv (rows 가재울, confidence data / low)"
+      ]
+    },
+    {
+      "name": "제14회 연수 능허대 문화축제, 연수한마음공원(선학동 231-3) (금·한글날, 12:00~21:00)",
+      "station": 3128,
+      "date": "2026-10-09",
+      "weight_on_scenarios": 1.0,
+      "scenarios": [
+        {
+          "p": 0.45,
+          "note": "main show over about 20:30 as at the spring festival of the same park (official hours also to 21:00)",
+          "hours": {
+            "20": 950,
+            "21": 350
+          }
+        },
+        {
+          "p": 0.43,
+          "note": "finale (drone show, fireworks) at the official end 21:00",
+          "hours": {
+            "20": 450,
+            "21": 950
+          }
+        },
+        {
+          "p": 0.12,
+          "note": "no visible crowd at this station: forecast kept",
+          "hours": {}
+        }
+      ],
+      "basis": "Venue and hours confirmed: 연수한마음공원, 인천 연수구 선학동 231-3, 12:00-21:00 on both days (National Assembly Library regional-event record, opened and checked 2026-11-13).  The only earlier festival at this park (2026-03-28/29, official hours 13:00-21:00) gave 925 and 1,017 boardings at 20h against 219 and 132 on ordinary days, and 512 / 194 at 21h.  Attendance is not reported.",
+      "sources": [
+        "https://clik.nanet.go.kr/event/detail.do?eventId=2849159",
+        "https://www.ysfac.or.kr/user/cultural/events_list.php?event_code=002002004"
+      ]
+    },
+    {
+      "name": "제14회 연수 능허대 문화축제, 연수한마음공원(선학동 231-3) (토, 12:00~21:00)",
+      "station": 3128,
+      "date": "2026-10-10",
+      "weight_on_scenarios": 1.0,
+      "scenarios": [
+        {
+          "p": 0.45,
+          "note": "main show over about 20:30 as at the spring festival of the same park (official hours also to 21:00)",
+          "hours": {
+            "20": 950,
+            "21": 350
+          }
+        },
+        {
+          "p": 0.43,
+          "note": "finale (drone show, fireworks) at the official end 21:00",
+          "hours": {
+            "20": 450,
+            "21": 950
+          }
+        },
+        {
+          "p": 0.12,
+          "note": "no visible crowd at this station: forecast kept",
+          "hours": {}
+        }
+      ],
+      "basis": "Venue and hours confirmed: 연수한마음공원, 인천 연수구 선학동 231-3, 12:00-21:00 on both days (National Assembly Library regional-event record, opened and checked 2026-11-13).  The only earlier festival at this park (2026-03-28/29, official hours 13:00-21:00) gave 925 and 1,017 boardings at 20h against 219 and 132 on ordinary days, and 512 / 194 at 21h.  Attendance is not reported.",
+      "sources": [
+        "https://clik.nanet.go.kr/event/detail.do?eventId=2849159",
+        "https://www.ysfac.or.kr/user/cultural/events_list.php?event_code=002002004"
+      ]
+    },
+    {
+      "name": "2026 인천송도국제마라톤 (08:00 출발, 인천대 송도캠퍼스)",
+      "station": 3136,
+      "date": "2026-09-20",
+      "multiply": {
+        "10": 1.4,
+        "11": 1.4
+      },
+      "basis": "The 2025 race (2025-09-28) gave 713 and 746 boardings at 10h and 11h against 242 and 261 on the neighbouring Sundays (x2.9). The retrained model of v14 already raises these two hours by about 30 %; x1.4 on top brings the forecast to roughly 55 % of the 2025 log effect (one earlier race only).",
+      "sources": [
+        "team share v3: events_venues_added.csv"
+      ]
+    }
+  ],
+  "summer_leave": {
+    "name": "여름 집단휴가 2주 (평일 7/27~8/7)",
+    "leave_2025": [
+      "2025-07-28",
+      "2025-08-08"
+    ],
+    "reference_2025": [
+      [
+        "2025-07-14",
+        "2025-07-25"
+      ],
+      [
+        "2025-08-18",
+        "2025-08-29"
+      ]
+    ],
+    "leave_2026": [
+      "2026-07-27",
+      "2026-08-07"
+    ],
+    "reference_2026": [
+      [
+        "2026-07-13",
+        "2026-07-24"
+      ],
+      [
+        "2026-08-18",
+        "2026-08-28"
+      ]
+    ],
+    "hour_groups": [
+      [
+        6,
+        9
+      ],
+      [
+        10,
+        15
+      ],
+      [
+        16,
+        19
+      ],
+      [
+        20,
+        23
+      ]
+    ],
+    "share_of_gap": 0.5,
+    "largest_shift": -0.2,
+    "excluded_stations": [
+      3127,
+      3139
+    ],
+    "basis": "Weekday boardings fell in the week holding 1 August and the following week in every year of the daily card data (nine years, mean -0.09 and -0.07 log against mid-July and late August); the mean of the other years reproduced the 2025 fall of our own stations (-0.100 vs -0.107, -0.076 vs -0.075). Per station and hour group, half of the difference between the 2025 fall and the fall the forecast already holds is applied, only where 2025 was deeper. Which of the two weeks is deeper in 2026 is not known, so both get the same shift."
+  },
+  "not_applied": [
+    {
+      "name": "서울세계불꽃축제 2026-09-05 (여의도)",
+      "reason": "On the day of the 2025 edition (2025-09-27, Saturday) the night hours 20-23 at 계양 3110, 검암 3207 and 부평 3120 were 0.9-1.6 times an ordinary Saturday with no return wave at 22-23h at 계양 (0.93 at 22h); 부평 was raised through the whole afternoon and the median station was 1.04. One day, mixed with other events of that Saturday: not applied.",
+      "sources": [
+        "https://festival.seoul.go.kr/festival/main/festivalView.do?festacode=379"
+      ]
+    }
+  ]
+}

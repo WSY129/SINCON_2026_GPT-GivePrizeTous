@@ -1,0 +1,70 @@
+{
+ "information": "v13 + event-specific entries; not validated on any fold; no leaderboard value is used",
+ "entries": [
+  {
+   "name": "SSG 랜더스페셜 매치 '최광야구 1429' (23,000석 매진, 17:30 시작)",
+   "station": 3127,
+   "date": "2026-10-17",
+   "before": {
+    "20": 69,
+    "21": 66,
+    "22": 22
+   },
+   "after": {
+    "20": 1505,
+    "21": 3708,
+    "22": 310
+   }
+  },
+  {
+   "name": "PLAVE World Tour [KEEP IT MANIC] in Incheon, 문학 주경기장 (토)",
+   "station": 3127,
+   "date": "2026-09-12",
+   "before": {
+    "21": 548,
+    "22": 695,
+    "23": 248
+   },
+   "after": {
+    "21": 746,
+    "22": 2667,
+    "23": 519
+   }
+  },
+  {
+   "name": "PLAVE World Tour [KEEP IT MANIC] in Incheon, 문학 주경기장 (일)",
+   "station": 3127,
+   "date": "2026-09-13",
+   "before": {
+    "21": 234,
+    "22": 483,
+    "23": 207
+   },
+   "after": {
+    "21": 629,
+    "22": 2480,
+    "23": 500
+   }
+  },
+  {
+   "name": "2026 인천송도국제마라톤 (08:00 출발, 인천대 송도캠퍼스)",
+   "station": 3136,
+   "date": "2026-09-20",
+   "before": {
+    "10": 271,
+    "11": 311
+   },
+   "after": {
+    "10": 489,
+    "11": 560
+   }
+  }
+ ],
+ "submission": {
+  "file": "submission_ensemble_v13e.csv",
+  "sha256": "c80b792acf0bf87e7063b02aacd96f729b5366ceecebb16def769db32a78de50",
+  "rows": 157194,
+  "mean_boardings": 334.24662061101924,
+  "rows_changed_vs_v13": 11
+ }
+}

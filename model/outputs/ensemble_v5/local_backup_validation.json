@@ -1,0 +1,11 @@
+{
+  "files": 507,
+  "bytes": 452015883,
+  "missing": [],
+  "hash_mismatch": [],
+  "source_hash_mismatch": [],
+  "config_hash_match": true,
+  "final_models": 14,
+  "cv_models": 28,
+  "checked_unix": 1794423764.913117
+}

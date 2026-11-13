@@ -1,0 +1,16 @@
+date,venue,station_id,event,start_time,end_time,attendance,source_url,confidence,note
+2026-10-24,인천문학경기장,3127;3128,GHOSTIVAL 2026 (할로윈 뮤직 페스티벌·OST/K-POP·지정석 2/3층),15:00,22:00,,https://nol.yanolja.com/ticket/products/26014180,cancelled,취소: 개최 사흘 전 전면 취소·전액 환불 (아시아투데이 2026-10-21 https://www.asiatoday.co.kr/kn/view.php?key=20261021010007097). 변수로 쓰지 말 것. | NEW. 공연시간 420분(예매처)→종료 추정 22:00. 주경기장 여부 미확인
+2026-10-25,인천문학경기장,3127;3128,GHOSTIVAL 2026 (할로윈 뮤직 페스티벌·OST/K-POP·지정석 2/3층),15:00,22:00,,https://nol.yanolja.com/ticket/products/26014180,cancelled,취소: 개최 사흘 전 전면 취소·전액 환불 (아시아투데이 2026-10-21 https://www.asiatoday.co.kr/kn/view.php?key=20261021010007097). 변수로 쓰지 말 것. | NEW. 위와 같음
+2026-08-29,인천문학경기장 주경기장,3127,Sustainable Wave Festival 2026 (1일차),13:10,21:10,20000.0,https://www.kocca.kr/n_content/2026/kocca_vol41/sub_4_1_1.html,medium,관객: 이틀 합계 약 4만 명(KOCCA)→일별은 반분 추정. god가 양일 마지막 무대
+2026-08-30,인천문학경기장 주경기장,3127,Sustainable Wave Festival 2026 (2일차),13:10,21:10,20000.0,https://www.kocca.kr/n_content/2026/kocca_vol41/sub_4_1_1.html,medium,위와 같음
+2026-07-31,송도달빛축제공원,3139,인천펜타포트 락 페스티벌 2026 (1일차),11:00,23:00,50000.0,https://www.khan.co.kr/article/202608032028005,medium,관객: 사흘 합계 15만 명(주최 측 추산)→일별은 3등분 추정. 종료 시각 미확인
+2026-08-01,송도달빛축제공원,3139,인천펜타포트 락 페스티벌 2026 (2일차),11:00,23:00,50000.0,https://www.khan.co.kr/article/202608032028005,medium,위와 같음
+2026-08-02,송도달빛축제공원,3139,인천펜타포트 락 페스티벌 2026 (3일차),11:00,23:00,50000.0,https://www.khan.co.kr/article/202608032028005,medium,위와 같음
+2026-10-10,인천대공원 어울큰마당,3226;3227,제62회 시민의 날 기념 인천시민 대축제,11:00,21:00,,https://www.inews24.com/view/2013606,high,"시각 확정: 시민문화예술제 11:00~21:00, 기념식 18:00~18:40, 부대행사 15:00~19:00, 드론쇼 시각 미확인(기념식 뒤로 추정). 축하공연 박기영·이석훈"
+2026-07-01,인천1호선·서해선,,인천1호선 출입문 고장 + 서해선 단전으로 퇴근길 운행 차질,,,,https://kyeonggi.com/article/20260701580706,medium,운행 장애. 영향 시간대·구간 원문 확인 필요
+2026-06-20,인천SSG랜더스필드(문학야구장),3127;3128,불꽃야구2 8번째 직관 (vs 유신고),17:00,,,https://sports.khan.co.kr/article/202606171448003,high,재확인: 장소·날짜·시각 모두 맞음(제작진 발표 2건). 우천 취소 기사는 못 찾음 → 승차 흔적 없음은 원인 미상
+2026-06-20,인천아시아드주경기장,3209;3210,SEVENTEEN 10TH FAN MEETING 'CARAT LAND' (1일차),,,,https://wikidocs.net/blog/@mythos/29913,low,개인 블로그 출처. 공식 공지 확인 필요(학습 기간 이상치 설명용)
+2026-06-21,인천아시아드주경기장,3209;3210,SEVENTEEN 10TH FAN MEETING 'CARAT LAND' (2일차),,,,https://wikidocs.net/blog/@mythos/29913,low,위와 같음
+2025-10-11,인천 남동체육관 (송도달빛축제공원에서 변경),,제61회 시민의 날 기념행사 (우천 예보로 장소 변경),11:00,19:00,,https://www.incheon.go.kr/IC010601/3034679,medium,인천시 공지 '장소변경 안내'(2025-10-08) 확인. 이민사 사진전이 남동체육관 11:00~19:00. 인천음식축제는 취소. 기념식이 남동체육관에서 열렸다는 원문 문장은 못 찾음. 송도(3139;3138) 라벨은 빼는 게 맞음
+2025-10-18,인천아시아드주경기장,3209;3210,Stray Kids dominATE: celebrATE (전석 매진),19:00,,,https://en.wikipedia.org/wiki/Dominate_World_Tour,high,기존 목록에 있는지 확인. 학습 기간
+2025-10-19,인천아시아드주경기장,3209;3210,Stray Kids dominATE: celebrATE (전석 매진),18:00,,,https://en.wikipedia.org/wiki/Dominate_World_Tour,high,위와 같음

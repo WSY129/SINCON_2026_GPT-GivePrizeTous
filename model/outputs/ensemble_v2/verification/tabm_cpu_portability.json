@@ -1,0 +1,7 @@
+{
+  "rows": 2048,
+  "inference_device": "cpu",
+  "training_device": "mps",
+  "max_absolute_log_difference": 4.76837158203125e-07,
+  "allclose": true
+}

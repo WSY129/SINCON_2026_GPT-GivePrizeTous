@@ -1,0 +1,315 @@
+{
+  "additional_checks": {
+    "direct_floor_purged_comparison": {
+      "0": {
+        "weights": [
+          0.2424967135590874,
+          0.38016990341594953,
+          0.0,
+          0.16360528188640158,
+          0.0,
+          0.0,
+          0.21372810113856167
+        ],
+        "purged_fold4_rmsle": 0.19859707126071918
+      },
+      "0.2": {
+        "weights": [
+          0.2424967135590874,
+          0.38016990341594953,
+          0.0,
+          0.16360528188640158,
+          0.0,
+          0.0,
+          0.21372810113856167
+        ],
+        "purged_fold4_rmsle": 0.19859707126071918
+      }
+    },
+    "forward_date_blocks": [
+      {
+        "start": "2025-10-31T00:00:00.000000000",
+        "rows": 155916,
+        "direct_floor": 0,
+        "rmsle": 0.22645681063110928
+      },
+      {
+        "start": "2025-10-31T00:00:00.000000000",
+        "rows": 155916,
+        "direct_floor": 0.2,
+        "rmsle": 0.22302960748900683
+      },
+      {
+        "start": "2025-12-31T00:00:00.000000000",
+        "rows": 159750,
+        "direct_floor": 0,
+        "rmsle": 0.2352456582401848
+      },
+      {
+        "start": "2025-12-31T00:00:00.000000000",
+        "rows": 159750,
+        "direct_floor": 0.2,
+        "rmsle": 0.2337908437810639
+      },
+      {
+        "start": "2026-03-02T00:00:00.000000000",
+        "rows": 157194,
+        "direct_floor": 0,
+        "rmsle": 0.20611184686352899
+      },
+      {
+        "start": "2026-03-02T00:00:00.000000000",
+        "rows": 157194,
+        "direct_floor": 0.2,
+        "rmsle": 0.20611184686352899
+      },
+      {
+        "start": "2026-05-02T00:00:00.000000000",
+        "rows": 77958,
+        "direct_floor": 0,
+        "rmsle": 0.19435006146990955
+      },
+      {
+        "start": "2026-05-02T00:00:00.000000000",
+        "rows": 77958,
+        "direct_floor": 0.2,
+        "rmsle": 0.19435006146990955
+      }
+    ],
+    "note": "Meta validation only; base model folds overlap and early stopping reused."
+  },
+  "models": {
+    "lightgbm": {
+      "oof_rmsle": 0.22420163889672057,
+      "weighted_rmsle": 0.21555537068729544,
+      "fold34_rmsle": 0.20189287321344485,
+      "fold4_rmsle": 0.20410794861494075
+    },
+    "catboost_cpu": {
+      "oof_rmsle": 0.22476462635037053,
+      "weighted_rmsle": 0.2177747222672142,
+      "fold34_rmsle": 0.2068474516612983,
+      "fold4_rmsle": 0.2054846714870528
+    },
+    "xgboost": {
+      "oof_rmsle": 0.22399074853182765,
+      "weighted_rmsle": 0.2158395899513702,
+      "fold34_rmsle": 0.20300009441910707,
+      "fold4_rmsle": 0.2025232777549102
+    },
+    "tabm_v5": {
+      "oof_rmsle": 0.22205957654564534,
+      "weighted_rmsle": 0.2140849399705543,
+      "fold34_rmsle": 0.201532182298616,
+      "fold4_rmsle": 0.19489976563237285
+    },
+    "decomp_gbdt": {
+      "oof_rmsle": 0.23925043253098197,
+      "weighted_rmsle": 0.23052941852307646,
+      "fold34_rmsle": 0.21679109255704307,
+      "fold4_rmsle": 0.20130923524829913
+    },
+    "low_demand_specialist": {
+      "oof_rmsle": 0.26205178425207326,
+      "weighted_rmsle": 0.24425935807298205,
+      "fold34_rmsle": 0.21482522796687636,
+      "fold4_rmsle": 0.21162348301901326
+    },
+    "st_itransformer": {
+      "oof_rmsle": 0.24645173439414345,
+      "weighted_rmsle": 0.2321955461166457,
+      "fold34_rmsle": 0.20899579663762663,
+      "fold4_rmsle": 0.20411306136035842
+    }
+  },
+  "global": {
+    "oof_rmsle": 0.2159998930877119,
+    "weighted_rmsle": 0.208639242819243,
+    "fold34_rmsle": 0.1970834934478612,
+    "fold4_rmsle": 0.19508821390119857
+  },
+  "ensemble": {
+    "oof_rmsle": 0.21351578016124242,
+    "weighted_rmsle": 0.20654391613731596,
+    "fold34_rmsle": 0.19562078280834713,
+    "fold4_rmsle": 0.1947961308872099
+  },
+  "global_weights": {
+    "lightgbm": 0.2957748532265275,
+    "catboost_cpu": 0.10193751631334634,
+    "xgboost": 0.023343191489947054,
+    "tabm_v5": 0.5104626808755054,
+    "decomp_gbdt": 0.06848175809467376,
+    "low_demand_specialist": 0.0,
+    "st_itransformer": 0.0
+  },
+  "bucket_weights": {
+    "new_stations": [
+      0.0,
+      0.0,
+      0.2957685486533586,
+      0.2374522922894326,
+      0.4667791590572088,
+      0.0,
+      0.0
+    ],
+    "gyeyang_gyulhyeon": [
+      0.0,
+      0.0,
+      0.0,
+      0.4156716697620324,
+      0.4070255470169492,
+      0.0,
+      0.17730278322101842
+    ],
+    "high_spike": [
+      0.16861214232392402,
+      0.3295397046219119,
+      0.0,
+      0.038925703264793284,
+      0.4629224497893708,
+      0.0,
+      0.0
+    ],
+    "late_or_low": [
+      0.0,
+      0.3603386945115752,
+      0.0,
+      0.639661305488425,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "regular": [
+      0.3059301506783821,
+      0.1469306304595652,
+      0.0,
+      0.4682639634812258,
+      0.0,
+      0.0,
+      0.07887525538082703
+    ]
+  },
+  "model_order": [
+    "lightgbm",
+    "catboost_cpu",
+    "xgboost",
+    "tabm_v5",
+    "decomp_gbdt",
+    "low_demand_specialist",
+    "st_itransformer"
+  ],
+  "objective": "0.35 * four-fold weighted log MSE + 0.65 * Fold3+4 pooled log MSE; per-bucket normalized within-fold; tiny L2 prior shrinkage",
+  "direct_tree_min_weight": 0.2,
+  "new_station_spatial_cap": 0.45,
+  "purged_chronological_check": {
+    "fit_rows": 75402,
+    "test_rows": 157194,
+    "global_rmsle": 0.19859707126071915,
+    "raw_bucket_rmsle": 0.1989577425865167,
+    "buckets": [
+      {
+        "bucket": "new_stations",
+        "rows": 6642,
+        "rmsle": 0.27469269846942934,
+        "weights": [
+          0.32156088862480614,
+          0.05868450149555912,
+          0.07430500659800585,
+          0.0,
+          0.545449603281629,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "bucket": "gyeyang_gyulhyeon",
+        "rows": 4428,
+        "rmsle": 0.24191744214282743,
+        "weights": [
+          0.0,
+          0.6476804685651756,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.35231953143482436
+        ]
+      },
+      {
+        "bucket": "high_spike",
+        "rows": 3044,
+        "rmsle": 0.7557789657262584,
+        "weights": [
+          0.0,
+          0.0,
+          0.4269852767264468,
+          0.2120778279856244,
+          0.0,
+          0.0,
+          0.36093689528792877
+        ]
+      },
+      {
+        "bucket": "late_or_low",
+        "rows": 23743,
+        "rmsle": 0.22655104414537092,
+        "weights": [
+          0.021876150295608646,
+          0.43110260974139675,
+          0.0,
+          0.5116405224148176,
+          0.0,
+          0.035380717548177086,
+          0.0
+        ]
+      },
+      {
+        "bucket": "regular",
+        "rows": 119337,
+        "rmsle": 0.14487439904840152,
+        "weights": [
+          0.170110564943866,
+          0.3949031829107205,
+          0.0,
+          0.030043761617318185,
+          0.0,
+          0.0,
+          0.4049424905280953
+        ]
+      }
+    ]
+  },
+  "lofo_global_rmsle": 0.21727066504224501,
+  "limitations": "OOF weight-fit scores are not independent. Forward checks purge repeated dates but reuse early stopping/feature design; LOFO may use later folds. No fallback is selected from Fold4 truth.",
+  "submission_validation": {
+    "rows": 157194,
+    "ids_in_test_order": true,
+    "finite_nonnegative": true,
+    "mean": 335.80370658704453,
+    "min": 2.070506028063961,
+    "max": 2822.7312287016293,
+    "sha256": "500f7aca090e4157e13712b41b7a90f58aed00fffb5624c083e6f5d6a378c12b"
+  },
+  "run_status": {
+    "status": "complete",
+    "seconds": 2361.9580430984497,
+    "within_budget": true
+  },
+  "provenance": {
+    "oof_seed": 2026,
+    "final_seeds": [
+      2026,
+      2027
+    ],
+    "weights_fit_folds": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "official_metric": "RMSLE",
+    "public_score": null,
+    "source_sha256": "10781cff9ca439387ce0bde1e29ea7fe3461d4bab57d6a203d40f311ea26e0f8"
+  }
+}

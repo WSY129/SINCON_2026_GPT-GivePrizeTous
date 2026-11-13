@@ -1,0 +1,10 @@
+fold,left,right,residual_correlation
+1,lightgbm_large,xgboost,-0.26323068226014207
+1,lightgbm_large,catboost,0.879904219487609
+1,xgboost,catboost,0.15206430841407392
+2,lightgbm_large,xgboost,0.9120278773544006
+2,lightgbm_large,catboost,0.9117553731064125
+2,xgboost,catboost,0.9080894099805888
+3,lightgbm_large,xgboost,0.9659549986798959
+3,lightgbm_large,catboost,0.9478474501338184
+3,xgboost,catboost,0.9623684799558508

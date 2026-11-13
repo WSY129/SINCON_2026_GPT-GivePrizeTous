@@ -1,0 +1,64 @@
+{
+  "models": {
+    "lightgbm_2026": {
+      "allclose": true,
+      "max_abs": 0.0
+    },
+    "lightgbm_2027": {
+      "allclose": true,
+      "max_abs": 0.0
+    },
+    "catboost_cpu_2026": {
+      "allclose": true,
+      "max_abs": 0.0
+    },
+    "catboost_cpu_2027": {
+      "allclose": true,
+      "max_abs": 0.0
+    },
+    "xgboost_2026": {
+      "allclose": true,
+      "max_abs": 0.0
+    },
+    "xgboost_2027": {
+      "allclose": true,
+      "max_abs": 0.0
+    },
+    "tabm_v4_2026": {
+      "allclose": true,
+      "max_abs": 4.76837158203125e-07
+    },
+    "tabm_v4_2027": {
+      "allclose": true,
+      "max_abs": 4.76837158203125e-07
+    },
+    "decomp_gbdt_2026": {
+      "allclose": true,
+      "max_abs": 0.0
+    },
+    "decomp_gbdt_2027": {
+      "allclose": true,
+      "max_abs": 0.0
+    },
+    "low_demand_specialist_2026": {
+      "allclose": true,
+      "max_abs": 0.0
+    },
+    "low_demand_specialist_2027": {
+      "allclose": true,
+      "max_abs": 0.0
+    },
+    "st_itransformer_2026": {
+      "allclose": true,
+      "max_abs": 4.76837158203125e-07
+    },
+    "st_itransformer_2027": {
+      "allclose": true,
+      "max_abs": 4.76837158203125e-07
+    }
+  },
+  "submission_allclose": true,
+  "original_sha256": "9b315a3ef59f3a1e847fb01468867686e6116e12913b46f9a534919d959ae998",
+  "reload_sha256": "86ad9e119bd17257b2c754205a62ca6586a01c945aa819dbe4068a3382000917",
+  "byte_identical": false
+}

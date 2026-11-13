@@ -1,0 +1,8 @@
+{
+  "cells": 8,
+  "embedded_files": 29,
+  "syntax_pass": true,
+  "all_embedded_files_match_source": true,
+  "sha256": "a00bd78fab6c190a0cf916438250db047a880720a3b99e7e03c201ae28c6569d",
+  "hosted_cuda_execution_tested": false
+}

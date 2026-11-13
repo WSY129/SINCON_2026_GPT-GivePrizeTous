@@ -1,0 +1,85 @@
+{
+ "3754": {
+  "cup_2025": {
+   "events": 4,
+   "mean_peak_log_lift": 1.3720949088161696,
+   "ratio": 3.943603537794974
+  },
+  "k1_2026": {
+   "events": 8,
+   "mean_peak_log_lift": 2.6915357320145006,
+   "ratio": 14.754317207805864
+  },
+  "k2_2025": {
+   "events": 19,
+   "mean_peak_log_lift": 2.055883010421712,
+   "ratio": 7.813734436258721
+  },
+  "k2_2025_playoff": {
+   "events": 2,
+   "mean_peak_log_lift": 2.6179248883364172,
+   "ratio": 13.70724997803331
+  }
+ },
+ "3209": {
+  "kpop_festival": {
+   "events": 2,
+   "mean_peak_log_lift": 2.6076238685861406,
+   "ratio": 13.56677607963854
+  },
+  "psy_summer_swag": {
+   "events": 2,
+   "mean_peak_log_lift": 2.5534371468146015,
+   "ratio": 12.851199416806036
+  },
+  "seventeen": {
+   "events": 6,
+   "mean_peak_log_lift": 3.253399195771843,
+   "ratio": 25.87815549821419
+  },
+  "stray_kids": {
+   "events": 2,
+   "mean_peak_log_lift": 3.6395597422989896,
+   "ratio": 38.075070192003565
+  }
+ },
+ "3210": {
+  "kpop_festival": {
+   "events": 2,
+   "mean_peak_log_lift": 1.5683058513876902,
+   "ratio": 4.798511911389611
+  },
+  "psy_summer_swag": {
+   "events": 2,
+   "mean_peak_log_lift": 1.688634598652961,
+   "ratio": 5.412085988403103
+  },
+  "seventeen": {
+   "events": 6,
+   "mean_peak_log_lift": 3.042026359542002,
+   "ratio": 20.947647723059593
+  },
+  "stray_kids": {
+   "events": 2,
+   "mean_peak_log_lift": 3.386191694569829,
+   "ratio": 29.55319011589323
+  }
+ },
+ "3139": {
+  "pentaport_d1": {
+   "events": 1,
+   "mean_peak_log_lift": 3.717821638484857,
+   "ratio": 41.174603174603185
+  },
+  "pentaport_d2": {
+   "events": 1,
+   "mean_peak_log_lift": 4.091911048071399,
+   "ratio": 59.854166666666686
+  },
+  "pentaport_d3": {
+   "events": 1,
+   "mean_peak_log_lift": 3.773326069502728,
+   "ratio": 43.52459016393443
+  }
+ }
+}

@@ -1,0 +1,91 @@
+{
+  "version": "ensemble_v3",
+  "seed": 2026,
+  "final_seeds": [
+    2026,
+    2027
+  ],
+  "fold_origins": [
+    "2025-08-30",
+    "2025-10-30",
+    "2025-12-30",
+    "2026-02-27"
+  ],
+  "fold_weights": [
+    0.15,
+    0.15,
+    0.35,
+    0.35
+  ],
+  "horizon_days": 123,
+  "final_cutoff": "2026-06-30",
+  "max_training_rows": 800000,
+  "final_training_rows": 1000000,
+  "threads": 8,
+  "max_cpu_workers": 2,
+  "device": "auto",
+  "models": [
+    "lightgbm",
+    "catboost",
+    "xgboost",
+    "tabm"
+  ],
+  "patience": 150,
+  "lightgbm": {
+    "num_leaves": 159,
+    "min_child_samples": 25,
+    "learning_rate": 0.03,
+    "subsample": 0.8,
+    "subsample_freq": 1,
+    "colsample_bytree": 0.8,
+    "reg_alpha": 0.5,
+    "reg_lambda": 5.0,
+    "n_estimators": 3000,
+    "cat_smooth": 50.0,
+    "cat_l2": 20.0,
+    "extra_trees": true
+  },
+  "catboost": {
+    "depth": 8,
+    "learning_rate": 0.04,
+    "l2_leaf_reg": 5.0,
+    "random_strength": 1.0,
+    "iterations": 3500
+  },
+  "xgboost": {
+    "tree_method": "hist",
+    "enable_categorical": true,
+    "max_cat_to_onehot": 4,
+    "max_depth": 6,
+    "min_child_weight": 80,
+    "learning_rate": 0.03,
+    "subsample": 0.8,
+    "colsample_bytree": 0.75,
+    "reg_alpha": 0.5,
+    "reg_lambda": 5.0,
+    "n_estimators": 3000
+  },
+  "tabm": {
+    "k": 8,
+    "hidden": 256,
+    "blocks": 3,
+    "frequencies": 4,
+    "dropout": 0.15,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "batch_size": 4096,
+    "epochs": 30,
+    "patience": 5,
+    "auxiliary_weight": 0.2
+  },
+  "final_iteration_multiplier": 1.12,
+  "final_iteration_fold_weights": [
+    0.4,
+    0.6
+  ],
+  "selection_metric": "fold34_pooled_rmsle",
+  "ensemble_bias": false,
+  "input_data": "data/raw",
+  "output": "outputs/ensemble_v3",
+  "feature_workers": 4
+}

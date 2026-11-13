@@ -1,0 +1,43 @@
+{
+ "n_train": 2973942,
+ "best": 28,
+ "trained": 278,
+ "train_curve": [
+  0.06051,
+  0.04708,
+  0.04087,
+  0.03757,
+  0.03563,
+  0.03429,
+  0.0332,
+  0.03227,
+  0.03145,
+  0.03076,
+  0.03003,
+  0.02953
+ ],
+ "valid_curve": [
+  0.04041,
+  0.03922,
+  0.03929,
+  0.0395,
+  0.03957,
+  0.0398,
+  0.03994,
+  0.0399,
+  0.04012,
+  0.04021,
+  0.04023,
+  0.0402
+ ],
+ "valid_rmse_best": 0.19804,
+ "alarm_early_stop": true,
+ "note": "curves are mean squared error of r_eq every 25 rounds; for an L2 objective the per-row gradient L2 norm equals sqrt(train mse)",
+ "model": "xgb_s",
+ "fold": "f2",
+ "seed": 2026,
+ "seconds": 21.4,
+ "kind": "xgb",
+ "variant": "s",
+ "features": 48
+}

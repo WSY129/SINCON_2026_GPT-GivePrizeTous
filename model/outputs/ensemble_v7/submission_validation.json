@@ -1,0 +1,42 @@
+{
+ "file": "submission_ensemble_v7.csv",
+ "sha256": "879f58252b7bbc22e0dac2ce4d94c07b1de386534f3c3f370d0a28422b1233ff",
+ "rows": 157194,
+ "mean_boardings": 338.06464423000693,
+ "adopted_modules": [
+  "beer",
+  "growth"
+ ],
+ "blend_weights": {
+  "ordinary": {
+   "v2": 0.43,
+   "v4": 0.12,
+   "v5": 0.45
+  },
+  "holiday": {
+   "v2": 0.32,
+   "v4": 0.0,
+   "v5": 0.68
+  }
+ },
+ "eq_final_files": {},
+ "growth": {
+  "slopes": {
+   "3107": 0.0008995843423814225,
+   "3108": 0.0008995843423814225,
+   "3109": 0.0008995843423814225
+  },
+  "rows": 6642,
+  "mean_log_correction": 0.08096259081432804,
+  "max_log_correction": 0.1358372356995948
+ },
+ "munhak_rows_replaced": 2214,
+ "event_actions": 43,
+ "diff_vs_v6_log_rmsd": 0.027516385421654414,
+ "v6_submission_sha256": "3b5885a76104d336a7c673bed61afbf949567607f1610282df958dc7f6cc58d5",
+ "inputs": {
+  "v2": "f6f95b8a64a9a95b39fac1c3891cb24f713669fbfe5558dcbafe0391620b0bf6",
+  "v4": "9b315a3ef59f3a1e847fb01468867686e6116e12913b46f9a534919d959ae998",
+  "v5": "500f7aca090e4157e13712b41b7a90f58aed00fffb5624c083e6f5d6a378c12b"
+ }
+}

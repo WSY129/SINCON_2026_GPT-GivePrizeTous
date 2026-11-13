@@ -1,0 +1,1215 @@
+{
+  "source_directory": "/Users/hongtaeyang/Downloads/sincon-2026",
+  "files": {
+    "train": {
+      "rows": 688176,
+      "columns": [
+        "date",
+        "station_id",
+        "hour",
+        "boardings",
+        "alightings"
+      ],
+      "column_count": 5,
+      "sha256": "1b3b21e8f1fe22a44c0ff4adba315784a5c21caea25098a15869c4ed370822bc",
+      "bytes": 18210560,
+      "missing_cells": {
+        "date": 0,
+        "station_id": 0,
+        "hour": 0,
+        "boardings": 0,
+        "alightings": 0
+      },
+      "memory_bytes": 14451828,
+      "dtypes": {
+        "date": "datetime64[ns]",
+        "station_id": "int32",
+        "hour": "int8",
+        "boardings": "int32",
+        "alightings": "int32"
+      }
+    },
+    "test": {
+      "rows": 157194,
+      "columns": [
+        "example_id",
+        "date",
+        "station_id",
+        "hour"
+      ],
+      "column_count": 4,
+      "sha256": "d257fed268db7919fd8fbc45b6c78dfbdb09b6bb40d4ae1d3f2a666c6e69fefa",
+      "bytes": 4209338,
+      "missing_cells": {
+        "example_id": 0,
+        "date": 0,
+        "station_id": 0,
+        "hour": 0
+      },
+      "memory_bytes": 10846518,
+      "dtypes": {
+        "example_id": "object",
+        "date": "datetime64[ns]",
+        "station_id": "int32",
+        "hour": "int8"
+      }
+    },
+    "metaData": {
+      "rows": 71,
+      "columns": [
+        "station_id",
+        "station_name",
+        "canonical_line",
+        "first_date",
+        "last_date"
+      ],
+      "column_count": 5,
+      "sha256": "9870dc6c9cbe7e6fc810bbe589dd9e06f309bb173a268a1bd63478f430785380",
+      "bytes": 3122,
+      "missing_cells": {
+        "station_id": 0,
+        "station_name": 0,
+        "canonical_line": 0,
+        "first_date": 0,
+        "last_date": 0
+      },
+      "memory_bytes": 7452,
+      "dtypes": {
+        "station_id": "int32",
+        "station_name": "object",
+        "canonical_line": "int64",
+        "first_date": "datetime64[ns]",
+        "last_date": "datetime64[ns]"
+      }
+    },
+    "sample_submission": {
+      "rows": 117576,
+      "columns": [
+        "example_id",
+        "boardings"
+      ],
+      "column_count": 2,
+      "sha256": "8c5e10d4201460ddff2d78bf10a229ec8b604e86ae2f18bcd96969093981c93d",
+      "bytes": 1175781,
+      "missing_cells": {
+        "example_id": 0,
+        "boardings": 0
+      },
+      "memory_bytes": 7524996,
+      "dtypes": {
+        "example_id": "object",
+        "boardings": "int64"
+      }
+    }
+  },
+  "coverage": {
+    "train_start": "2025-01-01",
+    "train_end": "2026-06-30",
+    "train_days": 546,
+    "test_start": "2026-07-01",
+    "test_end": "2026-10-31",
+    "test_days": 123,
+    "station_count": 71,
+    "hours": [
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "train_duplicate_keys": 0,
+    "test_duplicate_keys": 0,
+    "train_test_key_overlap": 0,
+    "test_id_duplicates": 0,
+    "sample_id_duplicates": 0,
+    "new_test_stations": [],
+    "metadata_unique_station_ids": true,
+    "metadata_dates_match_observed": true,
+    "global_full_grid_rows": 697788,
+    "global_grid_absent_rows": 9612,
+    "within_observed_lifetime_missing_rows": 0,
+    "station_start_date_counts": {
+      "2025-01-01 00:00:00": 68,
+      "2025-06-28 00:00:00": 3
+    },
+    "observed_timestamp_gaps_hours": {
+      "1.0": 649944,
+      "7.0": 38161
+    },
+    "test_complete_grid": true,
+    "canonical_line_station_counts": {
+      "1": 33,
+      "2": 27,
+      "7": 11
+    }
+  },
+  "submission_mismatch": {
+    "test_rows": 157194,
+    "sample_rows": 117576,
+    "difference": 39618,
+    "sample_ids_absent_from_test": 0,
+    "sample_period_start": "2026-07-01",
+    "sample_period_end": "2026-09-30",
+    "sample_days": 92,
+    "uncovered_start": "2026-10-01",
+    "uncovered_end": "2026-10-31",
+    "sample_matches_test_prefix_order": true,
+    "sample_values_all_zero": true,
+    "resolution": "User-supplied official rules confirm 157194 rows for July through October. Use full test IDs in their original order; the local 117576-row sample is stale/inconsistent and is not the final row-count authority."
+  },
+  "boardings": {
+    "min": 0,
+    "max": 10189,
+    "mean": 331.98433394945476,
+    "std": 333.80778898067564,
+    "median": 240.0,
+    "skewness": 2.9649009448174155,
+    "negative_rows": 0,
+    "zero_rows": 76,
+    "zero_fraction": 0.00011043686498802631,
+    "quantiles": {
+      "0.01": 10.0,
+      "0.05": 30.0,
+      "0.25": 118.0,
+      "0.5": 240.0,
+      "0.75": 429.0,
+      "0.9": 715.0,
+      "0.95": 917.0,
+      "0.99": 1755.0,
+      "0.999": 2496.82500000007
+    }
+  },
+  "alightings": {
+    "min": 0,
+    "max": 5960,
+    "mean": 331.2733356001953,
+    "std": 323.0801484881968,
+    "median": 234.0,
+    "skewness": 2.756420024365349,
+    "negative_rows": 0,
+    "zero_rows": 10,
+    "zero_fraction": 1.4531166445792936e-05,
+    "quantiles": {
+      "0.01": 19.0,
+      "0.05": 42.0,
+      "0.25": 128.0,
+      "0.5": 234.0,
+      "0.75": 428.0,
+      "0.9": 693.0,
+      "0.95": 918.0,
+      "0.99": 1694.25,
+      "0.999": 2591.0
+    }
+  },
+  "same_row_boardings_alightings_correlation": 0.5632119603381027,
+  "highest_mean_stations": [
+    {
+      "station_id": 3756,
+      "size": 9828,
+      "mean": 818.785002035002,
+      "median": 708.0,
+      "std": 520.3107822602632,
+      "min": 80,
+      "max": 3182,
+      "station_name": "신중동",
+      "canonical_line": 7,
+      "zero_fraction": 0.0
+    },
+    {
+      "station_id": 3758,
+      "size": 9828,
+      "mean": 790.2396214896215,
+      "median": 716.0,
+      "std": 422.0340544614912,
+      "min": 77,
+      "max": 2768,
+      "station_name": "상동",
+      "canonical_line": 7,
+      "zero_fraction": 0.0
+    },
+    {
+      "station_id": 3757,
+      "size": 9828,
+      "mean": 765.7498982498983,
+      "median": 664.0,
+      "std": 465.84136112042296,
+      "min": 60,
+      "max": 2493,
+      "station_name": "부천시청",
+      "canonical_line": 7,
+      "zero_fraction": 0.0
+    },
+    {
+      "station_id": 3116,
+      "size": 9828,
+      "mean": 725.6022588522588,
+      "median": 680.0,
+      "std": 525.0676513448925,
+      "min": 42,
+      "max": 2673,
+      "station_name": "작전",
+      "canonical_line": 1,
+      "zero_fraction": 0.0
+    },
+    {
+      "station_id": 3126,
+      "size": 9828,
+      "mean": 693.7388074888075,
+      "median": 708.0,
+      "std": 291.46695788075135,
+      "min": 58,
+      "max": 1950,
+      "station_name": "인천터미널",
+      "canonical_line": 1,
+      "zero_fraction": 0.0
+    },
+    {
+      "station_id": 3119,
+      "size": 9828,
+      "mean": 658.7690272690272,
+      "median": 669.0,
+      "std": 383.36066859777094,
+      "min": 37,
+      "max": 1924,
+      "station_name": "부평시장",
+      "canonical_line": 1,
+      "zero_fraction": 0.0
+    },
+    {
+      "station_id": 3134,
+      "size": 9828,
+      "mean": 586.5359177859178,
+      "median": 442.0,
+      "std": 456.87243574337185,
+      "min": 25,
+      "max": 2364,
+      "station_name": "테크노파크",
+      "canonical_line": 1,
+      "zero_fraction": 0.0
+    },
+    {
+      "station_id": 3125,
+      "size": 9828,
+      "mean": 578.8273300773301,
+      "median": 521.0,
+      "std": 296.52560567395454,
+      "min": 66,
+      "max": 2783,
+      "station_name": "예술회관",
+      "canonical_line": 1,
+      "zero_fraction": 0.0
+    },
+    {
+      "station_id": 3211,
+      "size": 9828,
+      "mean": 569.4969474969475,
+      "median": 420.0,
+      "std": 483.550519602111,
+      "min": 61,
+      "max": 2718,
+      "station_name": "가정(루원시티)",
+      "canonical_line": 2,
+      "zero_fraction": 0.0
+    },
+    {
+      "station_id": 3762,
+      "size": 9828,
+      "mean": 540.9136141636142,
+      "median": 401.5,
+      "std": 578.7487571558802,
+      "min": 16,
+      "max": 2917,
+      "station_name": "산곡",
+      "canonical_line": 7,
+      "zero_fraction": 0.0
+    }
+  ],
+  "lowest_mean_stations": [
+    {
+      "station_id": 3107,
+      "size": 6624,
+      "mean": 41.01177536231884,
+      "median": 32.0,
+      "std": 42.90797044201782,
+      "min": 0,
+      "max": 345,
+      "station_name": "검단호수공원",
+      "canonical_line": 1,
+      "zero_fraction": 0.00588768115942029
+    },
+    {
+      "station_id": 3111,
+      "size": 9828,
+      "mean": 47.152726902726904,
+      "median": 38.0,
+      "std": 37.706144166685846,
+      "min": 0,
+      "max": 226,
+      "station_name": "귤현",
+      "canonical_line": 1,
+      "zero_fraction": 0.0006105006105006105
+    },
+    {
+      "station_id": 3227,
+      "size": 9828,
+      "mean": 62.23504273504273,
+      "median": 54.0,
+      "std": 54.0267724293729,
+      "min": 0,
+      "max": 482,
+      "station_name": "운연(서창)",
+      "canonical_line": 2,
+      "zero_fraction": 0.00030525030525030525
+    },
+    {
+      "station_id": 3217,
+      "size": 9828,
+      "mean": 117.16259666259666,
+      "median": 41.0,
+      "std": 211.23386089367037,
+      "min": 0,
+      "max": 1162,
+      "station_name": "주안국가산단",
+      "canonical_line": 2,
+      "zero_fraction": 0.00010175010175010175
+    },
+    {
+      "station_id": 3202,
+      "size": 9828,
+      "mean": 119.70645095645095,
+      "median": 93.0,
+      "std": 105.46430997662176,
+      "min": 2,
+      "max": 526,
+      "station_name": "왕길",
+      "canonical_line": 2,
+      "zero_fraction": 0.0
+    },
+    {
+      "station_id": 3201,
+      "size": 9828,
+      "mean": 123.12413512413512,
+      "median": 59.0,
+      "std": 197.80785152124412,
+      "min": 0,
+      "max": 994,
+      "station_name": "검단오류(검단산업단지)",
+      "canonical_line": 2,
+      "zero_fraction": 0.0011192511192511193
+    },
+    {
+      "station_id": 3213,
+      "size": 9828,
+      "mean": 133.32967032967034,
+      "median": 119.0,
+      "std": 110.88544610610167,
+      "min": 5,
+      "max": 578,
+      "station_name": "석남(거북시장)",
+      "canonical_line": 2,
+      "zero_fraction": 0.0
+    },
+    {
+      "station_id": 3122,
+      "size": 9828,
+      "mean": 133.4879934879935,
+      "median": 129.0,
+      "std": 102.27443769985317,
+      "min": 0,
+      "max": 2037,
+      "station_name": "부평삼거리",
+      "canonical_line": 1,
+      "zero_fraction": 0.00010175010175010175
+    },
+    {
+      "station_id": 3138,
+      "size": 9828,
+      "mean": 142.94078144078145,
+      "median": 106.0,
+      "std": 127.95185806614309,
+      "min": 4,
+      "max": 742,
+      "station_name": "국제업무지구",
+      "canonical_line": 1,
+      "zero_fraction": 0.0
+    },
+    {
+      "station_id": 3130,
+      "size": 9828,
+      "mean": 145.84900284900286,
+      "median": 119.0,
+      "std": 105.25109795948805,
+      "min": 3,
+      "max": 525,
+      "station_name": "원인재",
+      "canonical_line": 1,
+      "zero_fraction": 0.0
+    }
+  ],
+  "weekday_profiles": [
+    {
+      "weekday": 0,
+      "mean": 354.3986413651433,
+      "median": 255.0,
+      "size": 98334
+    },
+    {
+      "weekday": 1,
+      "mean": 364.8609839933289,
+      "median": 261.0,
+      "size": 98334
+    },
+    {
+      "weekday": 2,
+      "mean": 369.54007936507935,
+      "median": 265.0,
+      "size": 98280
+    },
+    {
+      "weekday": 3,
+      "mean": 370.0734126984127,
+      "median": 269.5,
+      "size": 98280
+    },
+    {
+      "weekday": 4,
+      "mean": 380.712037037037,
+      "median": 283.0,
+      "size": 98280
+    },
+    {
+      "weekday": 5,
+      "mean": 277.6698903736246,
+      "median": 216.0,
+      "size": 98334
+    },
+    {
+      "weekday": 6,
+      "mean": 206.7035918400553,
+      "median": 158.0,
+      "size": 98334
+    }
+  ],
+  "hour_mean_boardings": {
+    "6": 281.4569470600544,
+    "7": 658.0252406361163,
+    "8": 633.0227819627537,
+    "9": 350.5667242100858,
+    "10": 285.77848399246705,
+    "11": 299.000261560996,
+    "12": 319.146578782172,
+    "13": 305.5629054195438,
+    "14": 296.11375287717095,
+    "15": 341.4041117388575,
+    "16": 387.94653693241264,
+    "17": 483.6912272441933,
+    "18": 495.3923153379368,
+    "19": 249.4783689056288,
+    "20": 214.73872672107134,
+    "21": 181.37076271186442,
+    "22": 130.27937329985352,
+    "23": 62.74291169700774
+  },
+  "monthly_profiles": [
+    {
+      "month": "2025-01",
+      "rows": 37944,
+      "mean": 286.3213156230234,
+      "total": 10864176
+    },
+    {
+      "month": "2025-02",
+      "rows": 34272,
+      "mean": 321.5124299719888,
+      "total": 11018874
+    },
+    {
+      "month": "2025-03",
+      "rows": 37944,
+      "mean": 337.5708148850938,
+      "total": 12808787
+    },
+    {
+      "month": "2025-04",
+      "rows": 36720,
+      "mean": 355.8920751633987,
+      "total": 13068357
+    },
+    {
+      "month": "2025-05",
+      "rows": 37944,
+      "mean": 340.21913873076113,
+      "total": 12909275
+    },
+    {
+      "month": "2025-06",
+      "rows": 36882,
+      "mean": 331.2582289463695,
+      "total": 12217466
+    },
+    {
+      "month": "2025-07",
+      "rows": 39618,
+      "mean": 321.9427785350093,
+      "total": 12754729
+    },
+    {
+      "month": "2025-08",
+      "rows": 39618,
+      "mean": 304.50350850623454,
+      "total": 12063820
+    },
+    {
+      "month": "2025-09",
+      "rows": 38340,
+      "mean": 343.5485915492958,
+      "total": 13171653
+    },
+    {
+      "month": "2025-10",
+      "rows": 39618,
+      "mean": 312.0009591599778,
+      "total": 12360854
+    },
+    {
+      "month": "2025-11",
+      "rows": 38340,
+      "mean": 336.9083202921231,
+      "total": 12917065
+    },
+    {
+      "month": "2025-12",
+      "rows": 39618,
+      "mean": 337.2509212983997,
+      "total": 13361207
+    },
+    {
+      "month": "2026-01",
+      "rows": 39618,
+      "mean": 312.088520369529,
+      "total": 12364323
+    },
+    {
+      "month": "2026-02",
+      "rows": 35784,
+      "mean": 306.6200816007154,
+      "total": 10972093
+    },
+    {
+      "month": "2026-03",
+      "rows": 39618,
+      "mean": 351.86463223787166,
+      "total": 13940173
+    },
+    {
+      "month": "2026-04",
+      "rows": 38340,
+      "mean": 377.74342723004696,
+      "total": 14482683
+    },
+    {
+      "month": "2026-05",
+      "rows": 39618,
+      "mean": 346.65391993538293,
+      "total": 13733735
+    },
+    {
+      "month": "2026-06",
+      "rows": 38340,
+      "mean": 350.92282211789257,
+      "total": 13454381
+    }
+  ],
+  "aggregate_daily_autocorrelation": {
+    "1": 0.379371570867507,
+    "7": 0.6984332855255857,
+    "14": 0.6908345241025416,
+    "28": 0.6906931222349663
+  },
+  "largest_single_slot_counts": [
+    {
+      "date": "2025-11-01",
+      "station_id": 3127,
+      "hour": 21,
+      "boardings": 10189,
+      "alightings": 79,
+      "station_name": "문학경기장",
+      "canonical_line": 1
+    },
+    {
+      "date": "2026-04-11",
+      "station_id": 3127,
+      "hour": 22,
+      "boardings": 8850,
+      "alightings": 80,
+      "station_name": "문학경기장",
+      "canonical_line": 1
+    },
+    {
+      "date": "2026-04-05",
+      "station_id": 3127,
+      "hour": 22,
+      "boardings": 7656,
+      "alightings": 46,
+      "station_name": "문학경기장",
+      "canonical_line": 1
+    },
+    {
+      "date": "2025-09-27",
+      "station_id": 3127,
+      "hour": 21,
+      "boardings": 7544,
+      "alightings": 80,
+      "station_name": "문학경기장",
+      "canonical_line": 1
+    },
+    {
+      "date": "2026-04-04",
+      "station_id": 3127,
+      "hour": 22,
+      "boardings": 7307,
+      "alightings": 58,
+      "station_name": "문학경기장",
+      "canonical_line": 1
+    },
+    {
+      "date": "2025-05-01",
+      "station_id": 3127,
+      "hour": 21,
+      "boardings": 7084,
+      "alightings": 146,
+      "station_name": "문학경기장",
+      "canonical_line": 1
+    },
+    {
+      "date": "2025-10-11",
+      "station_id": 3127,
+      "hour": 17,
+      "boardings": 6797,
+      "alightings": 104,
+      "station_name": "문학경기장",
+      "canonical_line": 1
+    },
+    {
+      "date": "2025-03-23",
+      "station_id": 3127,
+      "hour": 17,
+      "boardings": 6705,
+      "alightings": 64,
+      "station_name": "문학경기장",
+      "canonical_line": 1
+    },
+    {
+      "date": "2025-03-20",
+      "station_id": 3127,
+      "hour": 22,
+      "boardings": 6549,
+      "alightings": 72,
+      "station_name": "문학경기장",
+      "canonical_line": 1
+    },
+    {
+      "date": "2025-03-22",
+      "station_id": 3127,
+      "hour": 17,
+      "boardings": 6518,
+      "alightings": 140,
+      "station_name": "문학경기장",
+      "canonical_line": 1
+    },
+    {
+      "date": "2025-10-31",
+      "station_id": 3127,
+      "hour": 21,
+      "boardings": 6308,
+      "alightings": 86,
+      "station_name": "문학경기장",
+      "canonical_line": 1
+    },
+    {
+      "date": "2025-03-21",
+      "station_id": 3127,
+      "hour": 22,
+      "boardings": 6288,
+      "alightings": 156,
+      "station_name": "문학경기장",
+      "canonical_line": 1
+    }
+  ],
+  "spike_heuristic": {
+    "definition": "boardings >= 1000 and > 3x median of up to eight prior same-weekday observations at this station/hour; at least four prior observations",
+    "rows": 392,
+    "top_rows": [
+      {
+        "date": "2025-03-20",
+        "station_id": 3127,
+        "hour": 23,
+        "boardings": 4057,
+        "past_8_same_weekday_median": 4.0,
+        "ratio": 1014.25,
+        "station_name": "문학경기장"
+      },
+      {
+        "date": "2025-03-20",
+        "station_id": 3127,
+        "hour": 22,
+        "boardings": 6549,
+        "past_8_same_weekday_median": 7.5,
+        "ratio": 873.2,
+        "station_name": "문학경기장"
+      },
+      {
+        "date": "2026-04-05",
+        "station_id": 3127,
+        "hour": 22,
+        "boardings": 7656,
+        "past_8_same_weekday_median": 10.0,
+        "ratio": 765.6,
+        "station_name": "문학경기장"
+      },
+      {
+        "date": "2025-03-21",
+        "station_id": 3127,
+        "hour": 23,
+        "boardings": 4223,
+        "past_8_same_weekday_median": 7.5,
+        "ratio": 563.0666666666667,
+        "station_name": "문학경기장"
+      },
+      {
+        "date": "2025-03-21",
+        "station_id": 3127,
+        "hour": 22,
+        "boardings": 6288,
+        "past_8_same_weekday_median": 11.5,
+        "ratio": 546.7826086956521,
+        "station_name": "문학경기장"
+      },
+      {
+        "date": "2026-04-04",
+        "station_id": 3127,
+        "hour": 22,
+        "boardings": 7307,
+        "past_8_same_weekday_median": 14.0,
+        "ratio": 521.9285714285714,
+        "station_name": "문학경기장"
+      },
+      {
+        "date": "2026-04-11",
+        "station_id": 3127,
+        "hour": 22,
+        "boardings": 8850,
+        "past_8_same_weekday_median": 18.0,
+        "ratio": 491.6666666666667,
+        "station_name": "문학경기장"
+      },
+      {
+        "date": "2025-03-25",
+        "station_id": 3127,
+        "hour": 22,
+        "boardings": 3838,
+        "past_8_same_weekday_median": 9.5,
+        "ratio": 404.0,
+        "station_name": "문학경기장"
+      },
+      {
+        "date": "2025-10-01",
+        "station_id": 3127,
+        "hour": 23,
+        "boardings": 4304,
+        "past_8_same_weekday_median": 11.5,
+        "ratio": 374.2608695652174,
+        "station_name": "문학경기장"
+      },
+      {
+        "date": "2025-09-05",
+        "station_id": 3127,
+        "hour": 22,
+        "boardings": 4245,
+        "past_8_same_weekday_median": 13.5,
+        "ratio": 314.44444444444446,
+        "station_name": "문학경기장"
+      },
+      {
+        "date": "2025-08-27",
+        "station_id": 3127,
+        "hour": 22,
+        "boardings": 4595,
+        "past_8_same_weekday_median": 15.0,
+        "ratio": 306.3333333333333,
+        "station_name": "문학경기장"
+      },
+      {
+        "date": "2025-09-26",
+        "station_id": 3127,
+        "hour": 22,
+        "boardings": 4171,
+        "past_8_same_weekday_median": 14.0,
+        "ratio": 297.92857142857144,
+        "station_name": "문학경기장"
+      },
+      {
+        "date": "2025-05-11",
+        "station_id": 3127,
+        "hour": 21,
+        "boardings": 5674,
+        "past_8_same_weekday_median": 19.5,
+        "ratio": 290.97435897435895,
+        "station_name": "문학경기장"
+      },
+      {
+        "date": "2025-04-30",
+        "station_id": 3127,
+        "hour": 22,
+        "boardings": 5203,
+        "past_8_same_weekday_median": 18.5,
+        "ratio": 281.2432432432432,
+        "station_name": "문학경기장"
+      },
+      {
+        "date": "2025-04-04",
+        "station_id": 3127,
+        "hour": 22,
+        "boardings": 3491,
+        "past_8_same_weekday_median": 13.0,
+        "ratio": 268.53846153846155,
+        "station_name": "문학경기장"
+      }
+    ]
+  },
+  "spatial_and_synchrony": {
+    "coordinates_available": false,
+    "adjacency_available": false,
+    "canonical_lines": [
+      1,
+      2,
+      7
+    ],
+    "pair_count": 2485,
+    "raw_pair_correlation_quantiles": {
+      "0.0": -0.19613863355966132,
+      "0.25": 0.8048043277885473,
+      "0.5": 0.9291256899865756,
+      "0.75": 0.9662643383780527,
+      "0.9": 0.9821164651547659,
+      "1.0": 0.9956789613968268
+    },
+    "weekday_demeaned_pair_correlation_quantiles": {
+      "0.0": -0.36863989904468125,
+      "0.25": 0.6978450772518582,
+      "0.5": 0.8641221652768816,
+      "0.75": 0.933073067790813,
+      "0.9": 0.9607990510083481,
+      "1.0": 0.9891452548087576
+    },
+    "top_pairs": [
+      {
+        "station_a": 3756,
+        "station_b": 3761,
+        "name_a": "신중동",
+        "name_b": "부평구청",
+        "same_canonical_line": true,
+        "raw_daily_correlation": 0.9956789613968268,
+        "weekday_demeaned_correlation": 0.9891452548087576
+      },
+      {
+        "station_a": 3211,
+        "station_b": 3762,
+        "name_a": "가정(루원시티)",
+        "name_b": "산곡",
+        "same_canonical_line": false,
+        "raw_daily_correlation": 0.9954074569357263,
+        "weekday_demeaned_correlation": 0.9886527017975124
+      },
+      {
+        "station_a": 3117,
+        "station_b": 3762,
+        "name_a": "갈산",
+        "name_b": "산곡",
+        "same_canonical_line": false,
+        "raw_daily_correlation": 0.9952497152489855,
+        "weekday_demeaned_correlation": 0.9847138181492321
+      },
+      {
+        "station_a": 3132,
+        "station_b": 3211,
+        "name_a": "동막",
+        "name_b": "가정(루원시티)",
+        "same_canonical_line": false,
+        "raw_daily_correlation": 0.9951963514997365,
+        "weekday_demeaned_correlation": 0.9860897360185769
+      },
+      {
+        "station_a": 3756,
+        "station_b": 3760,
+        "name_a": "신중동",
+        "name_b": "굴포천",
+        "same_canonical_line": true,
+        "raw_daily_correlation": 0.9948590994585282,
+        "weekday_demeaned_correlation": 0.9865343724687347
+      },
+      {
+        "station_a": 3132,
+        "station_b": 3762,
+        "name_a": "동막",
+        "name_b": "산곡",
+        "same_canonical_line": false,
+        "raw_daily_correlation": 0.9942265094740332,
+        "weekday_demeaned_correlation": 0.9826609786477908
+      },
+      {
+        "station_a": 3215,
+        "station_b": 3762,
+        "name_a": "인천가좌",
+        "name_b": "산곡",
+        "same_canonical_line": false,
+        "raw_daily_correlation": 0.9942130202712631,
+        "weekday_demeaned_correlation": 0.9826694618421108
+      },
+      {
+        "station_a": 3761,
+        "station_b": 3762,
+        "name_a": "부평구청",
+        "name_b": "산곡",
+        "same_canonical_line": true,
+        "raw_daily_correlation": 0.9941368592086398,
+        "weekday_demeaned_correlation": 0.9869228274931253
+      },
+      {
+        "station_a": 3129,
+        "station_b": 3215,
+        "name_a": "신연수",
+        "name_b": "인천가좌",
+        "same_canonical_line": false,
+        "raw_daily_correlation": 0.9938638354897487,
+        "weekday_demeaned_correlation": 0.9805240585573678
+      },
+      {
+        "station_a": 3113,
+        "station_b": 3123,
+        "name_a": "임학",
+        "name_b": "간석오거리",
+        "same_canonical_line": true,
+        "raw_daily_correlation": 0.9933740092859937,
+        "weekday_demeaned_correlation": 0.9831956491048359
+      }
+    ],
+    "lag_diagnostics_top_10_pairs": [
+      {
+        "station_a": 3756,
+        "station_b": 3761,
+        "name_a": "신중동",
+        "name_b": "부평구청",
+        "daily_lag_correlations": {
+          "-3": 0.2624209709426778,
+          "-2": 0.3523149419891812,
+          "-1": 0.5194990499750508,
+          "0": 0.9891452548087565,
+          "1": 0.5232152773801163,
+          "2": 0.36275397252132685,
+          "3": 0.2679838787839237
+        },
+        "highest_correlation_lag_days": 0
+      },
+      {
+        "station_a": 3211,
+        "station_b": 3762,
+        "name_a": "가정(루원시티)",
+        "name_b": "산곡",
+        "daily_lag_correlations": {
+          "-3": 0.30744020222569063,
+          "-2": 0.3742413441478525,
+          "-1": 0.5332231753962007,
+          "0": 0.9886527017975129,
+          "1": 0.5351224329968064,
+          "2": 0.3705206400323574,
+          "3": 0.29455920541297625
+        },
+        "highest_correlation_lag_days": 0
+      },
+      {
+        "station_a": 3117,
+        "station_b": 3762,
+        "name_a": "갈산",
+        "name_b": "산곡",
+        "daily_lag_correlations": {
+          "-3": 0.27405195649418895,
+          "-2": 0.338138092868395,
+          "-1": 0.5079989385044633,
+          "0": 0.9847138181492321,
+          "1": 0.510244765866559,
+          "2": 0.3369609540070972,
+          "3": 0.25760976790606555
+        },
+        "highest_correlation_lag_days": 0
+      },
+      {
+        "station_a": 3132,
+        "station_b": 3211,
+        "name_a": "동막",
+        "name_b": "가정(루원시티)",
+        "daily_lag_correlations": {
+          "-3": 0.32220377836681835,
+          "-2": 0.3772099259347498,
+          "-1": 0.5422087174737691,
+          "0": 0.9860897360185757,
+          "1": 0.5546712998135428,
+          "2": 0.39487135756569564,
+          "3": 0.325138008096968
+        },
+        "highest_correlation_lag_days": 0
+      },
+      {
+        "station_a": 3756,
+        "station_b": 3760,
+        "name_a": "신중동",
+        "name_b": "굴포천",
+        "daily_lag_correlations": {
+          "-3": 0.26466213308463,
+          "-2": 0.35829057141710524,
+          "-1": 0.5326454926354806,
+          "0": 0.9865343724687343,
+          "1": 0.5114855741642877,
+          "2": 0.35001376524843675,
+          "3": 0.25753100756083824
+        },
+        "highest_correlation_lag_days": 0
+      },
+      {
+        "station_a": 3132,
+        "station_b": 3762,
+        "name_a": "동막",
+        "name_b": "산곡",
+        "daily_lag_correlations": {
+          "-3": 0.3010676490310512,
+          "-2": 0.35677242251017804,
+          "-1": 0.5202613518479571,
+          "0": 0.9826609786477903,
+          "1": 0.5360250951987768,
+          "2": 0.3714087020646144,
+          "3": 0.2904559589892925
+        },
+        "highest_correlation_lag_days": 0
+      },
+      {
+        "station_a": 3215,
+        "station_b": 3762,
+        "name_a": "인천가좌",
+        "name_b": "산곡",
+        "daily_lag_correlations": {
+          "-3": 0.2841220529266656,
+          "-2": 0.343506798680524,
+          "-1": 0.5164713609268532,
+          "0": 0.9826694618421125,
+          "1": 0.512915704771391,
+          "2": 0.35719713186873964,
+          "3": 0.282845737956449
+        },
+        "highest_correlation_lag_days": 0
+      },
+      {
+        "station_a": 3761,
+        "station_b": 3762,
+        "name_a": "부평구청",
+        "name_b": "산곡",
+        "daily_lag_correlations": {
+          "-3": 0.2748218394756707,
+          "-2": 0.3575799150351965,
+          "-1": 0.5112832831526569,
+          "0": 0.9869228274931257,
+          "1": 0.5144614587830503,
+          "2": 0.34977547240598933,
+          "3": 0.2609789810074819
+        },
+        "highest_correlation_lag_days": 0
+      },
+      {
+        "station_a": 3129,
+        "station_b": 3215,
+        "name_a": "신연수",
+        "name_b": "인천가좌",
+        "daily_lag_correlations": {
+          "-3": 0.2899928013776427,
+          "-2": 0.3451376249009743,
+          "-1": 0.5115422719438986,
+          "0": 0.9805240585573698,
+          "1": 0.5335982909690336,
+          "2": 0.36020328121913975,
+          "3": 0.2986301007739732
+        },
+        "highest_correlation_lag_days": 0
+      },
+      {
+        "station_a": 3113,
+        "station_b": 3123,
+        "name_a": "임학",
+        "name_b": "간석오거리",
+        "daily_lag_correlations": {
+          "-3": 0.26939977403136234,
+          "-2": 0.3582017552577494,
+          "-1": 0.5127801550975988,
+          "0": 0.9831956491048371,
+          "1": 0.522112685174953,
+          "2": 0.36998819866790383,
+          "3": 0.2780269754863611
+        },
+        "highest_correlation_lag_days": 0
+      }
+    ],
+    "interpretation": "Daily synchrony and coarse day-lag association only. Not a physical travel-time/propagation estimate. Station ID numeric proximity does not establish adjacency."
+  },
+  "feature_availability": {
+    "future_known_from_files": [
+      "date",
+      "station_id",
+      "hour",
+      "canonical_line"
+    ],
+    "train_only_observations": [
+      "boardings",
+      "alightings"
+    ],
+    "absent_from_files": [
+      "weather",
+      "holiday indicator",
+      "discount/event indicator",
+      "station coordinates",
+      "physical adjacency",
+      "service disruption labels"
+    ],
+    "calendar_derivable": [
+      "weekday",
+      "month",
+      "day of year",
+      "cyclic hour/weekday/day of year"
+    ],
+    "leakage_notes": [
+      "No contemporaneous test alightings; use only values observed by forecast origin.",
+      "Metadata last_date is a dataset coverage boundary, not a verified station closing date.",
+      "No holdout target data may enter rolling means, scale normalization, correlations used as features or fitted calibration."
+    ]
+  },
+  "official_task": {
+    "evidence": "User-supplied official Overview/Data/Rules; reports/sources/rules_user_provided.txt",
+    "metric": "RMSLE",
+    "horizon_days": 123,
+    "required_submission_rows": 157194,
+    "training_loss": "MSE on log1p(boardings); invert with expm1 then clip at zero",
+    "external_data_cutoff": "2026-06-30",
+    "holidays_allowed": true,
+    "external_sources_and_license_record_required": true
+  }
+}

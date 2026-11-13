@@ -1,0 +1,11 @@
+{
+  "id_order_match": true,
+  "allclose": true,
+  "rtol": 2e-05,
+  "atol": 1e-05,
+  "max_absolute_prediction_difference": 0.0,
+  "max_relative_prediction_difference": 0.0,
+  "byte_identical_csv": true,
+  "original_sha256": "f6f95b8a64a9a95b39fac1c3891cb24f713669fbfe5558dcbafe0391620b0bf6",
+  "reloaded_sha256": "f6f95b8a64a9a95b39fac1c3891cb24f713669fbfe5558dcbafe0391620b0bf6"
+}

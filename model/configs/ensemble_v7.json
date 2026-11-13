@@ -1,0 +1,287 @@
+{
+ "name": "ensemble_v7",
+ "information": "All weights and decisions are computed from local out-of-fold predictions. No leaderboard score is read or stored.",
+ "final_cutoff": "2026-06-30",
+ "fold_origins": [
+  "2025-08-30",
+  "2025-10-30",
+  "2025-12-30",
+  "2026-02-27"
+ ],
+ "aux_folds": {
+  "hot26": [
+   "2026-05-15",
+   46
+  ],
+  "summer25": [
+   "2025-06-30",
+   123
+  ]
+ },
+ "input_data": "data/raw",
+ "schedule_v6": "configs/domain_schedule_v6.json",
+ "base_submissions": {
+  "v2": "outputs/ensemble_v2/submission_ensemble_v2.csv",
+  "v4": "outputs/ensemble_v4/submission_ensemble_v4.csv",
+  "v5": "outputs/ensemble_v5/submission_ensemble_v5.csv"
+ },
+ "output": "outputs/ensemble_v7",
+ "extra_events": [
+  {
+   "name": "송도맥주축제 2025",
+   "family": "songdo_beer_fri",
+   "date": "2025-08-22",
+   "start": null,
+   "known_since": "2025-08-22",
+   "source_url": "https://www.insight.co.kr/news/516529",
+   "note": "과거 행사(이력으로만 사용). 사전 발표일 미확인이라 공개일을 행사일로 둠",
+   "venue": "songdo_festival_park",
+   "stations": [
+    3139
+   ],
+   "kind": "festival"
+  },
+  {
+   "name": "송도맥주축제 2025",
+   "family": "songdo_beer_sat",
+   "date": "2025-08-23",
+   "start": null,
+   "known_since": "2025-08-23",
+   "source_url": "https://www.insight.co.kr/news/516529",
+   "note": "과거 행사(이력으로만 사용). 사전 발표일 미확인이라 공개일을 행사일로 둠",
+   "venue": "songdo_festival_park",
+   "stations": [
+    3139
+   ],
+   "kind": "festival"
+  },
+  {
+   "name": "송도맥주축제 2025",
+   "family": "songdo_beer_sun",
+   "date": "2025-08-24",
+   "start": null,
+   "known_since": "2025-08-24",
+   "source_url": "https://www.insight.co.kr/news/516529",
+   "note": "과거 행사(이력으로만 사용). 사전 발표일 미확인이라 공개일을 행사일로 둠",
+   "venue": "songdo_festival_park",
+   "stations": [
+    3139
+   ],
+   "kind": "festival"
+  },
+  {
+   "name": "송도맥주축제 2025",
+   "family": "songdo_beer_wd",
+   "date": "2025-08-25",
+   "start": null,
+   "known_since": "2025-08-25",
+   "source_url": "https://www.insight.co.kr/news/516529",
+   "note": "과거 행사(이력으로만 사용). 사전 발표일 미확인이라 공개일을 행사일로 둠",
+   "venue": "songdo_festival_park",
+   "stations": [
+    3139
+   ],
+   "kind": "festival"
+  },
+  {
+   "name": "송도맥주축제 2025",
+   "family": "songdo_beer_wd",
+   "date": "2025-08-26",
+   "start": null,
+   "known_since": "2025-08-26",
+   "source_url": "https://www.insight.co.kr/news/516529",
+   "note": "과거 행사(이력으로만 사용). 사전 발표일 미확인이라 공개일을 행사일로 둠",
+   "venue": "songdo_festival_park",
+   "stations": [
+    3139
+   ],
+   "kind": "festival"
+  },
+  {
+   "name": "송도맥주축제 2025",
+   "family": "songdo_beer_wd",
+   "date": "2025-08-27",
+   "start": null,
+   "known_since": "2025-08-27",
+   "source_url": "https://www.insight.co.kr/news/516529",
+   "note": "과거 행사(이력으로만 사용). 사전 발표일 미확인이라 공개일을 행사일로 둠",
+   "venue": "songdo_festival_park",
+   "stations": [
+    3139
+   ],
+   "kind": "festival"
+  },
+  {
+   "name": "송도맥주축제 2025",
+   "family": "songdo_beer_wd",
+   "date": "2025-08-28",
+   "start": null,
+   "known_since": "2025-08-28",
+   "source_url": "https://www.insight.co.kr/news/516529",
+   "note": "과거 행사(이력으로만 사용). 사전 발표일 미확인이라 공개일을 행사일로 둠",
+   "venue": "songdo_festival_park",
+   "stations": [
+    3139
+   ],
+   "kind": "festival"
+  },
+  {
+   "name": "송도맥주축제 2025",
+   "family": "songdo_beer_fri",
+   "date": "2025-08-29",
+   "start": null,
+   "known_since": "2025-08-29",
+   "source_url": "https://www.insight.co.kr/news/516529",
+   "note": "과거 행사(이력으로만 사용). 사전 발표일 미확인이라 공개일을 행사일로 둠",
+   "venue": "songdo_festival_park",
+   "stations": [
+    3139
+   ],
+   "kind": "festival"
+  },
+  {
+   "name": "송도맥주축제 2025",
+   "family": "songdo_beer_sat",
+   "date": "2025-08-30",
+   "start": null,
+   "known_since": "2025-08-30",
+   "source_url": "https://www.insight.co.kr/news/516529",
+   "note": "과거 행사(이력으로만 사용). 사전 발표일 미확인이라 공개일을 행사일로 둠",
+   "venue": "songdo_festival_park",
+   "stations": [
+    3139
+   ],
+   "kind": "festival"
+  },
+  {
+   "name": "송도맥주축제 2026",
+   "family": "songdo_beer_sat",
+   "date": "2026-08-22",
+   "start": null,
+   "known_since": "2026-06-23",
+   "source_url": "https://news.ifm.kr/news/articleView.html?idxno=473558",
+   "note": "경인방송 2026-06-23 13:45 기사: 8월 22일부터 30일까지 9일간 송도달빛축제공원",
+   "venue": "songdo_festival_park",
+   "stations": [
+    3139
+   ],
+   "kind": "festival"
+  },
+  {
+   "name": "송도맥주축제 2026",
+   "family": "songdo_beer_sun",
+   "date": "2026-08-23",
+   "start": null,
+   "known_since": "2026-06-23",
+   "source_url": "https://news.ifm.kr/news/articleView.html?idxno=473558",
+   "note": "경인방송 2026-06-23 13:45 기사: 8월 22일부터 30일까지 9일간 송도달빛축제공원",
+   "venue": "songdo_festival_park",
+   "stations": [
+    3139
+   ],
+   "kind": "festival"
+  },
+  {
+   "name": "송도맥주축제 2026",
+   "family": "songdo_beer_wd",
+   "date": "2026-08-24",
+   "start": null,
+   "known_since": "2026-06-23",
+   "source_url": "https://news.ifm.kr/news/articleView.html?idxno=473558",
+   "note": "경인방송 2026-06-23 13:45 기사: 8월 22일부터 30일까지 9일간 송도달빛축제공원",
+   "venue": "songdo_festival_park",
+   "stations": [
+    3139
+   ],
+   "kind": "festival"
+  },
+  {
+   "name": "송도맥주축제 2026",
+   "family": "songdo_beer_wd",
+   "date": "2026-08-25",
+   "start": null,
+   "known_since": "2026-06-23",
+   "source_url": "https://news.ifm.kr/news/articleView.html?idxno=473558",
+   "note": "경인방송 2026-06-23 13:45 기사: 8월 22일부터 30일까지 9일간 송도달빛축제공원",
+   "venue": "songdo_festival_park",
+   "stations": [
+    3139
+   ],
+   "kind": "festival"
+  },
+  {
+   "name": "송도맥주축제 2026",
+   "family": "songdo_beer_wd",
+   "date": "2026-08-26",
+   "start": null,
+   "known_since": "2026-06-23",
+   "source_url": "https://news.ifm.kr/news/articleView.html?idxno=473558",
+   "note": "경인방송 2026-06-23 13:45 기사: 8월 22일부터 30일까지 9일간 송도달빛축제공원",
+   "venue": "songdo_festival_park",
+   "stations": [
+    3139
+   ],
+   "kind": "festival"
+  },
+  {
+   "name": "송도맥주축제 2026",
+   "family": "songdo_beer_wd",
+   "date": "2026-08-27",
+   "start": null,
+   "known_since": "2026-06-23",
+   "source_url": "https://news.ifm.kr/news/articleView.html?idxno=473558",
+   "note": "경인방송 2026-06-23 13:45 기사: 8월 22일부터 30일까지 9일간 송도달빛축제공원",
+   "venue": "songdo_festival_park",
+   "stations": [
+    3139
+   ],
+   "kind": "festival"
+  },
+  {
+   "name": "송도맥주축제 2026",
+   "family": "songdo_beer_fri",
+   "date": "2026-08-28",
+   "start": null,
+   "known_since": "2026-06-23",
+   "source_url": "https://news.ifm.kr/news/articleView.html?idxno=473558",
+   "note": "경인방송 2026-06-23 13:45 기사: 8월 22일부터 30일까지 9일간 송도달빛축제공원",
+   "venue": "songdo_festival_park",
+   "stations": [
+    3139
+   ],
+   "kind": "festival"
+  },
+  {
+   "name": "송도맥주축제 2026",
+   "family": "songdo_beer_sat",
+   "date": "2026-08-29",
+   "start": null,
+   "known_since": "2026-06-23",
+   "source_url": "https://news.ifm.kr/news/articleView.html?idxno=473558",
+   "note": "경인방송 2026-06-23 13:45 기사: 8월 22일부터 30일까지 9일간 송도달빛축제공원",
+   "venue": "songdo_festival_park",
+   "stations": [
+    3139
+   ],
+   "kind": "festival"
+  },
+  {
+   "name": "송도맥주축제 2026",
+   "family": "songdo_beer_sun",
+   "date": "2026-08-30",
+   "start": null,
+   "known_since": "2026-06-23",
+   "source_url": "https://news.ifm.kr/news/articleView.html?idxno=473558",
+   "note": "경인방송 2026-06-23 13:45 기사: 8월 22일부터 30일까지 9일간 송도달빛축제공원",
+   "venue": "songdo_festival_park",
+   "stations": [
+    3139
+   ],
+   "kind": "festival"
+  }
+ ],
+ "academic_periods": [],
+ "adoption_overrides": {
+  "beer": "지시서 M1의 명시 지시(2025-08-22~30 급등 제거 무조건 반영, 2026 일정이 마감 전 발표로 검증되면 상승 반영). 검증 fold에 해당 행이 없어 LOFO 게이트로 측정할 수 없으며, v6의 펜타포트와 같은 방식으로 처리한다."
+ }
+}

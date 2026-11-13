@@ -1,0 +1,8 @@
+{
+  "rounds": 20,
+  "best_iteration": 20,
+  "actual_inference_residual_rmse": 0.2286457953255855,
+  "recorded_validation_rmse": 0.2286457951864126,
+  "absolute_gap": 1.391728954303062e-10,
+  "passed": true
+}

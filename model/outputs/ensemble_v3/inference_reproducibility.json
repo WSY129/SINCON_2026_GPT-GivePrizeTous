@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "models_reloaded": 8,
+  "rows": 157194,
+  "ids_identical": true,
+  "max_abs_log_difference": 0.0,
+  "log_rms_difference": 0.0,
+  "max_abs_count_difference": 0.0,
+  "tolerance_log": 2e-05,
+  "original_sha256": "f2eaac6c5f401eace2f16be733a55136157ad5f2564c95bcbaa63ac84e176bf1",
+  "reloaded_sha256": "f2eaac6c5f401eace2f16be733a55136157ad5f2564c95bcbaa63ac84e176bf1",
+  "seconds": 22.577861919999123
+}

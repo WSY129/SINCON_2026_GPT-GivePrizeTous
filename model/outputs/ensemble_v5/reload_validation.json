@@ -1,0 +1,64 @@
+{
+  "models": {
+    "lightgbm_2026": {
+      "allclose": true,
+      "max_abs": 0.0
+    },
+    "lightgbm_2027": {
+      "allclose": true,
+      "max_abs": 0.0
+    },
+    "catboost_cpu_2026": {
+      "allclose": true,
+      "max_abs": 0.0
+    },
+    "catboost_cpu_2027": {
+      "allclose": true,
+      "max_abs": 0.0
+    },
+    "xgboost_2026": {
+      "allclose": true,
+      "max_abs": 0.0
+    },
+    "xgboost_2027": {
+      "allclose": true,
+      "max_abs": 0.0
+    },
+    "tabm_v5_2026": {
+      "allclose": true,
+      "max_abs": 0.0
+    },
+    "tabm_v5_2027": {
+      "allclose": true,
+      "max_abs": 0.0
+    },
+    "decomp_gbdt_2026": {
+      "allclose": true,
+      "max_abs": 0.0
+    },
+    "decomp_gbdt_2027": {
+      "allclose": true,
+      "max_abs": 0.0
+    },
+    "low_demand_specialist_2026": {
+      "allclose": true,
+      "max_abs": 0.0
+    },
+    "low_demand_specialist_2027": {
+      "allclose": true,
+      "max_abs": 0.0
+    },
+    "st_itransformer_2026": {
+      "allclose": true,
+      "max_abs": 0.0
+    },
+    "st_itransformer_2027": {
+      "allclose": true,
+      "max_abs": 0.0
+    }
+  },
+  "submission_allclose": true,
+  "original_sha256": "500f7aca090e4157e13712b41b7a90f58aed00fffb5624c083e6f5d6a378c12b",
+  "reload_sha256": "500f7aca090e4157e13712b41b7a90f58aed00fffb5624c083e6f5d6a378c12b",
+  "byte_identical": true
+}

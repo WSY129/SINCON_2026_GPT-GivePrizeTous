@@ -1,0 +1,27 @@
+{
+  "rows": 157194,
+  "columns": [
+    "example_id",
+    "boardings"
+  ],
+  "ids_in_test_order": true,
+  "unique_ids": true,
+  "finite": true,
+  "nonnegative": true,
+  "mean": 341.80280903859756,
+  "min": 3.45583836,
+  "max": 3099.00300372,
+  "mean_in_requested_315_345_range": true,
+  "minimum_below_3": false,
+  "quantiles": {
+    "0.0": 3.45583836,
+    "0.01": 11.978798293299999,
+    "0.1": 54.611313530000004,
+    "0.5": 247.938791285,
+    "0.9": 733.1522826790001,
+    "0.99": 1795.0834001461003,
+    "1.0": 3099.00300372
+  },
+  "sha256": "f2eaac6c5f401eace2f16be733a55136157ad5f2564c95bcbaa63ac84e176bf1",
+  "note": "Mean/minimum thresholds are diagnostics only. No mean forcing, floor forcing, bias calibration or domain zeroing was applied."
+}

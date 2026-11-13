@@ -1,0 +1,23 @@
+{
+  "project": "/Users/hongtaeyang/Desktop/SINCON",
+  "method": "Original seeded MLP refit plus three fixed post-hoc feature diagnostics. Original OOF reproduced. No deployment changes. Fold3 has already been observed and is not a fresh holdout.",
+  "original_oof_checks": [
+    {
+      "fold": 1,
+      "max_abs_prediction_diff_vs_saved_oof": 1.1368683772161603e-13
+    },
+    {
+      "fold": 2,
+      "max_abs_prediction_diff_vs_saved_oof": 1.1368683772161603e-13
+    },
+    {
+      "fold": 3,
+      "max_abs_prediction_diff_vs_saved_oof": 1.1368683772161603e-13
+    }
+  ],
+  "source_sha256": {
+    "src/models.py": "96ea5e3ad4e7a8a16625a15c42575fccb6baa85d919edab67428a967867fc1a4",
+    "src/features.py": "0909aed9abaed5f8f4722839352e84b2e30836ac269505b8a56b2cc8d6ea86ed",
+    "configs/default.json": "0163a46ab22fd1c76dc92e24f6f328daf7ba498f2013a871ae618aa376a46f2e"
+  }
+}

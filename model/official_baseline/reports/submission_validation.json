@@ -1,0 +1,34 @@
+{
+  "valid": true,
+  "scope": "test",
+  "rows": 157194,
+  "columns": [
+    "example_id",
+    "boardings"
+  ],
+  "official_scope": "test",
+  "matches_official_scope": true,
+  "exact_id_order": true,
+  "finite_nonnegative": true,
+  "template_matches_test": false,
+  "scope_discrepancy": {
+    "template_rows": 117576,
+    "test_rows": 157194,
+    "test_ids_absent_from_template": 39618,
+    "missing_period_start": "2026-10-01",
+    "missing_period_end": "2026-10-31"
+  },
+  "warnings": [
+    "Stale sample template: sample=117576 rows, test=157194 rows; 39618 test IDs are absent from the sample. Official submission scope is the full test ID sequence. Validated that full test scope."
+  ],
+  "prediction_distribution": {
+    "count": 157194,
+    "min": 4.199666146185185,
+    "mean": 344.90647838927623,
+    "p01": 12.573772216162274,
+    "p50": 261.3710277923155,
+    "p99": 1676.924619765731,
+    "max": 2808.8649482059795,
+    "zero_fraction": 0.0
+  }
+}

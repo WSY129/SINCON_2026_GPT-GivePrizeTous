@@ -1,0 +1,12 @@
+{
+  "dataset": "fold_3, 800000 train / 157194 validation rows",
+  "xgboost_version": "3.4.1",
+  "best_iteration_before": 1839,
+  "native_reference_quantile_validation_rmse": 0.21672943734712954,
+  "recreated_reference_quantile_rmse": 0.21672943234443665,
+  "raw_dmatrix_and_inplace_prediction_rmse": 0.22508621215820312,
+  "max_prediction_log_difference": 1.70081436634,
+  "same_validation_labels": true,
+  "raw_prediction_equals_saved_oof": true,
+  "claim_scope": "Observed matrix-path discrepancy in this dataset; not an attribution to a confirmed upstream bug."
+}

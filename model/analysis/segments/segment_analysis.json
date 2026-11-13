@@ -1,0 +1,76 @@
+{
+  "input_source": "/Users/hongtaeyang/Desktop/SINCON/outputs/baseline",
+  "row_counts": {
+    "fold_1": 157140,
+    "fold_2": 157194,
+    "audit_fold_3": 157194,
+    "development_folds_1_2": 314334,
+    "all_oof": 471528
+  },
+  "source_hashes": {
+    "/Users/hongtaeyang/Desktop/SINCON/outputs/baseline/ensemble_plan.json": "c7e03adc181013c040c14f22c00fd0457bd856a28abc2fcb929f75ebc6110f8c",
+    "/Users/hongtaeyang/Desktop/SINCON/outputs/baseline/cv_folds.json": "bbe4c2ecf431bbc4edc45fce6a57fbc36e33461503ce7d573be93b447e98df3d",
+    "/Users/hongtaeyang/Desktop/SINCON/data/raw/metaData.csv": "9870dc6c9cbe7e6fc810bbe589dd9e06f309bb173a268a1bd63478f430785380",
+    "/Users/hongtaeyang/Desktop/SINCON/src/holiday_calendar.py": "50defb4fb19fcc52a1f35e568deb8d94e5b89ec275e7ace57138cff658a17e64",
+    "/Users/hongtaeyang/Desktop/SINCON/outputs/baseline/fold_1/oof.csv.gz": "a786566738af6c1f2a67e671bd723c8be6b2f80efa4f715dda832d219a8e16a5",
+    "/Users/hongtaeyang/Desktop/SINCON/outputs/baseline/fold_2/oof.csv.gz": "d21870fb040ef936d430ec07d52f3a203eae995b575fc279a8389f526bd8a279",
+    "/Users/hongtaeyang/Desktop/SINCON/outputs/baseline/fold_3/oof.csv.gz": "49ff0aafd7cb0b56ab5d34dc71b1c735890b2df693f8713a38a22459943f25fe"
+  },
+  "numpy_version": "2.3.5",
+  "pandas_version": "2.2.3",
+  "weights": {
+    "catboost": 0.522625155795227,
+    "weekday_mean": 0.0818476542409859,
+    "seasonal7": 0.22370889055427606,
+    "lightgbm_small": 0.08314847846977277,
+    "xgboost": 0.08866982093973776,
+    "mlp": 0.0
+  },
+  "log_bias_correction": -0.05617285669038133,
+  "ensemble_reconstruction_max_abs_difference": 9.094947017729282e-13,
+  "audit": {
+    "ensemble_rmsle": 0.29385253646617615,
+    "seasonal7_rmsle": 0.29100484892830686,
+    "delta_rmsle": 0.0028476875378692923,
+    "delta_msle": 0.0016654910878187018,
+    "delta_sum_lse": 261.80520605857527,
+    "blend_without_bias_rmsle_diagnostic_only": 0.26281189505618086,
+    "calibration_added_msle": 0.01727922100458439,
+    "calibration_formula_2b_mean_e_plus_b2": 0.017279221004584497,
+    "calibration_added_msle_relative_to_net_gap": 10.37485047561259,
+    "paired_date_bootstrap_delta_rmsle_ci95": [
+      -0.02527929353446785,
+      0.02657705464541041
+    ],
+    "paired_date_bootstrap_p_delta_le_zero": 0.3846,
+    "excluding_station_3226_ensemble_rmsle": 0.2848921739778963,
+    "excluding_station_3226_seasonal7_rmsle": 0.2850524070677459,
+    "known_holiday_ensemble_lse_share": 0.11565790546462408,
+    "known_holiday_row_share": 0.056910569105691054,
+    "nonholiday_delta_sum_lse": 1915.5586027554095,
+    "holiday_delta_sum_lse": -1653.7533966968342
+  },
+  "fold1_cold": {
+    "rows": 6588,
+    "row_share": 0.04192439862542955,
+    "share_of_model_log_squared_error": {
+      "seasonal7": 0.5060774427392399,
+      "weekday_mean": 0.5253756471540463,
+      "lightgbm_small": 0.7657636538811782,
+      "lightgbm_large": 0.7884945946930689,
+      "catboost": 0.5273481644973612,
+      "xgboost": 0.8230852753014758,
+      "mlp": 0.2736119529112069,
+      "ensemble": 0.5046735233058004,
+      "blend_without_bias": 0.4715060853730106
+    }
+  },
+  "limitations": [
+    "RMSLE is not additive: partition contributions are log-squared-error sums or MSLE contributions.",
+    "Each dimension separately partitions the same rows; do not sum contributions across dimensions.",
+    "Removing calibration is a diagnostic counterfactual, not a newly validated model selection.",
+    "Audit labels have now informed diagnosis; subsequent tuning needs a new nested/rolling validation protocol.",
+    "Bootstrap resamples dates jointly across models, not rows; conditional interval omits model-selection and future-regime uncertainty.",
+    "The spike label uses OOF truth only for explanation, never for production routing."
+  ]
+}

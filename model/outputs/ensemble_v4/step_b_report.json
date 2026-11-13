@@ -1,0 +1,207 @@
+{
+  "models": {
+    "lightgbm": {
+      "oof_rmsle": 0.22718091208622698,
+      "weighted_rmsle": 0.22220059022719343,
+      "fold34_rmsle": 0.2145134157081739,
+      "fold4_rmsle": 0.21759605748377986
+    },
+    "catboost_cpu": {
+      "oof_rmsle": 0.22669598055318546,
+      "weighted_rmsle": 0.22246064963376364,
+      "fold34_rmsle": 0.21595196269132408,
+      "fold4_rmsle": 0.21786250942255714
+    },
+    "xgboost": {
+      "oof_rmsle": 0.22482315683596665,
+      "weighted_rmsle": 0.22039295316926097,
+      "fold34_rmsle": 0.2135754123070717,
+      "fold4_rmsle": 0.2158621648186577
+    },
+    "tabm_v4": {
+      "oof_rmsle": 0.2226764076841527,
+      "weighted_rmsle": 0.21795033156863194,
+      "fold34_rmsle": 0.21066251154040924,
+      "fold4_rmsle": 0.20969004631854116
+    },
+    "decomp_gbdt": {
+      "oof_rmsle": 0.24405482536448023,
+      "weighted_rmsle": 0.23386983512765994,
+      "fold34_rmsle": 0.21770074134248307,
+      "fold4_rmsle": 0.20933148121847897
+    },
+    "low_demand_specialist": {
+      "oof_rmsle": 0.26095641273948494,
+      "weighted_rmsle": 0.2444574351577123,
+      "fold34_rmsle": 0.21737345740666486,
+      "fold4_rmsle": 0.21796837661316165
+    },
+    "st_itransformer": {
+      "oof_rmsle": 0.24132362970174476,
+      "weighted_rmsle": 0.2309290117092956,
+      "fold34_rmsle": 0.2143942157427359,
+      "fold4_rmsle": 0.20569256891799736
+    }
+  },
+  "global": {
+    "oof_rmsle": 0.22079629990896024,
+    "weighted_rmsle": 0.21457651045885684,
+    "fold34_rmsle": 0.20489311365079727,
+    "fold4_rmsle": 0.20568432356707167
+  },
+  "ensemble": {
+    "oof_rmsle": 0.22128948991514336,
+    "weighted_rmsle": 0.21412065900611144,
+    "fold34_rmsle": 0.20289303589002797,
+    "fold4_rmsle": 0.20481649659373047
+  },
+  "global_weights": {
+    "lightgbm": 1.0136443279792212e-17,
+    "catboost_cpu": 1.3601655067009555e-17,
+    "xgboost": 2.204360893581954e-17,
+    "tabm_v4": 0.29396839419741866,
+    "decomp_gbdt": 0.11435789777740732,
+    "low_demand_specialist": 0.31305416337474273,
+    "st_itransformer": 0.27861954465043126
+  },
+  "all_fold_weights": {
+    "lightgbm": 0.0,
+    "catboost_cpu": 0.19186240046447733,
+    "xgboost": 0.20752706112727118,
+    "tabm_v4": 0.46773656763991567,
+    "decomp_gbdt": 6.713741958615195e-18,
+    "low_demand_specialist": 0.03381466104613626,
+    "st_itransformer": 0.09905930972219956
+  },
+  "bucket_weights": {
+    "new_stations": [
+      3.2526065174565133e-19,
+      0.0,
+      0.0,
+      0.044047727204737465,
+      4.8599362381662736e-17,
+      0.09120454801461828,
+      0.8647477247806443
+    ],
+    "high_spike": [
+      6.532318089225164e-18,
+      2.168404344971009e-18,
+      2.043721095135176e-17,
+      2.8406096919120216e-17,
+      0.510720611223324,
+      0.0,
+      0.48927938877667587
+    ],
+    "late_or_low": [
+      8.50039914217053e-18,
+      0.3257028608911898,
+      0.049518872928169276,
+      0.4759762132894213,
+      0.0,
+      0.0,
+      0.14880205289121956
+    ],
+    "regular": [
+      2.439454888092385e-19,
+      1.6263032587282567e-19,
+      0.0,
+      0.38488850959283544,
+      0.11616231170980679,
+      0.34437742430066925,
+      0.15457175439668855
+    ]
+  },
+  "model_order": [
+    "lightgbm",
+    "catboost_cpu",
+    "xgboost",
+    "tabm_v4",
+    "decomp_gbdt",
+    "low_demand_specialist",
+    "st_itransformer"
+  ],
+  "purged_chronological_check": {
+    "fit_rows": 75402,
+    "test_rows": 157194,
+    "global_rmsle": 0.20940810681803573,
+    "raw_bucket_rmsle": 0.2087291018698489,
+    "training_selected_single": "tabm_v4",
+    "single_rmsle": 0.20969004631854116,
+    "buckets": [
+      {
+        "bucket": "new_stations",
+        "rows": 6642,
+        "bucket_rmsle": 0.2766325820619466,
+        "global_rmsle": 0.27893019765245425,
+        "training_selected_single": "tabm_v4",
+        "single_rmsle": 0.275607364962018,
+        "fallback_global": false,
+        "fit_weights": [
+          1.2034982927768e-16,
+          6.613633252161577e-18,
+          1.929879867024198e-17,
+          5.567378155713065e-17,
+          2.168404344971009e-18,
+          0.6593594171234798,
+          0.3406405828765201
+        ]
+      },
+      {
+        "bucket": "high_spike",
+        "rows": 1365,
+        "bucket_rmsle": 1.021762841978502,
+        "global_rmsle": 1.026570517543125,
+        "training_selected_single": "tabm_v4",
+        "single_rmsle": 1.0417605551235258,
+        "fallback_global": false,
+        "fit_weights": [
+          8.258571235729428e-19,
+          9.87809823087965e-18,
+          7.014279836212861e-18,
+          0.5735586466758381,
+          0.022264919161662875,
+          2.872204020844607e-17,
+          0.40417643416249904
+        ]
+      },
+      {
+        "bucket": "late_or_low",
+        "rows": 25296,
+        "bucket_rmsle": 0.23992866617649372,
+        "global_rmsle": 0.2407940468207495,
+        "training_selected_single": "tabm_v4",
+        "single_rmsle": 0.23686079635623603,
+        "fallback_global": false,
+        "fit_weights": [
+          0.0,
+          0.4060919448952801,
+          0.10508888663849245,
+          0.3861650049170845,
+          0.0,
+          0.10265416354914295,
+          1.5686916790066698e-18
+        ]
+      },
+      {
+        "bucket": "regular",
+        "rows": 123891,
+        "bucket_rmsle": 0.1670937649414598,
+        "global_rmsle": 0.16738784092480935,
+        "training_selected_single": "tabm_v4",
+        "single_rmsle": 0.1682404300246419,
+        "fallback_global": false,
+        "fit_weights": [
+          0.0,
+          1.4075905774844104e-18,
+          3.519227078344913e-18,
+          0.5588949218474004,
+          0.0,
+          0.44110507815259964,
+          7.432577832515807e-18
+        ]
+      }
+    ]
+  },
+  "lofo_global_rmsle": 0.21998888896898178,
+  "limitations": "Fold 3+4 blend scores fit weights on those labels. Bucket fallback is selected using Fold 4; its selected score is not independent. Purged checks remove repeated dates but still reuse early-stopping and feature-design decisions."
+}

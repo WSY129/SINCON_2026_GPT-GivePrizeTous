@@ -1,0 +1,5 @@
+{
+  "original_start": 1794414621.842275,
+  "correction_time": 1794415338.4126785,
+  "reason": "Fourier Ridge penalized entire demand level toward zero. Add unpenalized global intercept. All old-source caches/models archived and regenerated. Original 7200s deadline retained."
+}

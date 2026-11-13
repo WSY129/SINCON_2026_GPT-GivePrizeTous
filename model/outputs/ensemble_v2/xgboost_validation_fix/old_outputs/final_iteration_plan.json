@@ -1,0 +1,22 @@
+{
+  "lightgbm": {
+    "fold3": 999,
+    "fold4": 3000,
+    "final_iterations": 2464
+  },
+  "catboost": {
+    "fold3": 1823,
+    "fold4": 3500,
+    "final_iterations": 3169
+  },
+  "xgboost": {
+    "fold3": 1839,
+    "fold4": 3000,
+    "final_iterations": 2840
+  },
+  "tabm": {
+    "fold3": 12,
+    "fold4": 12,
+    "final_iterations": 13
+  }
+}

@@ -1,0 +1,15 @@
+{
+ "outputs/ensemble_v9/RESULTS_V9.md": "6503de9b395569f7cd8f141cbc10581d3065656e3b31895201d4998669a1ec66",
+ "outputs/ensemble_v9/V9_DESIGN.md": "956d19dd041a35c78fe1b1d37e7d6697c774faf9125f0c70b0b0d2d57eabc725",
+ "outputs/ensemble_v9/blend_v9.json": "b06ffd38bc4a609705b112189639ec422f0873dc366d4225cf19a98ed00832d3",
+ "outputs/ensemble_v9/oof_v9_main.npz": "a054bbf0e001d65600a238ac60b60462660881c7b6aa651363ca4ac8b4a7fd0e",
+ "outputs/ensemble_v9/oof_v9_precutoff.npz": "4da8306bea387ff4bd0c3b166dc499145932ae6f3015ccf802c564efe4cbdaf1",
+ "outputs/ensemble_v9/submission_ensemble_v9.csv": "a536b9c8f5325dc838cebc4703fac91f13fff9ba59db97ea1af66f8c419960f6",
+ "outputs/ensemble_v9/v8_preserved_before.json": "e7dee26bb1f8cc5ceae81bb19484c247a4522c3d43a4b47530b99555727e9348",
+ "src/v9/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+ "src/v9/blend.py": "ce042052929382b55e3244a530ca40d9198b54950b93e2fabe27c00d6587ad82",
+ "src/v9/panel.py": "b180770b37a293273cf2ce3d8d4140fbe48fedd21ee32ca784a0dc092db8a4ec",
+ "src/v9/tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+ "src/v9/tests/test_v9.py": "72a7266aeb4b7ddd2e2bb766ada772453162f4fd5648cb19f34cd7bbb77093e7",
+ "src/v9/train.py": "9eddf8c5d51394bdee552e4db627e6f8db4458b4e6e08e06e9810ef00129e477"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "ensemble_v12",
+  "information": "Meta-level corrections on the stored v11 forecasts (CPU only). No leaderboard score is read or stored. Realised facts of the evaluation period (events held, crowds, end times, weather) are allowed by the organisers; subway ridership of that period is not used anywhere.",
+  "one_off_events": [
+    {
+      "name": "제62회 시민의 날 인천시민 대축제 (인천대공원 어울큰마당)",
+      "station": 3226,
+      "date": "2026-10-10",
+      "end": "20:30",
+      "flow_shape": [0.20, 0.35, 0.30, 0.15],
+      "attendance": 6000,
+      "transit_share": 0.06,
+      "basis": "Held as announced (press of 2026-10-11). Planned programme 11:00-21:00, ceremony 18:00-18:40, then the celebration concert and a drone light show as the finale; actual end time and crowd were not published. The 2024 edition at the same park was stated by the organiser as about 30,000 visitors over the day. Assumed evening audience 6,000 (one fifth of that), 10 % leaving by this station, shrunk by 0.6 = 360 extra boardings from 20:30 to 22:30. Size check from this station's own history before the cutoff: single-hour evening spikes of 283 (2025-10-10, 20h) and 530 (2025-06-07, 19h) on event evenings against 30-50 on ordinary October Saturdays.",
+      "sources": ["https://www.pressian.com/pages/articles/2026101110142919639", "https://www.ajunews.com/view/20261011104012325", "https://m.inews24.com/v/2010234", "https://newsseoul.co.kr/news/view/1065601833847314"]
+    }
+  ]
+}

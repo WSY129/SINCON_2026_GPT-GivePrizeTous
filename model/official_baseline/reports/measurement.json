@@ -1,0 +1,46 @@
+{
+  "source_url": "https://www.kaggle.com/competitions/sincon-2026/discussion/757952",
+  "author": "jungjunu1 (Competition Host)",
+  "post_title": "[운영진] 시작 코드(Baseline) 공유 — 최근 8주 같은 요일·시간대 평균",
+  "post_date_kst": "2026-11-11 17:38:47",
+  "retrieved_date_kst": "2026-11-11",
+  "retrieval_method": "NAVER Whale UI; official discussion code block copied from rendered page; no separate downloadable notebook attachment observed",
+  "source_preserved_without_algorithm_or_date_changes": true,
+  "browser_capture_verification": {
+    "characters": 1788,
+    "lines": 44,
+    "fnv1a_utf16": 1627979271,
+    "matches_original_capture": true
+  },
+  "source_sha256": "2deecb2c8f21b518b14c4904ef8d081a28b474536a29f0d1d0f0252032e75d4a",
+  "training_window": [
+    "2026-01-05",
+    "2026-02-28"
+  ],
+  "training_window_days_inclusive": 55,
+  "validation_window": [
+    "2026-03-01",
+    "2026-06-30"
+  ],
+  "validation_days": 122,
+  "validation_rows": 155916,
+  "measured_local_rmsle": 0.30770066230494014,
+  "measured_local_rmsle_5dp": "0.30770",
+  "organizer_reported_local_rmsle": 0.3077,
+  "matches_organizer_reported_5dp": true,
+  "organizer_reported_public_rmsle": 0.28264,
+  "public_score_independently_measured": false,
+  "kaggle_submission_performed": false,
+  "final_profile_window": [
+    "2026-05-04",
+    "2026-06-30"
+  ],
+  "final_profile_days_inclusive": 58,
+  "submission_rows": 157194,
+  "submission_sha256": "dbb6e0518317de743d1e4f151880f0cc2cd7e7ccf24dd8f84c89738c24c132eb",
+  "comparison_same_cutoff_seasonal_copy_rmsle": 0.2897381687956004,
+  "earlier_0_291005_definition": "assistant-created seasonal7 at cutoff2026-02-27; validation2026-02-28~06-30; not the official baseline",
+  "train_csv_sha256": "1b3b21e8f1fe22a44c0ff4adba315784a5c21caea25098a15869c4ed370822bc",
+  "numpy_version": "2.3.5",
+  "pandas_version": "2.2.3"
+}

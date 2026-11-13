@@ -1,0 +1,9 @@
+{
+  "model": "tabm",
+  "seed": 2026,
+  "best_iteration": 1,
+  "requested_iterations": 2,
+  "seconds": 4.336804590886459,
+  "device": "cuda:0",
+  "train_rows": 16000
+}

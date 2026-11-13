@@ -1,0 +1,533 @@
+{
+ "information": "local data only; no leaderboard score is used",
+ "munhak_quota": {
+  "information": "local data only; crowd day = daily maximum hourly boardings >= 1200 at station 3127",
+  "validation_summer25": {
+   "v6": {
+    "unannounced_days": 61,
+    "expected_crowd_days": 17.76,
+    "actual_crowd_days": 17,
+    "rmsle_unannounced_rows": 0.8012,
+    "by_weekday": {
+     "Mon": {
+      "days": 9,
+      "expected_crowd_days": 2.5,
+      "actual_crowd_days": 2,
+      "mean_probability": 0.278,
+      "rmsle": 0.7111
+     },
+     "Tue-Fri": {
+      "days": 36,
+      "expected_crowd_days": 9.34,
+      "actual_crowd_days": 9,
+      "mean_probability": 0.26,
+      "rmsle": 0.8207
+     },
+     "Sat": {
+      "days": 8,
+      "expected_crowd_days": 3.11,
+      "actual_crowd_days": 4,
+      "mean_probability": 0.389,
+      "rmsle": 0.922
+     },
+     "Sun": {
+      "days": 8,
+      "expected_crowd_days": 2.8,
+      "actual_crowd_days": 2,
+      "mean_probability": 0.35,
+      "rmsle": 0.6667
+     }
+    },
+    "monday_split": null
+   },
+   "v7_monday_split": {
+    "unannounced_days": 61,
+    "expected_crowd_days": 18.11,
+    "actual_crowd_days": 17,
+    "rmsle_unannounced_rows": 0.8111,
+    "by_weekday": {
+     "Mon": {
+      "days": 9,
+      "expected_crowd_days": 0.89,
+      "actual_crowd_days": 2,
+      "mean_probability": 0.099,
+      "rmsle": 0.8106
+     },
+     "Tue-Fri": {
+      "days": 36,
+      "expected_crowd_days": 11.3,
+      "actual_crowd_days": 9,
+      "mean_probability": 0.314,
+      "rmsle": 0.8142
+     },
+     "Sat": {
+      "days": 8,
+      "expected_crowd_days": 3.11,
+      "actual_crowd_days": 4,
+      "mean_probability": 0.389,
+      "rmsle": 0.922
+     },
+     "Sun": {
+      "days": 8,
+      "expected_crowd_days": 2.8,
+      "actual_crowd_days": 2,
+      "mean_probability": 0.35,
+      "rmsle": 0.6667
+     }
+    },
+    "monday_split": {
+     "weekday_rate": 0.3623,
+     "mondays": 14,
+     "monday_crowd_days": 0,
+     "other_weekdays": 55,
+     "other_crowd_days": 25,
+     "monday_ratio": 0.3,
+     "other_ratio": 1.2295
+    }
+   },
+   "quota_scaled_to_10_games": {
+    "unannounced_days": 61,
+    "expected_crowd_days": 12.96,
+    "actual_crowd_days": 17,
+    "rmsle_unannounced_rows": 0.8234,
+    "by_weekday": {
+     "Mon": {
+      "days": 9,
+      "expected_crowd_days": 1.83,
+      "actual_crowd_days": 2,
+      "mean_probability": 0.203,
+      "rmsle": 0.7264
+     },
+     "Tue-Fri": {
+      "days": 36,
+      "expected_crowd_days": 6.82,
+      "actual_crowd_days": 9,
+      "mean_probability": 0.189,
+      "rmsle": 0.8437
+     },
+     "Sat": {
+      "days": 8,
+      "expected_crowd_days": 2.27,
+      "actual_crowd_days": 4,
+      "mean_probability": 0.284,
+      "rmsle": 0.9597
+     },
+     "Sun": {
+      "days": 8,
+      "expected_crowd_days": 2.04,
+      "actual_crowd_days": 2,
+      "mean_probability": 0.255,
+      "rmsle": 0.6716
+     }
+    },
+    "monday_split": null
+   }
+  },
+  "validation_fold1": {
+   "v6": {
+    "unannounced_days": 31,
+    "expected_crowd_days": 5.2,
+    "actual_crowd_days": 5,
+    "rmsle_unannounced_rows": 0.7414,
+    "by_weekday": {
+     "Mon": {
+      "days": 4,
+      "expected_crowd_days": 0.65,
+      "actual_crowd_days": 0,
+      "mean_probability": 0.162,
+      "rmsle": 0.6139
+     },
+     "Tue-Fri": {
+      "days": 19,
+      "expected_crowd_days": 3.06,
+      "actual_crowd_days": 4,
+      "mean_probability": 0.161,
+      "rmsle": 0.8059
+     },
+     "Sat": {
+      "days": 4,
+      "expected_crowd_days": 0.77,
+      "actual_crowd_days": 1,
+      "mean_probability": 0.193,
+      "rmsle": 0.6996
+     },
+     "Sun": {
+      "days": 4,
+      "expected_crowd_days": 0.72,
+      "actual_crowd_days": 0,
+      "mean_probability": 0.181,
+      "rmsle": 0.5549
+     }
+    },
+    "monday_split": null
+   },
+   "v7_monday_split": {
+    "unannounced_days": 31,
+    "expected_crowd_days": 5.37,
+    "actual_crowd_days": 5,
+    "rmsle_unannounced_rows": 0.7346,
+    "by_weekday": {
+     "Mon": {
+      "days": 4,
+      "expected_crowd_days": 0.28,
+      "actual_crowd_days": 0,
+      "mean_probability": 0.07,
+      "rmsle": 0.5923
+     },
+     "Tue-Fri": {
+      "days": 19,
+      "expected_crowd_days": 3.59,
+      "actual_crowd_days": 4,
+      "mean_probability": 0.189,
+      "rmsle": 0.7992
+     },
+     "Sat": {
+      "days": 4,
+      "expected_crowd_days": 0.77,
+      "actual_crowd_days": 1,
+      "mean_probability": 0.193,
+      "rmsle": 0.6996
+     },
+     "Sun": {
+      "days": 4,
+      "expected_crowd_days": 0.72,
+      "actual_crowd_days": 0,
+      "mean_probability": 0.181,
+      "rmsle": 0.5549
+     }
+    },
+    "monday_split": {
+     "weekday_rate": 0.3571,
+     "mondays": 22,
+     "monday_crowd_days": 0,
+     "other_weekdays": 90,
+     "other_crowd_days": 40,
+     "monday_ratio": 0.2143,
+     "other_ratio": 1.2292
+    }
+   },
+   "quota_scaled_to_10_games": {
+    "unannounced_days": 31,
+    "expected_crowd_days": 3.79,
+    "actual_crowd_days": 5,
+    "rmsle_unannounced_rows": 0.7418,
+    "by_weekday": {
+     "Mon": {
+      "days": 4,
+      "expected_crowd_days": 0.47,
+      "actual_crowd_days": 0,
+      "mean_probability": 0.118,
+      "rmsle": 0.5804
+     },
+     "Tue-Fri": {
+      "days": 19,
+      "expected_crowd_days": 2.23,
+      "actual_crowd_days": 4,
+      "mean_probability": 0.117,
+      "rmsle": 0.8174
+     },
+     "Sat": {
+      "days": 4,
+      "expected_crowd_days": 0.56,
+      "actual_crowd_days": 1,
+      "mean_probability": 0.141,
+      "rmsle": 0.6924
+     },
+     "Sun": {
+      "days": 4,
+      "expected_crowd_days": 0.53,
+      "actual_crowd_days": 0,
+      "mean_probability": 0.132,
+      "rmsle": 0.5236
+     }
+    },
+    "monday_split": null
+   }
+  },
+  "test_window": {
+   "v6": {
+    "unannounced_days": 53,
+    "expected_crowd_days": 13.7,
+    "by_weekday": {
+     "Mon": {
+      "days": 8,
+      "expected": 2.04,
+      "mean_probability": 0.255
+     },
+     "Sat": {
+      "days": 7,
+      "expected": 2.53,
+      "mean_probability": 0.361
+     },
+     "Sun": {
+      "days": 6,
+      "expected": 1.29,
+      "mean_probability": 0.215
+     },
+     "Tue-Fri": {
+      "days": 32,
+      "expected": 7.85,
+      "mean_probability": 0.245
+     }
+    },
+    "by_month": {
+     "9": 7.76,
+     "10": 5.95
+    },
+    "monday_split": null
+   },
+   "v7_monday_split": {
+    "unannounced_days": 53,
+    "expected_crowd_days": 13.75,
+    "by_weekday": {
+     "Mon": {
+      "days": 8,
+      "expected": 0.63,
+      "mean_probability": 0.079
+     },
+     "Sat": {
+      "days": 7,
+      "expected": 2.53,
+      "mean_probability": 0.361
+     },
+     "Sun": {
+      "days": 6,
+      "expected": 1.29,
+      "mean_probability": 0.215
+     },
+     "Tue-Fri": {
+      "days": 32,
+      "expected": 9.31,
+      "mean_probability": 0.291
+     }
+    },
+    "by_month": {
+     "9": 7.61,
+     "10": 6.14
+    },
+    "monday_split": {
+     "weekday_rate": 0.3348,
+     "mondays": 44,
+     "monday_crowd_days": 2,
+     "other_weekdays": 177,
+     "other_crowd_days": 72,
+     "monday_ratio": 0.2395,
+     "other_ratio": 1.2078
+    }
+   },
+   "quota_scaled_to_10_games": {
+    "unannounced_days": 53,
+    "expected_crowd_days": 10.0,
+    "by_weekday": {
+     "Mon": {
+      "days": 8,
+      "expected": 1.49,
+      "mean_probability": 0.186
+     },
+     "Sat": {
+      "days": 7,
+      "expected": 1.84,
+      "mean_probability": 0.263
+     },
+     "Sun": {
+      "days": 6,
+      "expected": 0.94,
+      "mean_probability": 0.157
+     },
+     "Tue-Fri": {
+      "days": 32,
+      "expected": 5.73,
+      "mean_probability": 0.179
+     }
+    },
+    "by_month": {
+     "9": 5.66,
+     "10": 4.34
+    },
+    "monday_split": null
+   }
+  },
+  "league_quota_reasoning": {
+   "home_games_per_season": 72,
+   "note": "2025: the original grid listed 69 home dates and the remaining-games schedule announced 2025-08-19 listed 16 home dates (3 unscheduled + rained-out games). 2026: the original grid lists 66 home dates, so 6 home games are unscheduled before any rain-out is added. A target of 9-11 would assume at most 3-5 rained-out home games."
+  }
+ },
+ "diff_v7_minus_v6_log": {
+  "log_rmsd_all": 0.027516385421654414,
+  "mean_log_diff": 0.003691718224369188,
+  "rows_changed": 6720,
+  "rows_changed_over_0_05": 5245,
+  "mean_boardings_v6": 336.77516434053626,
+  "mean_boardings_v7": 338.06464423000693,
+  "by_month": {
+   "7": {
+    "mean": 0.001669602683116589,
+    "rmsd": 0.008374967987126093
+   },
+   "8": {
+    "mean": 0.0039279798515133146,
+    "rmsd": 0.043909810481190754
+   },
+   "9": {
+    "mean": 0.004010118935206264,
+    "rmsd": 0.01957413147577981
+   },
+   "10": {
+    "mean": 0.005169442418312748,
+    "rmsd": 0.025202837657811592
+   }
+  },
+  "by_hour": {
+   "6": {
+    "mean": 0.003451906143361178,
+    "rmsd": 0.0180074079591565
+   },
+   "7": {
+    "mean": 0.0034209545414178788,
+    "rmsd": 0.017890675183784868
+   },
+   "8": {
+    "mean": 0.0034209545417955246,
+    "rmsd": 0.017890675184147102
+   },
+   "9": {
+    "mean": 0.0034209545412506102,
+    "rmsd": 0.017890675183787536
+   },
+   "10": {
+    "mean": 0.003420954541579581,
+    "rmsd": 0.017890675184491757
+   },
+   "11": {
+    "mean": 0.0034243436175565908,
+    "rmsd": 0.0178934782625596
+   },
+   "12": {
+    "mean": 0.0034015838807929712,
+    "rmsd": 0.017982020924540248
+   },
+   "13": {
+    "mean": 0.003413741467611612,
+    "rmsd": 0.017903369037101966
+   },
+   "14": {
+    "mean": 0.0034138955445006925,
+    "rmsd": 0.017900103816534695
+   },
+   "15": {
+    "mean": 0.003422249347448152,
+    "rmsd": 0.017891237289644927
+   },
+   "16": {
+    "mean": 0.0034200444750722195,
+    "rmsd": 0.01789099980924506
+   },
+   "17": {
+    "mean": 0.0034288954822248,
+    "rmsd": 0.01790372992877295
+   },
+   "18": {
+    "mean": 0.0034840601895788203,
+    "rmsd": 0.018092479031465235
+   },
+   "19": {
+    "mean": 0.0035850259467004215,
+    "rmsd": 0.01882509813939188
+   },
+   "20": {
+    "mean": 0.003930475699749348,
+    "rmsd": 0.02578134033056023
+   },
+   "21": {
+    "mean": 0.004685135269476734,
+    "rmsd": 0.044180324412655084
+   },
+   "22": {
+    "mean": 0.0056750568631773685,
+    "rmsd": 0.07436668776359973
+   },
+   "23": {
+    "mean": 0.004030695945350879,
+    "rmsd": 0.03082609141665569
+   }
+  },
+  "by_station_top15": {
+   "3139": {
+    "mean": 0.01922,
+    "rmsd": 0.17616,
+    "max_abs": 2.84662
+   },
+   "3108": {
+    "mean": 0.08096,
+    "rmsd": 0.08704,
+    "max_abs": 0.13584
+   },
+   "3109": {
+    "mean": 0.08096,
+    "rmsd": 0.08704,
+    "max_abs": 0.13584
+   },
+   "3107": {
+    "mean": 0.08096,
+    "rmsd": 0.08704,
+    "max_abs": 0.13584
+   },
+   "3111": {
+    "mean": -0.0,
+    "rmsd": 0.0,
+    "max_abs": 0.0
+   },
+   "3227": {
+    "mean": 0.0,
+    "rmsd": 0.0,
+    "max_abs": 0.0
+   },
+   "3226": {
+    "mean": 0.0,
+    "rmsd": 0.0,
+    "max_abs": 0.0
+   },
+   "3201": {
+    "mean": -0.0,
+    "rmsd": 0.0,
+    "max_abs": 0.0
+   },
+   "3217": {
+    "mean": 0.0,
+    "rmsd": 0.0,
+    "max_abs": 0.0
+   },
+   "3122": {
+    "mean": 0.0,
+    "rmsd": 0.0,
+    "max_abs": 0.0
+   },
+   "3127": {
+    "mean": 0.0,
+    "rmsd": 0.0,
+    "max_abs": 0.0
+   },
+   "3202": {
+    "mean": 0.0,
+    "rmsd": 0.0,
+    "max_abs": 0.0
+   },
+   "3213": {
+    "mean": -0.0,
+    "rmsd": 0.0,
+    "max_abs": 0.0
+   },
+   "3112": {
+    "mean": 0.0,
+    "rmsd": 0.0,
+    "max_abs": 0.0
+   },
+   "3754": {
+    "mean": 0.0,
+    "rmsd": 0.0,
+    "max_abs": 0.0
+   }
+  },
+  "stations_changed": 4
+ }
+}

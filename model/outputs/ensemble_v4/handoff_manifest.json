@@ -1,0 +1,18 @@
+{
+  "RESULTS.md": {
+    "bytes": 30683,
+    "sha256": "3a86e7224435a0e3e86d3a01b90d7f5f45e49054adfb9a8b021e70ab28309fd4"
+  },
+  "ensemble_report.json": {
+    "bytes": 6932,
+    "sha256": "7534380a3007dc13d93ea6107ea9f981b388844f9bb2211624e314b39f1e1365"
+  },
+  "fold4_domain_segments.csv": {
+    "bytes": 457240,
+    "sha256": "296b58e95c1a5acf2b693b91e4d3daff69ccd57c2da0140cd4c9a3cbffcdaac9"
+  },
+  "cv_training_budget.csv": {
+    "bytes": 4554,
+    "sha256": "793e7e073df088356766bab73ce1c8217d7d89bd0e8d32f208a03f05bae99ccb"
+  }
+}

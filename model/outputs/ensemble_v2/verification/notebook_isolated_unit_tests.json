@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "embedded_files": 29,
+  "isolated_root": "/private/tmp/sincon_notebook_test_5lf12foe",
+  "external_project_files_used": false,
+  "data_required_for_unittest": false,
+  "hosted_cuda_execution": false
+}

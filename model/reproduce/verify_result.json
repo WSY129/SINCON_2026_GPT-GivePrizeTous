@@ -1,0 +1,42 @@
+{
+ "v15 submission": {
+  "identical": true,
+  "sha256": "0d0ee324033c1c450aed7dc76f4d21b5de05dd4c87f39ebdbba8e22091134a3e"
+ },
+ "v15 out-of-fold": {
+  "identical": true
+ },
+ "v19 submission": {
+  "identical": true,
+  "sha256": "67ffc2d85c1322a5f8e14f016350923a779f9c96c077bd6fa5bd22446a4a34b2"
+ },
+ "v20e submission": {
+  "identical": true,
+  "sha256": "1a5dbd7c21737008dfa26e9e66f6bca11969af75f18b17e941d4482e6e015c69"
+ },
+ "retrain lgb_h fold 4 seed 2026": {
+  "identical": true,
+  "max_abs_log_difference": 0.0,
+  "valid_rmsle_last": 0.16254
+ },
+ "retrain xgb_i fold 4 seed 2026": {
+  "identical": true,
+  "max_abs_log_difference": 0.0,
+  "valid_rmsle_last": 0.16335
+ },
+ "retrain with 4 threads instead of 12 (fold 4, seed 2026)": {
+  "lgb_h": {
+   "identical": false,
+   "max_abs_log_difference": 0.0806,
+   "rmse_of_difference": 0.00323
+  },
+  "xgb_i": {
+   "identical": true,
+   "max_abs_log_difference": 0.0
+  }
+ },
+ "v10 re-run (python -m src.v10.run into a scratch folder)": {
+  "identical": true,
+  "seconds": 2
+ }
+}

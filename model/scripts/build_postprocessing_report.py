@@ -1,0 +1,211 @@
+"""Summarize the completed, frozen temporal postprocessing experiment."""
+from __future__ import annotations
+import hashlib
+import json
+from pathlib import Path
+import sys
+
+import numpy as np
+import pandas as pd
+
+ROOT=Path(__file__).resolve().parents[1]
+sys.path.insert(0,str(ROOT))
+OUT=ROOT/'outputs/lightgbm_postprocessed'
+BASE=ROOT/'outputs/lightgbm_tuned'
+REPORT=ROOT/'reports/POSTPROCESSING.md'
+
+def read(path):return json.loads(Path(path).read_text(encoding='utf-8'))
+def sha(path):return hashlib.sha256(Path(path).read_bytes()).hexdigest()
+def rmsle(y,p):return float(np.sqrt(np.mean((np.log1p(p)-np.log1p(y))**2)))
+def table(columns,rows):
+    lines=['| '+' | '.join(columns)+' |','| '+' | '.join(['---']*len(columns))+' |']
+    lines.extend('| '+' | '.join(str(v).replace('|','\\|') for v in row)+' |' for row in rows)
+    return '\n'.join(lines)+'\n'
+
+def main():
+    run=read(OUT/'run_summary.json')
+    if run.get('status')!='completed':raise RuntimeError('Postprocessing experiment is not complete')
+    plan=read(OUT/'postprocessing_plan.json');design=read(OUT/'selection_design.json')
+    scores=pd.read_csv(OUT/'candidate_development_scores.csv')
+    segments=pd.read_csv(OUT/'audit_segments.csv')
+    check=read(OUT/'submission_validation.json')
+    spec=plan['spec'];chosen=plan['selected_forward_scores']
+    if len(scores)!=design['candidate_count']:raise AssertionError('Candidate score count mismatch')
+    if sha(BASE/'model_bundle.joblib')!=plan['source_base_bundle_sha256']:
+        raise AssertionError('Original base bundle changed after postprocessing')
+    if sha(BASE/'submission.csv')!=sha(OUT/'unprocessed_reference/submission.csv'):
+        raise AssertionError('Unprocessed reference differs from original submission')
+    if not run['postprocessing_plan_frozen_before_comparison'] or not run['original_weights_unchanged']:
+        raise AssertionError('Expected frozen plan and unchanged model weights')
+    if not check['valid'] or check['rows']!=157194:raise AssertionError('Invalid submission')
+    if not run['test_holiday_predictions_unchanged'] or not run['prediction_reloaded_identical']:
+        raise AssertionError('Holiday preservation or reload verification failed')
+
+    raw=float(run['base_rmsle']);post=float(run['postprocessed_rmsle'])
+    change=post-raw
+    verdict=('기존 예측보다 RMSLE가 낮아 후처리 채택을 검토할 수 있다.' if post<raw else
+             'RMSLE가 악화되어 이번 후처리를 기본 제출에 채택하지 않고 기존 LightGBM 예측을 유지하는 것이 타당하다.' if post>raw else
+             'RMSLE가 같아 추가 후처리의 검증 이득이 없다.')
+    recommendation=('outputs/lightgbm_postprocessed/submission.csv' if post<raw else 'outputs/lightgbm_tuned/submission.csv')
+    relative=100*(post/raw-1)
+    direction='감소' if relative<0 else '증가'
+    shortlist=['none_0_anchor0_0','global_bias_0.5','global_bias_1',
+               'diagnostic_cap95_56','diagnostic_cap95_112',
+               'none_0_anchor28_0.2','none_0_anchor56_0.2','none_0_anchor112_0.2',
+               'hour_dow_0.5_anchor0_0',spec['name']]
+    shortlist=list(dict.fromkeys(shortlist))
+    candidate_rows=[]
+    for name in shortlist:
+        row=scores.loc[scores.name==name].iloc[0]
+        label=name+(' **선정**' if name==spec['name'] else '')
+        candidate_rows.append([label,f'{row.development1_in_sample_rmsle:.9f}',
+                               f'{row.development2_forward_rmsle:.9f}',
+                               '예' if row.eligible_for_selection else '아니오'])
+    development_rows=[]
+    for fold in [1,2]:
+        frame=pd.read_csv(OUT/f'fold_{fold}/oof.csv.gz')
+        development_rows.append([fold,len(frame),f'{rmsle(frame.boardings,frame.lightgbm_large):.9f}',
+                                 f'{rmsle(frame.boardings,frame.postprocessed):.9f}'])
+    segment_rows=[[row.segment,f'{row.rows:,}',f'{row.raw_rmsle:.9f}',f'{row.postprocessed_rmsle:.9f}',
+                   f'{row.postprocessed_rmsle-row.raw_rmsle:+.9f}'] for row in segments.itertuples(index=False)]
+    offset_values=np.array(list(plan['offsets'].values()),dtype=float)
+    offset_range='없음' if len(offset_values)==0 else f'{offset_values.min():.9f} ~ {offset_values.max():.9f}'
+    ci=run['paired_date_bootstrap_delta_ci95']
+    text=f'''# LightGBM 추론 후처리 검토·적용·재검증
+
+작성일: 2026-11-11. 완료된 `outputs/lightgbm_postprocessed` 산출물로 생성했다.
+
+## 결과와 채택 판단
+
+| 동일 마지막 비교 구간 | RMSLE |
+|---|---:|
+| 후처리 전 LightGBM | {raw:.10f} |
+| 개발 구간에서 고른 후처리 적용 | {post:.10f} |
+| 차이: 후처리 − 원본 | {change:+.10f} |
+
+상대 **{abs(relative):.2f}% {direction}**다. {verdict}
+검증 기간은 **2026-02-28~2026-06-30, 123일·157,194행**, 예측 기준일은 2026-02-27이다.
+이 결과는 Kaggle 리더보드 점수가 아니다.
+
+비교 결과 기준 권고 파일: [submission.csv](../{recommendation}).
+실험 후처리 파일도 [별도 위치](../outputs/lightgbm_postprocessed/submission.csv)에 보관했다.
+이번 후처리는 기본 파이프라인에 승격하지 않았으며, **실험 후처리 CSV/bundle은 DO_NOT_SUBMIT**으로 구분한다.
+현재 기본 모델·제출 파일은 `outputs/lightgbm_tuned`의 원본을 유지한다.
+후처리가 항상 성능을 개선한다고 전제하지 않고, 변화가 없을 때의 원본 예측도 후보로 포함했다.
+후처리 설정은 마지막 구간을 읽기 전에 고정했지만, **채택 여부를 이 비교 결과로 판단하면 같은 구간의 정보를 선택에 사용한 것**이다.
+또한 이 구간은 이전 모델 분석에도 사용했으므로 새로운 독립 holdout 성능으로 해석하지 않는다.
+
+## 검토한 후처리와 적용 범위
+
+- 비음수 절삭: 기본 모델에서 이미 적용 중이다. 새 실험도 유한·비음수 예측을 보장한다.
+- 전체 로그 편향 보정: 개발 1에서 추정하고 다음 개발 구간으로 이전 가능한지 확인했다.
+- 시간대·시간대×요일별 로그 잔차 보정: 작은 그룹을 규제하고 전역 계절 편향을 제거해 사용했다.
+- 과거 일반일 수요 기준선 결합: 최근 28·56·112일의 역×시간대×요일별 평균 `log1p(boardings)`를 사용했다.
+- 과거 95% 분위수 상한: 진단으로 계산했지만, 물리적 수용량 정보가 없어 선택 후보에서는 제외했다.
+- 임의 공휴일·영업 종료 수요 0 고정: 목표 시간 06~24시의 실제 수요가 존재하며 폐쇄 정보가 없어 적용하지 않았다.
+- 최소 5명·10명 강제 같은 양의 하한: 작은 실제 수요를 훼손할 수 있어 채택하지 않았다.
+- 정수 반올림: 대회에서 소수 제출이 허용되므로 적용하지 않았다.
+- 분류·이상 탐지 임계값 조정: 현재 과제가 승차 인원 회귀이므로 해당하지 않는다.
+
+공휴일에는 아래 보정·기준선 결합을 모두 우회하고 **LightGBM 원본 예측을 정확히 유지**했다.
+예측 시점까지 알려진 공휴일 정보만 `calendar_features(..., as_of=origin)`으로 사용한다.
+미래 실제 승하차·날씨·행사 결과를 조회하거나 후처리 입력으로 사용하지 않았다.
+
+## 54개 후보와 시간순 선택 절차
+
+실제 후보 수는 **{design['candidate_count']}개**다.
+변경 없는 원본을 포함한 5개 잔차 보정 설정 × 10개 과거 기준선 설정 = 50개,
+전체 로그 편향 2개, 진단용 분위수 상한 2개를 비교했다.
+
+1. 기존 역만 포함한 개발 fold 1에서 후보별 잔차 보정값을 적합했다.
+2. 그 보정값을 바꾸지 않고 시간상 다음인 개발 fold 2에 적용했다.
+3. 개발 1을 악화시키지 않는 허용 후보 중 **개발 2 forward RMSLE가 최소**인 후보를 골랐다.
+4. 선택한 규칙을 고정한 뒤 개발 1·2를 합쳐 잔차 보정값만 다시 추정했다. 이때 fold마다 평균 잔차를 먼저 제거했다.
+5. 고정된 계획을 저장한 뒤 마지막 비교 구간을 읽고 한 번 적용·평가했다.
+
+LightGBM 가중치를 다시 학습하지 않았으며, 모델의 173개 트리와 출력값을 입력으로 후처리만 수행했다.
+개발 fold 자체도 앞선 LightGBM 튜닝에 사용됐으므로 개발 2 forward 점수는 엄격하게 새로 확보한 독립 일반화 추정치가 아니다.
+
+대표 후보의 **개발 1 적합 → 개발 2 이전** 결과:
+
+{table(['후보', '개발 1 적합 RMSLE', '개발 2 forward RMSLE', '선택 가능'],candidate_rows)}
+
+전체 후보는 [candidate_development_scores.csv](../outputs/lightgbm_postprocessed/candidate_development_scores.csv)에 있다.
+분위수 상한은 이 표의 점수와 무관하게 선택 가능 여부를 False로 고정했다.
+
+## 실제 선정된 후처리 산식
+
+- 선정 후보: **`{spec['name']}`**.
+- 잔차 보정 그룹: **`{spec['calibration']['kind']}`**, 축소 배율 **{spec['calibration']['scale']:g}**.
+- 기준선: 최근 **{spec['anchor']['days']}일**, 가중치 **{spec['anchor']['weight']:.0%}**.
+- 모델 예측 비중은 일반일에도 최소 **80%**를 유지한다. 새로운 트리·신경망 모델을 추가 학습하지 않았다.
+- 잔차 보정 가상 표본 수: **{plan['shrinkage_pseudo_rows']}**.
+- 보정값 절삭 범위는 배율 적용 전 **±{plan['offset_clip']:g} log 단위**다.
+- 최종 저장된 그룹 보정값 범위: **{offset_range}**.
+
+일반일의 실제 로그 타겟과 모델 예측의 차이를 `r_i = log1p(y_i) − log1p(p_i)`라 하면,
+각 개발 fold의 일반일 평균을 먼저 빼서 `r_centered`를 만든다.
+선정 그룹 `g`의 보정은 다음과 같다.
+
+```text
+delta_g = scale * clip(sum(r_centered in g) / (n_g + 1000), -0.1, 0.1)
+z = log1p(model_prediction) + delta_g
+anchor = mean(log1p(past_boardings))  # 최근 D일의 공휴일 제외, 역×시간×요일
+z_post = (1 - anchor_weight) * z + anchor_weight * anchor
+prediction = expm1(max(z_post, 0))
+```
+
+조회하는 과거 날짜는 `origin-D < date <= origin`이며, 해당 기간의 공휴일 관측도 제외한다.
+같은 역×시간×요일의 관측이 없으면 기준선 결합을 하지 않고 보정된 모델 예측을 유지한다.
+잔차 보정 그룹이 없으면 보정값은 0이다. 예측 날짜가 공휴일이면 최종 출력은 원본 모델 예측이다.
+위 산식은 이번에 선택된 시간/요일 보정 계열에 해당하며, 전체 로그 편향 후보는 별도 상수 이동 규칙이었다.
+
+개발 1·2로 보정값을 다시 추정한 후의 점수는 아래와 같다. 두 구간 모두 보정값 적합에 사용했으므로 **참고용 적합 점수**다.
+
+{table(['개발 fold', '기존 역 행 수', '원본 RMSLE', '최종 보정 재적합 RMSLE'],development_rows)}
+
+## 마지막 비교 구간의 변화
+
+{table(['구간', '행 수', '원본 RMSLE', '후처리 RMSLE', '차이'],segment_rows)}
+
+공휴일 구간 점수가 완전히 같은 것은 해당 행의 예측을 의도적으로 유지했기 때문이다.
+원본보다 낮은 구간과 높은 구간을 구분해야 하며, 개발 구간의 이득이 다른 계절로 자동 이전되지는 않는다.
+날짜를 짝지어 재표집한 2,000회 bootstrap에서 RMSLE 차이의 조건부 95% 구간은
+**[{ci[0]:+.9f}, {ci[1]:+.9f}]**다. 날짜 간 시계열 의존성을 모두 보존한 구간이 아니며 미래 테스트 성능을 보장하지 않는다.
+
+## 저장·재현·무결성
+
+- 원본 [LightGBM bundle](../outputs/lightgbm_tuned/model_bundle.joblib)은 변경하지 않았다. 저장 당시 해시와 현재 해시를 대조했다.
+- 원본 가중치 파일의 SHA-256: `{plan['source_base_bundle_sha256']}`.
+- 새 bundle은 같은 모델에 고정된 `postprocessing` 계획을 추가한 별도 파일이다.
+- 원본 예측을 재생성한 CSV가 기존 원본 제출 CSV와 동일한 해시임을 확인했다.
+- 후처리 계획 재로딩 예측 일치, 테스트 공휴일 예측 불변을 확인했다.
+- 후처리 CSV는 전체 test ID·순서·157,194행·유한 비음수 검수를 통과했다.
+- 과거 220회 LightGBM 별도 보관본은 [archives](../archives/lightgbm_large_220_before_tuning_20261111_194707/manifest.json)에 계속 보존돼 있다.
+
+주요 산출물:
+
+- [후처리 선택 계획](../outputs/lightgbm_postprocessed/postprocessing_plan.json)
+- [실험 후처리 bundle — DO_NOT_SUBMIT](../outputs/lightgbm_postprocessed/model_bundle.joblib)
+- [실험 후처리 CSV — DO_NOT_SUBMIT](../outputs/lightgbm_postprocessed/submission.csv)
+- [원본 제출 파일](../outputs/lightgbm_tuned/submission.csv)
+- [구간별 비교](../outputs/lightgbm_postprocessed/audit_segments.csv)
+- [실행·검증 요약](../outputs/lightgbm_postprocessed/run_summary.json)
+- [후처리 구현](../src/postprocessing.py)
+- [시간순 선택·검증 실행 코드](../src/evaluate_postprocessing.py)
+
+```bash
+cd /Users/hongtaeyang/Desktop/SINCON
+# 이전 결과를 보존하도록 새 출력 폴더를 지정
+.venv/bin/python -m src.evaluate_postprocessing --base-output outputs/lightgbm_tuned --output outputs/lightgbm_postprocessed_repeat
+# 저장된 현재 실험에서 이 보고서 재생성
+.venv/bin/python scripts/build_postprocessing_report.py
+```
+'''
+    REPORT.parent.mkdir(parents=True,exist_ok=True)
+    REPORT.write_text(text,encoding='utf-8')
+    print(json.dumps({'report':str(REPORT),'base_rmsle':raw,'postprocessed_rmsle':post,
+                      'selected_candidate':spec['name'],'original_bundle_verified':True,
+                      'recommendation':recommendation,'model_files_modified':False},ensure_ascii=False,indent=2))
+
+if __name__=='__main__':main()

@@ -1,0 +1,17 @@
+{
+  "rows": 157194,
+  "features": 83,
+  "year364_clean_available_fraction": 1.0,
+  "yoy_season_missing_fraction": 0.0,
+  "anchor_finite": true,
+  "anchor_only_mean": 344.45945228662544,
+  "anchor_only_min": 3.839670304865268,
+  "yoy_season_log_delta_quantiles": {
+    "0.0": -0.5471323132514954,
+    "0.1": -0.15688985586166382,
+    "0.5": -0.053685203194618225,
+    "0.9": 0.009493021294474602,
+    "1.0": 0.22883550822734833
+  },
+  "purpose": "Preflight for future features only; these are not final model predictions and no test labels are used."
+}

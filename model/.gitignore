@@ -1,0 +1,15 @@
+.venv/
+.cache/
+__pycache__/
+*.pyc
+.DS_Store
+outputs/
+.claude/
+reproduce/_scratch/
+archives/
+*.zip
+outputs/handoff_*/
+data/external_bus/stcis/
+zindi-*.md
+submission_lgbm_*.csv
+submission_lgbm_*.json

@@ -1,0 +1,15 @@
+{
+  "scope": "inference-only backend restoration; no retraining, no feature or weight change",
+  "training_fingerprint_preserved": true,
+  "before_sha256": "f37bc2ad11b50a6e47029ffddf42e76df6d2ae0a53013657f3d7f6decafd8c50",
+  "after_sha256": "b8dedab630a11ae8689a9b0c9d94222f7f310adf81abcba5d600204990ff0d30",
+  "cpu_xgb_max_log_difference": {
+    "2026": 0.1948826089501381,
+    "2027": 0.16235048323869705
+  },
+  "cuda_xgb_max_log_difference": {
+    "2026": 0.0,
+    "2027": 0.0
+  },
+  "portability_limit": "CPU inference runs but is not numerically identical to CUDA for installed XGBoost 3.4.1. Exact submission reproduction uses CUDA."
+}

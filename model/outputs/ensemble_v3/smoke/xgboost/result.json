@@ -1,0 +1,9 @@
+{
+  "model": "xgboost",
+  "seed": 2026,
+  "best_iteration": 1,
+  "requested_iterations": 20,
+  "seconds": 2.308673432096839,
+  "device": "cuda:0",
+  "train_rows": 16000
+}

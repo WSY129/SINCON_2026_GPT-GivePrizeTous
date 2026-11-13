@@ -1,0 +1,520 @@
+{
+ "information_cutoff": "2026-06-30",
+ "kbo_records": [
+  {
+   "season": 2025,
+   "stage": "original",
+   "known_since": "2024-12-20",
+   "coverage": [
+    "2025-03-22",
+    "2025-08-31"
+   ],
+   "home_dates": 69,
+   "reserve_dates": 0
+  },
+  {
+   "season": 2025,
+   "stage": "remaining",
+   "known_since": "2025-08-19",
+   "coverage": [
+    "2025-08-19",
+    "2025-09-30"
+   ],
+   "home_dates": 16,
+   "reserve_dates": 4
+  },
+  {
+   "season": 2026,
+   "stage": "original",
+   "known_since": "2025-12-19",
+   "coverage": [
+    "2026-03-28",
+    "2026-09-06"
+   ],
+   "home_dates": 66,
+   "reserve_dates": 0
+  }
+ ],
+ "events_total": 68,
+ "events_in_test_window": [
+  {
+   "name": "싸이흠뻑쇼 SUMMERSWAG2026 인천",
+   "venue": "asiad_main",
+   "date": "2026-07-11",
+   "start": "18:00",
+   "known_since": "2026-05-29"
+  },
+  {
+   "name": "K리그1 18R 부천 v 서울",
+   "venue": "bucheon",
+   "date": "2026-07-19",
+   "start": "19:30",
+   "known_since": "2026-01-13"
+  },
+  {
+   "name": "K리그1 19R 부천 v 안양",
+   "venue": "bucheon",
+   "date": "2026-07-22",
+   "start": "19:30",
+   "known_since": "2026-01-13"
+  },
+  {
+   "name": "K리그1 22R 부천 v 광주",
+   "venue": "bucheon",
+   "date": "2026-08-08",
+   "start": "19:30",
+   "known_since": "2026-01-13"
+  },
+  {
+   "name": "K리그1 23R 부천 v 전북",
+   "venue": "bucheon",
+   "date": "2026-08-16",
+   "start": "19:30",
+   "known_since": "2026-01-13"
+  },
+  {
+   "name": "K리그1 26R 부천 v 안양",
+   "venue": "bucheon",
+   "date": "2026-08-29",
+   "start": "19:30",
+   "known_since": "2026-01-13"
+  },
+  {
+   "name": "K리그1 27R 부천 v 대전",
+   "venue": "bucheon",
+   "date": "2026-09-05",
+   "start": "19:00",
+   "known_since": "2026-01-13"
+  },
+  {
+   "name": "K리그1 29R 부천 v 제주",
+   "venue": "bucheon",
+   "date": "2026-09-12",
+   "start": "16:30",
+   "known_since": "2026-01-13"
+  },
+  {
+   "name": "K리그1 30R 부천 v 김천",
+   "venue": "bucheon",
+   "date": "2026-09-19",
+   "start": "16:30",
+   "known_since": "2026-01-13"
+  },
+  {
+   "name": "K리그1 33R 부천 v 광주",
+   "venue": "bucheon",
+   "date": "2026-10-24",
+   "start": "14:00",
+   "known_since": "2026-01-13"
+  },
+  {
+   "name": "Sustainable Wave Festival 2026",
+   "venue": "munhak_main",
+   "date": "2026-08-29",
+   "start": null,
+   "known_since": "2026-06-02"
+  },
+  {
+   "name": "Sustainable Wave Festival 2026",
+   "venue": "munhak_main",
+   "date": "2026-08-30",
+   "start": null,
+   "known_since": "2026-06-02"
+  },
+  {
+   "name": "2026 PLAVE World Tour [KEEP IT MANIC] in Incheon",
+   "venue": "munhak_main",
+   "date": "2026-09-12",
+   "start": "19:00",
+   "known_since": "2026-06-10"
+  },
+  {
+   "name": "2026 PLAVE World Tour [KEEP IT MANIC] in Incheon",
+   "venue": "munhak_main",
+   "date": "2026-09-13",
+   "start": "19:00",
+   "known_since": "2026-06-10"
+  }
+ ],
+ "munhak_test_state_days": {
+  "UNANNOUNCED": 55,
+  "NO_HOME": 40,
+  "HOME": 28
+ },
+ "munhak_concert_days": [
+  "2026-08-29",
+  "2026-08-30",
+  "2026-09-12",
+  "2026-09-13"
+ ],
+ "munhak_fit": {
+  "origin": "2026-06-30",
+  "history_days": 546,
+  "scheduled": 117,
+  "realised_games": 109,
+  "cancelled": 8,
+  "unscheduled_events": 10,
+  "cancel": {
+   "summer": 0.10285714285714286,
+   "other": 0.054901960784313725
+  },
+  "event_rate": [
+   0.0023,
+   0.1656,
+   0.1472
+  ],
+  "base_rate": [
+   0.3795,
+   0.4545,
+   0.4815
+  ],
+  "opponent": {
+   "KIA": 0.23301736937092649,
+   "KT": -0.015468157708120014,
+   "LG": 0.17777092082418647,
+   "NC": 0.01664137098554403,
+   "두산": 0.021435670563876956,
+   "롯데": -0.08466571931845275,
+   "삼성": -0.043406363254996354,
+   "키움": -0.15230601808526903,
+   "한화": 0.14291193404047295
+  },
+  "game_cells": [
+   [
+    34,
+    11,
+    15,
+    5,
+    0
+   ],
+   [
+    10,
+    4,
+    3,
+    2,
+    0
+   ],
+   [
+    12,
+    8,
+    4,
+    1,
+    0
+   ]
+  ],
+  "observed_concert_days": 9
+ },
+ "event_overlay": [
+  {
+   "station": 3139,
+   "date": "2026-07-31",
+   "action": "despike",
+   "hours": 6,
+   "mean_change": -0.08799644864066221,
+   "neighbours": [
+    "2026-07-24",
+    "2026-08-07",
+    "2026-08-14"
+   ]
+  },
+  {
+   "station": 3139,
+   "date": "2026-08-01",
+   "action": "despike",
+   "hours": 6,
+   "mean_change": -0.3650189363423637,
+   "neighbours": [
+    "2026-07-18",
+    "2026-07-25",
+    "2026-08-08"
+   ]
+  },
+  {
+   "station": 3139,
+   "date": "2026-08-02",
+   "action": "despike",
+   "hours": 8,
+   "mean_change": -0.30936000329939517,
+   "neighbours": [
+    "2026-07-19",
+    "2026-07-26",
+    "2026-08-09",
+    "2026-08-16"
+   ]
+  },
+  {
+   "station": 3139,
+   "date": "2026-07-31",
+   "action": "lift",
+   "event": "pentaport day 1",
+   "family": "pentaport_d1",
+   "comparable_events": 1,
+   "matched_by": "family",
+   "hours": 13,
+   "max_lift": 3.717821638484857,
+   "mean_change": 1.0363707573401193
+  },
+  {
+   "station": 3139,
+   "date": "2026-08-01",
+   "action": "lift",
+   "event": "pentaport day 2",
+   "family": "pentaport_d2",
+   "comparable_events": 1,
+   "matched_by": "family",
+   "hours": 6,
+   "max_lift": 4.091911048071399,
+   "mean_change": 2.1179643655900886
+  },
+  {
+   "station": 3139,
+   "date": "2026-08-02",
+   "action": "lift",
+   "event": "pentaport day 3",
+   "family": "pentaport_d3",
+   "comparable_events": 1,
+   "matched_by": "family",
+   "hours": 10,
+   "max_lift": 3.773326069502728,
+   "mean_change": 1.5389313782247627
+  },
+  {
+   "station": 3209,
+   "date": "2026-09-12",
+   "action": "despike",
+   "hours": 9,
+   "mean_change": -0.10071291047030033,
+   "neighbours": [
+    "2026-08-29",
+    "2026-09-05",
+    "2026-09-19"
+   ]
+  },
+  {
+   "station": 3209,
+   "date": "2026-09-13",
+   "action": "despike",
+   "hours": 10,
+   "mean_change": -0.17880350887680904,
+   "neighbours": [
+    "2026-08-30",
+    "2026-09-06",
+    "2026-09-20",
+    "2026-09-27"
+   ]
+  },
+  {
+   "station": 3209,
+   "date": "2026-10-17",
+   "action": "despike",
+   "hours": 3,
+   "mean_change": -0.26778726212135356,
+   "neighbours": [
+    "2026-10-10",
+    "2026-10-24",
+    "2026-10-31"
+   ]
+  },
+  {
+   "station": 3209,
+   "date": "2026-10-18",
+   "action": "despike",
+   "hours": 3,
+   "mean_change": -0.5088048220123742,
+   "neighbours": [
+    "2026-10-04",
+    "2026-10-11",
+    "2026-10-25"
+   ]
+  },
+  {
+   "station": 3209,
+   "date": "2026-07-11",
+   "action": "lift",
+   "event": "싸이흠뻑쇼 SUMMERSWAG2026 인천",
+   "family": "psy_summer_swag",
+   "comparable_events": 2,
+   "matched_by": "family",
+   "hours": 5,
+   "max_lift": 2.5534371468146015,
+   "mean_change": 1.2372340068757164
+  },
+  {
+   "station": 3210,
+   "date": "2026-09-12",
+   "action": "despike",
+   "hours": 11,
+   "mean_change": -0.09785650956436308,
+   "neighbours": [
+    "2026-08-29",
+    "2026-09-05",
+    "2026-09-19"
+   ]
+  },
+  {
+   "station": 3210,
+   "date": "2026-09-13",
+   "action": "despike",
+   "hours": 11,
+   "mean_change": -0.15472754426410737,
+   "neighbours": [
+    "2026-08-30",
+    "2026-09-06",
+    "2026-09-20",
+    "2026-09-27"
+   ]
+  },
+  {
+   "station": 3210,
+   "date": "2026-10-17",
+   "action": "despike",
+   "hours": 2,
+   "mean_change": -0.35877657941449614,
+   "neighbours": [
+    "2026-10-10",
+    "2026-10-24",
+    "2026-10-31"
+   ]
+  },
+  {
+   "station": 3210,
+   "date": "2026-10-18",
+   "action": "despike",
+   "hours": 3,
+   "mean_change": -0.44480797814622824,
+   "neighbours": [
+    "2026-10-04",
+    "2026-10-11",
+    "2026-10-25"
+   ]
+  },
+  {
+   "station": 3210,
+   "date": "2026-07-11",
+   "action": "lift",
+   "event": "싸이흠뻑쇼 SUMMERSWAG2026 인천",
+   "family": "psy_summer_swag",
+   "comparable_events": 2,
+   "matched_by": "family",
+   "hours": 4,
+   "max_lift": 1.688634598652961,
+   "mean_change": 0.8048096066809274
+  },
+  {
+   "station": 3754,
+   "date": "2026-07-19",
+   "action": "lift",
+   "event": "K리그1 18R 부천 v 서울",
+   "family": "k1_2026",
+   "comparable_events": 8,
+   "matched_by": "family",
+   "hours": 4,
+   "max_lift": 2.6915357320145006,
+   "mean_change": 0.9073718416102048
+  },
+  {
+   "station": 3754,
+   "date": "2026-07-22",
+   "action": "lift",
+   "event": "K리그1 19R 부천 v 안양",
+   "family": "k1_2026",
+   "comparable_events": 8,
+   "matched_by": "family",
+   "hours": 4,
+   "max_lift": 2.6915357320145006,
+   "mean_change": 0.9344326996225376
+  },
+  {
+   "station": 3754,
+   "date": "2026-08-08",
+   "action": "lift",
+   "event": "K리그1 22R 부천 v 광주",
+   "family": "k1_2026",
+   "comparable_events": 8,
+   "matched_by": "family",
+   "hours": 4,
+   "max_lift": 2.6915357320145006,
+   "mean_change": 0.9366251857705852
+  },
+  {
+   "station": 3754,
+   "date": "2026-08-16",
+   "action": "lift",
+   "event": "K리그1 23R 부천 v 전북",
+   "family": "k1_2026",
+   "comparable_events": 8,
+   "matched_by": "family",
+   "hours": 4,
+   "max_lift": 2.6915357320145006,
+   "mean_change": 0.9251240150006499
+  },
+  {
+   "station": 3754,
+   "date": "2026-08-29",
+   "action": "lift",
+   "event": "K리그1 26R 부천 v 안양",
+   "family": "k1_2026",
+   "comparable_events": 8,
+   "matched_by": "family",
+   "hours": 4,
+   "max_lift": 2.6915357320145006,
+   "mean_change": 0.9366251857705852
+  },
+  {
+   "station": 3754,
+   "date": "2026-09-05",
+   "action": "lift",
+   "event": "K리그1 27R 부천 v 대전",
+   "family": "k1_2026",
+   "comparable_events": 8,
+   "matched_by": "family",
+   "hours": 4,
+   "max_lift": 2.6915357320145006,
+   "mean_change": 0.9366251857705852
+  },
+  {
+   "station": 3754,
+   "date": "2026-09-12",
+   "action": "lift",
+   "event": "K리그1 29R 부천 v 제주",
+   "family": "k1_2026",
+   "comparable_events": 8,
+   "matched_by": "family",
+   "hours": 4,
+   "max_lift": 2.6915357320145006,
+   "mean_change": 0.9366251857705852
+  },
+  {
+   "station": 3754,
+   "date": "2026-09-19",
+   "action": "lift",
+   "event": "K리그1 30R 부천 v 김천",
+   "family": "k1_2026",
+   "comparable_events": 8,
+   "matched_by": "family",
+   "hours": 4,
+   "max_lift": 2.6915357320145006,
+   "mean_change": 0.9366251857705852
+  },
+  {
+   "station": 3754,
+   "date": "2026-10-24",
+   "action": "lift",
+   "event": "K리그1 33R 부천 v 광주",
+   "family": "k1_2026",
+   "comparable_events": 8,
+   "matched_by": "family",
+   "hours": 4,
+   "max_lift": 2.6915357320145006,
+   "mean_change": 0.8708838502884497
+  }
+ ],
+ "rows_changed_by_station": {
+  "3127": 2214,
+  "3139": 29,
+  "3209": 30,
+  "3210": 31,
+  "3754": 36
+ },
+ "rows_changed_total": 2340
+}

@@ -1,0 +1,72 @@
+ stage        role     cutoff query_start  query_end  anchors  training_rows  unique_target_rows  repeated_target_excess_rows  repeated_target_excess_fraction  max_target_repetitions  eligible_unique_target_rows  unique_target_coverage  training_cold_start_rows  training_cold_start_fraction  query_rows  query_cold_start_rows  query_cold_start_fraction  query_known_station_count  query_cold_station_count  training_year364_coverage  query_year364_coverage latest_anchor latest_sampled_target_date  last_28_days_sample_rows  last_28_days_sample_fraction  last_28_days_unique_coverage
+fold_1 development 2025-06-26  2025-06-27 2025-10-27        2         220000              156491                        63509                         0.288677                       2                       182376                0.858068                         0                      0.000000      157140                   6588                   0.041924                         68                         3                   0.000000                0.000000    2025-02-23                 2025-06-26                     26851                      0.122050                      0.744252
+fold_2 development 2025-10-27  2025-10-28 2026-02-27        7         219996              167376                        52620                         0.239186                       6                       339516                0.492984                      4444                      0.020200      157194                      0                   0.000000                         71                         0                   0.000000                0.459407    2025-06-26                 2025-10-27                     11983                      0.054469                      0.306422
+fold_3       audit 2026-02-27  2026-02-28 2026-06-30       11         220000              182515                        37485                         0.170386                       5                       496710                0.367448                      1940                      0.008818      157194                      0                   0.000000                         71                         0                   0.077100                0.959121    2025-10-27                 2026-02-27                      5883                      0.026741                      0.160239
+ final  deployment 2026-06-30  2026-07-01 2026-10-31       16         220000              191424                        28576                         0.129891                       5                       653904                0.292740                      1404                      0.006382      157194                      0                   0.000000                         71                         0                   0.342327                1.000000    2026-02-27                 2026-06-30                      5877                      0.026714                      0.158143
+
+OOF known/cold: RMSLE and squared-log error share
+             stage          model segment   rows    rmsle  fraction_of_stage_log_sse
+            fold_1      seasonal7     all 157140 0.463067                   1.000000
+            fold_1      seasonal7   known 150552 0.332486                   0.493923
+            fold_1      seasonal7    cold   6588 1.608862                   0.506077
+            fold_1   weekday_mean     all 157140 0.454483                   1.000000
+            fold_1   weekday_mean   known 150552 0.319884                   0.474624
+            fold_1   weekday_mean    cold   6588 1.608862                   0.525376
+            fold_1 lightgbm_small     all 157140 0.632489                   1.000000
+            fold_1 lightgbm_small   known 150552 0.312737                   0.234236
+            fold_1 lightgbm_small    cold   6588 2.703128                   0.765764
+            fold_1 lightgbm_large     all 157140 0.657958                   1.000000
+            fold_1 lightgbm_large   known 150552 0.309143                   0.211505
+            fold_1 lightgbm_large    cold   6588 2.853409                   0.788495
+            fold_1       catboost     all 157140 0.447682                   1.000000
+            fold_1       catboost   known 150552 0.314442                   0.472652
+            fold_1       catboost    cold   6588 1.587762                   0.527348
+            fold_1        xgboost     all 157140 0.758378                   1.000000
+            fold_1        xgboost   known 150552 0.325888                   0.176915
+            fold_1        xgboost    cold   6588 3.360273                   0.823085
+            fold_1            mlp     all 157140 0.625472                   1.000000
+            fold_1            mlp   known 150552 0.544619                   0.726388
+            fold_1            mlp    cold   6588 1.597873                   0.273612
+            fold_1       ensemble     all 157140 0.393619                   1.000000
+            fold_1       ensemble   known 150552 0.283023                   0.495326
+            fold_1       ensemble    cold   6588 1.365676                   0.504674
+pooled_development      seasonal7     all 314334 0.398092                   1.000000
+pooled_development      seasonal7   known 307746 0.326279                   0.657679
+pooled_development      seasonal7    cold   6588 1.608862                   0.342321
+pooled_development      seasonal7  fold_1 157140 0.463067                   0.676421
+pooled_development      seasonal7  fold_2 157194 0.320222                   0.323579
+pooled_development   weekday_mean     all 314334 0.389414                   1.000000
+pooled_development   weekday_mean   known 307746 0.315401                   0.642252
+pooled_development   weekday_mean    cold   6588 1.608862                   0.357748
+pooled_development   weekday_mean  fold_1 157140 0.454483                   0.680938
+pooled_development   weekday_mean  fold_2 157194 0.311047                   0.319062
+pooled_development lightgbm_small     all 314334 0.475137                   1.000000
+pooled_development lightgbm_small   known 307746 0.272337                   0.321645
+pooled_development lightgbm_small    cold   6588 2.703128                   0.678355
+pooled_development lightgbm_small  fold_1 157140 0.632489                   0.885854
+pooled_development lightgbm_small  fold_2 157194 0.227001                   0.114146
+pooled_development lightgbm_large     all 314334 0.491465                   1.000000
+pooled_development lightgbm_large   known 307746 0.269095                   0.293512
+pooled_development lightgbm_large    cold   6588 2.853409                   0.706488
+pooled_development lightgbm_large  fold_1 157140 0.657958                   0.895996
+pooled_development lightgbm_large  fold_2 157194 0.224128                   0.104004
+pooled_development       catboost     all 314334 0.352903                   1.000000
+pooled_development       catboost   known 307746 0.270628                   0.575751
+pooled_development       catboost    cold   6588 1.587762                   0.424249
+pooled_development       catboost  fold_1 157140 0.447682                   0.804496
+pooled_development       catboost  fold_2 157194 0.220654                   0.195504
+pooled_development        xgboost     all 314334 0.562404                   1.000000
+pooled_development        xgboost   known 307746 0.285221                   0.251806
+pooled_development        xgboost    cold   6588 3.360273                   0.748194
+pooled_development        xgboost  fold_1 157140 0.758378                   0.909012
+pooled_development        xgboost  fold_2 157194 0.239894                   0.090988
+pooled_development            mlp     all 314334 0.578145                   1.000000
+pooled_development            mlp   known 307746 0.535491                   0.839907
+pooled_development            mlp    cold   6588 1.597873                   0.160093
+pooled_development            mlp  fold_1 157140 0.625472                   0.585110
+pooled_development            mlp  fold_2 157194 0.526600                   0.414890
+pooled_development       ensemble     all 314334 0.324615                   1.000000
+pooled_development       ensemble   known 307746 0.260201                   0.629045
+pooled_development       ensemble    cold   6588 1.365676                   0.370955
+pooled_development       ensemble  fold_1 157140 0.393619                   0.735039
+pooled_development       ensemble  fold_2 157194 0.236286                   0.264961

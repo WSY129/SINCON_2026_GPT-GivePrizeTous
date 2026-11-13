@@ -1,0 +1,35 @@
+{
+  "observed_at": "2026-11-11T23:06:46.401929",
+  "processes": [
+    {
+      "pid": 18572,
+      "ppid": 18561,
+      "rss_mib": 52.671875,
+      "cpu_percent": 0.0,
+      "command": "/Users/hongtaeyang/Desktop/SINCON/.venv/bin/python -u -m src.pipeline v2 run"
+    },
+    {
+      "pid": 19890,
+      "ppid": 18572,
+      "rss_mib": 1254.171875,
+      "cpu_percent": 20.0,
+      "command": "/Users/hongtaeyang/Desktop/SINCON/.venv/bin/python -m src.pipeline_v2 worker --config /Users/hongtaeyang/Desktop/SINCON/configs/ensemble_v2.json --cache /Users/hongtaeyang/Desktop/SINCON/outputs/ensemble_v2/final/matrix.joblib --destination /Users/hongtaeyang/Desktop/SINCON/outputs/ensemble_v2/final/tabm/2027 --model tabm --seed 2027 --iterations 13"
+    },
+    {
+      "pid": 19908,
+      "ppid": 18572,
+      "rss_mib": 2645.78125,
+      "cpu_percent": 382.7,
+      "command": "/Users/hongtaeyang/Desktop/SINCON/.venv/bin/python -m src.pipeline_v2 worker --config /Users/hongtaeyang/Desktop/SINCON/configs/ensemble_v2.json --cache /Users/hongtaeyang/Desktop/SINCON/outputs/ensemble_v2/final/matrix.joblib --destination /Users/hongtaeyang/Desktop/SINCON/outputs/ensemble_v2/final/catboost/2026 --model catboost --seed 2026 --iterations 3169"
+    },
+    {
+      "pid": 19911,
+      "ppid": 18572,
+      "rss_mib": 2550.390625,
+      "cpu_percent": 384.1,
+      "command": "/Users/hongtaeyang/Desktop/SINCON/.venv/bin/python -m src.pipeline_v2 worker --config /Users/hongtaeyang/Desktop/SINCON/configs/ensemble_v2.json --cache /Users/hongtaeyang/Desktop/SINCON/outputs/ensemble_v2/final/matrix.joblib --destination /Users/hongtaeyang/Desktop/SINCON/outputs/ensemble_v2/final/catboost/2027 --model catboost --seed 2027 --iterations 3169"
+    }
+  ],
+  "sum_rss_mib": 6503.015625,
+  "note": "One live snapshot, not peak RAM; shared pages can be counted more than once."
+}

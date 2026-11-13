@@ -1,0 +1,19 @@
+{
+ "n_train": 1762560,
+ "landmarks": 4096,
+ "gamma_laplace": 0.04909573867917061,
+ "gamma_rbf": 0.02807348221540451,
+ "valid_rmsle": {
+  "0.0001": 0.28865,
+  "0.001": 0.28628,
+  "0.01": 0.28628,
+  "0.1": 0.28616
+ },
+ "model": "rkhs",
+ "fold": "summer25",
+ "seed": 2026,
+ "seconds": 63.0,
+ "kind": "rkhs",
+ "variant": "",
+ "features": 45
+}

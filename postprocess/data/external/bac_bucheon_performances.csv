@@ -1,0 +1,650 @@
+start_date,end_date,title,hall,production_type,genre_id,url
+2023-05-04,2023-05-04,윌슨 응 & 필하모니코리아,콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/252802
+2023-05-19,2023-05-19,부천아트센터 개관공연 : BAC CONNECTED,콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/252708
+2023-05-19,2023-05-20,현(呟) : 울림 이탈리아 크레모나 현대악기,갤러리,기획,27231,https://www.bac.or.kr/product/performance/252766
+2023-05-20,2023-05-20,필리프 헤레베허 & 샹젤리제 오케스트라,콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/252709
+2023-05-25,2023-05-25,"부천시립합창단 '멘델스존, 사도 바울'",콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252733
+2023-05-25,2023-07-16,PRISM,갤러리,기획,27231,https://www.bac.or.kr/product/performance/252767
+2023-05-28,2023-05-28,에머슨 스트링 콰르텟 : LAST CONCERT,콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/252710
+2023-05-28,2023-05-28,Meet the Masters - 에머슨 콰르텟,소공연장,기타,27234,https://www.bac.or.kr/product/performance/252721
+2023-06-09,2023-06-09,부천필하모닉오케스트라 '어린이를 위한 음악놀이터Ⅰ',콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252734
+2023-06-13,2023-06-13,장한나 & 빈 심포니 오케스트라 [브루스 리우],콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/252711
+2023-06-15,2023-06-15,부천시립합창단 '아침의 콘서트 : 오르간과 합창음악',콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252735
+2023-06-17,2023-06-17,베르네-메클러 오르간 듀오 리사이틀,콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/252712
+2023-06-23,2023-06-23,부천필하모닉오케스트라 '리추얼 라흐마니노프 Ⅰ',콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252737
+2023-06-25,2023-06-25,요엘 레비 & KBS교향악단 [기돈 크레머],콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/252713
+2023-06-29,2023-06-29,부천시립합창단 '포레 레퀴엠',콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252738
+2023-06-30,2023-07-01,BAC 마이크로오페라 <귀족되기 대작전>,소공연장,기획,20491,https://www.bac.or.kr/product/performance/252716
+2023-06-30,2023-06-30,부천필하모닉오케스트라 '영화음악 콘서트',콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252741
+2023-07-08,2023-07-08,조수미 & 베를린필 12 첼리스트,콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/252714
+2023-07-09,2023-07-09,조성진 피아노 리사이틀,콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/252715
+2023-07-14,2023-07-14,부천필하모닉오케스트라 '해설음악회Ⅲ : 낭만주의 i',콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252739
+2023-07-15,2023-07-15,"김사월 그리고, 아마도이자람밴드",소공연장,기획,20486,https://www.bac.or.kr/product/performance/252717
+2023-07-20,2023-07-20,부천시립합창단 '판타스틱 코랄 파티',콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252740
+2023-07-22,2023-07-22,경기시나위오케스트라 : 시나위 일렉트로니카 – Frontier,소공연장,기획,20490,https://www.bac.or.kr/product/performance/252718
+2023-07-26,2023-08-13,괴물세계의 오늘,갤러리,기획,27231,https://www.bac.or.kr/product/performance/252768
+2023-07-28,2023-07-28,"부천필하모닉오케스트라 '말러, 부활'",콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252742
+2023-07-29,2023-07-30,BAC 가족 인형극 연희공방 음마갱깽 <괴물도감>,소공연장,기획,20488,https://www.bac.or.kr/product/performance/252719
+2023-08-18,2023-08-18,부천필하모닉오케스트라 광복절 기념 특별음악회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252743
+2023-08-24,2023-08-24,부천시립합창단 '교류음악회 : 아름다운 나라',콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252745
+2023-08-25,2023-08-25,부천필하모닉오케스트라 '만화 OST 콘서트',콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252744
+2023-08-31,2023-08-31,"BAC 살롱 콘서트: 김겨울의 요즘, 클래식Ⅰ 퍼커셔니스트 박혜지",소공연장,기획,20484,https://www.bac.or.kr/product/performance/252817
+2023-09-01,2023-09-01,부천필하모닉오케스트라 '파이프-오르간',콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252746
+2023-09-03,2023-09-03,신카이 마코토 영화음악 콘서트,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252833
+2023-09-07,2023-09-07,부천시립합창단 '아침의 콘서트 : 미술관 음악회',콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252747
+2023-09-07,2023-09-07,부천시민과 함께하는 '만원의 행복' 가을 음악회,콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/252841
+2023-09-09,2023-09-09,BAC 영 프론티어: 원더우먼Ⅰ 퍼커셔니스트 공성연,소공연장,기획,20484,https://www.bac.or.kr/product/performance/252818
+2023-09-13,2023-09-13,부천필하모닉오케스트라 '아침의 콘서트 : 클래식 음악동화',콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252748
+2023-09-13,2023-09-13,정담온 클라리넷 독주회,소공연장,대관,20484,https://www.bac.or.kr/product/performance/252842
+2023-09-14,2023-09-14,음악오늘 열여덟 번째 이야기 <퍼커션 듀오 '영'의 작은 타악>,소공연장,대관,20484,https://www.bac.or.kr/product/performance/252840
+2023-09-20,2023-09-20,도이치방송오케스트라  With 손열음,콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/252825
+2023-09-21,2023-09-21,"BAC 살롱 콘서트: 김겨울의 요즘, 클래식Ⅱ 바이올리니스트 대니구",소공연장,기획,20484,https://www.bac.or.kr/product/performance/252819
+2023-09-22,2023-09-22,부천필하모닉오케스트라 '리추얼 라흐마니노프Ⅲ',콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252749
+2023-09-23,2023-09-23,퀸 엘리자베스 콩쿠르 위너스 콘서트,콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/252828
+2023-09-24,2023-09-24,groove& 재료시리즈Ⅰ: 금(金),소공연장,대관,20490,https://www.bac.or.kr/product/performance/252845
+2023-09-27,2023-09-27,임성훈 바순 독주회,소공연장,대관,20484,https://www.bac.or.kr/product/performance/252834
+2023-10-04,2023-10-04,BAC 아카데미 「BAC-ADEMY 알쓸클잡」 1편,소공연장,기획,27234,https://www.bac.or.kr/product/performance/252852
+2023-10-06,2023-10-06,부천시립예술단 '시민의날 경축음악회 : 가을의 여행',야외 잔디광장,대관,20484,https://www.bac.or.kr/product/performance/252750
+2023-10-06,2023-10-06,"런던 필하모닉 [지휘 | 에드워드 가드너, 협연 | 크리스티안 테츨라프]",콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/252827
+2023-10-07,2023-10-07,추리밴드 '좋은 말씀 전하러왔습니다!',소공연장,대관,20490,https://www.bac.or.kr/product/performance/252863
+2023-10-11,2023-10-11,BAC 특별기획 | MODA 탱고 트리오 「Histoire du Tango」,콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/252853
+2023-10-11,2023-10-11,BAC 아카데미 「클래식 공연장 이야기」,소공연장,기획,27234,https://www.bac.or.kr/product/performance/252848
+2023-10-12,2023-10-12,숭실OB남성합창단 창단 50주년 기념 연주회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252835
+2023-10-13,2023-10-13,부천필하모닉오케스트라 '해설음악회Ⅳ : 낭만주의ⅱ',콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252751
+2023-10-14,2023-10-14,BAC 파크콘서트 '피치업!',콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/252850
+2023-10-14,2023-10-14,Joy of Autumn,소공연장,대관,20484,https://www.bac.or.kr/product/performance/252858
+2023-10-19,2023-10-19,부천시립합창단 '부천시민합창페스티벌',콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252752
+2023-10-21,2023-10-21,부천필하모닉오케스트라와 함께하는 디즈니 100주년 애니메이션 OST 콘서트,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252753
+2023-10-21,2023-10-21,BAC 영 프론티어: 원더우먼Ⅱ 비올리스트 박하양,소공연장,기획,20484,https://www.bac.or.kr/product/performance/252822
+2023-10-22,2023-10-22,제52회 (사)한국소년소녀합창제,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252867
+2023-10-24,2023-10-24,자유를 향한 소리,소공연장,대관,20484,https://www.bac.or.kr/product/performance/252861
+2023-10-25,2023-10-25,BAC 아카데미 「BAC-ADEMY 알쓸클잡」 2편,소공연장,기획,27234,https://www.bac.or.kr/product/performance/252851
+2023-10-26,2023-10-26,"BAC 살롱 콘서트: 김겨울의 요즘, 클래식Ⅲ 피아니스트 김준희",소공연장,기획,20484,https://www.bac.or.kr/product/performance/252820
+2023-10-27,2023-10-27,KBS교향악단 제795회 정기연주회 - 부천,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252838
+2023-10-28,2023-10-28,2인 2색 콘서트,소공연장,대관,20484,https://www.bac.or.kr/product/performance/252862
+2023-11-02,2023-11-02,부천필하모닉오케스트라 '어린이를 위한 음악놀이터Ⅱ',콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252754
+2023-11-03,2023-11-05,"[어텀바로크 2023 : 비바헨델] ""아르카디아의 사랑"" 시즌 2",소공연장,대관,20484,https://www.bac.or.kr/product/performance/252849
+2023-11-03,2023-11-03,부천아트센터와 벽산문화재단이 함께하는 The Next Classic,콘서트홀,공동기획,20484,https://www.bac.or.kr/product/performance/252854
+2023-11-04,2023-11-10,집의 계절,갤러리,대관,27231,https://www.bac.or.kr/product/performance/252875
+2023-11-09,2023-11-09,제18회 부천아버지합창단 정기연주회,소공연장,대관,20484,https://www.bac.or.kr/product/performance/252874
+2023-11-10,2023-11-10,부천필하모닉오케스트라 '브람스와 생상스',콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252755
+2023-11-16,2023-11-16,멸종위기 동물의 사육제,소공연장,대관,20484,https://www.bac.or.kr/product/performance/252876
+2023-11-17,2023-11-17,부천필하모닉오케스트라 '해설음악회Ⅴ : 오페라와 오케스트라',콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252756
+2023-11-17,2023-11-26,"2023청년장애인웹툰아카데미 웹툰전시회 ""상상꿈툰""",갤러리,대관,27231,https://www.bac.or.kr/product/performance/252868
+2023-11-18,2023-11-18,소프라노 박혜상 & 테너 손지훈  <The Voice> ,콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/252826
+2023-11-21,2023-11-21,STU심포니콰이어 40주년 기념 정기연주회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252859
+2023-11-23,2023-11-23,부천시립합창단 '신예지휘자 연주회',콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252757
+2023-11-24,2023-11-25,R.U.R 인류를 삭제하다,소공연장,대관,20482,https://www.bac.or.kr/product/performance/252878
+2023-11-26,2023-11-26,더 시네마 & 클래식 with 또모 Vol. 4 - 부천,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252869
+2023-11-30,2023-11-30,부천필하모닉오케스트라 '콘체르토 vs 콘체르토',콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252758
+2023-11-30,2023-11-30,"BAC 살롱 콘서트: 김겨울의 요즘, 클래식Ⅳ 클래식 기타리스트 박규희",소공연장,기획,20484,https://www.bac.or.kr/product/performance/252821
+2023-12-02,2023-12-02,장은희 독주회 and 6 Cello Ensemble,소공연장,대관,20484,https://www.bac.or.kr/product/performance/252873
+2023-12-07,2023-12-07,부천시립합창단 '아침의 콘서트 : 오페라 아리아와 합창',콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252759
+2023-12-09,2023-12-09,BAC 영 프론티어: 원더우먼Ⅲ 첼리스트 김가은,소공연장,기획,20484,https://www.bac.or.kr/product/performance/252823
+2023-12-09,2023-12-09,2023 부천마스터코러스 제11회 정기연주회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252877
+2023-12-13,2023-12-13,바리톤 정 경의 오페라마 <정신나간 작곡가와 키스하다>,소공연장,기획,20484,https://www.bac.or.kr/product/performance/252879
+2023-12-14,2023-12-14,부천필하모닉오케스트라 '협주곡의 밤',콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252760
+2023-12-14,2023-12-17,HAPPYFINEART!,갤러리,대관,27231,https://www.bac.or.kr/product/performance/252905
+2023-12-15,2023-12-16,오 헨리의 겨울,소공연장,대관,20484,https://www.bac.or.kr/product/performance/252872
+2023-12-16,2023-12-16,BAC 크리스마스 기획공연: 체코 보니푸에리 소년합창단,콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/252866
+2023-12-20,2023-12-20,BAC 영 프론티어: 원더우먼Ⅳ 바수니스트 김민주,소공연장,기획,20484,https://www.bac.or.kr/product/performance/252814
+2023-12-21,2023-12-21,"부천시립합창단 '송년음악회 : 바흐, 크리스마스 오라토리오'",콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252761
+2023-12-22,2023-12-22,한양 필하모닉 오케스트라 정기연주회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252911
+2023-12-22,2023-12-22,BAC 크리스마스 가족공연 <행복의 파랑새>,소공연장,기획,20484,https://www.bac.or.kr/product/performance/252871
+2023-12-23,2023-12-23,Harmonieren mit : Jazz(1),소공연장,대관,20484,https://www.bac.or.kr/product/performance/252884
+2023-12-24,2023-12-24,히사이시 조 영화음악 콘서트 2023_부천,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252846
+2023-12-27,2023-12-27,"부천필하모닉오케스트라 '송년음악회 : 베토벤, 합창'",콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252762
+2023-12-28,2023-12-28,오르디앙상블 연주시리즈 Ⅳ 'Music Sensation',콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252882
+2023-12-28,2023-12-28,클라비어라움 송년음악회 (Klavierraum 송년음악회),소공연장,대관,20484,https://www.bac.or.kr/product/performance/252933
+2023-12-29,2023-12-29,제6회 여로 창작 가곡의 밤,소공연장,대관,20484,https://www.bac.or.kr/product/performance/252883
+2023-12-31,2023-12-31,2023 제야음악회,콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/252888
+2024-01-13,2024-01-13,AOU 2024 신년연주회 'Finale',콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252943
+2024-01-14,2024-01-14,아르테늄 브라스밴드 마스터즈 시리즈 with 필립 콥&데이비드 차일즈,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252881
+2024-01-19,2024-01-19,부천필하모닉오케스트라 신년음악회 '신세계로부터',콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252913
+2024-01-20,2024-01-20,2024 한국대학생연합오케스트라 기획공연 <KUCO Soloists>,소공연장,대관,20484,https://www.bac.or.kr/product/performance/252880
+2024-01-25,2024-01-25,부천시립합창단 신년음악회 '바로크의 영광',콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252885
+2024-02-13,2024-02-13,BAC 프라임클래식 : 바르샤바 필하모닉 오케스트라,콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/252942
+2024-02-17,2024-02-17,BAC 챔버 뮤직 Ⅰ: 피아니스트 김용배와 함께하는 2월의 실내악,콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/252944
+2024-02-24,2024-02-24,제23회 소사필하모닉오케스트라 정기연주회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252965
+2024-02-28,2024-02-28,부천필하모닉오케스트라 '홍석원과 브루크너',콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252886
+2024-02-29,2024-02-29,부천시립합창단 어린이 음악회 '우리 함께 가요',콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252887
+2024-03-07,2024-03-07,BAC 특강 I 「클래식 공연장 이야기」,소공연장,기획,27234,https://www.bac.or.kr/product/performance/252948
+2024-03-07,2024-03-07,"부천필하모닉오케스트라 해설음악회Ⅰ : 음악의 아버지, 바흐",콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252904
+2024-03-09,2024-03-09,BAC 영 프론티어 : 원더우먼Ⅰ 리수스 콰르텟,소공연장,기획,20484,https://www.bac.or.kr/product/performance/252951
+2024-03-12,2024-03-12,부천시립합창단 아침의 콘서트 : 영화와 합창음악,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252903
+2024-03-22,2024-03-22,부천필하모닉오케스트라 '최수열과 브람스',콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252901
+2024-03-23,2024-03-23,BAC 시어트리컬Ⅰ：체코 브르노 국립 주니어 발레단 NdB2,소공연장,기획,20483,https://www.bac.or.kr/product/performance/252964
+2024-03-27,2024-11-13,BAC 아카데미 「BAC Music Society」,소공연장,기획,20484,https://www.bac.or.kr/product/performance/252947
+2024-03-28,2024-03-28,부천시립합창단 신춘음악회 '합창으로 듣는 시인의 사랑',콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252900
+2024-04-02,2024-06-25,2024 부천아트센터 'BAC TOUR',콘서트홀,기획,20489,https://www.bac.or.kr/product/performance/252978
+2024-04-04,2024-04-04,부천필하모닉오케스트라 '아드리앙 페뤼숑과 드뷔시',콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252899
+2024-04-05,2024-04-05,BAC 프라임클래식 : 다닐 트리포노프 피아노 리사이틀,콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/252934
+2024-04-09,2024-04-09,부천아트센터 마티네 콘서트 : 말러 No.5,콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/252969
+2024-04-12,2024-04-12,부천필하모닉오케스트라 아침의 콘서트 : 올림포스의 음악축제,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252898
+2024-04-13,2024-04-13,BAC 영 프론티어 : 원더우먼Ⅱ 오르가니스트 노선경,콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/252952
+2024-04-13,2024-04-13,유하현 피아노 독주회,소공연장,대관,20484,https://www.bac.or.kr/product/performance/252980
+2024-04-14,2024-04-14,진영훈 X 배진우 듀오 콘서트,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252967
+2024-04-14,2024-04-14,바이올리니스트 김계희 & 피아니스트 조지 할리오노 듀오 리사이틀,소공연장,대관,20484,https://www.bac.or.kr/product/performance/252968
+2024-04-16,2024-04-18,김미정 개인전-lovely peach,갤러리,대관,27231,https://www.bac.or.kr/product/performance/252984
+2024-04-20,2024-04-20,지브리 & 히사이시 조 : 디오케스트라 - 부천,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252958
+2024-04-23,2024-04-23,BAC 챔버 뮤직 Ⅱ: 텔 아비브 챔버 앙상블,콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/252946
+2024-04-25,2024-04-25,부천시립합창단 '너에게로 가는 길',콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252897
+2024-04-26,2024-04-26,"부천필하모닉오케스트라 해설음악회Ⅱ : 음악의 어머니, 헨델",콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252896
+2024-04-27,2024-04-27,BAC 가족음악회 : 프랑스 메츠 브라스 앙상블,콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/252963
+2024-05-02,2024-05-02,부천시립예술단 복사골 예술제 경축음악회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252979
+2024-05-09,2024-05-09,부천시립합창단 아침의 콘서트 : 오르간과 합창음악,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252895
+2024-05-11,2024-05-11,BAC 예술놀이「프렌쥬 클래식 사파리」,소공연장,기획,20484,https://www.bac.or.kr/product/performance/252957
+2024-05-12,2024-05-12,히사이시 조 영화음악 콘서트 2024_부천,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252956
+2024-05-16,2024-05-16,부천아트센터 개관 1주년 페스티벌 : 오케스트라 디 오리지널 [RE : wake],콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/252973
+2024-05-17,2024-05-17,부천아트센터 개관 1주년 페스티벌 : 경기필하모닉오케스트라 특별 연주회,콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/252970
+2024-05-17,2024-05-17,부천아트센터 개관 1주년 페스티벌  : BAC 예술 포럼,소공연장,기획,20489,https://www.bac.or.kr/product/performance/252976
+2024-05-17,2024-05-18,부천아트센터 개관 1주년 페스티벌 : 현(呟):울림Ⅱ,갤러리,기획,27231,https://www.bac.or.kr/product/performance/252986
+2024-05-18,2024-05-18,부천아트센터 개관 1주년 페스티벌  : 백건우 피아노 리사이틀,콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/252971
+2024-05-19,2024-05-19,부천아트센터 개관 1주년 페스티벌 : 부천필하모닉오케스트라 특별 연주회,콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/252972
+2024-05-24,2024-05-24,부천필하모닉오케스트라 '송유진과 차이콥스키',콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252894
+2024-05-25,2024-05-25,제53회 한국소년소녀합창제,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252987
+2024-05-30,2024-06-06,제3회 김정회 개인전,갤러리,대관,27231,https://www.bac.or.kr/product/performance/252996
+2024-05-31,2024-06-01,부천시립합창단 가족합창뮤지컬 ‘선물’,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252893
+2024-06-01,2024-06-02,마술사 최형배의 오리지널 과학마술콘서트 공룡편 - 부천,소공연장,대관,20487,https://www.bac.or.kr/product/performance/252955
+2024-06-02,2024-06-02,BAC 오르간 : 벤 판 우스텐 오르간 리사이틀,콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/252977
+2024-06-05,2024-06-05,부천필하모닉오케스트라 어린이를 위한 음악놀이터I,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252892
+2024-06-13,2024-06-13,부천필하모닉오케스트라 아침의 콘서트 : A long time ago,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252891
+2024-06-15,2024-06-15,BAC 챔버 뮤직 Ⅲ: 피아니스트 김용배와 함께하는 6월의 실내악 ,콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/252945
+2024-06-17,2024-06-17,BAC 프라임클래식 : 임윤찬 피아노 리사이틀,콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/252985
+2024-06-20,2024-06-20,"부천시립합창단 '모차르트, 레퀴엠'",콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252890
+2024-06-22,2024-06-22,BAC 영 프론티어 : 원더우먼Ⅲ 소프라노 한예원,소공연장,기획,20484,https://www.bac.or.kr/product/performance/252953
+2024-06-22,2024-06-22,한국오라토리오싱어즈 제37회 정기연주회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252990
+2024-06-23,2024-06-23,2024 황희찬 팬미팅,소공연장,대관,27233,https://www.bac.or.kr/product/performance/253004
+2024-06-25,2024-07-02,HAPPYFINEART!,갤러리,대관,27231,https://www.bac.or.kr/product/performance/252989
+2024-06-27,2024-06-27,"부천필하모닉오케스트라 해설음악회Ⅲ : 교향곡의 아버지, 하이든",콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252889
+2024-06-29,2024-06-29,"일리야 라쉬코프스키, 라흐마니노프 3개의 피아노 협주곡",콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252966
+2024-06-29,2024-06-29,일 피노 콰이어 정기연주회(제2회),소공연장,대관,20484,https://www.bac.or.kr/product/performance/252997
+2024-06-30,2024-06-30,프로젝트필하모닉 '비창',콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252995
+2024-07-03,2024-07-03,부천필하모닉오케스트라 BIFAN 영화음악 콘서트,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252914
+2024-07-04,2024-07-04,제28회 부천국제판타스틱영화제 개막식,콘서트홀,대관,27233,https://www.bac.or.kr/product/performance/253006
+2024-07-05,2024-07-07,BIFAN+ AI 국제 콘퍼런스,소공연장,대관,27233,https://www.bac.or.kr/product/performance/253001
+2024-07-10,2024-07-10,나눔꽃챔버가 전하는 희망의 메세지<사랑의 음악편지>,소공연장,대관,20484,https://www.bac.or.kr/product/performance/252999
+2024-07-11,2024-07-11,부천필하모닉오케스트라 '이승원과 슈베르트',콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252915
+2024-07-13,2024-07-13,BAC 프라임클래식 : 손민수 베토벤 피아노 콘체르토 전곡 시리즈 Ⅰ ,콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/252936
+2024-07-13,2024-07-13,지음지기 브라스 콰이어 아홉 번째 이야기,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253005
+2024-07-14,2024-07-14,BAC 프라임클래식 : 손민수 베토벤 피아노 콘체르토 전곡 시리즈 Ⅱ,콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/252937
+2024-07-16,2024-07-16,2024 영아티스트 콘서트,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253003
+2024-07-17,2024-07-17,제21회 경기예술고등학교 정기연주회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253008
+2024-07-18,2024-07-18,부천시립합창단 세상의 모든 음악 '시원한 여름음악회',콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252916
+2024-07-20,2024-07-20,BAC 영 프론티어 : 원더우먼Ⅳ 오보이스트 송현정,소공연장,기획,20484,https://www.bac.or.kr/product/performance/252954
+2024-07-20,2024-07-20,디즈니&픽사 OST 콘서트,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253000
+2024-07-23,2024-07-23,BAC 프라임클래식 : 프랑스 오베르뉴론알프 국립 오케스트라 ,콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/252935
+2024-07-26,2024-07-26,부천필하모닉오케스트라 '서진과 멘델스존',콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252917
+2024-07-27,2024-07-28,BAC 시어트리컬 Ⅱ: 와그르르르 수궁가,소공연장,기획,20488,https://www.bac.or.kr/product/performance/253002
+2024-07-28,2024-07-28,소프라노 니노 마차이제 내한 리사이틀,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253017
+2024-08-13,2024-08-13,음악을 들으면 돈이 보인다 :음악경제학,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253031
+2024-08-14,2024-08-14,테너 마이클 스파이어스 리사이틀,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253020
+2024-08-17,2024-08-17,바리테너 콘서트 마이클 스파이어스,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253023
+2024-08-20,2024-11-26,2024 부천아트센터 'BAC TOUR',콘서트홀,기획,20489,https://www.bac.or.kr/product/performance/253026
+2024-08-24,2024-08-24,"""듀오 이랑"" 피아노 리사이틀",소공연장,대관,20484,https://www.bac.or.kr/product/performance/253025
+2024-08-24,2024-08-24,월드닥터스오케스트라 월드투어 콘서트,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253036
+2024-08-25,2024-08-25,썸머 지브리 & 디즈니 & 스즈메의 문단속 영화음악 콘서트,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252988
+2024-08-25,2024-08-25,콘서트 오페라 마술피리,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253045
+2024-08-29,2024-08-29,오르디앙상블 연주시리즈 VI < Firebird >,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253030
+2024-08-31,2024-08-31,MDOP 제84회 정기연주회 'ILLUSION',콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253040
+2024-09-01,2024-09-01,BAC 프라임클래식 : 클라라 주미 강 바이올린 리사이틀,콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/253010
+2024-09-07,2024-09-07,Bella Musica Piano Ensemble Concert,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253039
+2024-09-07,2024-09-07,BAC 파크콘서트 - 클래식 온에어,,기획,20484,https://www.bac.or.kr/product/performance/253046
+2024-09-10,2024-09-10,다니엘 로자코비치 바이올린 리사이틀,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253022
+2024-09-11,2024-09-11,부천시립합창단 아침의 콘서트 : 시와 합창 - 한국 가곡,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252919
+2024-09-12,2024-09-12,"부천필하모닉오케스트라 해설음악회Ⅳ : 음악의 신동, 모차르트",콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252932
+2024-09-12,2024-09-12,"BAC 살롱 콘서트: 브랜든 최의 요즘, 클래식Ⅰ 카운터테너 이동규",소공연장,기획,20484,https://www.bac.or.kr/product/performance/253034
+2024-09-14,2024-09-14,제41회 인하오케스트라 정기연주회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253037
+2024-09-20,2024-09-20,"부천세종병원 개원 42주년 기념 음악회 ""사랑YES 희망YES""",콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253053
+2024-09-21,2024-09-21,음악극 비르투오소 인 클래식,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253048
+2024-09-21,2024-09-21,2024 제3회 한국 스타인웨이 아마추어 콩쿠르 입상자 연주회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253062
+2024-09-22,2024-09-22,최송하 바이올린 리사이틀,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253054
+2024-09-24,2024-09-24,BAC 프라임클래식 : 양인모 & 베를린 바로크 솔리스텐,콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/253011
+2024-09-27,2024-09-27,부천필하모닉오케스트라 '김건과 시벨리우스',콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252920
+2024-09-28,2024-09-28,2024 Harz 창단연주회 'For strings',소공연장,대관,20484,https://www.bac.or.kr/product/performance/253055
+2024-09-28,2024-09-28,제 6회 더싱어즈 정기연주회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253059
+2024-09-29,2024-09-29,"박은경 피아노 독주회 ""피아니스트 박은경의 피아노 작곡가들 시리즈8-라흐마니노프""",소공연장,대관,20484,https://www.bac.or.kr/product/performance/253050
+2024-10-01,2024-10-01,한패 챔버 오케스트라 <치유의 숲>,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253057
+2024-10-02,2024-10-02,부천시립예술단 BICOF와 함께하는 부천시민의날 경축음악회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252921
+2024-10-02,2024-10-06,장애인 문화예술 역량강화 작품 전시회,갤러리,대관,27231,https://www.bac.or.kr/product/performance/253056
+2024-10-04,2024-10-04,크누아심포니오케스트라 연주회,콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/253061
+2024-10-05,2024-10-05,BAC 챔버 뮤직 Ⅳ : 피아니스트 김용배와 함께하는 10월의 실내악,콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/253041
+2024-10-10,2024-10-10,"BAC 살롱 콘서트: 브랜든 최의 요즘, 클래식Ⅱ 색소포니스트 브랜든 최",소공연장,기획,20484,https://www.bac.or.kr/product/performance/253032
+2024-10-11,2024-10-11,창작오페라 '외투' 쇼케이스,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253067
+2024-10-11,2024-10-11,부천필하모닉오케스트라 'Concerto vs Concerto',콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252922
+2024-10-12,2024-10-12,페스티벌 앙상블 가우디움 제19회 정기연주회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253063
+2024-10-12,2024-10-12,천년만세_거문고자리,소공연장,대관,20490,https://www.bac.or.kr/product/performance/253064
+2024-10-13,2024-10-13,지브리 OST 콘서트 : 디 오케스트라 앙코르,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253029
+2024-10-13,2024-10-13,리여석기타오케스트라 제53회 정기연주회,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253043
+2024-10-16,2024-10-16,부천시립합창단 부천시민합창페스티벌,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252923
+2024-10-18,2024-10-18,부천필하모닉오케스트라 '세바스티앙 랑-레싱과 차이콥스키',콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252924
+2024-10-19,2024-10-19,어쿠스틱 신드롬,콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/253052
+2024-10-19,2024-10-19,유하현 피아노 독주회-가을의 메타포,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253058
+2024-10-24,2024-10-24,2024 한양대학교 윈드오케스트라 정기연주회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253073
+2024-10-26,2024-10-26,제26회 BIAF 개최 기념 부천필과 신카이 마코토가 함께하는 애니메이션 OST 콘서트,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252925
+2024-10-26,2024-10-26,프레이즈 앙상블 정기연주회,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253065
+2024-10-27,2024-10-27,한스 짐머 & 엔니오 모리꼬네,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253038
+2024-10-31,2024-10-31,"THE JAZZ, 더재즈앰배서더스오케스트라 with 정선아",콘서트홀,기획,20485,https://www.bac.or.kr/product/performance/253051
+2024-11-02,2024-11-02,히사이시 조 영화음악 콘서트 2024_부천 앙코르,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253024
+2024-11-05,2024-11-05,부천콘서트콰이어 25주년 기념음악회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253072
+2024-11-07,2024-11-07,"BAC 살롱 콘서트: 브랜든 최의 요즘, 클래식Ⅲ 피아니스트 윤아인",소공연장,기획,20484,https://www.bac.or.kr/product/performance/253033
+2024-11-07,2024-11-07,서울신학대학교 교회음악과 제40회 심포니콰이어 정기연주회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253071
+2024-11-08,2024-11-08,"2024 카즈미 타테이시 트리오 내한공연-지브리, 재즈를 만나다-(부천)",소공연장,대관,20486,https://www.bac.or.kr/product/performance/253016
+2024-11-09,2024-11-09,서울대학교 졸업생 오케스트라 제12회 정기연주회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253081
+2024-11-10,2024-11-10,2024 윤이상국제음악콩쿠르 입상자 콘서트,콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/253047
+2024-11-12,2024-11-12,BAC 프라임클래식 : 제임스 에네스 바이올린 리사이틀 '베토벤',콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/253012
+2024-11-13,2024-11-13,더원심포니&세르게이 나카리아코프 in Classic Generation,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253066
+2024-11-14,2024-11-14,부천필하모닉오케스트라 '마르틴 덴디벨과 시벨리우스',콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252926
+2024-11-14,2024-11-24,향기를 그리다.,갤러리,대관,27231,https://www.bac.or.kr/product/performance/253083
+2024-11-16,2024-11-16,"가을의 낭만, 목소리로 그리다.",소공연장,대관,20484,https://www.bac.or.kr/product/performance/253068
+2024-11-16,2024-11-16,삼성필하모닉 오케스트라 제19회 정기연주회 - 소아암 어린이돕기 자선음악회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253070
+2024-11-20,2024-11-20,제12회 올키즈스트라 정기연주회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253069
+2024-11-22,2024-11-22,성신 필하모닉 오케스트라 제39회 정기연주회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253085
+2024-11-23,2024-11-23,강수정&백명진 교수 피아노 듀오 리사이틀,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253087
+2024-11-24,2024-11-24,BAC 챔버 뮤직 Ⅴ: All Brahms,콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/253042
+2024-11-27,2024-11-27,서울 코랄 뮤직 페스티벌 기획연주회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253088
+2024-11-28,2024-11-28,부천시립합창단 신예지휘자 연주회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252927
+2024-11-29,2024-11-29,부천필하모닉오케스트라 '가렛 키스트와 차이콥스키',콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252928
+2024-11-29,2024-12-04,청년장애인웹툰아카데미 웹툰전시회 상상꿈툰,갤러리,대관,27231,https://www.bac.or.kr/product/performance/253093
+2024-11-30,2024-12-01,BAC 예술놀이 <푸푸게노! 똥 밟았네?>,소공연장,기획,20491,https://www.bac.or.kr/product/performance/253060
+2024-11-30,2024-11-30,뮤지컬 & 무비 슈퍼콘서트 with 옥주현 & 민우혁,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253075
+2024-12-01,2024-12-01,덴탈코러스 31회 정기연주회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253092
+2024-12-05,2024-12-05,부천필하모닉오케스트라 어린이를 위한 음악놀이터Ⅱ,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252929
+2024-12-05,2024-12-05,"BAC 살롱 콘서트: 브랜든 최의 요즘, 클래식Ⅳ  테너 존노",소공연장,기획,20484,https://www.bac.or.kr/product/performance/253035
+2024-12-07,2024-12-07,BAC 오르간 : 인스피레이션 앙상블 [JAZZ to CLASSIC],콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/253074
+2024-12-08,2024-12-08,크리스마스 지브리&디즈니 with 마블,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253079
+2024-12-10,2024-12-10,제14회 베하필하모닉 송년콘서트 'The Christmas Story',콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253097
+2024-12-12,2024-12-12,청소년을 위한 관악음악여행,콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/253080
+2024-12-13,2024-12-15,BAC 시어트리컬 Ⅲ: 쓰릴 미,소공연장,기획,20487,https://www.bac.or.kr/product/performance/253077
+2024-12-13,2024-12-13,제24회 소사필하모닉오케스트라 정기연주회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253091
+2024-12-14,2024-12-14,고전과 낭만사이 <베토벤 & 차이코프스키 & 라흐마니노프>,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253049
+2024-12-15,2024-12-15,바이올리니스트 이자벨 파우스트 & 일 자르디노 아르모니코,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253086
+2024-12-17,2024-12-17,소프라노 박수진 피아니스트 김진겸 듀오 리사이틀,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253100
+2024-12-18,2024-12-25,신은정 개인전,갤러리,대관,27231,https://www.bac.or.kr/product/performance/253136
+2024-12-19,2024-12-19,"부천시립합창단 송년음악회 '헨델, 메시아'",콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252930
+2024-12-20,2024-12-20,한국대학합창단(The Korale) 제58회 정기연주회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253089
+2024-12-21,2024-12-22,적로 - 이슬의 노래,소공연장,기획,20490,https://www.bac.or.kr/product/performance/253078
+2024-12-21,2024-12-21,BAC 성탄 특별기획 : 유키 구라모토 크리스마스 콘서트,콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/253082
+2024-12-24,2024-12-24,함께하는 뮤지컬 with '위리(wiri)',소공연장,대관,20487,https://www.bac.or.kr/product/performance/253090
+2024-12-27,2024-12-27,"부천필하모닉오케스트라 송년음악회 '베토벤, 합창'",콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/252931
+2024-12-28,2024-12-28,2024 오르디앙상블 송년음악회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253101
+2024-12-28,2024-12-28,제10회 앙상블베르노 정기연주회 Beethoven Symphony X Piano Duo <An die Freude : 환희에 대하여>,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253137
+2024-12-29,2024-12-29,차이콥스키 시리즈: 호두까기 인형과 교향곡 4번,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253103
+2024-12-31,2024-12-31,(공연 취소) 2024 제야음악회,콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/253084
+2025-01-04,2025-01-04,Miracle-a new decade,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253152
+2025-01-16,2025-01-16,부천필하모닉오케스트라 제324회 정기연주회 - 신년음악회 '생상스 오르간',콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253098
+2025-01-18,2025-01-18,Symphony of breeze,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253150
+2025-01-21,2025-06-17,2025 부천아트센터 'BAC TOUR',갤러리,기획,20489,https://www.bac.or.kr/product/performance/253141
+2025-01-23,2025-01-23,부천시립예술단 신년음악회 '사랑의 인사',콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253099
+2025-02-18,2025-02-23,HAPPYFINEART! 꼬마작가들의 전시,갤러리,대관,27231,https://www.bac.or.kr/product/performance/253155
+2025-02-20,2025-02-20,부천시립합창단 어린이 음악회 - '다 잘될 거야',콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253104
+2025-02-22,2025-02-22,BAC 영 프론티어Ⅰ 오르가니스트 박준병,콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/253142
+2025-02-23,2025-02-23,테너 김민석〈그대 있음에〉토크 콘서트,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253156
+2025-02-23,2025-02-23,KUPHIL 제44회 정기연주회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253160
+2025-02-28,2025-02-28,부천필하모닉오케스트라 제325회 정기연주회 - 'Slavic Majesty',콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253105
+2025-03-01,2025-03-01,BAC 프라임클래식 Ⅰ 노부스 콰르텟,콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/253147
+2025-03-06,2025-03-06,부천시립예술단 1234 콘서트 - 부천시립합창단 '악기와 합창음악',콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253106
+2025-03-13,2025-03-13,부천필하모닉오케스트라 해설음악회Ⅰ－ 슈베르트의 고백,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253107
+2025-03-21,2025-03-21,"부천시립합창단 제174회 정기연주회 - 하이든, '천지창조'",콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253108
+2025-03-22,2025-03-22,BAC 영 프론티어Ⅱ 트럼페터 이현준,소공연장,기획,20484,https://www.bac.or.kr/product/performance/253143
+2025-03-23,2025-03-23,트리오 호 창단연주회,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253169
+2025-03-27,2025-11-19,2025 BAC Music Society,소공연장,기획,20484,https://www.bac.or.kr/product/performance/253166
+2025-03-28,2025-03-28,부천시립예술단 1234 콘서트－부천필하모닉오케스트라 '19세기 러시아',콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253109
+2025-03-29,2025-03-29,2025 오케스트라 syncope 창단연주회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253170
+2025-03-29,2025-03-29,센티토클래식과 함께하는 클래식음악 콘서트,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253167
+2025-03-30,2025-03-30,Harz 제 2회 정기연주회 - '죽음과 소녀',콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253159
+2025-04-01,2025-05-27,영화관에 간 클래식,,기획,27234,https://www.bac.or.kr/product/performance/253471
+2025-04-03,2025-06-12,서양미술사 A to Z,,기획,27234,https://www.bac.or.kr/product/performance/253470
+2025-04-05,2025-04-05,BAC 오르간Ⅰ 이베타 압칼나 오르간 리사이틀,콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/253157
+2025-04-10,2025-04-10,부천필하모닉오케스트라 제326회 정기연주회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253110
+2025-04-12,2025-04-12,BAC 영 프론티어Ⅲ 클래식 기타리스트 조대연,소공연장,기획,20484,https://www.bac.or.kr/product/performance/253144
+2025-04-12,2025-04-12,W9 정기연주회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253183
+2025-04-17,2025-04-17,부천필하모닉오케스트라 해설음악회Ⅱ- 멘델스존의 춤,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253111
+2025-04-19,2025-06-07,내가 주인공이 되는 뮤지컬 넘버 만들기 - A반(고학년),,기획,27234,https://www.bac.or.kr/product/performance/253472
+2025-04-19,2025-06-07,내가 주인공이 되는 뮤지컬 넘버 만들기 - B반(저학년),,기획,27234,https://www.bac.or.kr/product/performance/253475
+2025-04-19,2025-04-19,페스티벌 앙상블 가우디움 제20회 정기연주회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253184
+2025-04-24,2025-04-24,부천시립합창단 제175회 정기연주회 - 꽃피는 사월의 설레임,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253112
+2025-04-26,2025-04-26,낭만주의 거장 〈차이코프스키 ＆ 라흐마니노프〉,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253154
+2025-04-26,2025-04-26,BAC 초이스Ⅰ허윤정의 거문고 절정 '絶靜',소공연장,기획,20490,https://www.bac.or.kr/product/performance/253164
+2025-04-30,2025-04-30,부천시립예술단 복사골 예술제 경축음악회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253113
+2025-05-02,2025-05-02,BAC 프라임클래식 Ⅱ 프랑스 국립오케스트라,콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/253148
+2025-05-04,2025-05-04,BAC 특별 기획 핑크퐁 클래식 나라 〈뚜띠를 찾아라〉,콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/253165
+2025-05-04,2025-05-04,제40회 복사골연극제 '흔적',소공연장,대관,20482,https://www.bac.or.kr/product/performance/253187
+2025-05-05,2025-05-05,히사이시 조 영화음악 콘서트 2025_부천,콘서트홀,공동기획,20484,https://www.bac.or.kr/product/performance/253168
+2025-05-10,2025-05-10,지브리 ＆ 디즈니 OST 콘서트,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253162
+2025-05-13,2025-05-13,메조소프라노 송윤진 리사이틀,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253194
+2025-05-14,2025-05-14,부천필하모닉오케스트라 제4대 상임지휘자 취임 연주회 - Fantastique,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253181
+2025-05-15,2025-05-15,부천시민과 함께하는 SNU 심포니 오케스트라 연주회,콘서트홀,공동기획,20484,https://www.bac.or.kr/product/performance/253185
+2025-05-17,2025-05-17,제 2회 이데아 프로젝트,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253190
+2025-05-22,2025-05-22,부천필하모닉오케스트라 해설음악회Ⅲ - 슈만의 속삭임,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253115
+2025-05-24,2025-05-24,BAC 오르간Ⅱ 티에리 에스카이쉬 & 로맹 를뢰 오르간 콘서트,콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/253158
+2025-05-30,2025-05-30,부천시립합창단 가족음악회 - 엄빠와 함께,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253116
+2025-05-31,2025-05-31,파시오네트: 차이코프스키 교향곡 4번,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253163
+2025-05-31,2025-05-31,제 4회 프레이즈 앙상블 정기 연주회,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253193
+2025-06-01,2025-06-01,BAC 프라임클래식 Ⅲ 한재민＆알렉산더 말로페예프 듀오 리사이틀,콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/253149
+2025-06-03,2025-06-03,이영은 첼로 독주회,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253199
+2025-06-05,2025-06-05,부천필하모닉오케스트라 어린이를 위한 음악놀이터Ⅰ- 마음이 들리는 시간,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253117
+2025-06-06,2025-06-06,지브리 OST 콘서트 : 디 오케스트라 - 부천,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253161
+2025-06-07,2025-06-07,서울대학교 졸업생 오케스트라 제13회 정기연주회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253197
+2025-06-11,2025-06-11,오은지 플루트 독주회 <숲의 하루>,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253200
+2025-06-13,2025-06-13,BAC 초이스Ⅱ 조이오브스트링스  'Stars & Strings',콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/253171
+2025-06-14,2025-06-14,한국오라토리오싱어즈 제 38회 정기연주회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253196
+2025-06-14,2025-06-14,일 피노 콰이어 정기연주회(제3회),소공연장,대관,20484,https://www.bac.or.kr/product/performance/253202
+2025-06-17,2025-11-18,2025 부천아트센터 'BAC TOUR',갤러리,기획,20489,https://www.bac.or.kr/product/performance/253205
+2025-06-19,2025-06-22,"사진&캘리 "" The moment 여운을 담다""",갤러리,대관,27231,https://www.bac.or.kr/product/performance/253186
+2025-06-20,2025-06-20,"부천필하모닉오케스트라 제327회 정기연주회 - 베르디, 레퀴엠",콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253118
+2025-06-21,2025-06-21,제25회 소사필하모닉오케스트라 정기연주회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253209
+2025-06-21,2025-06-21,BAC 영 프론티어Ⅳ 피아니스트 김선민,소공연장,기획,20484,https://www.bac.or.kr/product/performance/253145
+2025-06-22,2025-06-22,나눔꽃챔버가 전하는 희망 메시지 <사랑의 음악 편지>,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253198
+2025-06-22,2025-06-22,유니온필하모닉오케스트라 상반기 연주회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253206
+2025-06-24,2025-06-24,신경숙 스무스 재즈 콘서트(신! 나는~재즈 야(夜)~),소공연장,대관,20485,https://www.bac.or.kr/product/performance/253203
+2025-06-24,2025-06-29,Zoom in 우리가 사는 세상!,갤러리,대관,27231,https://www.bac.or.kr/product/performance/253214
+2025-06-28,2025-06-29,BAC 초이스 Ⅲ 연극 파랑새,소공연장,기획,20482,https://www.bac.or.kr/product/performance/253174
+2025-07-04,2025-07-04,[BIFAN 개최기념] 부천필하모닉오케스트라 해설음악회Ⅳ - 브람스의 깊은 숨결,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253119
+2025-07-09,2025-07-09,BAC 초이스 Ⅳ 서의철 가단의 남도선소리 ‘시를 읊다 - 님이 침묵한 까닭?',콘서트홀,기획,20490,https://www.bac.or.kr/product/performance/253195
+2025-07-13,2025-07-13,메리 마스터피스 시리즈 IV - 코스모스: 홀스트 & 인터스텔라 콘서트,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253212
+2025-07-16,2025-07-16,제22회 경기예술고등학교 정기연주회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253218
+2025-07-16,2025-07-16,제2회 나비가디오 정기연주회,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253215
+2025-07-17,2025-07-17,"부천시립합창단 제176회 정기연주회 - 로시니, 작은 장엄 미사",콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253120
+2025-07-19,2025-07-19,BAC 영 프론티어Ⅴ 첼리스트 정우찬,소공연장,기획,20484,https://www.bac.or.kr/product/performance/253146
+2025-07-20,2025-07-20,"BAC X 평창대관령음악제 <고대의 찬가, 현대의 리듬>",콘서트홀,공동기획,20484,https://www.bac.or.kr/product/performance/253189
+2025-07-20,2025-07-20,Harz 챔버 시리즈Ⅰ- '사계와 메타모르포젠',소공연장,대관,20484,https://www.bac.or.kr/product/performance/253204
+2025-07-24,2025-07-24,부천필하모닉오케스트라 제328회 정기연주회 - ROMA,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253121
+2025-07-26,2025-07-27,"[HAPPYFINEART] 2025 어린이 아티스트 아트페어 ""DREAM ART FAIR""",,대관,27231,https://www.bac.or.kr/product/performance/253233
+2025-07-27,2025-07-27,Andy Phil 제9회 정기연주회 'Lebewohl',콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253217
+2025-08-16,2025-08-16,검이불루 화이불치,소공연장,대관,20483,https://www.bac.or.kr/product/performance/253238
+2025-08-21,2025-08-21,부천시립합창단 사연이 있는 음악회 - YOU사연,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253122
+2025-08-23,2025-08-23,이룸 오케스트라 제7회 연주회,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253231
+2025-08-24,2025-08-24,시네마 Pop-up 콘서트,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253230
+2025-08-28,2025-08-28,부천시립예술단 1234 콘서트 - 부천필하모닉오케스트라 '20세기 파리',콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253123
+2025-08-29,2025-08-29,성균관대 오케스트라 제 39회 정기 가을 연주회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253248
+2025-08-30,2025-08-30,썸머 무비 콘서트 <재패니메이션 & 지브리 & 디즈니 & 픽사 & 드림웍스>,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253211
+2025-08-31,2025-08-31,하나클랑 제24회 정기연주회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253252
+2025-09-02,2025-10-28,도서관에 간 클래식,,기획,27234,https://www.bac.or.kr/product/performance/253474
+2025-09-04,2025-11-13,서양미술사 A to Z,,기획,27234,https://www.bac.or.kr/product/performance/253473
+2025-09-06,2025-09-27,꼬마 예술가의 아뜰리에 - B반(2020~21년생),,기획,27234,https://www.bac.or.kr/product/performance/253477
+2025-09-06,2025-09-27,꼬마 예술가의 아뜰리에 - A반(2018~19년생),,기획,27234,https://www.bac.or.kr/product/performance/253476
+2025-09-06,2025-09-06,2025년 생명사랑 음악회,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253257
+2025-09-06,2025-09-06,BAC 프라임클래식 Ⅳ : 윤홍천 피아노 리사이틀 ,콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/253213
+2025-09-07,2025-09-07,인하오케스트라 제 42회 정기연주회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253242
+2025-09-07,2025-09-07,센티토클래식과 함께하는 클래식음악 콘서트,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253244
+2025-09-12,2025-09-12,부천필하모닉오케스트라 제329회 정기연주회 - 브루크너 6,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253124
+2025-09-13,2025-09-13,BAC 프라임클래식 Ⅴ 라이프치히 성 토마스 합창단,콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/253219
+2025-09-13,2025-09-13,제5회 카파츠그린나래합창단 정기연주회,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253258
+2025-09-14,2025-09-14,Breeze of Eroica,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253243
+2025-09-17,2025-09-23,리도겸 개인전,갤러리,공동기획,27231,https://www.bac.or.kr/product/performance/253296
+2025-09-17,2025-09-17,BAC 특별 기획 : 제네바 트리오,콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/253208
+2025-09-18,2025-09-18,부천시립예술단 1234 콘서트 - 부천시립합창단 '계절과 합창 - 한국가곡',콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253125
+2025-09-20,2025-09-21,오페라 <피가로 결혼>,콘서트홀,대관,20491,https://www.bac.or.kr/product/performance/253232
+2025-09-20,2025-09-21,어느 멋진 날 ,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253249
+2025-09-24,2025-09-30,박상기 개인전,갤러리,공동기획,27231,https://www.bac.or.kr/product/performance/253298
+2025-09-26,2025-09-26,부천시립예술단 BICOF 개최기념 - 부천시민의날 경축음악회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253126
+2025-09-27,2025-09-28,BAC 초이스 Ⅴ 2인 가극 <아파트> ,소공연장,기획,20484,https://www.bac.or.kr/product/performance/253223
+2025-09-27,2025-09-27,"CHAOS 제 5회 정기연주회 - ""Scheherazade""",콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253246
+2025-09-28,2025-09-28,서울시민교향악단 제32회 정기연주회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253245
+2025-10-11,2025-10-11,"Powerful Brass, Beautiful Woodwind and Colorful Organ",콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253287
+2025-10-11,2025-10-11,"나는 왈츠공주, 너는 폴카 왕자",소공연장,대관,20484,https://www.bac.or.kr/product/performance/253295
+2025-10-12,2025-10-12,오케스트라 syncope 제2회 정기연주회 : 라흐마니노프 시리즈,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253286
+2025-10-16,2025-10-16,부천필하모닉오케스트라 제330회 정기연주회 - Frespanol,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253127
+2025-10-16,2025-10-19,제41회 2025 FACP 부천 총회,기타,기타,20489,https://www.bac.or.kr/product/performance/253210
+2025-10-17,2025-10-17,BAC 프라임클래식 Ⅵ 타이베이 심포니 오케스트라,콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/253235
+2025-10-17,2025-10-18,[DAY PASS] 제41회 2025 FACP 부천 총회 - 1일권,소공연장,기획,20489,https://www.bac.or.kr/product/performance/253285
+2025-10-18,2025-10-18,BAC 특별기획  2025 찾아가는 국립극장 선정작 국립국악관현악단 <베스트 컬렉션> ,콘서트홀,기획,20490,https://www.bac.or.kr/product/performance/253234
+2025-10-23,2025-10-23,BAC × 홍콩예술발전국 <윌슨 응과 함께하는 아시안 현대 심포니 오케스트라>,콘서트홀,공동기획,20484,https://www.bac.or.kr/product/performance/253247
+2025-10-24,2025-10-24,2025 한국 국제 오카리나 페스티벌,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253302
+2025-10-25,2025-10-25,제44회 서울신학대학교 교회음악과 교수음악회,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253300
+2025-10-25,2025-10-25,부천필하모닉오케스트라 기획연주회 BIAF 개최기념 - 애니메이션 OST 콘서트,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253128
+2025-10-29,2025-11-05,시간을 담다: 60년의 얼굴,갤러리,대관,27231,https://www.bac.or.kr/product/performance/253310
+2025-10-30,2025-10-30,부천시립예술단 1234 콘서트 - 부천시립합창단 '오르간과 합창음악',콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253129
+2025-10-30,2025-10-30,2025 펄벅국제심포지엄,소공연장,대관,27235,https://www.bac.or.kr/product/performance/253294
+2025-11-01,2025-11-01,BAC 프라임클래식 Ⅶ 알렉상드르 타로 피아노 리사이틀 ,콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/253250
+2025-11-01,2025-11-01,포르비토 앙상블 창단 연주회,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253308
+2025-11-02,2025-11-02,BAC 프라임클래식 Ⅷ 쟝-기엔 케라스 & 알렉상드르 타로 듀오 리사이틀,콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/253251
+2025-11-05,2025-11-05,BACX국립심포니오케스트라 2025 제3회 KNSO 작곡가 아틀리에,콘서트홀,공동기획,20484,https://www.bac.or.kr/product/performance/253292
+2025-11-07,2025-11-16,임평예 개인전<일상 풍경>,갤러리,대관,27231,https://www.bac.or.kr/product/performance/253315
+2025-11-09,2025-11-09,KDO 코리안 닥터스 오케스트라 제4회 정기연주회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253301
+2025-11-14,2025-11-14,부천필하모닉오케스트라 제331회 정기연주회 - Romantic Voyage,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253130
+2025-11-15,2025-11-15,맹진석 피아노 독주회,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253309
+2025-11-15,2025-11-15,LG필하모닉 오케스트라 14회 정기연주회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253293
+2025-11-16,2025-11-16,김우진 피아노 리사이틀,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253303
+2025-11-16,2025-11-16,서울대OB합창단 제51회 정기연주회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253307
+2025-11-20,2025-11-20,부천마스터코러스 제13회 정기연주회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253304
+2025-11-21,2025-11-21,"BAC 프라임클래식 Ⅸ : 정명훈 실내악 콘서트 with 양인모, 지안 왕, 디미트리 무라스",콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/253281
+2025-11-21,2025-11-23,마이 페이보릿(MY FAVORITE),갤러리,대관,27231,https://www.bac.or.kr/product/performance/253348
+2025-11-22,2025-11-22,2025 서울음악교사코랄 정기연주회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253311
+2025-11-27,2025-11-27,부천시립합창단 신예작곡가 연주회 - 시를 노래하다,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253131
+2025-11-28,2025-12-03,예술의정상 예마루 -따뜻한연말-,갤러리,대관,27231,https://www.bac.or.kr/product/performance/253355
+2025-11-28,2025-11-28,서울신포니에타 제166회 정기연주회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253312
+2025-11-29,2025-11-30,BAC 초이스 Ⅵ 뮤지컬 <이매지너리>,소공연장,기획,20487,https://www.bac.or.kr/product/performance/253288
+2025-11-29,2025-11-29,함께하는 오케스트라 IBK TOGETHER 2025 정기연주회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253314
+2025-11-30,2025-11-30,덴탈코러스 32회 정기연주회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253346
+2025-12-02,2025-12-02,제13회 올키즈스트라 정기연주회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253297
+2025-12-03,2025-12-03,제 25회 코리아합창페스티벌,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253313
+2025-12-04,2025-12-04,부천필하모닉오케스트라 어린이를 위한 음악놀이터Ⅱ- Winter Wonderland,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253132
+2025-12-05,2025-12-05,제26회 소사필하모닉오케스트라 정기연주회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253361
+2025-12-07,2025-12-07,서울대학교 졸업생 오케스트라 제14회 정기연주회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253347
+2025-12-09,2025-12-14,장애인웹툰아카데미 웹툰전시회 상상꿈툰,갤러리,대관,27231,https://www.bac.or.kr/product/performance/253350
+2025-12-10,2025-12-10,청소년을 위한 음악여행,콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/253356
+2025-12-11,2025-12-11,부천필하모닉오케스트라 콘체르토 VS 콘체르토,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253133
+2025-12-13,2025-12-14,BAC 초이스 Ⅶ 연극 <저수지의 인어>,소공연장,기획,20482,https://www.bac.or.kr/product/performance/253289
+2025-12-13,2025-12-13,BAC 오르간 Ⅲ 스즈키 마사아키와 바흐의 목소리,콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/253291
+2025-12-14,2025-12-14,한빛오케스트라 제8회 정기연주회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253352
+2025-12-17,2025-12-17,"부천시립합창단 제177회 정기연주회 - 송년음악회 '헨델, 메시아'",콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253134
+2025-12-18,2025-12-18,오르디 앙상블 송년음악회 ,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253353
+2025-12-19,2025-12-26,함께 길을 가다-우리집에 그림이 왔어요,갤러리,대관,27231,https://www.bac.or.kr/product/performance/253349
+2025-12-20,2025-12-21,BAC 특별기획 크리스마스 발레 콘서트 <호두까기인형>,콘서트홀,기획,20483,https://www.bac.or.kr/product/performance/253305
+2025-12-20,2025-12-20,최용석 피아노 리사이틀,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253354
+2025-12-23,2025-12-23,"부천필하모닉오케스트라 제332회 정기연주회 - 베토벤, 합창",콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253135
+2025-12-24,2025-12-24,BAC 프라임클래식 Ⅹ : 리처드 용재 오닐&제레미 덴크 듀오 리사이틀,콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/253282
+2025-12-25,2025-12-25,헐리우드 인 크리스마스_부천 ,콘서트홀,공동기획,20484,https://www.bac.or.kr/product/performance/253299
+2025-12-26,2025-12-26,지휘자 백윤학의 춤추는 발레 FESTA,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253290
+2025-12-28,2025-12-28,차이콥스키 시리즈: 백조의 호수와 비창,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253362
+2025-12-31,2025-12-31,BAC 특별기획 2025 제야음악회,콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/253306
+2026-01-10,2026-01-10,지브리와 사랑에 빠지다: 지브리 영화음악 콘서트 2026 - 부천,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253360
+2026-01-10,2026-01-10,AOU 2026 신년음악회 <L'amour>,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253364
+2026-01-11,2026-01-11,한양 솔로이스츠 제 9회 정기연주회 <베토벤 피아노 소나타 전곡시리즈 #5>,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253366
+2026-01-16,2026-01-16,부천필하모닉오케스트라 제333회 정기연주회 - Top of the World,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253316
+2026-01-17,2026-01-18,도토리숲,갤러리,대관,27231,https://www.bac.or.kr/product/performance/253371
+2026-01-17,2026-01-17,Andy Phil 제10회 정기연주회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253363
+2026-01-18,2026-01-18,아마티챔버오케스트라 제2회 정기연주회,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253365
+2026-01-22,2026-01-22,부천시립예술단 신년음악회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253317
+2026-02-07,2026-02-07,제 3회 이데아 프로젝트,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253373
+2026-02-12,2026-02-12,부천시립합창단 - 우리가 노래하는 이유,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253318
+2026-02-12,2026-02-12,IGNIS MUSICAE 연주회,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253372
+2026-02-13,2026-02-13,부천필하모닉오케스트라 발렌타인 콘서트,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253351
+2026-02-24,2026-06-23,2026 부천아트센터 'BAC TOUR',갤러리,기획,20489,https://www.bac.or.kr/product/performance/253383
+2026-02-25,2026-02-25,BAC 브런치 : 피아니스트 박상욱과 함께하는 브런치콘서트 I,소공연장,기획,20484,https://www.bac.or.kr/product/performance/253367
+2026-02-27,2026-02-27,부천필하모닉오케스트라 제334회 정기연주회 - ADAGIO,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253319
+2026-03-01,2026-03-01,KUCO 제 45회 정기연주회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253388
+2026-03-06,2026-03-06,BAC 재즈 : 더 피아니스트,소공연장,기획,20485,https://www.bac.or.kr/product/performance/253368
+2026-03-07,2026-03-07,부천필하모닉오케스트라 한불수교 140주년 기념 연주회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253370
+2026-03-08,2026-03-08,BAC 클래식 : WDR 쾰른 방송 오케스트라,콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/253369
+2026-03-12,2026-03-12,부천필하모닉오케스트라 해설음악회Ⅰ- Classic in Mass Media : Classic in Drama,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253320
+2026-03-14,2026-03-14,TENUTO 제 7회 정기연주회 <journey>,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253384
+2026-03-19,2026-03-19,"부천시립예술단 1234 콘서트 Ⅰ- 부천필하모닉오케스트라 ‘봄, 그리고 이야기 Spring, and  Stories’",콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253321
+2026-03-20,2026-03-20,부천시립합창단 기획연주회 - YOU사연Ⅰ,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253322
+2026-03-21,2026-03-21,서울시민교향악단 제33회 정기연주회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253386
+2026-03-22,2026-03-22,오케스트라 syncope 제3회 정기연주회 : 차이코프스키 시리즈,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253387
+2026-03-22,2026-03-22,브리즈앙상블과 엘로퀸텟의 모차르트 시리즈,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253382
+2026-03-24,2026-03-29,[공동기획] 하영미 작가展 <바라보다>,갤러리,공동기획,27231,https://www.bac.or.kr/product/performance/253400
+2026-03-26,2026-05-28,서양미술사 A to Z,,기획,27234,https://www.bac.or.kr/product/performance/253460
+2026-03-28,2026-03-28,project 유성우 창단연주회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253394
+2026-03-31,2026-04-28,유럽 음악 축제 기행,,기획,27234,https://www.bac.or.kr/product/performance/253461
+2026-04-01,2026-05-20,위대한 작곡가들,,기획,27234,https://www.bac.or.kr/product/performance/253462
+2026-04-03,2026-04-03,부천필하모닉오케스트라 제335회 정기연주회 - Romeo & Juliet,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253323
+2026-04-04,2026-04-26,나의 첫 번째 노래 - A반(중·고등학생),,기획,27234,https://www.bac.or.kr/product/performance/253463
+2026-04-04,2026-04-26,나의 첫 번째 노래 - B반(성인),,기획,27234,https://www.bac.or.kr/product/performance/253464
+2026-04-05,2026-04-05,BAC 오르간 : 카메론 카펜터 오르간 리사이틀,콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/253378
+2026-04-11,2026-04-11,"봄, Voice Palette - 목소리로 그리는 색채",소공연장,대관,20484,https://www.bac.or.kr/product/performance/253391
+2026-04-11,2026-04-11,페스티벌 앙상블 가우디움 제22회 정기연주회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253402
+2026-04-12,2026-04-12,베토벤 & 라흐마니노프 - 부천,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253379
+2026-04-16,2026-04-16,부천필하모닉오케스트라 해설음악회Ⅱ- Classic in Mass Media : Classic on Media,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253324
+2026-04-18,2026-04-18,함께Grin합창단 창단연주회,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253401
+2026-04-18,2026-04-18,제54회 한국소년소녀합창제,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253406
+2026-04-19,2026-04-19,BAC 초이스 : 디토 오케스트라 with 신지아,콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/253392
+2026-04-21,2026-04-29,김소연 개인전 숲 . 숨,갤러리,공동기획,27231,https://www.bac.or.kr/product/performance/253419
+2026-04-22,2026-04-22,BAC 브런치 : 피아니스트 박상욱과 함께하는 브런치콘서트 Ⅱ,소공연장,기획,20484,https://www.bac.or.kr/product/performance/253375
+2026-04-23,2026-04-23,"부천시립합창단 제178회 정기연주회 - 모차르트, c단조 미사",콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253325
+2026-04-25,2026-04-25,김보람 피아노 독주회-베토벤 피아노 소나타 전곡 시리즈 II ,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253405
+2026-04-26,2026-04-26,우리가 사랑한 한국영화 OST 콘서트 2026 - 부천,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253389
+2026-05-02,2026-05-03,BAC 초이스 : 연극 <반쪼가리 자작>,소공연장,기획,20482,https://www.bac.or.kr/product/performance/253393
+2026-05-02,2026-07-11,Play! Make! Show! - B반(1~3학년),,기획,27234,https://www.bac.or.kr/product/performance/253465
+2026-05-02,2026-07-11,Play! Make! Show! - A반(4~6학년),,기획,27234,https://www.bac.or.kr/product/performance/253466
+2026-05-05,2026-05-05,MelON 디즈니+ 지브리 오케스트라 콘서트(어린이날 edition),콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253397
+2026-05-05,2026-05-05,그녀들의 블루스,소공연장,대관,20482,https://www.bac.or.kr/product/performance/253411
+2026-05-09,2026-05-09,부천필하모닉오케스트라 가족음악회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253326
+2026-05-10,2026-05-10,어린이날 기념 지브리 & 디즈니 OST 콘서트 - 부천,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253399
+2026-05-12,2026-05-12,In His Harmony,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253408
+2026-05-14,2026-05-14,테너 최성수 독창회,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253407
+2026-05-15,2026-05-15,부천아트센터 개관 3주년 페스티벌 : 조수미 세계무대 데뷔 40주년 기념 콘서트,콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/253395
+2026-05-15,2026-05-31,시간의 간극 <RE:PLAY>,갤러리,기획,27231,https://www.bac.or.kr/product/performance/253421
+2026-05-18,2026-10-28,부천아트센터 후원회와 함께하는 로비 콘서트,기타,기획,20484,https://www.bac.or.kr/product/performance/253410
+2026-05-19,2026-05-19,부천필하모닉오케스트라 제336회 정기연주회 - BOHEMIA,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253327
+2026-05-21,2026-05-21,부천아트센터 개관 3주년 페스티벌 : 클라라 주미 강 & 김선욱 듀오 리사이틀,콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/253396
+2026-05-23,2026-05-23,부천아트센터 후원회와 함께하는 파크콘서트,야외 잔디광장,기획,20484,https://www.bac.or.kr/product/performance/253426
+2026-05-27,2026-05-27,BAC 공동기획 : SNU 심포니 오케스트라 연주회,콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/253427
+2026-05-30,2026-05-30,김정민 전국투어 콘서트 : 대한민국 락발라더 김정민 - 부천,소공연장,대관,20486,https://www.bac.or.kr/product/performance/253417
+2026-05-30,2026-05-30,2026 김종서 전국투어 콘서트 : 모두의 김종서 - 부천,소공연장,대관,20486,https://www.bac.or.kr/product/performance/253418
+2026-05-30,2026-05-30,부천시립합창단 가족음악회 - 합창뮤지컬 <토끼야 수궁가자>,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253328
+2026-06-02,2026-06-02,송문희 피아노 독주회,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253409
+2026-06-02,2026-06-06,우연한 인연들,갤러리,대관,27231,https://www.bac.or.kr/product/performance/253439
+2026-06-05,2026-06-05,BAC 재즈 : 피아니스트 허대욱,소공연장,기획,20485,https://www.bac.or.kr/product/performance/253377
+2026-06-06,2026-06-06,서울대학교 졸업생 오케스트라 제15회 정기연주회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253428
+2026-06-06,2026-06-06,Trio Armone  정기연주회,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253433
+2026-06-07,2026-06-07,스마일 오케스트라 ‘스마일 앙상블’ 5회 연주회,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253412
+2026-06-07,2026-06-07,프로젝트 부활(Projekt Auferstehung) ,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253420
+2026-06-11,2026-06-11,아트러브코리아 제9회 음악회,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253437
+2026-06-11,2026-06-11,부천필하모닉오케스트라 어린이를 위한 음악놀이터 I - 장난꾸러기 피어의 신나는 음악여행,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253329
+2026-06-13,2026-06-13,창단20주년 기념  제27회 소사필하모닉오케스트라 정기연주회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253430
+2026-06-14,2026-06-14,상상이 현실이 되는 재즈 夜~,소공연장,대관,20485,https://www.bac.or.kr/product/performance/253429
+2026-06-14,2026-06-14,드보르작 시리즈: 신세계로부터,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253435
+2026-06-16,2026-06-16,드레스덴 필하모닉 & 제임스 에네스,콘서트홀,공동기획,20484,https://www.bac.or.kr/product/performance/253404
+2026-06-20,2026-06-20,히사이시 조 영화음악 콘서트 2026_부천,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253390
+2026-06-21,2026-06-21,팡세오케스트라 창단20주년 기념 제20회 정기연주회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253434
+2026-06-24,2026-06-24,BAC 브런치 : 피아니스트 박상욱과 함께하는 브런치콘서트 Ⅲ,소공연장,기획,20484,https://www.bac.or.kr/product/performance/253376
+2026-06-24,2026-06-28,"ART IN LIFE-예술의 일상, 일상의 예술",갤러리,대관,27231,https://www.bac.or.kr/product/performance/253457
+2026-06-26,2026-06-26,부천필하모닉오케스트라 제337회 정기연주회 - REQUIEM,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253330
+2026-06-27,2026-06-27,일피노콰이어 제4회 정기연주회,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253431
+2026-06-28,2026-06-28,바로크 & 재즈 즉흥의 순간들,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253432
+2026-07-04,2026-07-04,"[B 마이 게스트] 한 가지 이야기, 두 가지 공포: <곤지암>과 <폐병원 402호>",소공연장,대관,27233,https://www.bac.or.kr/product/performance/253482
+2026-07-04,2026-07-04,[B 마이 게스트] 원화평 × 정두홍 액션 거장 토크,소공연장,대관,27233,https://www.bac.or.kr/product/performance/253483
+2026-07-05,2026-07-07,[부천 AI 콘텐츠 서밋] AI 국제 콘퍼런스,소공연장,대관,27233,https://www.bac.or.kr/product/performance/253459
+2026-07-14,2026-11-10,2026 부천아트센터 'BAC TOUR',갤러리,기획,20489,https://www.bac.or.kr/product/performance/253448
+2026-07-16,2026-07-16,BAC 클래식 : 피아니스트 조성진 체임버 콘서트,콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/253440
+2026-07-17,2026-07-17,부천필하모닉오케스트라 제338회 정기연주회 -  ENIGMA,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253331
+2026-07-17,2026-07-17,클래식 온 모던테이블 Classic on Modern Table,소공연장,대관,20483,https://www.bac.or.kr/product/performance/253458
+2026-07-19,2026-07-19,무지커영아티스트콘서트,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253481
+2026-07-21,2026-07-26,[미협공동기획] 원재연 개인전 : LOVE LETTER,갤러리,공동기획,27231,https://www.bac.or.kr/product/performance/253493
+2026-07-22,2026-08-12,춤추고 노래하는 여름 - B반(2020~22년생),,기획,27234,https://www.bac.or.kr/product/performance/253456
+2026-07-22,2026-08-12,춤추고 노래하는 여름 - A반(2023~24년생),,기획,27234,https://www.bac.or.kr/product/performance/253455
+2026-07-23,2026-07-23,부천시립합창단 기획연주회 - YOU 사연 Ⅱ,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253332
+2026-07-25,2026-07-25,"박은경 피아노 독주회 ""My Beloved Chopin""",소공연장,대관,20484,https://www.bac.or.kr/product/performance/253480
+2026-07-25,2026-07-25,동행(同行): 차이콥스키 5번 & 한중 합동 연주회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253485
+2026-07-26,2026-07-26,AOU 2026 프로젝트 연주회 <HORIZON>,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253486
+2026-07-29,2026-08-13,[전시] 와사비베어 공방에 놀러와,갤러리,기획,27231,https://www.bac.or.kr/product/performance/253438
+2026-07-31,2026-07-31,부천필하모닉오케스트라 해설음악회 Ⅲ - Classic in Mass Media : Classic on Screen,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253333
+2026-08-07,2026-08-07,[원데이클래스] 와사비베어 공방에 놀러와 - A반(성인),,기획,27234,https://www.bac.or.kr/product/performance/253453
+2026-08-08,2026-08-08,[원데이클래스] 와사비베어 공방에 놀러와 - B반(초6~중3),,기획,27234,https://www.bac.or.kr/product/performance/253454
+2026-08-14,2026-08-14,부천필하모닉오케스트라 - 바그너 <니벨룽의 반지> 하이라이트,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253449
+2026-08-15,2026-08-15,Erster Klang,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253491
+2026-08-15,2026-08-15,CHAOS 오케스트라 제 7회 정기 연주회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253492
+2026-08-15,2026-08-16,2026 해피 아트페어 : 부천 어린이 아트페어,,대관,27231,https://www.bac.or.kr/product/performance/253495
+2026-08-15,2026-08-16,"2026 어린이 아티스트 아트페어 ""HAPPY FINE ART FAIR""",갤러리,대관,27231,https://www.bac.or.kr/product/performance/253511
+2026-08-16,2026-08-16,독일에서 온 음악 친구들,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253450
+2026-08-19,2026-08-19,소프라노 박혜진 & 김동연 듀오 리사이틀,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253513
+2026-08-22,2026-08-22,BAC 클래식 : 김유빈 & 리처드 이가 듀오 리사이틀,콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/253443
+2026-08-22,2026-08-22,NOW [경기예술고등학교 클래식기타 전공 동문 연주회],소공연장,대관,20484,https://www.bac.or.kr/product/performance/253490
+2026-08-23,2026-08-23,노현진 피아노 독주회,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253451
+2026-08-23,2026-08-23,BAC 오르간 : 벤자민 리게티 오르간 리사이틀,콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/253444
+2026-08-26,2026-08-26,부천시립합창단 제179회 정기연주회 - 광야에서 바다로,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253334
+2026-08-26,2026-08-26,BAC 브런치 : 피아니스트 박상욱과 함께하는 브런치콘서트 Ⅳ,소공연장,기획,20484,https://www.bac.or.kr/product/performance/253441
+2026-08-27,2026-08-27,제 23회 경기예술고등학교 정기연주회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253489
+2026-08-27,2026-08-27,테너 박찬우 독창회,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253496
+2026-08-30,2026-08-30,슈베르티아데 창단 연주회 : 우연,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253504
+2026-08-30,2026-08-30,서울시립대학교 칸타빌레 창단 20주년 정기연주회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253512
+2026-09-01,2026-09-06,구키 Guki 개인전,갤러리,대관,27231,https://www.bac.or.kr/product/performance/253528
+2026-09-06,2026-09-06,성균관대학교 오케스트라 제 40주년 정기 가을 연주회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253509
+2026-09-08,2026-09-13,이지영 개인전,갤러리,대관,27231,https://www.bac.or.kr/product/performance/253529
+2026-09-11,2026-09-11,BAC 재즈 : 박진영 뉴트리오,소공연장,기획,20485,https://www.bac.or.kr/product/performance/253442
+2026-09-11,2026-09-11,부천필하모닉오케스트라 제339회 정기연주회 - The Beginning,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253335
+2026-09-12,2026-09-12,BAC 클래식 : 손열음 피아노 리사이틀,콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/253445
+2026-09-12,2026-09-12,제6회 카파츠그린나래합창단 정기연주회,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253527
+2026-09-15,2026-09-20,PRISM 01 : 다채로운 빛깔의 시작점,갤러리,공동기획,27231,https://www.bac.or.kr/product/performance/253533
+2026-09-17,2026-09-17,부천시립예술단 1234 콘서트Ⅱ- 부천시립합창단 '악기와 합창음악',콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253336
+2026-09-17,2026-09-17,노선형 피아노 독주회,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253510
+2026-09-19,2026-09-19,Philharmonic EVE - 말러 교향곡 3번,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253514
+2026-09-19,2026-09-19,Autumn Echoes: Cello & Harp,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253532
+2026-09-20,2026-09-20,에스토니아 국립 오케스트라 with 선우예권 - 부천,콘서트홀,공동기획,20484,https://www.bac.or.kr/product/performance/253478
+2026-10-01,2026-12-03,서양미술사 A to Z,,기획,27234,https://www.bac.or.kr/product/performance/253519
+2026-10-04,2026-10-04,BAC 클래식 : 서울비르투오지 챔버 오케스트라 with 반도네오니스트 J.P. 조프레,콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/253502
+2026-10-09,2026-10-10,"사운드 오브 BAC, 오르간 유니버스",콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/253531
+2026-10-09,2026-10-13,Odyssey for BAC,갤러리,기획,27231,https://www.bac.or.kr/product/performance/253539
+2026-10-09,2026-10-10,MUSIC&STITCH,,대관,27233,https://www.bac.or.kr/product/performance/253544
+2026-10-09,2026-10-10,오르간으로 만나는 명상의 숲,소공연장,기획,20484,https://www.bac.or.kr/product/performance/253545
+2026-10-10,2026-10-10,"피날레 콘서트, 오르간 with 발레",콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/253530
+2026-10-13,2026-11-10,"한 달 살기, 도시를 만나다",,기획,27234,https://www.bac.or.kr/product/performance/253520
+2026-10-15,2026-10-15,"부천시립예술단 1234 콘서트 Ⅲ - 부천필하모닉오케스트라 ‘가을, 그리고 전설 Autumn, and  Legends’",콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253337
+2026-10-15,2026-10-15,성덕현 클라리넷 독주회,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253538
+2026-10-17,2026-10-17,포르비토 앙상블 제2회 정기연주회,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253543
+2026-10-17,2026-12-19,Play! Make! Show! - B반(1~3학년),,기획,27234,https://www.bac.or.kr/product/performance/253524
+2026-10-17,2026-10-17,BAC 클래식 : 파질 사이 피아노 리사이틀,콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/253500
+2026-10-17,2026-12-19,Play! Make! Show! - A반(4~6학년),,기획,27234,https://www.bac.or.kr/product/performance/253523
+2026-10-18,2026-10-18,오케스트라 syncope 제4회 정기연주회 <라흐마니노프와 생상스>,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253534
+2026-10-20,2026-10-25,한국화의 확장,갤러리,공동기획,27231,https://www.bac.or.kr/product/performance/253565
+2026-10-21,2026-10-21,BAC 브런치 : 피아니스트 박상욱과 함께하는 브런치콘서트 Ⅴ,소공연장,기획,20484,https://www.bac.or.kr/product/performance/253501
+2026-10-21,2026-10-21,"「One Year, One Voice」",콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/253547
+2026-10-24,2026-10-24,테너 김우경 & 소프라노 여지영 듀오 리사이틀,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253540
+2026-10-24,2026-11-14,Wonder Labs 사라진 화가를 찾아라,,대관,27233,https://www.bac.or.kr/product/performance/253572
+2026-10-25,2026-10-25,코랄 TGY 15주년 기념 음악회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253503
+2026-10-27,2026-10-27,"일리야 라쉬코프스키, 라흐마니노프 3개의 피아노 협주곡 - 부천",콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253452
+2026-10-28,2026-11-20,나의 첫 번째 노래 - A반(초5~중3),,기획,27234,https://www.bac.or.kr/product/performance/253521
+2026-10-28,2026-11-20,나의 첫 번째 노래 - B반(성인),,기획,27234,https://www.bac.or.kr/product/performance/253522
+2026-10-28,2026-11-01,"안아보다, 달항아리",갤러리,대관,27231,https://www.bac.or.kr/product/performance/253574
+2026-10-30,2026-10-30,부천필하모닉오케스트라 제340회 정기연주회 - Distant Worlds 먼 세계,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253338
+2026-10-31,2026-10-31,BAC 초이스 : 고영열의 피아노 병창 <춘향>,소공연장,기획,20490,https://www.bac.or.kr/product/performance/253516
+2026-10-31,2026-10-31,빛과 울림 (홍채린 오르간 리사이틀),콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253559
+2026-11-03,2026-11-03,CTS 장로합창단 제7회 정기연주회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253561
+2026-11-05,2026-11-05,부천시립합창단 해설음악회 - 세상의 모든 음악 시리즈 <영국의 모든 음악>,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253339
+2026-11-06,2026-11-06,제 21회 인문주간 폐막식 및 부천시민합창제,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253577
+2026-11-07,2026-11-07,우리가 사랑한 시네마 뮤직 콘서트 2026 - 부천,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253488
+2026-11-08,2026-11-08,LG필하모닉 오케스트라 15회 정기연주회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253542
+2026-11-08,2026-11-08,<뮤지컬 라떼파파> 리딩 낭독 쇼케이스,소공연장,대관,20487,https://www.bac.or.kr/product/performance/253579
+2026-11-11,2026-11-11,나의 최애(最愛) 피아노 협주곡 4,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253562
+2026-11-12,2026-11-12,동행,소공연장,대관,20486,https://www.bac.or.kr/product/performance/253553
+2026-11-12,2026-11-12,제42회 서울신학대학교 교회음악과 심포니 콰이어 정기연주회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253569
+2026-11-14,2026-11-14,제 7회 사랑의 음악편지,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253556
+2026-11-15,2026-11-15,KSEA ENSEMBLE FESTA,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253570
+2026-11-15,2026-11-15,서명현 슈베르트 피아노 시리즈 I,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253571
+2026-11-17,2026-11-17,제27회 코리아합창페스티벌,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253549
+2026-11-18,2026-11-22,"함께,그리고 그림 전",갤러리,공동기획,27231,https://www.bac.or.kr/product/performance/253612
+2026-11-19,2026-11-19,부천시립예술단 1234 콘서트 IV - 부천시립합창단 '오르간과 합창음악',콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253340
+2026-11-21,2026-11-22,BAC 초이스 : 연극  <물의 소리> ,소공연장,기획,20482,https://www.bac.or.kr/product/performance/253517
+2026-11-21,2026-11-21,만토바 체임버 오케스트라,콘서트홀,공동기획,20484,https://www.bac.or.kr/product/performance/253525
+2026-11-22,2026-11-22,KDO 코리안 닥터스 오케스트라 제5회 정기연주회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253546
+2026-11-24,2026-11-24,제1회 부천코랄페스타,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253576
+2026-11-26,2026-11-26,부천필하모닉오케스트라 제341회 정기연주회 - A Portrait in Contrast 대조 속의 초상,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253341
+2026-11-28,2026-11-29,클랩 그림책 콘서트 X BAC,소공연장,기획,20486,https://www.bac.or.kr/product/performance/253548
+2026-11-29,2026-11-29,망가진 계절(The Broken Seasons),콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253575
+2026-12-01,2026-12-01,김은희 첼로 리사이틀,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253526
+2026-12-03,2026-12-03,부천필하모닉오케스트라 어린이를 위한 음악놀이터 Ⅱ - Winter Wonderland,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253342
+2026-12-04,2026-12-04,부천시립합창단 기획연주회 - 재즈와 캐롤,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253343
+2026-12-04,2026-12-04,BAC 재즈 : 강재훈 트리오,소공연장,기획,20485,https://www.bac.or.kr/product/performance/253551
+2026-12-05,2026-12-05,창단 60주년 기념음악회 한국대학합창단&동문합창단 Messiah,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253578
+2026-12-06,2026-12-06,리드 테츨로프 피아노 리사이틀,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253494
+2026-12-08,2026-12-08,오르디앙상블 연주시리즈 XII <말러 심포니 NO.5>,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253581
+2026-12-09,2026-12-09,BAC 브런치 : 피아니스트 박상욱과 함께하는 브런치콘서트 Ⅵ,소공연장,기획,20484,https://www.bac.or.kr/product/performance/253550
+2026-12-10,2026-12-31,[전시] 그림이 된 문장들,갤러리,기획,27231,https://www.bac.or.kr/product/performance/253557
+2026-12-11,2026-12-11,알버트 카노 스미트 피아노 리사이틀(부천),콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253498
+2026-12-12,2026-12-12,센티토클래식과 함께하는 클래식 & 재즈 & 탱고 콘서트,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253582
+2026-12-13,2026-12-13,슈베르티아데 솔로이스트 시리즈 II : 트롬본 전한글,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253613
+2026-12-13,2026-12-13,서울대학교 졸업생 오케스트라 제16회 정기연주회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253580
+2026-12-16,2026-12-16,"부천시립합창단 제180회 정기연주회 - 헨델, 메시아",콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253344
+2026-12-18,2026-12-18,하모니유스코랄 제3회 정기연주회,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253573
+2026-12-19,2026-12-19,BAC 특별기획 : 파리나무십자가 소년합창단,콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/253552
+2026-12-22,2026-12-22,스테이지엠 크리스마스 영화음악 & 캐롤 콘서트 2026 - 부천,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253499
+2026-12-23,2026-12-23,"부천필하모닉오케스트라 제342회 정기연주회 - 베토벤, 합창",콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253345
+2026-12-24,2026-12-24,크리스마스 지브리 & 디즈니 OST 콘서트 with 첼로댁,콘서트홀,대관,20484,https://www.bac.or.kr/product/performance/253563
+2026-12-26,2026-12-26,손세혁 피아노 독주회-부천,소공연장,대관,20484,https://www.bac.or.kr/product/performance/253541
+2026-12-26,2026-12-27,[원데이클래스] 그림이 된 문장들,,기획,27234,https://www.bac.or.kr/product/performance/253558
+2026-12-27,2026-12-27,BAC 특별기획 : 발레 <호두까기인형>,콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/253555
+2026-12-31,2026-12-31,BAC 특별기획 : 2026 제야음악회,콘서트홀,기획,20484,https://www.bac.or.kr/product/performance/253560

@@ -1,0 +1,11 @@
+{
+ "n_train": 2977668,
+ "landmarks": 4096,
+ "gamma_laplace": 0.0431102029979229,
+ "gamma_rbf": 0.02546829916536808,
+ "valid_rmsle": {},
+ "lambda": 0.0001,
+ "model": "rkhs",
+ "seed": 2026,
+ "seconds": 102.2
+}

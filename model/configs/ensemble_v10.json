@@ -1,0 +1,121 @@
+{
+ "name": "ensemble_v10",
+ "information": "Corrections on top of v8/v9. Realised facts of the evaluation period (games, events, weather) are allowed by the organisers; subway ridership of that period is not used anywhere. No leaderboard score is read or stored.",
+ "extra_matches_bucheon": [
+  {
+   "date": "2026-07-29",
+   "kickoff": "19:00",
+   "attendance": 2689,
+   "name": "코리아컵 3라운드 부천 3-0 파주",
+   "source": "https://ko.wikipedia.org/wiki/2026-27년_코리아컵",
+   "note": "킥오프 19:00은 두 출처, 한 출처는 19:30. 관중 수는 위키 한 곳"
+  }
+ ],
+ "munhak_events": [
+  {
+   "date": "2025-09-14",
+   "start": "17:00",
+   "name": "불꽃야구 직관"
+  },
+  {
+   "date": "2026-05-30",
+   "start": "17:00",
+   "name": "불꽃야구2 직관"
+  },
+  {
+   "date": "2026-06-13",
+   "start": "17:00",
+   "name": "불꽃야구2 직관"
+  },
+  {
+   "date": "2026-10-31",
+   "start": "14:00",
+   "name": "불꽃야구2 19번째 직관",
+   "source": "https://isplus.com/article/view/isp202611040165",
+   "note": "사전 기사 2건으로 확인. 관중 수 미보도라 과거 직관일의 승차로 환산한 관중을 쓴다"
+  }
+ ],
+ "munhak_past_events": [
+  "2025-07-27",
+  "2025-08-10",
+  "2025-09-14",
+  "2026-05-30",
+  "2026-06-13"
+ ],
+ "station_events": [
+  {
+   "name": "인천과학대제전(금)",
+   "stations": [
+    3209,
+    3210
+   ],
+   "dates": [
+    "2026-10-23"
+   ],
+   "past_dates": [
+    "2025-10-24"
+   ],
+   "mode": "replace",
+   "shrink": 0.85,
+   "source": "https://www.insiseol.or.kr/sport_asiad/scheduleCalendar.do?year_month=2026-10&siteDiv=sport_asiad&schDiv=main"
+  },
+  {
+   "name": "인천과학대제전(토)",
+   "stations": [
+    3209,
+    3210
+   ],
+   "dates": [
+    "2026-10-24"
+   ],
+   "past_dates": [
+    "2025-10-25"
+   ],
+   "mode": "replace",
+   "shrink": 0.85,
+   "source": "https://www.kyeongin.com/article/1753968"
+  },
+  {
+   "name": "부평풍물대축제(토)",
+   "stations": [
+    3120,
+    3119
+   ],
+   "dates": [
+    "2026-10-03"
+   ],
+   "past_dates": [
+    "2025-09-27"
+   ],
+   "mode": "add",
+   "shrink": 0.85,
+   "source": "https://www.segye.com/newsView/20261005508908"
+  },
+  {
+   "name": "부평풍물대축제(일)",
+   "stations": [
+    3120,
+    3119
+   ],
+   "dates": [
+    "2026-10-04"
+   ],
+   "past_dates": [
+    "2025-09-28"
+   ],
+   "mode": "add",
+   "shrink": 0.85,
+   "source": "https://portal.icbp.go.kr/bpf/program/2025/pungmul2025.pdf"
+  }
+ ],
+ "research_notes": [
+  "인천과학대제전 2026은 10월 23일(금)~24일(토) 아시아드주경기장에서 열렸다(보도 8만여 명). 2025년 회차(10월 24~25일)의 같은 요일 상승폭을 쓴다.",
+  "전국노래자랑(10월 31일 14시, 아시아드 남측광장)은 개최가 확인됐으나 과거 표본과 관중 수가 없어 넣지 않았다.",
+  "문학: 테스트 구간의 비리그 행사는 Sustainable Wave Festival(8/29~30), PLAVE(9/12~13), 불꽃야구 직관(10/31 14시)이다. OBJET K-POP FESTA(9/26~27)와 GHOSTIVAL(10/24~25)은 취소돼 넣지 않았다. SSG는 6위로 포스트시즌 홈경기가 없다.",
+  "불꽃야구 직관은 2025-07-27, 08-10, 09-14, 2026-05-30, 06-13에 문학에서 열렸고 그날 역 승차 급증이 자료로 확인된다. 2026-06-20은 급증이 없어 제외했다.",
+  "부천 코리아컵 3라운드 홈경기(7월 29일 19시, 관중 2,689명)를 경기 목록에 추가했다. 10월 17일 원형광장 시 행사는 규모를 알 수 없어 넣지 않았다.",
+  "부평풍물대축제 2026은 10월 3일(토)~4일(일) 부평대로에서 열렸다. 2025년(9월 27~28일) 같은 요일 상승폭 x 0.85를 부평·부평시장역의 현재 예측에 더한다(10월 3일은 개천절이라 공휴일 처리 위에 더함).",
+  "이슬라이브(9월 12일)는 약 2만 명으로 보도됐다. 맥주축제·펜타포트 하루 관객의 약 1/3이라 기존 0.6배(로그) 설정과 맞는다.",
+  "우천취소일에는 취소 직후 귀가 인파가 생긴다(2025-06-13 18시 3,956명, 2026-05-26 18시 1,972명). 테스트 구간 우천취소 2일에는 반영하지 않았다."
+ ]
+}

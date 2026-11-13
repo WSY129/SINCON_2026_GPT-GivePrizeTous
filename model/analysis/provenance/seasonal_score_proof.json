@@ -1,0 +1,23 @@
+{
+  "model_origin": "created locally by assistant; not downloaded official baseline",
+  "score_kind": "local temporal validation; not Kaggle leaderboard",
+  "history_end": "2026-02-27",
+  "validation_start": "2026-02-28",
+  "validation_end": "2026-06-30",
+  "validation_rows": 157194,
+  "validation_days": 123,
+  "stations": 71,
+  "source_observation_dates": [
+    "2026-02-21",
+    "2026-02-22",
+    "2026-02-23",
+    "2026-02-24",
+    "2026-02-25",
+    "2026-02-26",
+    "2026-02-27"
+  ],
+  "msle": 0.08468382209978668,
+  "rmsle": 0.29100484892830686,
+  "predictions_exactly_match_saved_oof": true,
+  "train_csv_sha256": "1b3b21e8f1fe22a44c0ff4adba315784a5c21caea25098a15869c4ed370822bc"
+}

@@ -1,0 +1,9 @@
+{
+  "model": "lightgbm",
+  "seed": 2026,
+  "best_iteration": 1,
+  "requested_iterations": 20,
+  "seconds": 2.2100984330754727,
+  "device": "cpu",
+  "train_rows": 16000
+}

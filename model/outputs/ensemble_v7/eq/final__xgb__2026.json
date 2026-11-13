@@ -1,0 +1,7 @@
+{
+ "n_train": 2977668,
+ "rounds": 558,
+ "model": "xgb",
+ "seed": 2026,
+ "seconds": 15.6
+}

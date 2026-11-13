@@ -1,0 +1,89 @@
+{
+  "method": "SLSQP convex mean in log1p space; no intercept",
+  "weights": {
+    "lightgbm": 0.03244835378100977,
+    "catboost": 0.6023166881337192,
+    "xgboost": 5.128276275856436e-17,
+    "tabm": 0.3652349580852711
+  },
+  "models": {
+    "lightgbm": {
+      "oof_rmsle": 0.2269133656239914,
+      "weighted_rmsle": 0.22739644421285057,
+      "fold34_rmsle": 0.2281191439871045
+    },
+    "catboost": {
+      "oof_rmsle": 0.22330225566390688,
+      "weighted_rmsle": 0.22227071861903797,
+      "fold34_rmsle": 0.2207143738220862
+    },
+    "xgboost": {
+      "oof_rmsle": 0.2297738531980876,
+      "weighted_rmsle": 0.23102152754546057,
+      "fold34_rmsle": 0.23288050595391302
+    },
+    "tabm": {
+      "oof_rmsle": 0.22937600075727368,
+      "weighted_rmsle": 0.22535169566736762,
+      "fold34_rmsle": 0.21917673750946617
+    }
+  },
+  "ensemble": {
+    "oof_rmsle": 0.22276095854327352,
+    "weighted_rmsle": 0.22061827686229793,
+    "fold34_rmsle": 0.21736465498683724
+  },
+  "lofo": [
+    {
+      "held_out_fold": 1,
+      "weights": {
+        "lightgbm": 0.0,
+        "catboost": 0.4879591075115923,
+        "xgboost": 0.0,
+        "tabm": 0.5120408924884078
+      },
+      "training_selected_best_model": "tabm",
+      "ensemble_rmsle": 0.2544340654594584,
+      "selected_single_rmsle": 0.26634719113747735
+    },
+    {
+      "held_out_fold": 2,
+      "weights": {
+        "lightgbm": 0.014959196720455807,
+        "catboost": 0.6003035811305748,
+        "xgboost": 0.0,
+        "tabm": 0.38473722214896944
+      },
+      "training_selected_best_model": "catboost",
+      "ensemble_rmsle": 0.201631289567543,
+      "selected_single_rmsle": 0.2024867958791058
+    },
+    {
+      "held_out_fold": 3,
+      "weights": {
+        "lightgbm": 0.0,
+        "catboost": 0.7978271491196655,
+        "xgboost": 0.0,
+        "tabm": 0.2021728508803345
+      },
+      "training_selected_best_model": "catboost",
+      "ensemble_rmsle": 0.2118352456958528,
+      "selected_single_rmsle": 0.2147974673705252
+    },
+    {
+      "held_out_fold": 4,
+      "weights": {
+        "lightgbm": 0.2511530503438938,
+        "catboost": 0.4575016015530367,
+        "xgboost": 4.664779847118883e-17,
+        "tabm": 0.29134534810306945
+      },
+      "training_selected_best_model": "catboost",
+      "ensemble_rmsle": 0.225864303694429,
+      "selected_single_rmsle": 0.22647674855172084
+    }
+  ],
+  "lofo_weighted_rmsle": 0.22219333887556533,
+  "lofo_selected_single_weighted_rmsle": 0.22559176332039368,
+  "evaluation_limit": "Validation dates overlap between folds; LOFO is a sensitivity check, not an independent future holdout. Base models use their fold validation for early stopping."
+}

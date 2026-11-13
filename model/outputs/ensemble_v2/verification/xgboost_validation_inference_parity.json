@@ -1,0 +1,34 @@
+[
+  {
+    "fold": 1,
+    "best_iteration": 1,
+    "native_best_residual_rmse": 0.24594064047693784,
+    "actual_inference_residual_rmse": 0.24594064040100366,
+    "absolute_gap": 7.593417561402305e-11,
+    "saved_prediction_max_difference": 0.0
+  },
+  {
+    "fold": 2,
+    "best_iteration": 7,
+    "native_best_residual_rmse": 0.20550093814696788,
+    "actual_inference_residual_rmse": 0.2055009382043016,
+    "absolute_gap": 5.73337211040581e-11,
+    "saved_prediction_max_difference": 0.0
+  },
+  {
+    "fold": 3,
+    "best_iteration": 59,
+    "native_best_residual_rmse": 0.22825626503887303,
+    "actual_inference_residual_rmse": 0.22825626493851522,
+    "absolute_gap": 1.0035780539929817e-10,
+    "saved_prediction_max_difference": 0.0
+  },
+  {
+    "fold": 4,
+    "best_iteration": 3000,
+    "native_best_residual_rmse": 0.2374146954654822,
+    "actual_inference_residual_rmse": 0.23741469564616752,
+    "absolute_gap": 1.8068532781079227e-10,
+    "saved_prediction_max_difference": 0.0
+  }
+]

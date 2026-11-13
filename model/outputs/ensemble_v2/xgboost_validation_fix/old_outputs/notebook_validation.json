@@ -1,0 +1,9 @@
+{
+  "embedded_source_files": 28,
+  "all_current_source_hashes_match": true,
+  "code_cells_compile": true,
+  "cells": 8,
+  "notebook_sha256": "77410812262686154aacc5e2e4e01cca50c9877211579151a27e05ff48e69155",
+  "kaggle_cuda_execution_tested": false,
+  "local_execution": "CPU trees and MPS FP32 TabM; CPU neural smoke in archived attempt"
+}

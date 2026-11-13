@@ -1,0 +1,196 @@
+{
+  "method": "SLSQP convex mean in log1p space; no intercept",
+  "weights": {
+    "lightgbm": 0.0952990745489883,
+    "catboost": 2.290377089375628e-18,
+    "xgboost": 0.13838451741412858,
+    "tabm": 0.7663164080368832
+  },
+  "models": {
+    "lightgbm": {
+      "oof_rmsle": 0.22345293212412423,
+      "weighted_rmsle": 0.22376867625566063,
+      "fold34_rmsle": 0.22424145885791044
+    },
+    "catboost": {
+      "oof_rmsle": 0.22680934616110449,
+      "weighted_rmsle": 0.22680001922098048,
+      "fold34_rmsle": 0.2267860280915718
+    },
+    "xgboost": {
+      "oof_rmsle": 0.22488524285399045,
+      "weighted_rmsle": 0.22440517354387568,
+      "fold34_rmsle": 0.22368313772588
+    },
+    "tabm": {
+      "oof_rmsle": 0.2245992048161942,
+      "weighted_rmsle": 0.22202045006229515,
+      "fold34_rmsle": 0.21809515448207478
+    }
+  },
+  "ensemble": {
+    "oof_rmsle": 0.22243673641983439,
+    "weighted_rmsle": 0.22052944349560633,
+    "fold34_rmsle": 0.2176371660758893
+  },
+  "lofo": [
+    {
+      "held_out_fold": 1,
+      "weights": {
+        "lightgbm": 0.07801737375345907,
+        "catboost": 0.0,
+        "xgboost": 0.20178195562326412,
+        "tabm": 0.7202006706232768
+      },
+      "training_selected_best_model": "tabm",
+      "ensemble_rmsle": 0.2505621145525374,
+      "selected_single_rmsle": 0.2565457609372359
+    },
+    {
+      "held_out_fold": 2,
+      "weights": {
+        "lightgbm": 0.2893020941943046,
+        "catboost": 0.0,
+        "xgboost": 0.16854905297920086,
+        "tabm": 0.5421488528264946
+      },
+      "training_selected_best_model": "tabm",
+      "ensemble_rmsle": 0.19972382229156416,
+      "selected_single_rmsle": 0.20207050983327954
+    },
+    {
+      "held_out_fold": 3,
+      "weights": {
+        "lightgbm": 0.1222211861157183,
+        "catboost": 0.0,
+        "xgboost": 0.3615806138825673,
+        "tabm": 0.5161982000017145
+      },
+      "training_selected_best_model": "tabm",
+      "ensemble_rmsle": 0.21118391673155013,
+      "selected_single_rmsle": 0.21121787732346597
+    },
+    {
+      "held_out_fold": 4,
+      "weights": {
+        "lightgbm": 0.6226854462571622,
+        "catboost": 0.0,
+        "xgboost": 0.019822864788916587,
+        "tabm": 0.3574916889539213
+      },
+      "training_selected_best_model": "lightgbm",
+      "ensemble_rmsle": 0.22813749843443606,
+      "selected_single_rmsle": 0.23432884721014896
+    }
+  ],
+  "lofo_weighted_rmsle": 0.22187051285213388,
+  "lofo_selected_single_weighted_rmsle": 0.22545572265397448,
+  "evaluation_limit": "Validation dates overlap between folds; LOFO is a sensitivity check, not an independent future holdout. Base models use their fold validation for early stopping. Recent-fold optimized scores reuse labels for weights; purged weight checks still reuse fold-selected early stopping and feature-design decisions. Fold 3/4 are not season-identical to July-October.",
+  "all_fold_comparison": {
+    "weights": {
+      "lightgbm": 0.25754453005082073,
+      "catboost": 1.495182558493291e-17,
+      "xgboost": 0.19701159612184646,
+      "tabm": 0.5454438738273328
+    },
+    "ensemble": {
+      "oof_rmsle": 0.22137571904760575,
+      "weighted_rmsle": 0.2200579747719188,
+      "fold34_rmsle": 0.21806642835619933
+    }
+  },
+  "selection_rows": 314388,
+  "selection_scope": "Fold 3 + Fold 4 pooled OOF, equal row weights",
+  "recent_cross_checks": [
+    {
+      "fit_fold": 3,
+      "test_fold": 4,
+      "purged_overlapping_target_dates": false,
+      "fit_rows": 157194,
+      "weights": {
+        "lightgbm": 0.3470011182707025,
+        "catboost": 0.0,
+        "xgboost": 5.389162423610759e-17,
+        "tabm": 0.6529988817292974
+      },
+      "ensemble_rmsle": 0.2254520595152171,
+      "training_selected_single": "tabm",
+      "single_rmsle": 0.22476209893149113,
+      "chronological": true
+    },
+    {
+      "fit_fold": 3,
+      "test_fold": 4,
+      "purged_overlapping_target_dates": true,
+      "fit_rows": 75402,
+      "weights": {
+        "lightgbm": 0.3030070813971869,
+        "catboost": 1.2495430037895439e-17,
+        "xgboost": 0.1886922056633874,
+        "tabm": 0.5083007129394258
+      },
+      "ensemble_rmsle": 0.22560485802221983,
+      "training_selected_single": "tabm",
+      "single_rmsle": 0.22476209893149113,
+      "chronological": true
+    },
+    {
+      "fit_fold": 4,
+      "test_fold": 3,
+      "purged_overlapping_target_dates": false,
+      "fit_rows": 157194,
+      "weights": {
+        "lightgbm": 1.0828469197698976e-17,
+        "catboost": 1.691355389077387e-17,
+        "xgboost": 0.23418877852102202,
+        "tabm": 0.765811221478978
+      },
+      "ensemble_rmsle": 0.21107171680382997,
+      "training_selected_single": "tabm",
+      "single_rmsle": 0.21121787732346597,
+      "chronological": false
+    },
+    {
+      "fit_fold": 4,
+      "test_fold": 3,
+      "purged_overlapping_target_dates": true,
+      "fit_rows": 75402,
+      "weights": {
+        "lightgbm": 1.474514954580286e-17,
+        "catboost": 0.0,
+        "xgboost": 0.16941471608347672,
+        "tabm": 0.8305852839165233
+      },
+      "ensemble_rmsle": 0.21103110464434074,
+      "training_selected_single": "tabm",
+      "single_rmsle": 0.21121787732346597,
+      "chronological": false
+    }
+  ],
+  "residual_correlations_fold34": {
+    "lightgbm": {
+      "lightgbm": 1.0,
+      "catboost": 0.9735473916245091,
+      "xgboost": 0.9729697512774818,
+      "tabm": 0.9556811892311421
+    },
+    "catboost": {
+      "lightgbm": 0.9735473916245091,
+      "catboost": 1.0,
+      "xgboost": 0.9706683573449667,
+      "tabm": 0.9586192769622641
+    },
+    "xgboost": {
+      "lightgbm": 0.9729697512774818,
+      "catboost": 0.9706683573449667,
+      "xgboost": 1.0,
+      "tabm": 0.9574057371528983
+    },
+    "tabm": {
+      "lightgbm": 0.9556811892311421,
+      "catboost": 0.9586192769622641,
+      "xgboost": 0.9574057371528983,
+      "tabm": 1.0
+    }
+  }
+}

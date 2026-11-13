@@ -1,0 +1,9 @@
+{
+  "model": "catboost",
+  "seed": 2026,
+  "best_iteration": 1,
+  "requested_iterations": 20,
+  "seconds": 21.02382042282261,
+  "device": "cuda:0",
+  "train_rows": 16000
+}

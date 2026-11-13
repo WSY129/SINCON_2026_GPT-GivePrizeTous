@@ -1,0 +1,29 @@
+{
+  "kbo": [],
+  "festivals": [
+    {
+      "kind": "pentaport",
+      "start": "2025-08-01",
+      "end": "2025-08-03",
+      "known_since": "2025-07-30",
+      "source_url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000012828449",
+      "license": "KOGL Type 1 (attribution)",
+      "retrieved_on": "2026-11-12",
+      "attribution": "인천광역시"
+    },
+    {
+      "kind": "pentaport",
+      "start": "2026-07-31",
+      "end": "2026-08-02",
+      "known_since": "2026-05-31",
+      "source_url": "https://www.incheon.go.kr/moo/MOO030301/3074869",
+      "license": "KOGL Type 1 (attribution)",
+      "retrieved_on": "2026-11-12",
+      "attribution": "인천광역시"
+    }
+  ],
+  "exclusions": [
+    "KBO original schedule: dates verified; reuse authorization unconfirmed; excluded per user 2026-11-12",
+    "Beer festival: dated pre-cutoff event schedule and reuse conditions not both confirmed"
+  ]
+}

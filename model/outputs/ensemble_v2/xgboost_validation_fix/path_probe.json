@@ -1,0 +1,11 @@
+{
+  "history": 0.22842635604852057,
+  "captured_type": "<class 'xgboost.core.DMatrix'>",
+  "sklearn": 0.2286457953255855,
+  "captured_pred": 0.22842635623151958,
+  "fresh_dmatrix": 0.2286457953255855,
+  "fresh_qdm": 0.2286457953255855,
+  "eval_again": "[0]\tcaptured-rmse:0.22842635604852057\tfresh-rmse:0.22864579518641259\tqdm-rmse:0.22864579518641259",
+  "label_maxdiff": 0.0,
+  "captured_dmatrix_maxdiff": 0.0366218239068985
+}

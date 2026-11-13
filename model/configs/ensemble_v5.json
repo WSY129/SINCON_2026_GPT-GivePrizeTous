@@ -1,0 +1,114 @@
+{
+  "version": "ensemble_v5",
+  "seed": 2026,
+  "final_seeds": [
+    2026,
+    2027
+  ],
+  "fold_origins": [
+    "2025-08-30",
+    "2025-10-30",
+    "2025-12-30",
+    "2026-02-27"
+  ],
+  "fold_weights": [
+    0.15,
+    0.15,
+    0.35,
+    0.35
+  ],
+  "horizon_days": 123,
+  "final_cutoff": "2026-06-30",
+  "max_training_rows": 1200000,
+  "final_training_rows": 1600000,
+  "threads": 5,
+  "max_cpu_workers": 2,
+  "device": "auto",
+  "models": [
+    "lightgbm",
+    "catboost_cpu",
+    "xgboost",
+    "tabm_v5",
+    "decomp_gbdt",
+    "low_demand_specialist",
+    "st_itransformer"
+  ],
+  "patience": 250,
+  "lightgbm": {
+    "num_leaves": 191,
+    "min_child_samples": 20,
+    "learning_rate": 0.02,
+    "subsample": 0.8,
+    "subsample_freq": 1,
+    "colsample_bytree": 0.8,
+    "reg_alpha": 0.3,
+    "reg_lambda": 3,
+    "n_estimators": 6000,
+    "cat_smooth": 15,
+    "cat_l2": 10,
+    "extra_trees": false
+  },
+  "catboost": {
+    "depth": 8,
+    "learning_rate": 0.025,
+    "l2_leaf_reg": 5.0,
+    "random_strength": 0.8,
+    "iterations": 6000
+  },
+  "xgboost": {
+    "tree_method": "hist",
+    "enable_categorical": true,
+    "max_cat_to_onehot": 4,
+    "max_depth": 8,
+    "min_child_weight": 20,
+    "learning_rate": 0.02,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "reg_alpha": 0.3,
+    "reg_lambda": 3,
+    "n_estimators": 6000,
+    "max_cat_threshold": 64
+  },
+  "tabm": {
+    "k": 16,
+    "hidden": 384,
+    "blocks": 3,
+    "frequencies": 8,
+    "dropout": 0.2,
+    "learning_rate": 0.0015,
+    "weight_decay": 0.0003,
+    "batch_size": 2048,
+    "epochs": 35,
+    "patience": 7,
+    "auxiliary_weight": 0.2
+  },
+  "final_iteration_multiplier": 1.12,
+  "final_iteration_fold_weights": [
+    0.25,
+    0.75
+  ],
+  "selection_metric": "mixed_log_mse",
+  "ensemble_bias": false,
+  "input_data": "data/raw",
+  "output": "outputs/ensemble_v5",
+  "feature_workers": 4,
+  "budget_seconds": 7200,
+  "st_itransformer": {
+    "epochs": 30,
+    "batch_size": 512,
+    "hidden": 96,
+    "patience": 7,
+    "learning_rate": 0.001
+  },
+  "max_origins_per_target": 3,
+  "convergence_min_tree": 400,
+  "convergence_min_tabm": 8,
+  "convergence_lr_retries": 1,
+  "direct_tree_min_weight": 0.2,
+  "new_station_spatial_max_weight": 0.45,
+  "final_diagnostic_origin": "2026-06-02",
+  "final_diagnostic_end": "2026-06-30",
+  "checkpoint_average": 3,
+  "blend_weighted_mse_share": 0.35,
+  "blend_fold34_mse_share": 0.65
+}

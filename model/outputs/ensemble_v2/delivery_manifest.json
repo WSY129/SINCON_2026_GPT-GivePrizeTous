@@ -1,0 +1,107 @@
+{
+  "protected_files_unchanged": {
+    "submission_lgbm_0.247808.csv": "b194efc10ba25bd362c3eddff6a0123354e6baa27f3f1e58e9faf7b1b403e5e4",
+    "outputs/lightgbm_tuned/model_bundle.joblib": "dcf5fdb6b2f110d92374382e32757dadff325a8f28c9f1d35b34ca1da5e67a46",
+    "configs/lightgbm_tuned.json": "2116b579e50640d8c2f39fc378c225028c54735682bf59fe1cccc5af7e991d92"
+  },
+  "source_sha256": {
+    "__init__.py": "f526452b64e34c742e0f8ce4ab662b851774fc308d3c57f7ac247d51f302d207",
+    "eda.py": "9891970efc533f6b3d9510b3d5d49ac409511e7224d02cb7312a481bf28e54df",
+    "ensemble.py": "d955667ffc968daac36ea27835d0d32fe91eab6eaf47c3bce06f351723ef9a33",
+    "ensemble_v2.py": "226eeb7a8ac6a7c424b428b15295d934e4cb3185da7975675ff5932f4042199c",
+    "evaluate_postprocessing.py": "7dc58353fdf7f6dfccd0480e44a0ab4de0ce3570a6b7bd667a51d2d073c4a27b",
+    "features.py": "171d90496c2464b5efc55e25f8efd1cad33db2c01b01613c94359171999faa17",
+    "features_v2.py": "2da7ab555351619f1fa9b92b288d906f161d4f1e19c2554fe7f56d416956f0c3",
+    "holiday_calendar.py": "50defb4fb19fcc52a1f35e568deb8d94e5b89ec275e7ace57138cff658a17e64",
+    "metrics.py": "9fdda3b049e583d372401a4ddc6066c81ae8d5b2d1ef4560af4ffd23fa78c571",
+    "models.py": "fdf47108a6f7aac0632e56f7634f252a023409bbf776c25571c0a7d29c52a302",
+    "models_v2.py": "15fcfb851af4ae76168f4b21bfdbea0bc72a5ab6b421aeecff75cf8fb9b6a80f",
+    "nn_preprocessor.py": "abe6d243eec067abaa59b7d1eb74538f1fb1b81ce70ab64fd0d315580a6a38bb",
+    "pipeline.py": "d51f54f1d827b612f7390da4a7620287c5859f1e3a93ced447fee7ef77d02f77",
+    "pipeline_v2.py": "9788a6a2bd16047736b8c4a2ad8a2bbe6537fca5f90b6e9c43f2363c58466be9",
+    "postprocessing.py": "64d8d4aef97156c0f1efdb4e1b5f8c771343ca48c9c168a93cda8604b64c6f5d",
+    "tabm_v2.py": "ce01e8d3392bc821d5c5caf02f0e740880b20293f8f03ade9d202d269f66cd0e",
+    "tune_lightgbm.py": "e5acf34fa09925ddff60deb20ad84e74082ec5ba5bfda38908a03e70eeb3c663",
+    "validate_submission.py": "64667df2339bcf0d5fc4466807dc3ef21c892980a81ed862c3f919c3aece3d4e",
+    "xgb_compat.py": "4871dcd95040249acb2ccd8f9136fe6d419b0a99ceafe39e80fa53ef2c96bacf"
+  },
+  "config_sha256": "21d23b563eff27183343107ab70c9c4f2a1cc25856ba03ae27d4d3fe126e38f6",
+  "notebook_sha256": "a00bd78fab6c190a0cf916438250db047a880720a3b99e7e03c201ae28c6569d",
+  "model_sha256": {
+    "final/lightgbm/2026/model.joblib": "afc2cb42eb8911270d15cc5665d512cf14d04f01abf5b526b500a7b5efdb6d7d",
+    "final/lightgbm/2027/model.joblib": "3e22796e18dafd8572e20edfe99f5a42c402ea2300129044c8b6fe39af564cfb",
+    "final/catboost/2026/model.joblib": "62fb06af459e262cd750a72adf2a137938843f00a8d3d4f8fcb3bdf61064453d",
+    "final/catboost/2027/model.joblib": "51b20e0aa20efe7549b3d2763a5e41e0b9323531013196ec58b3b8dc34bf445f",
+    "final/xgboost/2026/model.joblib": "109637d3ba4212225180ec57439cc3f0ce7a87b14de270caf2583f9992637916",
+    "final/xgboost/2027/model.joblib": "1098ba0615d725c7621babb8d86069019efe1ccc10bb25b144629499c444781f",
+    "final/tabm/2026/model.joblib": "a74c2d6b95bdadeb2a6feb87784752f6d0ca5f3fbcac89bbc23df07cb440cc1c",
+    "final/tabm/2027/model.joblib": "fa91ff7660b4615799ab286f32b54a78665f759569e3e7d33a17fa2f3eef3f57"
+  },
+  "oof_sha256": "1501d1d040e29f110d78d997ce14f99c63c29ff6aac31a638c6f33a3c2d4d7cf",
+  "submission_sha256": "f6f95b8a64a9a95b39fac1c3891cb24f713669fbfe5558dcbafe0391620b0bf6",
+  "unit_tests": 53,
+  "notebook_validation": {
+    "cells": 8,
+    "embedded_files": 29,
+    "syntax_pass": true,
+    "all_embedded_files_match_source": true,
+    "sha256": "a00bd78fab6c190a0cf916438250db047a880720a3b99e7e03c201ae28c6569d",
+    "hosted_cuda_execution_tested": false
+  },
+  "notebook_isolated_unittest": {
+    "status": "PASS",
+    "embedded_files": 29,
+    "isolated_root": "/private/tmp/sincon_notebook_test_5lf12foe",
+    "external_project_files_used": false,
+    "data_required_for_unittest": false,
+    "hosted_cuda_execution": false
+  },
+  "reused_model_hashes_verified": 18,
+  "xgboost_validation_inference_parity": [
+    {
+      "fold": 1,
+      "best_iteration": 1,
+      "native_best_residual_rmse": 0.24594064047693784,
+      "actual_inference_residual_rmse": 0.24594064040100366,
+      "absolute_gap": 7.593417561402305e-11,
+      "saved_prediction_max_difference": 0.0
+    },
+    {
+      "fold": 2,
+      "best_iteration": 7,
+      "native_best_residual_rmse": 0.20550093814696788,
+      "actual_inference_residual_rmse": 0.2055009382043016,
+      "absolute_gap": 5.73337211040581e-11,
+      "saved_prediction_max_difference": 0.0
+    },
+    {
+      "fold": 3,
+      "best_iteration": 59,
+      "native_best_residual_rmse": 0.22825626503887303,
+      "actual_inference_residual_rmse": 0.22825626493851522,
+      "absolute_gap": 1.0035780539929817e-10,
+      "saved_prediction_max_difference": 0.0
+    },
+    {
+      "fold": 4,
+      "best_iteration": 3000,
+      "native_best_residual_rmse": 0.2374146954654822,
+      "actual_inference_residual_rmse": 0.23741469564616752,
+      "absolute_gap": 1.8068532781079227e-10,
+      "saved_prediction_max_difference": 0.0
+    }
+  ],
+  "cv_models_verified": 16,
+  "final_models_verified": 8,
+  "reload_agreement": {
+    "id_order_match": true,
+    "allclose": true,
+    "rtol": 2e-05,
+    "atol": 1e-05,
+    "max_absolute_prediction_difference": 0.0,
+    "max_relative_prediction_difference": 0.0,
+    "byte_identical_csv": true,
+    "original_sha256": "f6f95b8a64a9a95b39fac1c3891cb24f713669fbfe5558dcbafe0391620b0bf6",
+    "reloaded_sha256": "f6f95b8a64a9a95b39fac1c3891cb24f713669fbfe5558dcbafe0391620b0bf6"
+  }
+}

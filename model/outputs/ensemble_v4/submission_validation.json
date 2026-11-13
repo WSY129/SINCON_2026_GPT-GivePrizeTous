@@ -1,0 +1,9 @@
+{
+  "rows": 157194,
+  "ids_in_test_order": true,
+  "finite_nonnegative": true,
+  "mean": 334.35364677299833,
+  "min": 2.7272169519900546,
+  "max": 2798.773544923522,
+  "sha256": "9b315a3ef59f3a1e847fb01468867686e6116e12913b46f9a534919d959ae998"
+}

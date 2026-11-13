@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "input_source_config_hashes_match": true,
+  "packaging_metadata_verified_from_snapshot": 27,
+  "oof_rows": 628776,
+  "recent_oof_rows": 314388,
+  "final_model_count": 8,
+  "recomputed_scores": {
+    "oof_rmsle": 0.22243673641983436,
+    "fold34_rmsle": 0.2176371660758893,
+    "weighted_rmsle": 0.22052944349560627
+  },
+  "submission_rows": 157194,
+  "ids_in_test_order": true,
+  "max_submission_vs_training_log_difference": 9.746752294148564e-10,
+  "preserved_file_count": 476,
+  "submission_sha256": "f2eaac6c5f401eace2f16be733a55136157ad5f2564c95bcbaa63ac84e176bf1"
+}

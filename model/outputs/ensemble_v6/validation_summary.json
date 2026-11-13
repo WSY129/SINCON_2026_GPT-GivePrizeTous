@@ -1,0 +1,941 @@
+{
+ "information": "local OOF only; no leaderboard score is read anywhere in src/v6",
+ "fold_origins": [
+  "2025-08-30",
+  "2025-10-30",
+  "2025-12-30",
+  "2026-02-27"
+ ],
+ "blend": {
+  "method": "convex least squares on local leave-one-fold-out OOF predictions; four folds pooled with equal rows; no leaderboard input",
+  "versions": [
+   "v2",
+   "v4",
+   "v5"
+  ],
+  "grid_step": 0.01,
+  "excluded_stations": [
+   3127
+  ],
+  "segments": {
+   "ordinary": {
+    "rows": 585900,
+    "weights": {
+     "v2": 0.43,
+     "v4": 0.12,
+     "v5": 0.45
+    },
+    "pooled_rmsle": 0.18584961186245674,
+    "single_pooled": {
+     "v2": 0.19906333864686465,
+     "v4": 0.1952015730276486,
+     "v5": 0.1951402145586044
+    },
+    "equal_weight_pooled": 0.186368315182104,
+    "leave_one_fold_out": {
+     "1": {
+      "weights": {
+       "v2": 0.48,
+       "v4": 0.0,
+       "v5": 0.52
+      },
+      "rmsle": 0.20078829530556666,
+      "rmsle_full_fit_weights": 0.19970237434298632,
+      "single": {
+       "v2": 0.22406613084308177,
+       "v4": 0.21327136955779608,
+       "v5": 0.2132586382649505
+      }
+     },
+     "2": {
+      "weights": {
+       "v2": 0.3,
+       "v4": 0.14,
+       "v5": 0.56
+      },
+      "rmsle": 0.18811239107423655,
+      "rmsle_full_fit_weights": 0.18317881200657923,
+      "single": {
+       "v2": 0.1815024431457351,
+       "v4": 0.19999263115943622,
+       "v5": 0.20858670265228882
+      }
+     },
+     "3": {
+      "weights": {
+       "v2": 0.44,
+       "v4": 0.11,
+       "v5": 0.45
+      },
+      "rmsle": 0.18227379314278644,
+      "rmsle_full_fit_weights": 0.18222909155822015,
+      "single": {
+       "v2": 0.18970725679582284,
+       "v4": 0.1857466859812845,
+       "v5": 0.18447622942136274
+      }
+     },
+     "4": {
+      "weights": {
+       "v2": 0.49,
+       "v4": 0.22,
+       "v5": 0.29
+      },
+      "rmsle": 0.18057674816820582,
+      "rmsle_full_fit_weights": 0.17756363328732375,
+      "single": {
+       "v2": 0.19849079743609116,
+       "v4": 0.18017243324635845,
+       "v5": 0.17127338758889685
+      }
+     }
+    }
+   },
+   "holiday": {
+    "rows": 34020,
+    "weights": {
+     "v2": 0.32,
+     "v4": 0.0,
+     "v5": 0.68
+    },
+    "pooled_rmsle": 0.28595558708531943,
+    "single_pooled": {
+     "v2": 0.324298036277314,
+     "v4": 0.3335320460072777,
+     "v5": 0.2947929496918475
+    },
+    "equal_weight_pooled": 0.2997076901809488,
+    "leave_one_fold_out": {
+     "1": {
+      "weights": {
+       "v2": 0.32,
+       "v4": 0.0,
+       "v5": 0.68
+      },
+      "rmsle": 0.31769102106646985,
+      "rmsle_full_fit_weights": 0.31769102106646985,
+      "single": {
+       "v2": 0.35758978486251886,
+       "v4": 0.4149389455740824,
+       "v5": 0.326097515680193
+      }
+     },
+     "2": {
+      "weights": {
+       "v2": 0.27,
+       "v4": 0.0,
+       "v5": 0.73
+      },
+      "rmsle": 0.2975557125173346,
+      "rmsle_full_fit_weights": 0.2962083059425143,
+      "single": {
+       "v2": 0.33963171256845215,
+       "v4": 0.3172836153951341,
+       "v5": 0.3155298573003528
+      }
+     },
+     "3": {
+      "weights": {
+       "v2": 0.34,
+       "v4": 0.0,
+       "v5": 0.66
+      },
+      "rmsle": 0.2966446682139194,
+      "rmsle_full_fit_weights": 0.2963564520576423,
+      "single": {
+       "v2": 0.3425887615003336,
+       "v4": 0.31471810347216517,
+       "v5": 0.3014050501333028
+      }
+     },
+     "4": {
+      "weights": {
+       "v2": 0.33,
+       "v4": 0.0,
+       "v5": 0.67
+      },
+      "rmsle": 0.22694571781460157,
+      "rmsle_full_fit_weights": 0.2268336843583441,
+      "single": {
+       "v2": 0.24866081402478618,
+       "v4": 0.2670982800093179,
+       "v5": 0.22678405604576088
+      }
+     }
+    }
+   }
+  },
+  "ordinary_alternatives_reference_only": {
+   "folds_2_and_4": {
+    "weights": {
+     "v2": 0.51,
+     "v4": 0.0,
+     "v5": 0.49
+    },
+    "rmsle_on_those_folds": 0.17992124587614294,
+    "rmsle_all_folds": 0.18612101501479072
+   },
+   "folds_3_and_4": {
+    "weights": {
+     "v2": 0.09,
+     "v4": 0.15,
+     "v5": 0.76
+    },
+    "rmsle_on_those_folds": 0.17738693069092373,
+    "rmsle_all_folds": 0.19081978468193606
+   },
+   "folds_1_and_2": {
+    "weights": {
+     "v2": 0.52,
+     "v4": 0.23,
+     "v5": 0.25
+    },
+    "rmsle_on_those_folds": 0.19070526769624935,
+    "rmsle_all_folds": 0.1865528014081032
+   }
+  }
+ },
+ "local_validator": {
+  "definition": "RMSLE on the four time-ordered validation folds (157,194 rows each). all_oof pools every row; weighted_4fold = sqrt(0.15*MSE1 + 0.15*MSE2 + 0.35*MSE3 + 0.35*MSE4); fold_3_4 pools folds 3 and 4.",
+  "saved_ensemble_columns": {
+   "v2": {
+    "all_oof": 0.22276095854327352,
+    "weighted_4fold": 0.2206182768622979,
+    "fold_3_4": 0.21736465498683724,
+    "fold_4": 0.2243977366047803,
+    "fold_1": 0.2517333219754487,
+    "fold_2": 0.20155725423954268,
+    "fold_3": 0.21009626908097445
+   },
+   "v4": {
+    "all_oof": 0.22128948991514336,
+    "weighted_4fold": 0.2141206590061115,
+    "fold_3_4": 0.20289303589002797,
+    "fold_4": 0.20481649659373047,
+    "fold_1": 0.26043907960394524,
+    "fold_2": 0.21381410425255593,
+    "fold_3": 0.2009511650834967
+   },
+   "v5": {
+    "all_oof": 0.21351578016124242,
+    "weighted_4fold": 0.20654391613731596,
+    "fold_3_4": 0.19562078280834713,
+    "fold_4": 0.1947961308872099,
+    "fold_1": 0.2387975276008746,
+    "fold_2": 0.22089978042104183,
+    "fold_3": 0.1964419729194197
+   },
+   "v6_base_blend": {
+    "all_oof": 0.2049943438379273,
+    "weighted_4fold": 0.20235038138133343,
+    "fold_3_4": 0.19831835670107342,
+    "fold_4": 0.20061075547468998,
+    "fold_1": 0.2271926920784341,
+    "fold_2": 0.1944578707049291,
+    "fold_3": 0.1959991479499401
+   },
+   "v6_final": {
+    "all_oof": 0.1986530698378911,
+    "weighted_4fold": 0.1952225887431995,
+    "fold_3_4": 0.1899607450368732,
+    "fold_4": 0.18645948278290408,
+    "fold_1": 0.2198796569802019,
+    "fold_2": 0.19322250324538548,
+    "fold_3": 0.19339863130399815
+   }
+  },
+  "leave_one_fold_out_columns": {
+   "v2": {
+    "all_oof": 0.2243216026162493,
+    "weighted_4fold": 0.2221933388755653,
+    "fold_3_4": 0.2189621599756355,
+    "fold_4": 0.225864303694429,
+    "fold_1": 0.25443406545945835,
+    "fold_2": 0.20163128956754303,
+    "fold_3": 0.2118352456958528
+   },
+   "v4": {
+    "all_oof": 0.21998888896898178,
+    "weighted_4fold": 0.2150378417110868,
+    "fold_3_4": 0.20738976955167193,
+    "fold_4": 0.20933525314470447,
+    "fold_1": 0.24937186523412982,
+    "fold_2": 0.21300958870315628,
+    "fold_3": 0.2054258621017171
+   },
+   "v5": {
+    "all_oof": 0.21727066504224501,
+    "weighted_4fold": 0.21048966793681376,
+    "fold_3_4": 0.19988731310047209,
+    "fold_4": 0.19734822552739928,
+    "fold_1": 0.24323623218387883,
+    "fold_2": 0.22305252078274215,
+    "fold_3": 0.20239454972463825
+   },
+   "v6_base_blend": {
+    "all_oof": 0.20770209819685603,
+    "weighted_4fold": 0.20530951699500172,
+    "fold_3_4": 0.2016674292709103,
+    "fold_4": 0.20307471986540543,
+    "fold_1": 0.2296250302726753,
+    "fold_2": 0.19619757337006863,
+    "fold_3": 0.20025024896129923
+   },
+   "v6_blend_plus_munhak": {
+    "all_oof": 0.20218756535521953,
+    "weighted_4fold": 0.19906759602567226,
+    "fold_3_4": 0.1942937263325655,
+    "fold_4": 0.19097118981796898,
+    "fold_1": 0.2235731359694061,
+    "fold_2": 0.19502357556332112,
+    "fold_3": 0.19756039290277028
+   },
+   "v6_final": {
+    "all_oof": 0.20135091411788755,
+    "weighted_4fold": 0.19814628368364573,
+    "fold_3_4": 0.19323971750118074,
+    "fold_4": 0.1888202001798942,
+    "fold_1": 0.22243236552988008,
+    "fold_2": 0.19496006870470997,
+    "fold_3": 0.19756039290277028
+   }
+  }
+ },
+ "overall_rmsle": {
+  "v2": {
+   "1": 0.2544340654594584,
+   "2": 0.201631289567543,
+   "3": 0.2118352456958528,
+   "4": 0.225864303694429,
+   "all": 0.2243216026162493
+  },
+  "v4": {
+   "1": 0.2493718652341298,
+   "2": 0.21300958870315628,
+   "3": 0.2054258621017171,
+   "4": 0.20933525314470447,
+   "all": 0.21998888896898178
+  },
+  "v5": {
+   "1": 0.2432362321838788,
+   "2": 0.22305252078274218,
+   "3": 0.20239454972463825,
+   "4": 0.19734822552739928,
+   "all": 0.21727066504224501
+  },
+  "base": {
+   "1": 0.2296250302726753,
+   "2": 0.19619757337006863,
+   "3": 0.20025024896129923,
+   "4": 0.20307471986540546,
+   "all": 0.20770209819685603
+  },
+  "munhak_only": {
+   "1": 0.2235731359694061,
+   "2": 0.19502357556332112,
+   "3": 0.19756039290277028,
+   "4": 0.19097118981796898,
+   "all": 0.20218756535521953
+  },
+  "final": {
+   "1": 0.22243236552988008,
+   "2": 0.19496006870470997,
+   "3": 0.19756039290277028,
+   "4": 0.1888202001798942,
+   "all": 0.20135091411788755
+  }
+ },
+ "station_rmsle": {
+  "3127": {
+   "name": "문학경기장",
+   "rows_per_fold": 2214,
+   "base": {
+    "1": 0.8419009619746268,
+    "2": 0.41032396154323514,
+    "3": 0.5797277644164476,
+    "4": 0.8009990468843752,
+    "all": 0.6809637907288658
+   },
+   "final": {
+    "1": 0.7169832664267656,
+    "2": 0.36845076562501633,
+    "3": 0.5100102860811263,
+    "4": 0.5504324400389244,
+    "all": 0.5506603612893821
+   },
+   "rows_changed": {
+    "1": 1116,
+    "2": 36,
+    "3": 648,
+    "4": 1710
+   }
+  },
+  "3754": {
+   "name": "부천종합운동장",
+   "rows_per_fold": 2214,
+   "base": {
+    "1": 0.299317173645945,
+    "2": 0.24743464225978387,
+    "3": 0.4059315899089293,
+    "4": 0.4139663312035142,
+    "all": 0.3489137614388808
+   },
+   "final": {
+    "1": 0.2749487406124722,
+    "2": 0.24385543057940423,
+    "3": 0.4059315899089293,
+    "4": 0.37976372200438946,
+    "all": 0.33319034395675
+   },
+   "rows_changed": {
+    "1": 19,
+    "2": 7,
+    "3": 0,
+    "4": 24
+   }
+  },
+  "3209": {
+   "name": "아시아드경기장",
+   "rows_per_fold": 2214,
+   "base": {
+    "1": 0.2711185283019055,
+    "2": 0.19582579371303388,
+    "3": 0.19285372908574028,
+    "4": 0.2509680307190547,
+    "all": 0.230233854557278
+   },
+   "final": {
+    "1": 0.24529549580959567,
+    "2": 0.19582579371303388,
+    "3": 0.19285372908574028,
+    "4": 0.21856496977248474,
+    "all": 0.21417331100170856
+   },
+   "rows_changed": {
+    "1": 10,
+    "2": 0,
+    "3": 0,
+    "4": 37
+   }
+  },
+  "3210": {
+   "name": "서구청",
+   "rows_per_fold": 2214,
+   "base": {
+    "1": 0.24488860817715938,
+    "2": 0.15937791021236672,
+    "3": 0.17570030214693916,
+    "4": 0.21553023067401336,
+    "all": 0.20167772880732682
+   },
+   "final": {
+    "1": 0.22622043383335755,
+    "2": 0.15937791021236672,
+    "3": 0.17570030214693916,
+    "4": 0.1755374151701626,
+    "all": 0.18591730906949028
+   },
+   "rows_changed": {
+    "1": 6,
+    "2": 0,
+    "3": 0,
+    "4": 36
+   }
+  },
+  "3139": {
+   "name": "송도달빛축제공원",
+   "rows_per_fold": 2214,
+   "base": {
+    "1": 0.3484503230771305,
+    "2": 0.1918482544320496,
+    "3": 0.17989830561764067,
+    "4": 0.15932167398606709,
+    "all": 0.23236295775521199
+   },
+   "final": {
+    "1": 0.3484503230771305,
+    "2": 0.1918482544320496,
+    "3": 0.17989830561764067,
+    "4": 0.15932167398606709,
+    "all": 0.23236295775521199
+   },
+   "rows_changed": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   }
+  }
+ },
+ "munhak_by_state": [
+  {
+   "fold": 1,
+   "state": "HOME",
+   "days": 11,
+   "days_with_crowd": 9,
+   "rmsle_blend": 1.02915527622774,
+   "rmsle_final": 0.8460281292484607,
+   "bias_final": -0.004495945176126179
+  },
+  {
+   "fold": 1,
+   "state": "NO_HOME",
+   "days": 16,
+   "days_with_crowd": 2,
+   "rmsle_blend": 0.7623898616212849,
+   "rmsle_final": 0.6226488053676004,
+   "bias_final": -0.12694606324967386
+  },
+  {
+   "fold": 1,
+   "state": "OFF",
+   "days": 61,
+   "days_with_crowd": 2,
+   "rmsle_blend": 0.6958286476732451,
+   "rmsle_final": 0.6958286476732451,
+   "bias_final": 0.10617932562078158
+  },
+  {
+   "fold": 1,
+   "state": "RESERVE",
+   "days": 4,
+   "days_with_crowd": 2,
+   "rmsle_blend": 1.1393344801231347,
+   "rmsle_final": 0.8030984413918131,
+   "bias_final": -0.1275944470108021
+  },
+  {
+   "fold": 1,
+   "state": "UNANNOUNCED",
+   "days": 31,
+   "days_with_crowd": 5,
+   "rmsle_blend": 1.0081013755248884,
+   "rmsle_final": 0.7413769899334594,
+   "bias_final": 0.04060503985497454
+  },
+  {
+   "fold": 2,
+   "state": "CONCERT",
+   "days": 2,
+   "days_with_crowd": 2,
+   "rmsle_blend": 1.653474595377061,
+   "rmsle_final": 0.8535082623235741,
+   "bias_final": -0.06971536415966788
+  },
+  {
+   "fold": 2,
+   "state": "OFF",
+   "days": 121,
+   "days_with_crowd": 1,
+   "rmsle_blend": 0.3549069392063949,
+   "rmsle_final": 0.3549069392063949,
+   "bias_final": 0.02027019722447304
+  },
+  {
+   "fold": 3,
+   "state": "HOME",
+   "days": 16,
+   "days_with_crowd": 15,
+   "rmsle_blend": 0.9644561597952814,
+   "rmsle_final": 0.6587830208103408,
+   "bias_final": -0.06168973079355807
+  },
+  {
+   "fold": 3,
+   "state": "NO_HOME",
+   "days": 20,
+   "days_with_crowd": 3,
+   "rmsle_blend": 0.837349049844305,
+   "rmsle_final": 0.7942664048686444,
+   "bias_final": -0.2738981759833965
+  },
+  {
+   "fold": 3,
+   "state": "OFF",
+   "days": 87,
+   "days_with_crowd": 4,
+   "rmsle_blend": 0.3780240059664876,
+   "rmsle_final": 0.3780240059664876,
+   "bias_final": 0.032669103260869255
+  },
+  {
+   "fold": 4,
+   "state": "CONCERT",
+   "days": 3,
+   "days_with_crowd": 3,
+   "rmsle_blend": 1.9169578725345917,
+   "rmsle_final": 0.734487410814747,
+   "bias_final": -0.10950189104335444
+  },
+  {
+   "fold": 4,
+   "state": "HOME",
+   "days": 38,
+   "days_with_crowd": 37,
+   "rmsle_blend": 1.1089898597115537,
+   "rmsle_final": 0.7127309983530873,
+   "bias_final": -0.04155758003872109
+  },
+  {
+   "fold": 4,
+   "state": "NO_HOME",
+   "days": 54,
+   "days_with_crowd": 1,
+   "rmsle_blend": 0.4956420038301906,
+   "rmsle_final": 0.39562264954090925,
+   "bias_final": -0.04948905088505454
+  },
+  {
+   "fold": 4,
+   "state": "OFF",
+   "days": 28,
+   "days_with_crowd": 4,
+   "rmsle_blend": 0.5309101220530165,
+   "rmsle_final": 0.5309101220530165,
+   "bias_final": 0.0006014878819575072
+  }
+ ],
+ "event_actions": [
+  {
+   "fold": 1,
+   "station": 3209,
+   "date": "2025-09-13",
+   "action": "lift",
+   "event": "SEVENTEEN WORLD TOUR [NEW_] IN INCHEON",
+   "comparable_events": 4,
+   "rmsle_before": 1.0948439669268861,
+   "rmsle_after": 0.6014907895577728
+  },
+  {
+   "fold": 1,
+   "station": 3209,
+   "date": "2025-09-14",
+   "action": "lift",
+   "event": "SEVENTEEN WORLD TOUR [NEW_] IN INCHEON",
+   "comparable_events": 4,
+   "rmsle_before": 1.0738928303184037,
+   "rmsle_after": 0.5915122059065222
+  },
+  {
+   "fold": 1,
+   "station": 3210,
+   "date": "2025-09-13",
+   "action": "lift",
+   "event": "SEVENTEEN WORLD TOUR [NEW_] IN INCHEON",
+   "comparable_events": 4,
+   "rmsle_before": 0.9891712519338405,
+   "rmsle_after": 0.6842695091081351
+  },
+  {
+   "fold": 1,
+   "station": 3210,
+   "date": "2025-09-14",
+   "action": "lift",
+   "event": "SEVENTEEN WORLD TOUR [NEW_] IN INCHEON",
+   "comparable_events": 4,
+   "rmsle_before": 1.0872684701289053,
+   "rmsle_after": 0.7814307427769185
+  },
+  {
+   "fold": 1,
+   "station": 3754,
+   "date": "2025-09-07",
+   "action": "lift",
+   "event": "K리그2 부천 v 인천",
+   "comparable_events": 13,
+   "rmsle_before": 0.9595980625577755,
+   "rmsle_after": 0.5263309719361458
+  },
+  {
+   "fold": 1,
+   "station": 3754,
+   "date": "2025-09-20",
+   "action": "lift",
+   "event": "K리그2 부천 v 서울E",
+   "comparable_events": 13,
+   "rmsle_before": 0.5173182490473643,
+   "rmsle_after": 0.2384579434253012
+  },
+  {
+   "fold": 1,
+   "station": 3754,
+   "date": "2025-10-08",
+   "action": "lift",
+   "event": "K리그2 부천 v 성남",
+   "comparable_events": 13,
+   "rmsle_before": 0.6179062633544662,
+   "rmsle_after": 0.27363409151811385
+  },
+  {
+   "fold": 1,
+   "station": 3754,
+   "date": "2025-10-19",
+   "action": "lift",
+   "event": "K리그2 부천 v 천안",
+   "comparable_events": 13,
+   "rmsle_before": 0.5298093417953434,
+   "rmsle_after": 0.14356039120530273
+  },
+  {
+   "fold": 1,
+   "station": 3754,
+   "date": "2025-11-01",
+   "action": "lift",
+   "event": "K리그2 부천 v 안산",
+   "comparable_events": 13,
+   "rmsle_before": 0.48963075048600874,
+   "rmsle_after": 0.23677933057526818
+  },
+  {
+   "fold": 1,
+   "station": 3754,
+   "date": "2025-11-23",
+   "action": "lift",
+   "event": "K리그2 부천 v 화성",
+   "comparable_events": 13,
+   "rmsle_before": 0.4719814711917423,
+   "rmsle_after": 0.3267479269990174
+  },
+  {
+   "fold": 2,
+   "station": 3754,
+   "date": "2025-11-01",
+   "action": "lift",
+   "event": "K리그2 부천 v 안산",
+   "comparable_events": 17,
+   "rmsle_before": 0.44709127401182636,
+   "rmsle_after": 0.21558710993153396
+  },
+  {
+   "fold": 2,
+   "station": 3754,
+   "date": "2025-11-23",
+   "action": "lift",
+   "event": "K리그2 부천 v 화성",
+   "comparable_events": 17,
+   "rmsle_before": 0.38460599411615554,
+   "rmsle_after": 0.2916291180218684
+  },
+  {
+   "fold": 3,
+   "station": 3209,
+   "date": "2026-05-02",
+   "action": "despike",
+   "event": "",
+   "comparable_events": null,
+   "rmsle_before": 0.26291890638288207,
+   "rmsle_after": 0.26291890638288207
+  },
+  {
+   "fold": 3,
+   "station": 3210,
+   "date": "2026-05-02",
+   "action": "despike",
+   "event": "",
+   "comparable_events": null,
+   "rmsle_before": 0.16894436172210528,
+   "rmsle_after": 0.16894436172210528
+  },
+  {
+   "fold": 4,
+   "station": 3209,
+   "date": "2026-05-02",
+   "action": "despike",
+   "event": "",
+   "comparable_events": null,
+   "rmsle_before": 0.2399188548250109,
+   "rmsle_after": 0.2399188548250109
+  },
+  {
+   "fold": 4,
+   "station": 3209,
+   "date": "2026-05-30",
+   "action": "despike",
+   "event": "",
+   "comparable_events": null,
+   "rmsle_before": 0.16280437061142522,
+   "rmsle_after": 0.16302731229028553
+  },
+  {
+   "fold": 4,
+   "station": 3209,
+   "date": "2026-06-27",
+   "action": "despike",
+   "event": "",
+   "comparable_events": null,
+   "rmsle_before": 0.1291784075307199,
+   "rmsle_after": 0.12500695351345575
+  },
+  {
+   "fold": 4,
+   "station": 3209,
+   "date": "2026-06-28",
+   "action": "despike",
+   "event": "",
+   "comparable_events": null,
+   "rmsle_before": 0.14405458527397547,
+   "rmsle_after": 0.10702461360679631
+  },
+  {
+   "fold": 4,
+   "station": 3209,
+   "date": "2026-04-04",
+   "action": "lift",
+   "event": "SEVENTEEN WORLD TOUR [NEW_] ENCORE",
+   "comparable_events": 2,
+   "rmsle_before": 0.9831398240122765,
+   "rmsle_after": 0.14093694541681726
+  },
+  {
+   "fold": 4,
+   "station": 3209,
+   "date": "2026-04-05",
+   "action": "lift",
+   "event": "SEVENTEEN WORLD TOUR [NEW_] ENCORE",
+   "comparable_events": 2,
+   "rmsle_before": 0.9843459655204179,
+   "rmsle_after": 0.23358749208628504
+  },
+  {
+   "fold": 4,
+   "station": 3210,
+   "date": "2026-05-02",
+   "action": "despike",
+   "event": "",
+   "comparable_events": null,
+   "rmsle_before": 0.15900191787555848,
+   "rmsle_after": 0.15900191787555848
+  },
+  {
+   "fold": 4,
+   "station": 3210,
+   "date": "2026-05-30",
+   "action": "despike",
+   "event": "",
+   "comparable_events": null,
+   "rmsle_before": 0.12824163904742547,
+   "rmsle_after": 0.12335172169878517
+  },
+  {
+   "fold": 4,
+   "station": 3210,
+   "date": "2026-06-27",
+   "action": "despike",
+   "event": "",
+   "comparable_events": null,
+   "rmsle_before": 0.09965756887217625,
+   "rmsle_after": 0.09943651060765453
+  },
+  {
+   "fold": 4,
+   "station": 3210,
+   "date": "2026-06-28",
+   "action": "despike",
+   "event": "",
+   "comparable_events": null,
+   "rmsle_before": 0.11806130509113187,
+   "rmsle_after": 0.11403037534229356
+  },
+  {
+   "fold": 4,
+   "station": 3210,
+   "date": "2026-04-04",
+   "action": "lift",
+   "event": "SEVENTEEN WORLD TOUR [NEW_] ENCORE",
+   "comparable_events": 2,
+   "rmsle_before": 0.9400501143003173,
+   "rmsle_after": 0.1817388158883195
+  },
+  {
+   "fold": 4,
+   "station": 3210,
+   "date": "2026-04-05",
+   "action": "lift",
+   "event": "SEVENTEEN WORLD TOUR [NEW_] ENCORE",
+   "comparable_events": 2,
+   "rmsle_before": 1.0826766395508332,
+   "rmsle_after": 0.3183653869582468
+  },
+  {
+   "fold": 4,
+   "station": 3754,
+   "date": "2026-03-07",
+   "action": "lift",
+   "event": "K리그1 2R 부천 v 대전",
+   "comparable_events": 25,
+   "rmsle_before": 0.7876423053206966,
+   "rmsle_after": 0.35833919694802185
+  },
+  {
+   "fold": 4,
+   "station": 3754,
+   "date": "2026-03-15",
+   "action": "lift",
+   "event": "K리그1 3R 부천 v 울산",
+   "comparable_events": 25,
+   "rmsle_before": 0.681804460590108,
+   "rmsle_after": 0.26320923901268783
+  },
+  {
+   "fold": 4,
+   "station": 3754,
+   "date": "2026-03-18",
+   "action": "lift",
+   "event": "K리그1 4R 부천 v 강원",
+   "comparable_events": 25,
+   "rmsle_before": 0.7173025152123645,
+   "rmsle_after": 0.4068264162073073
+  },
+  {
+   "fold": 4,
+   "station": 3754,
+   "date": "2026-04-18",
+   "action": "lift",
+   "event": "K리그1 8R 부천 v 인천",
+   "comparable_events": 25,
+   "rmsle_before": 0.7877330374629132,
+   "rmsle_after": 0.398803742777118
+  },
+  {
+   "fold": 4,
+   "station": 3754,
+   "date": "2026-04-25",
+   "action": "lift",
+   "event": "K리그1 10R 부천 v 김천",
+   "comparable_events": 25,
+   "rmsle_before": 0.40891550405577654,
+   "rmsle_after": 0.19777597153932622
+  },
+  {
+   "fold": 4,
+   "station": 3754,
+   "date": "2026-05-05",
+   "action": "lift",
+   "event": "K리그1 12R 부천 v 제주",
+   "comparable_events": 25,
+   "rmsle_before": 0.7189229984881027,
+   "rmsle_after": 0.3175071823779472
+  },
+  {
+   "fold": 4,
+   "station": 3754,
+   "date": "2026-05-13",
+   "action": "lift",
+   "event": "K리그1 14R 부천 v 전북",
+   "comparable_events": 25,
+   "rmsle_before": 0.8626382504214108,
+   "rmsle_after": 0.48762777192541956
+  },
+  {
+   "fold": 4,
+   "station": 3754,
+   "date": "2026-05-17",
+   "action": "lift",
+   "event": "K리그1 15R 부천 v 포항",
+   "comparable_events": 25,
+   "rmsle_before": 0.9054625653590594,
+   "rmsle_after": 0.47879904923172345
+  }
+ ],
+ "untouched_rows_identical": true
+}

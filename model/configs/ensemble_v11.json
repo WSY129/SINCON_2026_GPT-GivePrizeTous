@@ -1,0 +1,124 @@
+{
+ "name": "ensemble_v11",
+ "information": "Full retrain on a unique-day panel with exogenous inputs. Realised facts of the evaluation period (games, events, weather) are allowed by the organisers; subway ridership of that period is not used anywhere. No leaderboard score is read or stored.",
+ "station_events": [
+  {
+   "name": "부천국제만화축제(금)",
+   "stations": [
+    3759
+   ],
+   "dates": [
+    "2026-09-18"
+   ],
+   "past_dates": [
+    "2025-09-26"
+   ],
+   "mode": "add",
+   "shrink": 0.85,
+   "source": "outputs/ensemble_v11/external/events_academic_research_v11.md"
+  },
+  {
+   "name": "부천국제만화축제(토)",
+   "stations": [
+    3759
+   ],
+   "dates": [
+    "2026-09-19"
+   ],
+   "past_dates": [
+    "2025-09-27"
+   ],
+   "mode": "add",
+   "shrink": 0.85
+  },
+  {
+   "name": "부천국제만화축제(일)",
+   "stations": [
+    3759
+   ],
+   "dates": [
+    "2026-09-20"
+   ],
+   "past_dates": [
+    "2025-09-28"
+   ],
+   "mode": "add",
+   "shrink": 0.85
+  },
+  {
+   "name": "BIFAN 개막 주말(토)",
+   "stations": [
+    3757
+   ],
+   "dates": [
+    "2026-07-04"
+   ],
+   "past_dates": [
+    "2025-07-05"
+   ],
+   "mode": "add",
+   "shrink": 0.85
+  },
+  {
+   "name": "BIFAN 개막 주말(일)",
+   "stations": [
+    3757
+   ],
+   "dates": [
+    "2026-07-05"
+   ],
+   "past_dates": [
+    "2025-07-06"
+   ],
+   "mode": "add",
+   "shrink": 0.85
+  },
+  {
+   "name": "경인교대 가정학습주간",
+   "stations": [
+    3115
+   ],
+   "dates": [
+    "2026-10-12",
+    "2026-10-13",
+    "2026-10-14",
+    "2026-10-15",
+    "2026-10-16"
+   ],
+   "past_dates": [
+    "2025-10-13",
+    "2025-10-14",
+    "2025-10-15",
+    "2025-10-16",
+    "2025-10-17"
+   ],
+   "mode": "signed",
+   "shrink": 0.85
+  },
+  {
+   "name": "전국노래자랑(아시아드 남측광장, 보수적)",
+   "stations": [
+    3209,
+    3210
+   ],
+   "dates": [
+    "2026-10-31"
+   ],
+   "past_dates": [
+    "2025-10-25"
+   ],
+   "mode": "add",
+   "shrink": 0.25,
+   "note": "과거 표본이 없어 2025년 과학대제전 토요일 상승폭의 0.25배를 쓴다"
+  }
+ ],
+ "research_notes": [
+  "인천대 2학기 개강은 2026-09-01(화), 2025-09-01(월)이다. 중간고사 기간은 공식 일정에 없다. 대동제는 5월이라 평가 구간 밖이다.",
+  "경인교대는 2026-08-31 개강, 가정학습주간 2026-10-12~16(2025-10-13~17). 2025년 그 주에 경인교대입구역은 평소보다 로그 0.05~0.11 낮았다.",
+  "부천국제만화축제 2026-09-18~20(2025-09-26~28): 삼산체육관역 2025년 상승폭이 금 +0.17, 토 +0.35, 일 +0.20(시간 평균)이다.",
+  "BIFAN 2026-07-02~12(2025-07-03~13): 부천시청역 개막 주말 상승폭 +0.18~0.20만 반영했다.",
+  "IFEZ 송도 페스타(센트럴파크, 2026-09-12 / 2025-09-06)는 2025년 당일 상승이 없어 넣지 않았다.",
+  "시민의 날 대축제(2026-10-10 인천대공원, 저녁 공연)는 2025년에 다른 장소에서 열려 이 역의 과거 표본이 없다. 넣지 않았다.",
+  "소래포구축제, 개항장 야행은 다른 노선 역이라 제외했다. 워터밤 인천 2026은 확인되지 않았다. 노선 장기 운행 중단은 없었다."
+ ]
+}

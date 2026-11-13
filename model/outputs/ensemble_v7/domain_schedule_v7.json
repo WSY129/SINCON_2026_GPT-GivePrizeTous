@@ -1,0 +1,1938 @@
+{
+ "version": "domain_schedule_v6",
+ "rule": "공개일(known_since)이 기준일보다 늦은 기록은 그 기준일의 예측에 보이지 않는다. 일정은 최초 발표본이다: 취소·순연된 경기를 지우지 않고, 나중에 편성된 경기를 추가하지 않는다. 결과·관중 수·날씨는 쓰지 않는다. 과거 행사 중 사전 발표일을 확인하지 못한 것은 공개일을 행사일로 두어 이력으로만 쓴다.",
+ "station_ids": {
+  "munhak": 3127,
+  "songdo_festival_park": 3139,
+  "asiad_main": [
+   3209,
+   3210
+  ],
+  "bucheon": 3754
+ },
+ "kbo_munhak": [
+  {
+   "season": 2025,
+   "stage": "original",
+   "known_since": "2024-12-20",
+   "coverage_start": "2025-03-22",
+   "coverage_end": "2025-08-31",
+   "source_url": "https://www.koreabaseball.com/MediaNews/Notice/View.aspx?bdSe=10341",
+   "attachment": "2025 KBO 정규시즌 경기 일정.docx",
+   "attachment_sha256": "37018a8d486c7f99f10230988f1934a213211727adfadb012cfab18f4ef81bad",
+   "retrieved_on": "2026-11-12",
+   "home": [
+    {
+     "date": "2025-03-22",
+     "matchup": "두산-SSG"
+    },
+    {
+     "date": "2025-03-23",
+     "matchup": "두산-SSG"
+    },
+    {
+     "date": "2025-03-25",
+     "matchup": "롯데-SSG"
+    },
+    {
+     "date": "2025-03-26",
+     "matchup": "롯데-SSG"
+    },
+    {
+     "date": "2025-03-27",
+     "matchup": "롯데-SSG"
+    },
+    {
+     "date": "2025-04-04",
+     "matchup": "KT-SSG"
+    },
+    {
+     "date": "2025-04-05",
+     "matchup": "KT-SSG"
+    },
+    {
+     "date": "2025-04-06",
+     "matchup": "KT-SSG"
+    },
+    {
+     "date": "2025-04-15",
+     "matchup": "한화-SSG"
+    },
+    {
+     "date": "2025-04-16",
+     "matchup": "한화-SSG"
+    },
+    {
+     "date": "2025-04-17",
+     "matchup": "한화-SSG"
+    },
+    {
+     "date": "2025-04-18",
+     "matchup": "LG-SSG"
+    },
+    {
+     "date": "2025-04-19",
+     "matchup": "LG-SSG"
+    },
+    {
+     "date": "2025-04-20",
+     "matchup": "LG-SSG"
+    },
+    {
+     "date": "2025-04-25",
+     "matchup": "키움-SSG"
+    },
+    {
+     "date": "2025-04-26",
+     "matchup": "키움-SSG"
+    },
+    {
+     "date": "2025-04-27",
+     "matchup": "키움-SSG"
+    },
+    {
+     "date": "2025-04-29",
+     "matchup": "삼성-SSG"
+    },
+    {
+     "date": "2025-04-30",
+     "matchup": "삼성-SSG"
+    },
+    {
+     "date": "2025-05-01",
+     "matchup": "삼성-SSG"
+    },
+    {
+     "date": "2025-05-09",
+     "matchup": "KIA-SSG"
+    },
+    {
+     "date": "2025-05-10",
+     "matchup": "KIA-SSG"
+    },
+    {
+     "date": "2025-05-11",
+     "matchup": "KIA-SSG"
+    },
+    {
+     "date": "2025-05-13",
+     "matchup": "NC-SSG"
+    },
+    {
+     "date": "2025-05-14",
+     "matchup": "NC-SSG"
+    },
+    {
+     "date": "2025-05-15",
+     "matchup": "NC-SSG"
+    },
+    {
+     "date": "2025-05-23",
+     "matchup": "LG-SSG"
+    },
+    {
+     "date": "2025-05-24",
+     "matchup": "LG-SSG"
+    },
+    {
+     "date": "2025-05-25",
+     "matchup": "LG-SSG"
+    },
+    {
+     "date": "2025-05-27",
+     "matchup": "NC-SSG"
+    },
+    {
+     "date": "2025-05-28",
+     "matchup": "NC-SSG"
+    },
+    {
+     "date": "2025-05-29",
+     "matchup": "NC-SSG"
+    },
+    {
+     "date": "2025-06-03",
+     "matchup": "삼성-SSG"
+    },
+    {
+     "date": "2025-06-04",
+     "matchup": "삼성-SSG"
+    },
+    {
+     "date": "2025-06-05",
+     "matchup": "삼성-SSG"
+    },
+    {
+     "date": "2025-06-13",
+     "matchup": "롯데-SSG"
+    },
+    {
+     "date": "2025-06-14",
+     "matchup": "롯데-SSG"
+    },
+    {
+     "date": "2025-06-15",
+     "matchup": "롯데-SSG"
+    },
+    {
+     "date": "2025-06-20",
+     "matchup": "KIA-SSG"
+    },
+    {
+     "date": "2025-06-21",
+     "matchup": "KIA-SSG"
+    },
+    {
+     "date": "2025-06-22",
+     "matchup": "KIA-SSG"
+    },
+    {
+     "date": "2025-06-27",
+     "matchup": "한화-SSG"
+    },
+    {
+     "date": "2025-06-28",
+     "matchup": "한화-SSG"
+    },
+    {
+     "date": "2025-06-29",
+     "matchup": "한화-SSG"
+    },
+    {
+     "date": "2025-07-08",
+     "matchup": "KT-SSG"
+    },
+    {
+     "date": "2025-07-09",
+     "matchup": "KT-SSG"
+    },
+    {
+     "date": "2025-07-10",
+     "matchup": "KT-SSG"
+    },
+    {
+     "date": "2025-07-17",
+     "matchup": "두산-SSG"
+    },
+    {
+     "date": "2025-07-18",
+     "matchup": "두산-SSG"
+    },
+    {
+     "date": "2025-07-19",
+     "matchup": "두산-SSG"
+    },
+    {
+     "date": "2025-07-20",
+     "matchup": "두산-SSG"
+    },
+    {
+     "date": "2025-07-29",
+     "matchup": "키움-SSG"
+    },
+    {
+     "date": "2025-07-30",
+     "matchup": "키움-SSG"
+    },
+    {
+     "date": "2025-07-31",
+     "matchup": "키움-SSG"
+    },
+    {
+     "date": "2025-08-05",
+     "matchup": "삼성-SSG"
+    },
+    {
+     "date": "2025-08-06",
+     "matchup": "삼성-SSG"
+    },
+    {
+     "date": "2025-08-07",
+     "matchup": "삼성-SSG"
+    },
+    {
+     "date": "2025-08-12",
+     "matchup": "키움-SSG"
+    },
+    {
+     "date": "2025-08-13",
+     "matchup": "키움-SSG"
+    },
+    {
+     "date": "2025-08-14",
+     "matchup": "키움-SSG"
+    },
+    {
+     "date": "2025-08-15",
+     "matchup": "LG-SSG"
+    },
+    {
+     "date": "2025-08-16",
+     "matchup": "LG-SSG"
+    },
+    {
+     "date": "2025-08-17",
+     "matchup": "LG-SSG"
+    },
+    {
+     "date": "2025-08-26",
+     "matchup": "KIA-SSG"
+    },
+    {
+     "date": "2025-08-27",
+     "matchup": "KIA-SSG"
+    },
+    {
+     "date": "2025-08-28",
+     "matchup": "KIA-SSG"
+    },
+    {
+     "date": "2025-08-29",
+     "matchup": "NC-SSG"
+    },
+    {
+     "date": "2025-08-30",
+     "matchup": "NC-SSG"
+    },
+    {
+     "date": "2025-08-31",
+     "matchup": "NC-SSG"
+    }
+   ],
+   "reserve": [],
+   "n_home": 69
+  },
+  {
+   "season": 2025,
+   "stage": "remaining",
+   "known_since": "2025-08-19",
+   "coverage_start": "2025-08-19",
+   "coverage_end": "2025-09-30",
+   "source_url": "https://www.koreabaseball.com/MediaNews/Notice/View.aspx?bdSe=11647",
+   "attachment": "별첨.2025 신한 SOL 뱅크 KBO 리그 정규시즌 잔여 경기 일정.docx",
+   "attachment_sha256": "be0d8dbf677513c0c61a98afe69109438e5f16b27e1deb5601c62f5bafd22236",
+   "retrieved_on": "2026-11-12",
+   "home": [
+    {
+     "date": "2025-08-26",
+     "matchup": "KIA-SSG"
+    },
+    {
+     "date": "2025-08-27",
+     "matchup": "KIA-SSG"
+    },
+    {
+     "date": "2025-08-28",
+     "matchup": "KIA-SSG"
+    },
+    {
+     "date": "2025-08-29",
+     "matchup": "NC-SSG"
+    },
+    {
+     "date": "2025-08-30",
+     "matchup": "NC-SSG"
+    },
+    {
+     "date": "2025-08-31",
+     "matchup": "NC-SSG"
+    },
+    {
+     "date": "2025-09-02",
+     "matchup": "키움-SSG"
+    },
+    {
+     "date": "2025-09-05",
+     "matchup": "롯데-SSG"
+    },
+    {
+     "date": "2025-09-06",
+     "matchup": "롯데-SSG"
+    },
+    {
+     "date": "2025-09-19",
+     "matchup": "두산-SSG"
+    },
+    {
+     "date": "2025-09-20",
+     "matchup": "두산-SSG"
+    },
+    {
+     "date": "2025-09-21",
+     "matchup": "두산-SSG"
+    },
+    {
+     "date": "2025-09-23",
+     "matchup": "KIA-SSG"
+    },
+    {
+     "date": "2025-09-24",
+     "matchup": "한화-SSG"
+    },
+    {
+     "date": "2025-09-25",
+     "matchup": "KT-SSG"
+    },
+    {
+     "date": "2025-09-26",
+     "matchup": "KT-SSG"
+    }
+   ],
+   "reserve": [
+    {
+     "date": "2025-09-01",
+     "matchup": "(N-S)"
+    },
+    {
+     "date": "2025-09-22",
+     "matchup": "(두-S)"
+    },
+    {
+     "date": "2025-09-28",
+     "matchup": "(KT-S)"
+    },
+    {
+     "date": "2025-09-29",
+     "matchup": "(롯-S) (KT-S)"
+    }
+   ],
+   "n_home": 16
+  },
+  {
+   "season": 2026,
+   "stage": "original",
+   "known_since": "2025-12-19",
+   "coverage_start": "2026-03-28",
+   "coverage_end": "2026-09-06",
+   "source_url": "https://www.koreabaseball.com/MediaNews/Notice/View.aspx?bdSe=11794",
+   "attachment": "별첨. 2026 KBO 정규시즌 경기 일정.docx",
+   "attachment_sha256": "ff7f95e462affbe2ce5329fd864b1f94e099868b3a9c7873c63299237dff4e38",
+   "retrieved_on": "2026-11-12",
+   "home": [
+    {
+     "date": "2026-03-28",
+     "matchup": "KIA-SSG"
+    },
+    {
+     "date": "2026-03-29",
+     "matchup": "KIA-SSG"
+    },
+    {
+     "date": "2026-03-31",
+     "matchup": "키움-SSG"
+    },
+    {
+     "date": "2026-04-01",
+     "matchup": "키움-SSG"
+    },
+    {
+     "date": "2026-04-02",
+     "matchup": "키움-SSG"
+    },
+    {
+     "date": "2026-04-07",
+     "matchup": "한화-SSG"
+    },
+    {
+     "date": "2026-04-08",
+     "matchup": "한화-SSG"
+    },
+    {
+     "date": "2026-04-09",
+     "matchup": "한화-SSG"
+    },
+    {
+     "date": "2026-04-14",
+     "matchup": "두산-SSG"
+    },
+    {
+     "date": "2026-04-15",
+     "matchup": "두산-SSG"
+    },
+    {
+     "date": "2026-04-16",
+     "matchup": "두산-SSG"
+    },
+    {
+     "date": "2026-04-24",
+     "matchup": "KT-SSG"
+    },
+    {
+     "date": "2026-04-25",
+     "matchup": "KT-SSG"
+    },
+    {
+     "date": "2026-04-26",
+     "matchup": "KT-SSG"
+    },
+    {
+     "date": "2026-05-01",
+     "matchup": "롯데-SSG"
+    },
+    {
+     "date": "2026-05-02",
+     "matchup": "롯데-SSG"
+    },
+    {
+     "date": "2026-05-03",
+     "matchup": "롯데-SSG"
+    },
+    {
+     "date": "2026-05-05",
+     "matchup": "NC-SSG"
+    },
+    {
+     "date": "2026-05-06",
+     "matchup": "NC-SSG"
+    },
+    {
+     "date": "2026-05-07",
+     "matchup": "NC-SSG"
+    },
+    {
+     "date": "2026-05-15",
+     "matchup": "LG-SSG"
+    },
+    {
+     "date": "2026-05-16",
+     "matchup": "LG-SSG"
+    },
+    {
+     "date": "2026-05-17",
+     "matchup": "LG-SSG"
+    },
+    {
+     "date": "2026-05-26",
+     "matchup": "삼성-SSG"
+    },
+    {
+     "date": "2026-05-27",
+     "matchup": "삼성-SSG"
+    },
+    {
+     "date": "2026-05-28",
+     "matchup": "삼성-SSG"
+    },
+    {
+     "date": "2026-06-02",
+     "matchup": "키움-SSG"
+    },
+    {
+     "date": "2026-06-03",
+     "matchup": "키움-SSG"
+    },
+    {
+     "date": "2026-06-04",
+     "matchup": "키움-SSG"
+    },
+    {
+     "date": "2026-06-05",
+     "matchup": "KT-SSG"
+    },
+    {
+     "date": "2026-06-06",
+     "matchup": "KT-SSG"
+    },
+    {
+     "date": "2026-06-07",
+     "matchup": "KT-SSG"
+    },
+    {
+     "date": "2026-06-16",
+     "matchup": "롯데-SSG"
+    },
+    {
+     "date": "2026-06-17",
+     "matchup": "롯데-SSG"
+    },
+    {
+     "date": "2026-06-18",
+     "matchup": "롯데-SSG"
+    },
+    {
+     "date": "2026-06-26",
+     "matchup": "한화-SSG"
+    },
+    {
+     "date": "2026-06-27",
+     "matchup": "한화-SSG"
+    },
+    {
+     "date": "2026-06-28",
+     "matchup": "한화-SSG"
+    },
+    {
+     "date": "2026-07-03",
+     "matchup": "삼성-SSG"
+    },
+    {
+     "date": "2026-07-04",
+     "matchup": "삼성-SSG"
+    },
+    {
+     "date": "2026-07-05",
+     "matchup": "삼성-SSG"
+    },
+    {
+     "date": "2026-07-16",
+     "matchup": "KIA-SSG"
+    },
+    {
+     "date": "2026-07-17",
+     "matchup": "KIA-SSG"
+    },
+    {
+     "date": "2026-07-18",
+     "matchup": "KIA-SSG"
+    },
+    {
+     "date": "2026-07-19",
+     "matchup": "KIA-SSG"
+    },
+    {
+     "date": "2026-07-24",
+     "matchup": "NC-SSG"
+    },
+    {
+     "date": "2026-07-25",
+     "matchup": "NC-SSG"
+    },
+    {
+     "date": "2026-07-26",
+     "matchup": "NC-SSG"
+    },
+    {
+     "date": "2026-07-28",
+     "matchup": "두산-SSG"
+    },
+    {
+     "date": "2026-07-29",
+     "matchup": "두산-SSG"
+    },
+    {
+     "date": "2026-07-30",
+     "matchup": "두산-SSG"
+    },
+    {
+     "date": "2026-08-04",
+     "matchup": "LG-SSG"
+    },
+    {
+     "date": "2026-08-05",
+     "matchup": "LG-SSG"
+    },
+    {
+     "date": "2026-08-06",
+     "matchup": "LG-SSG"
+    },
+    {
+     "date": "2026-08-11",
+     "matchup": "롯데-SSG"
+    },
+    {
+     "date": "2026-08-12",
+     "matchup": "롯데-SSG"
+    },
+    {
+     "date": "2026-08-13",
+     "matchup": "롯데-SSG"
+    },
+    {
+     "date": "2026-08-21",
+     "matchup": "KT-SSG"
+    },
+    {
+     "date": "2026-08-22",
+     "matchup": "KT-SSG"
+    },
+    {
+     "date": "2026-08-23",
+     "matchup": "KT-SSG"
+    },
+    {
+     "date": "2026-08-25",
+     "matchup": "한화-SSG"
+    },
+    {
+     "date": "2026-08-26",
+     "matchup": "한화-SSG"
+    },
+    {
+     "date": "2026-08-27",
+     "matchup": "한화-SSG"
+    },
+    {
+     "date": "2026-09-04",
+     "matchup": "두산-SSG"
+    },
+    {
+     "date": "2026-09-05",
+     "matchup": "두산-SSG"
+    },
+    {
+     "date": "2026-09-06",
+     "matchup": "두산-SSG"
+    }
+   ],
+   "reserve": [],
+   "n_home": 66
+  }
+ ],
+ "festivals": [
+  {
+   "kind": "pentaport",
+   "start": "2025-08-01",
+   "end": "2025-08-03",
+   "known_since": "2025-07-30",
+   "source_url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000012828449",
+   "license": "KOGL Type 1 (attribution)",
+   "retrieved_on": "2026-11-12",
+   "attribution": "인천광역시"
+  },
+  {
+   "kind": "pentaport",
+   "start": "2026-07-31",
+   "end": "2026-08-02",
+   "known_since": "2026-05-31",
+   "source_url": "https://www.incheon.go.kr/moo/MOO030301/3074869",
+   "license": "KOGL Type 1 (attribution)",
+   "retrieved_on": "2026-11-12",
+   "attribution": "인천광역시"
+  }
+ ],
+ "exclusions": [
+  "KBO 2026 잔여 경기 일정(2026-08-25 발표)과 2026 포스트시즌: 정보 마감 이후라 넣지 않음",
+  "KBO 2025 포스트시즌, 2025 2차 잔여 일정: 추론에 필요 없어 넣지 않음(2025년 9~10월은 관측으로 확인)",
+  "KBO 경기 개시 시각: 발표된 표에 없음. 시간대 형상은 과거 관측에서만 추정",
+  "불꽃야구 직관 경기(2025-07-27, 08-10, 09-14, 2026-05-30)와 SSG 팬 행사(2025-10-24): 며칠~2주 전에야 발표되는 행사라 미리 알 수 없음. 문학 전용 모델의 '일정에 없는 급등' 확률로만 대비",
+  "인천국제하프마라톤(2025-03-30), 인천마라톤(2025-11-23): 오전 행사이고 테스트 구간에 해당 없음",
+  "인천과학대제전·수학축전(아시아드주경기장, 2025-10-24~25 / 2026-10-23~24): 매년 같은 주말에 열리는 연례 행사. 2026년 일정은 2026-09-21 발표라 쓸 수 없고, 일회성 행사가 아니므로 '전년 급등 제거' 대상에도 넣지 않음",
+  "KBS 전국노래자랑(아시아드주경기장 남측광장, 2026-10-31): 2026-10-02 발표라 쓸 수 없음",
+  "OBJET K-POP FESTA 2026, GHOSTIVAL 2026: 마감 전 발표가 다른 장소였거나 마감 이후 발표라 쓸 수 없음",
+  "송도맥주축제 2026(8/22~8/30): 예매 페이지에서 날짜는 확인되나 2026-06-30 이전 발표를 증명하는 출처를 찾지 못해 제외",
+  "인천대·경인교대 학사일정: 학교별 공식 공지를 수집·검증하지 않아 제외(기존 버전의 달력 대리 변수는 그대로)",
+  "K리그1 24R 2026-08-22 포항전: 원편성은 포항 홈(포항스틸야드). 2026-08-14 공지로 부천 홈으로 바뀌었으나 마감 이후 변경이라 부천 홈경기로 넣지 않음",
+  "K리그1 파이널 라운드(2026-11월)와 코리아컵 3R 2026-07-29 부천 홈경기: 마감 이전에 부천 홈 개최가 확정됐다는 출처를 찾지 못해 제외"
+ ],
+ "events": [
+  {
+   "name": "트렌드웨이브 2025",
+   "family": "kpop_festival",
+   "date": "2025-05-03",
+   "start": "18:00",
+   "known_since": "2025-05-03",
+   "source_url": "https://isplus.com/article/view/isp202505060052",
+   "note": "과거 행사. 사전 발표일 미확인이라 공개일을 행사일로 둠(이력으로만 사용)",
+   "venue": "asiad_main",
+   "stations": [
+    3209,
+    3210
+   ],
+   "kind": "concert"
+  },
+  {
+   "name": "2025 SBS MEGA 콘서트",
+   "family": "kpop_festival",
+   "date": "2025-05-31",
+   "start": null,
+   "known_since": "2025-05-31",
+   "source_url": "https://www.segye.com/newsView/20250604504763",
+   "note": "과거 행사. 사전 발표일 미확인이라 공개일을 행사일로 둠(이력으로만 사용)",
+   "venue": "asiad_main",
+   "stations": [
+    3209,
+    3210
+   ],
+   "kind": "concert"
+  },
+  {
+   "name": "싸이흠뻑쇼 SUMMERSWAG2025 인천",
+   "family": "psy_summer_swag",
+   "date": "2025-06-28",
+   "start": "18:00",
+   "known_since": "2025-05-23",
+   "source_url": "https://news.tf.co.kr/read/ogmeta/2219171.htm",
+   "note": "일정 공개 2025-05-23(검색 요약 기준). 6/28 18시 시작",
+   "venue": "asiad_main",
+   "stations": [
+    3209,
+    3210
+   ],
+   "kind": "concert"
+  },
+  {
+   "name": "싸이흠뻑쇼 SUMMERSWAG2025 인천",
+   "family": "psy_summer_swag",
+   "date": "2025-06-29",
+   "start": "18:00",
+   "known_since": "2025-05-23",
+   "source_url": "https://news.tf.co.kr/read/ogmeta/2219171.htm",
+   "note": "6/29 시작 시각은 6/28과 같다고 가정",
+   "venue": "asiad_main",
+   "stations": [
+    3209,
+    3210
+   ],
+   "kind": "concert"
+  },
+  {
+   "name": "SEVENTEEN WORLD TOUR [NEW_] IN INCHEON",
+   "family": "seventeen",
+   "date": "2025-09-13",
+   "start": "18:30",
+   "known_since": "2025-07-21",
+   "source_url": "https://sbsstar.net/article/N1008186399/seventeen-to-kick-off-new-world-tour-new-in-incheon-continuing-10th-anniversary-celebrations",
+   "note": "2025-07-21 소속사 발표 기사",
+   "venue": "asiad_main",
+   "stations": [
+    3209,
+    3210
+   ],
+   "kind": "concert"
+  },
+  {
+   "name": "SEVENTEEN WORLD TOUR [NEW_] IN INCHEON",
+   "family": "seventeen",
+   "date": "2025-09-14",
+   "start": "18:30",
+   "known_since": "2025-07-21",
+   "source_url": "https://sbsstar.net/article/N1008186399/seventeen-to-kick-off-new-world-tour-new-in-incheon-continuing-10th-anniversary-celebrations",
+   "note": "2025-07-21 소속사 발표 기사",
+   "venue": "asiad_main",
+   "stations": [
+    3209,
+    3210
+   ],
+   "kind": "concert"
+  },
+  {
+   "name": "Stray Kids dominATE : celebrATE",
+   "family": "stray_kids",
+   "date": "2025-10-18",
+   "start": "19:00",
+   "known_since": "2025-09-05",
+   "source_url": "https://mobile.newsis.com/view/NISX20250905_0003317495",
+   "note": "2025-09-05 기사. 시작 시각은 검색 요약 기준",
+   "venue": "asiad_main",
+   "stations": [
+    3209,
+    3210
+   ],
+   "kind": "concert"
+  },
+  {
+   "name": "Stray Kids dominATE : celebrATE",
+   "family": "stray_kids",
+   "date": "2025-10-19",
+   "start": "18:00",
+   "known_since": "2025-09-05",
+   "source_url": "https://mobile.newsis.com/view/NISX20250905_0003317495",
+   "note": "2025-09-05 기사. 시작 시각은 검색 요약 기준",
+   "venue": "asiad_main",
+   "stations": [
+    3209,
+    3210
+   ],
+   "kind": "concert"
+  },
+  {
+   "name": "SEVENTEEN WORLD TOUR [NEW_] ENCORE",
+   "family": "seventeen",
+   "date": "2026-04-04",
+   "start": "18:30",
+   "known_since": "2026-01-21",
+   "source_url": "https://www.starnewskorea.com/music/2026/01/21/2026012114020560265",
+   "note": "2026-01-21 14:10 기사",
+   "venue": "asiad_main",
+   "stations": [
+    3209,
+    3210
+   ],
+   "kind": "concert"
+  },
+  {
+   "name": "SEVENTEEN WORLD TOUR [NEW_] ENCORE",
+   "family": "seventeen",
+   "date": "2026-04-05",
+   "start": "18:30",
+   "known_since": "2026-01-21",
+   "source_url": "https://www.starnewskorea.com/music/2026/01/21/2026012114020560265",
+   "note": "2026-01-21 14:10 기사",
+   "venue": "asiad_main",
+   "stations": [
+    3209,
+    3210
+   ],
+   "kind": "concert"
+  },
+  {
+   "name": "2026 SVT 10TH FAN MEETING SEVENTEEN in CARAT LAND",
+   "family": "seventeen",
+   "date": "2026-06-20",
+   "start": "18:30",
+   "known_since": "2026-03-30",
+   "source_url": "https://kpopjuice.com/en/article/d60c444bb21b3e55910fdd2687d15707",
+   "note": "2026-03-30 공지 인용 기사(지시서의 03-31이 아니라 03-30)",
+   "venue": "asiad_main",
+   "stations": [
+    3209,
+    3210
+   ],
+   "kind": "concert"
+  },
+  {
+   "name": "2026 SVT 10TH FAN MEETING SEVENTEEN in CARAT LAND",
+   "family": "seventeen",
+   "date": "2026-06-21",
+   "start": "18:30",
+   "known_since": "2026-03-30",
+   "source_url": "https://kpopjuice.com/en/article/d60c444bb21b3e55910fdd2687d15707",
+   "note": "2026-03-30 공지 인용 기사",
+   "venue": "asiad_main",
+   "stations": [
+    3209,
+    3210
+   ],
+   "kind": "concert"
+  },
+  {
+   "name": "싸이흠뻑쇼 SUMMERSWAG2026 인천",
+   "family": "psy_summer_swag",
+   "date": "2026-07-11",
+   "start": "18:00",
+   "known_since": "2026-05-29",
+   "source_url": "https://www.wikitree.co.kr/articles/1138931",
+   "note": "2026-05-29 15:52 기사에 '7월 11일 인천아시아드 주경기장' 명시(직접 확인). 하루 공연. 18시 시작은 날짜 표시 없는 예매 페이지 기준이나 2025년과 같아 정렬에 영향 없음",
+   "venue": "asiad_main",
+   "stations": [
+    3209,
+    3210
+   ],
+   "kind": "concert"
+  },
+  {
+   "name": "K리그2 부천 v 충북청주",
+   "family": "k2_2025",
+   "date": "2025-02-23",
+   "start": "16:30",
+   "known_since": "2025-01-16",
+   "source_url": "https://www.kleague.com/schedule.do?leagueId=2",
+   "note": "2025 K리그2 정규라운드(발표 2025-01-16, 검색 요약 기준). 실제 치러진 일시",
+   "venue": "bucheon",
+   "stations": [
+    3754
+   ],
+   "kind": "football"
+  },
+  {
+   "name": "K리그2 부천 v 부산",
+   "family": "k2_2025",
+   "date": "2025-03-08",
+   "start": "14:00",
+   "known_since": "2025-01-16",
+   "source_url": "https://www.kleague.com/schedule.do?leagueId=2",
+   "note": "2025 K리그2 정규라운드(발표 2025-01-16, 검색 요약 기준). 실제 치러진 일시",
+   "venue": "bucheon",
+   "stations": [
+    3754
+   ],
+   "kind": "football"
+  },
+  {
+   "name": "K리그2 부천 v 안산",
+   "family": "k2_2025",
+   "date": "2025-03-16",
+   "start": "16:30",
+   "known_since": "2025-01-16",
+   "source_url": "https://www.kleague.com/schedule.do?leagueId=2",
+   "note": "2025 K리그2 정규라운드(발표 2025-01-16, 검색 요약 기준). 실제 치러진 일시",
+   "venue": "bucheon",
+   "stations": [
+    3754
+   ],
+   "kind": "football"
+  },
+  {
+   "name": "코리아컵 2R 부천 v 여주",
+   "family": "cup_2025",
+   "date": "2025-03-23",
+   "start": "14:00",
+   "known_since": "2025-03-23",
+   "source_url": "https://www.goal.com/kr",
+   "note": "과거 경기. 공개일을 경기일로 둠(이력으로만 사용)",
+   "venue": "bucheon",
+   "stations": [
+    3754
+   ],
+   "kind": "football"
+  },
+  {
+   "name": "K리그2 부천 v 수원삼성",
+   "family": "k2_2025",
+   "date": "2025-04-12",
+   "start": "16:30",
+   "known_since": "2025-01-16",
+   "source_url": "https://www.kleague.com/schedule.do?leagueId=2",
+   "note": "2025 K리그2 정규라운드(발표 2025-01-16, 검색 요약 기준). 실제 치러진 일시",
+   "venue": "bucheon",
+   "stations": [
+    3754
+   ],
+   "kind": "football"
+  },
+  {
+   "name": "코리아컵 3R 부천 v 제주",
+   "family": "cup_2025",
+   "date": "2025-04-16",
+   "start": "19:30",
+   "known_since": "2025-04-16",
+   "source_url": "https://www.newsis.com/view/NISX20250416_0003142253",
+   "note": "과거 경기. 공개일을 경기일로 둠(이력으로만 사용)",
+   "venue": "bucheon",
+   "stations": [
+    3754
+   ],
+   "kind": "football"
+  },
+  {
+   "name": "K리그2 부천 v 인천",
+   "family": "k2_2025",
+   "date": "2025-04-26",
+   "start": "16:30",
+   "known_since": "2025-01-16",
+   "source_url": "https://www.kleague.com/schedule.do?leagueId=2",
+   "note": "2025 K리그2 정규라운드(발표 2025-01-16, 검색 요약 기준). 실제 치러진 일시",
+   "venue": "bucheon",
+   "stations": [
+    3754
+   ],
+   "kind": "football"
+  },
+  {
+   "name": "K리그2 부천 v 전남",
+   "family": "k2_2025",
+   "date": "2025-05-04",
+   "start": "14:00",
+   "known_since": "2025-01-16",
+   "source_url": "https://www.kleague.com/schedule.do?leagueId=2",
+   "note": "2025 K리그2 정규라운드(발표 2025-01-16, 검색 요약 기준). 실제 치러진 일시",
+   "venue": "bucheon",
+   "stations": [
+    3754
+   ],
+   "kind": "football"
+  },
+  {
+   "name": "코리아컵 16강 부천 v 김천",
+   "family": "cup_2025",
+   "date": "2025-05-14",
+   "start": "19:30",
+   "known_since": "2025-05-14",
+   "source_url": "https://www.newdaily.co.kr/site/data/html/2025/05/13/2025051300056.amp.html",
+   "note": "과거 경기(연장전). 공개일을 경기일로 둠(이력으로만 사용)",
+   "venue": "bucheon",
+   "stations": [
+    3754
+   ],
+   "kind": "football"
+  },
+  {
+   "name": "K리그2 부천 v 화성",
+   "family": "k2_2025",
+   "date": "2025-05-17",
+   "start": "16:30",
+   "known_since": "2025-01-16",
+   "source_url": "https://www.kleague.com/schedule.do?leagueId=2",
+   "note": "2025 K리그2 정규라운드(발표 2025-01-16, 검색 요약 기준). 실제 치러진 일시",
+   "venue": "bucheon",
+   "stations": [
+    3754
+   ],
+   "kind": "football"
+  },
+  {
+   "name": "K리그2 부천 v 서울E",
+   "family": "k2_2025",
+   "date": "2025-06-14",
+   "start": "19:00",
+   "known_since": "2025-01-16",
+   "source_url": "https://www.kleague.com/schedule.do?leagueId=2",
+   "note": "2025 K리그2 정규라운드(발표 2025-01-16, 검색 요약 기준). 실제 치러진 일시",
+   "venue": "bucheon",
+   "stations": [
+    3754
+   ],
+   "kind": "football"
+  },
+  {
+   "name": "K리그2 부천 v 경남",
+   "family": "k2_2025",
+   "date": "2025-06-28",
+   "start": "19:00",
+   "known_since": "2025-01-16",
+   "source_url": "https://www.kleague.com/schedule.do?leagueId=2",
+   "note": "2025 K리그2 정규라운드(발표 2025-01-16, 검색 요약 기준). 실제 치러진 일시",
+   "venue": "bucheon",
+   "stations": [
+    3754
+   ],
+   "kind": "football"
+  },
+  {
+   "name": "K리그2 부천 v 김포",
+   "family": "k2_2025",
+   "date": "2025-07-13",
+   "start": "19:00",
+   "known_since": "2025-01-16",
+   "source_url": "https://www.kleague.com/schedule.do?leagueId=2",
+   "note": "2025 K리그2 정규라운드(발표 2025-01-16, 검색 요약 기준). 실제 치러진 일시",
+   "venue": "bucheon",
+   "stations": [
+    3754
+   ],
+   "kind": "football"
+  },
+  {
+   "name": "K리그2 부천 v 충남아산",
+   "family": "k2_2025",
+   "date": "2025-07-20",
+   "start": "19:00",
+   "known_since": "2025-01-16",
+   "source_url": "https://www.kleague.com/schedule.do?leagueId=2",
+   "note": "2025 K리그2 정규라운드(발표 2025-01-16, 검색 요약 기준). 실제 치러진 일시",
+   "venue": "bucheon",
+   "stations": [
+    3754
+   ],
+   "kind": "football"
+  },
+  {
+   "name": "K리그2 부천 v 성남",
+   "family": "k2_2025",
+   "date": "2025-08-02",
+   "start": "19:00",
+   "known_since": "2025-01-16",
+   "source_url": "https://www.kleague.com/schedule.do?leagueId=2",
+   "note": "2025 K리그2 정규라운드(발표 2025-01-16, 검색 요약 기준). 실제 치러진 일시",
+   "venue": "bucheon",
+   "stations": [
+    3754
+   ],
+   "kind": "football"
+  },
+  {
+   "name": "K리그2 부천 v 천안",
+   "family": "k2_2025",
+   "date": "2025-08-23",
+   "start": "19:30",
+   "known_since": "2025-01-16",
+   "source_url": "https://www.kleague.com/schedule.do?leagueId=2",
+   "note": "2025 K리그2 정규라운드(발표 2025-01-16, 검색 요약 기준). 실제 치러진 일시. 킥오프는 폭염으로 19:00에서 19:30으로 변경(2025-08-12 공지)",
+   "venue": "bucheon",
+   "stations": [
+    3754
+   ],
+   "kind": "football"
+  },
+  {
+   "name": "코리아컵 준결승 2차전 부천 v 광주",
+   "family": "cup_2025",
+   "date": "2025-08-27",
+   "start": "19:30",
+   "known_since": "2025-08-27",
+   "source_url": "https://www.newsis.com/view/NISX20250827_0003305904",
+   "note": "과거 경기. 공개일을 경기일로 둠(이력으로만 사용)",
+   "venue": "bucheon",
+   "stations": [
+    3754
+   ],
+   "kind": "football"
+  },
+  {
+   "name": "K리그2 부천 v 인천",
+   "family": "k2_2025",
+   "date": "2025-09-07",
+   "start": "19:00",
+   "known_since": "2025-01-16",
+   "source_url": "https://www.kleague.com/schedule.do?leagueId=2",
+   "note": "2025 K리그2 정규라운드(발표 2025-01-16, 검색 요약 기준). 실제 치러진 일시",
+   "venue": "bucheon",
+   "stations": [
+    3754
+   ],
+   "kind": "football"
+  },
+  {
+   "name": "K리그2 부천 v 서울E",
+   "family": "k2_2025",
+   "date": "2025-09-20",
+   "start": "16:30",
+   "known_since": "2025-01-16",
+   "source_url": "https://www.kleague.com/schedule.do?leagueId=2",
+   "note": "2025 K리그2 정규라운드(발표 2025-01-16, 검색 요약 기준). 실제 치러진 일시",
+   "venue": "bucheon",
+   "stations": [
+    3754
+   ],
+   "kind": "football"
+  },
+  {
+   "name": "K리그2 부천 v 성남",
+   "family": "k2_2025",
+   "date": "2025-10-08",
+   "start": "16:30",
+   "known_since": "2025-01-16",
+   "source_url": "https://www.kleague.com/schedule.do?leagueId=2",
+   "note": "2025 K리그2 정규라운드(발표 2025-01-16, 검색 요약 기준). 실제 치러진 일시",
+   "venue": "bucheon",
+   "stations": [
+    3754
+   ],
+   "kind": "football"
+  },
+  {
+   "name": "K리그2 부천 v 천안",
+   "family": "k2_2025",
+   "date": "2025-10-19",
+   "start": "16:30",
+   "known_since": "2025-01-16",
+   "source_url": "https://www.kleague.com/schedule.do?leagueId=2",
+   "note": "2025 K리그2 정규라운드(발표 2025-01-16, 검색 요약 기준). 실제 치러진 일시",
+   "venue": "bucheon",
+   "stations": [
+    3754
+   ],
+   "kind": "football"
+  },
+  {
+   "name": "K리그2 부천 v 안산",
+   "family": "k2_2025",
+   "date": "2025-11-01",
+   "start": "16:30",
+   "known_since": "2025-01-16",
+   "source_url": "https://www.kleague.com/schedule.do?leagueId=2",
+   "note": "2025 K리그2 정규라운드(발표 2025-01-16, 검색 요약 기준). 실제 치러진 일시",
+   "venue": "bucheon",
+   "stations": [
+    3754
+   ],
+   "kind": "football"
+  },
+  {
+   "name": "K리그2 부천 v 화성",
+   "family": "k2_2025",
+   "date": "2025-11-23",
+   "start": "14:00",
+   "known_since": "2025-01-16",
+   "source_url": "https://www.kleague.com/schedule.do?leagueId=2",
+   "note": "2025 K리그2 정규라운드(발표 2025-01-16, 검색 요약 기준). 실제 치러진 일시",
+   "venue": "bucheon",
+   "stations": [
+    3754
+   ],
+   "kind": "football"
+  },
+  {
+   "name": "K리그2 플레이오프 부천 v 성남",
+   "family": "k2_2025_playoff",
+   "date": "2025-11-30",
+   "start": "14:00",
+   "known_since": "2025-11-24",
+   "source_url": "https://www.kleague.com/news_view.do?seq=93753&category=notice",
+   "note": "2025-11-24 일정 공지",
+   "venue": "bucheon",
+   "stations": [
+    3754
+   ],
+   "kind": "football"
+  },
+  {
+   "name": "승강 플레이오프 1차전 부천 v 수원FC",
+   "family": "k2_2025_playoff",
+   "date": "2025-12-05",
+   "start": "19:00",
+   "known_since": "2025-12-05",
+   "source_url": "https://sports.khan.co.kr/article/202512041919003",
+   "note": "12-04 19:00 경기가 폭설로 하루 연기. 공개일을 경기일로 둠(이력으로만 사용)",
+   "venue": "bucheon",
+   "stations": [
+    3754
+   ],
+   "kind": "football"
+  },
+  {
+   "name": "K리그1 2R 부천 v 대전",
+   "family": "k1_2026",
+   "date": "2026-03-07",
+   "start": "16:30",
+   "known_since": "2026-01-13",
+   "source_url": "https://www.kleague.com/news_view.do?seq=94117&category=notice&orderBy=seq&viewOption=album&page=1",
+   "note": "2026-01-13 연맹이 정규라운드 1~33R 일정을 발표(공지 직접 확인). 경기별 일시는 2026-01-16~02-15 시점 저장본(조사 보고 기준)과 현재 구단 일정(직접 확인)이 일치",
+   "venue": "bucheon",
+   "stations": [
+    3754
+   ],
+   "kind": "football"
+  },
+  {
+   "name": "K리그1 3R 부천 v 울산",
+   "family": "k1_2026",
+   "date": "2026-03-15",
+   "start": "14:00",
+   "known_since": "2026-01-13",
+   "source_url": "https://www.kleague.com/news_view.do?seq=94117&category=notice&orderBy=seq&viewOption=album&page=1",
+   "note": "2026-01-13 연맹이 정규라운드 1~33R 일정을 발표(공지 직접 확인). 경기별 일시는 2026-01-16~02-15 시점 저장본(조사 보고 기준)과 현재 구단 일정(직접 확인)이 일치",
+   "venue": "bucheon",
+   "stations": [
+    3754
+   ],
+   "kind": "football"
+  },
+  {
+   "name": "K리그1 4R 부천 v 강원",
+   "family": "k1_2026",
+   "date": "2026-03-18",
+   "start": "19:30",
+   "known_since": "2026-01-13",
+   "source_url": "https://www.kleague.com/news_view.do?seq=94117&category=notice&orderBy=seq&viewOption=album&page=1",
+   "note": "2026-01-13 연맹이 정규라운드 1~33R 일정을 발표(공지 직접 확인). 경기별 일시는 2026-01-16~02-15 시점 저장본(조사 보고 기준)과 현재 구단 일정(직접 확인)이 일치",
+   "venue": "bucheon",
+   "stations": [
+    3754
+   ],
+   "kind": "football"
+  },
+  {
+   "name": "K리그1 8R 부천 v 인천",
+   "family": "k1_2026",
+   "date": "2026-04-18",
+   "start": "16:30",
+   "known_since": "2026-01-13",
+   "source_url": "https://www.kleague.com/news_view.do?seq=94117&category=notice&orderBy=seq&viewOption=album&page=1",
+   "note": "2026-01-13 연맹이 정규라운드 1~33R 일정을 발표(공지 직접 확인). 경기별 일시는 2026-01-16~02-15 시점 저장본(조사 보고 기준)과 현재 구단 일정(직접 확인)이 일치",
+   "venue": "bucheon",
+   "stations": [
+    3754
+   ],
+   "kind": "football"
+  },
+  {
+   "name": "K리그1 10R 부천 v 김천",
+   "family": "k1_2026",
+   "date": "2026-04-25",
+   "start": "16:30",
+   "known_since": "2026-01-13",
+   "source_url": "https://www.kleague.com/news_view.do?seq=94117&category=notice&orderBy=seq&viewOption=album&page=1",
+   "note": "2026-01-13 연맹이 정규라운드 1~33R 일정을 발표(공지 직접 확인). 경기별 일시는 2026-01-16~02-15 시점 저장본(조사 보고 기준)과 현재 구단 일정(직접 확인)이 일치",
+   "venue": "bucheon",
+   "stations": [
+    3754
+   ],
+   "kind": "football"
+  },
+  {
+   "name": "K리그1 12R 부천 v 제주",
+   "family": "k1_2026",
+   "date": "2026-05-05",
+   "start": "14:00",
+   "known_since": "2026-01-13",
+   "source_url": "https://www.kleague.com/news_view.do?seq=94117&category=notice&orderBy=seq&viewOption=album&page=1",
+   "note": "2026-01-13 연맹이 정규라운드 1~33R 일정을 발표(공지 직접 확인). 경기별 일시는 2026-01-16~02-15 시점 저장본(조사 보고 기준)과 현재 구단 일정(직접 확인)이 일치",
+   "venue": "bucheon",
+   "stations": [
+    3754
+   ],
+   "kind": "football"
+  },
+  {
+   "name": "K리그1 14R 부천 v 전북",
+   "family": "k1_2026",
+   "date": "2026-05-13",
+   "start": "19:30",
+   "known_since": "2026-01-13",
+   "source_url": "https://www.kleague.com/news_view.do?seq=94117&category=notice&orderBy=seq&viewOption=album&page=1",
+   "note": "2026-01-13 연맹이 정규라운드 1~33R 일정을 발표(공지 직접 확인). 경기별 일시는 2026-01-16~02-15 시점 저장본(조사 보고 기준)과 현재 구단 일정(직접 확인)이 일치",
+   "venue": "bucheon",
+   "stations": [
+    3754
+   ],
+   "kind": "football"
+  },
+  {
+   "name": "K리그1 15R 부천 v 포항",
+   "family": "k1_2026",
+   "date": "2026-05-17",
+   "start": "19:00",
+   "known_since": "2026-01-13",
+   "source_url": "https://www.kleague.com/news_view.do?seq=94117&category=notice&orderBy=seq&viewOption=album&page=1",
+   "note": "2026-01-13 연맹이 정규라운드 1~33R 일정을 발표(공지 직접 확인). 경기별 일시는 2026-01-16~02-15 시점 저장본(조사 보고 기준)과 현재 구단 일정(직접 확인)이 일치",
+   "venue": "bucheon",
+   "stations": [
+    3754
+   ],
+   "kind": "football"
+  },
+  {
+   "name": "K리그1 18R 부천 v 서울",
+   "family": "k1_2026",
+   "date": "2026-07-19",
+   "start": "19:30",
+   "known_since": "2026-01-13",
+   "source_url": "https://www.kleague.com/news_view.do?seq=94117&category=notice&orderBy=seq&viewOption=album&page=1",
+   "note": "2026-01-13 연맹이 정규라운드 1~33R 일정을 발표(공지 직접 확인). 경기별 일시는 2026-01-16~02-15 시점 저장본(조사 보고 기준)과 현재 구단 일정(직접 확인)이 일치",
+   "venue": "bucheon",
+   "stations": [
+    3754
+   ],
+   "kind": "football"
+  },
+  {
+   "name": "K리그1 19R 부천 v 안양",
+   "family": "k1_2026",
+   "date": "2026-07-22",
+   "start": "19:30",
+   "known_since": "2026-01-13",
+   "source_url": "https://www.kleague.com/news_view.do?seq=94117&category=notice&orderBy=seq&viewOption=album&page=1",
+   "note": "2026-01-13 연맹이 정규라운드 1~33R 일정을 발표(공지 직접 확인). 경기별 일시는 2026-01-16~02-15 시점 저장본(조사 보고 기준)과 현재 구단 일정(직접 확인)이 일치",
+   "venue": "bucheon",
+   "stations": [
+    3754
+   ],
+   "kind": "football"
+  },
+  {
+   "name": "K리그1 22R 부천 v 광주",
+   "family": "k1_2026",
+   "date": "2026-08-08",
+   "start": "19:30",
+   "known_since": "2026-01-13",
+   "source_url": "https://www.kleague.com/news_view.do?seq=94117&category=notice&orderBy=seq&viewOption=album&page=1",
+   "note": "2026-01-13 연맹이 정규라운드 1~33R 일정을 발표(공지 직접 확인). 경기별 일시는 2026-01-16~02-15 시점 저장본(조사 보고 기준)과 현재 구단 일정(직접 확인)이 일치. 킥오프는 2026-08-05 공지로 20:00으로 바뀌었으나 마감 이후 변경이라 원래의 19:30을 사용",
+   "venue": "bucheon",
+   "stations": [
+    3754
+   ],
+   "kind": "football"
+  },
+  {
+   "name": "K리그1 23R 부천 v 전북",
+   "family": "k1_2026",
+   "date": "2026-08-16",
+   "start": "19:30",
+   "known_since": "2026-01-13",
+   "source_url": "https://www.kleague.com/news_view.do?seq=94117&category=notice&orderBy=seq&viewOption=album&page=1",
+   "note": "2026-01-13 연맹이 정규라운드 1~33R 일정을 발표(공지 직접 확인). 경기별 일시는 2026-01-16~02-15 시점 저장본(조사 보고 기준)과 현재 구단 일정(직접 확인)이 일치",
+   "venue": "bucheon",
+   "stations": [
+    3754
+   ],
+   "kind": "football"
+  },
+  {
+   "name": "K리그1 26R 부천 v 안양",
+   "family": "k1_2026",
+   "date": "2026-08-29",
+   "start": "19:30",
+   "known_since": "2026-01-13",
+   "source_url": "https://www.kleague.com/news_view.do?seq=94117&category=notice&orderBy=seq&viewOption=album&page=1",
+   "note": "2026-01-13 연맹이 정규라운드 1~33R 일정을 발표(공지 직접 확인). 경기별 일시는 2026-01-16~02-15 시점 저장본(조사 보고 기준)과 현재 구단 일정(직접 확인)이 일치",
+   "venue": "bucheon",
+   "stations": [
+    3754
+   ],
+   "kind": "football"
+  },
+  {
+   "name": "K리그1 27R 부천 v 대전",
+   "family": "k1_2026",
+   "date": "2026-09-05",
+   "start": "19:00",
+   "known_since": "2026-01-13",
+   "source_url": "https://www.kleague.com/news_view.do?seq=94117&category=notice&orderBy=seq&viewOption=album&page=1",
+   "note": "2026-01-13 연맹이 정규라운드 1~33R 일정을 발표(공지 직접 확인). 경기별 일시는 2026-01-16~02-15 시점 저장본(조사 보고 기준)과 현재 구단 일정(직접 확인)이 일치",
+   "venue": "bucheon",
+   "stations": [
+    3754
+   ],
+   "kind": "football"
+  },
+  {
+   "name": "K리그1 29R 부천 v 제주",
+   "family": "k1_2026",
+   "date": "2026-09-12",
+   "start": "16:30",
+   "known_since": "2026-01-13",
+   "source_url": "https://www.kleague.com/news_view.do?seq=94117&category=notice&orderBy=seq&viewOption=album&page=1",
+   "note": "2026-01-13 연맹이 정규라운드 1~33R 일정을 발표(공지 직접 확인). 경기별 일시는 2026-01-16~02-15 시점 저장본(조사 보고 기준)과 현재 구단 일정(직접 확인)이 일치",
+   "venue": "bucheon",
+   "stations": [
+    3754
+   ],
+   "kind": "football"
+  },
+  {
+   "name": "K리그1 30R 부천 v 김천",
+   "family": "k1_2026",
+   "date": "2026-09-19",
+   "start": "16:30",
+   "known_since": "2026-01-13",
+   "source_url": "https://www.kleague.com/news_view.do?seq=94117&category=notice&orderBy=seq&viewOption=album&page=1",
+   "note": "2026-01-13 연맹이 정규라운드 1~33R 일정을 발표(공지 직접 확인). 경기별 일시는 2026-01-16~02-15 시점 저장본(조사 보고 기준)과 현재 구단 일정(직접 확인)이 일치",
+   "venue": "bucheon",
+   "stations": [
+    3754
+   ],
+   "kind": "football"
+  },
+  {
+   "name": "K리그1 33R 부천 v 광주",
+   "family": "k1_2026",
+   "date": "2026-10-24",
+   "start": "14:00",
+   "known_since": "2026-01-13",
+   "source_url": "https://www.kleague.com/news_view.do?seq=94117&category=notice&orderBy=seq&viewOption=album&page=1",
+   "note": "2026-01-13 연맹이 정규라운드 1~33R 일정을 발표(공지 직접 확인). 경기별 일시는 2026-01-16~02-15 시점 저장본(조사 보고 기준)과 현재 구단 일정(직접 확인)이 일치",
+   "venue": "bucheon",
+   "stations": [
+    3754
+   ],
+   "kind": "football"
+  },
+  {
+   "name": "SEVENTEEN in CARAT LAND (2025)",
+   "family": "seventeen",
+   "date": "2025-03-20",
+   "start": "18:30",
+   "known_since": "2025-02-18",
+   "source_url": "https://www.fnnews.com/news/202502181002564406",
+   "note": "2025-02-18 기사. 시작 시각은 날짜 표시 없는 예매 페이지 기준",
+   "venue": "munhak_main",
+   "stations": [
+    3127
+   ],
+   "kind": "concert"
+  },
+  {
+   "name": "SEVENTEEN in CARAT LAND (2025)",
+   "family": "seventeen",
+   "date": "2025-03-21",
+   "start": "18:30",
+   "known_since": "2025-02-18",
+   "source_url": "https://www.fnnews.com/news/202502181002564406",
+   "note": "2025-02-18 기사",
+   "venue": "munhak_main",
+   "stations": [
+    3127
+   ],
+   "kind": "concert"
+  },
+  {
+   "name": "YE LIVE IN KOREA",
+   "family": "ye",
+   "date": "2025-07-26",
+   "start": "20:00",
+   "known_since": "2025-06-23",
+   "source_url": "https://www.marieclairekorea.com/hot-news/2025/06/ye-korea-3/",
+   "note": "2025-06-23 기사",
+   "venue": "munhak_main",
+   "stations": [
+    3127
+   ],
+   "kind": "concert"
+  },
+  {
+   "name": "MUSE 내한공연",
+   "family": "muse",
+   "date": "2025-09-27",
+   "start": "19:00",
+   "known_since": "2025-09-27",
+   "source_url": "https://www.segye.com/newsView/20250928508849",
+   "note": "과거 행사. 사전 발표일 미확인이라 공개일을 행사일로 둠(이력으로만 사용). 시작 시각은 검색 요약 기준",
+   "venue": "munhak_main",
+   "stations": [
+    3127
+   ],
+   "kind": "concert"
+  },
+  {
+   "name": "BTS Jin #RUNSEOKJIN_EP.TOUR ENCORE",
+   "family": "bts_jin",
+   "date": "2025-10-31",
+   "start": "19:00",
+   "known_since": "2025-10-03",
+   "source_url": "https://www.republicworld.com/entertainment/korean/bts-jin-announces-encore-concerts-in-incheon-know-the-dates-global-livestream-and-more-details",
+   "note": "2025-10-03 기사",
+   "venue": "munhak_main",
+   "stations": [
+    3127
+   ],
+   "kind": "concert"
+  },
+  {
+   "name": "BTS Jin #RUNSEOKJIN_EP.TOUR ENCORE",
+   "family": "bts_jin",
+   "date": "2025-11-01",
+   "start": "18:30",
+   "known_since": "2025-10-03",
+   "source_url": "https://www.republicworld.com/entertainment/korean/bts-jin-announces-encore-concerts-in-incheon-know-the-dates-global-livestream-and-more-details",
+   "note": "2025-10-03 기사",
+   "venue": "munhak_main",
+   "stations": [
+    3127
+   ],
+   "kind": "concert"
+  },
+  {
+   "name": "박효신 LIVE A & E 2026",
+   "family": "park_hyo_shin",
+   "date": "2026-04-04",
+   "start": "18:20",
+   "known_since": "2026-01-30",
+   "source_url": "https://www.asiae.co.kr/en/article/2026013008231371410",
+   "note": "2026-01-30 08:23 기사에 4월 4·5·11일 18:20, 인천문학경기장 주경기장 명시(직접 확인). 지시서의 02-11은 선예매 시작일",
+   "venue": "munhak_main",
+   "stations": [
+    3127
+   ],
+   "kind": "concert"
+  },
+  {
+   "name": "박효신 LIVE A & E 2026",
+   "family": "park_hyo_shin",
+   "date": "2026-04-05",
+   "start": "18:20",
+   "known_since": "2026-01-30",
+   "source_url": "https://www.asiae.co.kr/en/article/2026013008231371410",
+   "note": "위와 같음",
+   "venue": "munhak_main",
+   "stations": [
+    3127
+   ],
+   "kind": "concert"
+  },
+  {
+   "name": "박효신 LIVE A & E 2026",
+   "family": "park_hyo_shin",
+   "date": "2026-04-11",
+   "start": "18:20",
+   "known_since": "2026-01-30",
+   "source_url": "https://www.asiae.co.kr/en/article/2026013008231371410",
+   "note": "위와 같음",
+   "venue": "munhak_main",
+   "stations": [
+    3127
+   ],
+   "kind": "concert"
+  },
+  {
+   "name": "Sustainable Wave Festival 2026",
+   "family": "sustainable_wave_festival",
+   "date": "2026-08-29",
+   "start": null,
+   "known_since": "2026-06-02",
+   "source_url": "https://www.hankyung.com/article/202606023727H",
+   "note": "2026-06-02 17:46 기사에 '8월 29, 30일 인천문학경기장' 명시(직접 확인). 주경기장 여부·시간·규모는 마감 전 출처로 확인되지 않음. 비교할 과거 표본이 없어 상승폭을 0.6배로 줄임. 지시서 목록에 없던 행사",
+   "venue": "munhak_main",
+   "stations": [
+    3127
+   ],
+   "kind": "concert",
+   "lift_scale": 0.6
+  },
+  {
+   "name": "Sustainable Wave Festival 2026",
+   "family": "sustainable_wave_festival",
+   "date": "2026-08-30",
+   "start": null,
+   "known_since": "2026-06-02",
+   "source_url": "https://www.hankyung.com/article/202606023727H",
+   "note": "위와 같음",
+   "venue": "munhak_main",
+   "stations": [
+    3127
+   ],
+   "kind": "concert",
+   "lift_scale": 0.6
+  },
+  {
+   "name": "2026 PLAVE World Tour [KEEP IT MANIC] in Incheon",
+   "family": "plave",
+   "date": "2026-09-12",
+   "start": "19:00",
+   "known_since": "2026-06-10",
+   "source_url": "https://theqoo.net/square/4238498048",
+   "note": "2026-06-10 14:09 게시글이 공식 공지를 인용: 9월 12일(토)·13일(일) 7PM, 인천문학경기장 주경기장(직접 확인). 2026-06-15 뉴시스 기사도 같은 날짜·장소",
+   "venue": "munhak_main",
+   "stations": [
+    3127
+   ],
+   "kind": "concert"
+  },
+  {
+   "name": "2026 PLAVE World Tour [KEEP IT MANIC] in Incheon",
+   "family": "plave",
+   "date": "2026-09-13",
+   "start": "19:00",
+   "known_since": "2026-06-10",
+   "source_url": "https://theqoo.net/square/4238498048",
+   "note": "위와 같음",
+   "venue": "munhak_main",
+   "stations": [
+    3127
+   ],
+   "kind": "concert"
+  },
+  {
+   "name": "송도맥주축제 2025",
+   "family": "songdo_beer_fri",
+   "date": "2025-08-22",
+   "start": null,
+   "known_since": "2025-08-22",
+   "source_url": "https://www.insight.co.kr/news/516529",
+   "note": "과거 행사(이력으로만 사용). 사전 발표일 미확인이라 공개일을 행사일로 둠",
+   "venue": "songdo_festival_park",
+   "stations": [
+    3139
+   ],
+   "kind": "festival"
+  },
+  {
+   "name": "송도맥주축제 2025",
+   "family": "songdo_beer_sat",
+   "date": "2025-08-23",
+   "start": null,
+   "known_since": "2025-08-23",
+   "source_url": "https://www.insight.co.kr/news/516529",
+   "note": "과거 행사(이력으로만 사용). 사전 발표일 미확인이라 공개일을 행사일로 둠",
+   "venue": "songdo_festival_park",
+   "stations": [
+    3139
+   ],
+   "kind": "festival"
+  },
+  {
+   "name": "송도맥주축제 2025",
+   "family": "songdo_beer_sun",
+   "date": "2025-08-24",
+   "start": null,
+   "known_since": "2025-08-24",
+   "source_url": "https://www.insight.co.kr/news/516529",
+   "note": "과거 행사(이력으로만 사용). 사전 발표일 미확인이라 공개일을 행사일로 둠",
+   "venue": "songdo_festival_park",
+   "stations": [
+    3139
+   ],
+   "kind": "festival"
+  },
+  {
+   "name": "송도맥주축제 2025",
+   "family": "songdo_beer_wd",
+   "date": "2025-08-25",
+   "start": null,
+   "known_since": "2025-08-25",
+   "source_url": "https://www.insight.co.kr/news/516529",
+   "note": "과거 행사(이력으로만 사용). 사전 발표일 미확인이라 공개일을 행사일로 둠",
+   "venue": "songdo_festival_park",
+   "stations": [
+    3139
+   ],
+   "kind": "festival"
+  },
+  {
+   "name": "송도맥주축제 2025",
+   "family": "songdo_beer_wd",
+   "date": "2025-08-26",
+   "start": null,
+   "known_since": "2025-08-26",
+   "source_url": "https://www.insight.co.kr/news/516529",
+   "note": "과거 행사(이력으로만 사용). 사전 발표일 미확인이라 공개일을 행사일로 둠",
+   "venue": "songdo_festival_park",
+   "stations": [
+    3139
+   ],
+   "kind": "festival"
+  },
+  {
+   "name": "송도맥주축제 2025",
+   "family": "songdo_beer_wd",
+   "date": "2025-08-27",
+   "start": null,
+   "known_since": "2025-08-27",
+   "source_url": "https://www.insight.co.kr/news/516529",
+   "note": "과거 행사(이력으로만 사용). 사전 발표일 미확인이라 공개일을 행사일로 둠",
+   "venue": "songdo_festival_park",
+   "stations": [
+    3139
+   ],
+   "kind": "festival"
+  },
+  {
+   "name": "송도맥주축제 2025",
+   "family": "songdo_beer_wd",
+   "date": "2025-08-28",
+   "start": null,
+   "known_since": "2025-08-28",
+   "source_url": "https://www.insight.co.kr/news/516529",
+   "note": "과거 행사(이력으로만 사용). 사전 발표일 미확인이라 공개일을 행사일로 둠",
+   "venue": "songdo_festival_park",
+   "stations": [
+    3139
+   ],
+   "kind": "festival"
+  },
+  {
+   "name": "송도맥주축제 2025",
+   "family": "songdo_beer_fri",
+   "date": "2025-08-29",
+   "start": null,
+   "known_since": "2025-08-29",
+   "source_url": "https://www.insight.co.kr/news/516529",
+   "note": "과거 행사(이력으로만 사용). 사전 발표일 미확인이라 공개일을 행사일로 둠",
+   "venue": "songdo_festival_park",
+   "stations": [
+    3139
+   ],
+   "kind": "festival"
+  },
+  {
+   "name": "송도맥주축제 2025",
+   "family": "songdo_beer_sat",
+   "date": "2025-08-30",
+   "start": null,
+   "known_since": "2025-08-30",
+   "source_url": "https://www.insight.co.kr/news/516529",
+   "note": "과거 행사(이력으로만 사용). 사전 발표일 미확인이라 공개일을 행사일로 둠",
+   "venue": "songdo_festival_park",
+   "stations": [
+    3139
+   ],
+   "kind": "festival"
+  },
+  {
+   "name": "송도맥주축제 2026",
+   "family": "songdo_beer_sat",
+   "date": "2026-08-22",
+   "start": null,
+   "known_since": "2026-06-23",
+   "source_url": "https://news.ifm.kr/news/articleView.html?idxno=473558",
+   "note": "경인방송 2026-06-23 13:45 기사: 8월 22일부터 30일까지 9일간 송도달빛축제공원",
+   "venue": "songdo_festival_park",
+   "stations": [
+    3139
+   ],
+   "kind": "festival"
+  },
+  {
+   "name": "송도맥주축제 2026",
+   "family": "songdo_beer_sun",
+   "date": "2026-08-23",
+   "start": null,
+   "known_since": "2026-06-23",
+   "source_url": "https://news.ifm.kr/news/articleView.html?idxno=473558",
+   "note": "경인방송 2026-06-23 13:45 기사: 8월 22일부터 30일까지 9일간 송도달빛축제공원",
+   "venue": "songdo_festival_park",
+   "stations": [
+    3139
+   ],
+   "kind": "festival"
+  },
+  {
+   "name": "송도맥주축제 2026",
+   "family": "songdo_beer_wd",
+   "date": "2026-08-24",
+   "start": null,
+   "known_since": "2026-06-23",
+   "source_url": "https://news.ifm.kr/news/articleView.html?idxno=473558",
+   "note": "경인방송 2026-06-23 13:45 기사: 8월 22일부터 30일까지 9일간 송도달빛축제공원",
+   "venue": "songdo_festival_park",
+   "stations": [
+    3139
+   ],
+   "kind": "festival"
+  },
+  {
+   "name": "송도맥주축제 2026",
+   "family": "songdo_beer_wd",
+   "date": "2026-08-25",
+   "start": null,
+   "known_since": "2026-06-23",
+   "source_url": "https://news.ifm.kr/news/articleView.html?idxno=473558",
+   "note": "경인방송 2026-06-23 13:45 기사: 8월 22일부터 30일까지 9일간 송도달빛축제공원",
+   "venue": "songdo_festival_park",
+   "stations": [
+    3139
+   ],
+   "kind": "festival"
+  },
+  {
+   "name": "송도맥주축제 2026",
+   "family": "songdo_beer_wd",
+   "date": "2026-08-26",
+   "start": null,
+   "known_since": "2026-06-23",
+   "source_url": "https://news.ifm.kr/news/articleView.html?idxno=473558",
+   "note": "경인방송 2026-06-23 13:45 기사: 8월 22일부터 30일까지 9일간 송도달빛축제공원",
+   "venue": "songdo_festival_park",
+   "stations": [
+    3139
+   ],
+   "kind": "festival"
+  },
+  {
+   "name": "송도맥주축제 2026",
+   "family": "songdo_beer_wd",
+   "date": "2026-08-27",
+   "start": null,
+   "known_since": "2026-06-23",
+   "source_url": "https://news.ifm.kr/news/articleView.html?idxno=473558",
+   "note": "경인방송 2026-06-23 13:45 기사: 8월 22일부터 30일까지 9일간 송도달빛축제공원",
+   "venue": "songdo_festival_park",
+   "stations": [
+    3139
+   ],
+   "kind": "festival"
+  },
+  {
+   "name": "송도맥주축제 2026",
+   "family": "songdo_beer_fri",
+   "date": "2026-08-28",
+   "start": null,
+   "known_since": "2026-06-23",
+   "source_url": "https://news.ifm.kr/news/articleView.html?idxno=473558",
+   "note": "경인방송 2026-06-23 13:45 기사: 8월 22일부터 30일까지 9일간 송도달빛축제공원",
+   "venue": "songdo_festival_park",
+   "stations": [
+    3139
+   ],
+   "kind": "festival"
+  },
+  {
+   "name": "송도맥주축제 2026",
+   "family": "songdo_beer_sat",
+   "date": "2026-08-29",
+   "start": null,
+   "known_since": "2026-06-23",
+   "source_url": "https://news.ifm.kr/news/articleView.html?idxno=473558",
+   "note": "경인방송 2026-06-23 13:45 기사: 8월 22일부터 30일까지 9일간 송도달빛축제공원",
+   "venue": "songdo_festival_park",
+   "stations": [
+    3139
+   ],
+   "kind": "festival"
+  },
+  {
+   "name": "송도맥주축제 2026",
+   "family": "songdo_beer_sun",
+   "date": "2026-08-30",
+   "start": null,
+   "known_since": "2026-06-23",
+   "source_url": "https://news.ifm.kr/news/articleView.html?idxno=473558",
+   "note": "경인방송 2026-06-23 13:45 기사: 8월 22일부터 30일까지 9일간 송도달빛축제공원",
+   "venue": "songdo_festival_park",
+   "stations": [
+    3139
+   ],
+   "kind": "festival"
+  }
+ ]
+}

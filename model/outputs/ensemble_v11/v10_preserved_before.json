@@ -1,0 +1,17 @@
+{
+ "configs/ensemble_v10.json": "00e73713314a3d0204402b1877d69be7ff979583ec330d9c080cec8ae60cb158",
+ "outputs/ensemble_v10/RESULTS_V10.md": "5b9630373a8111b8d4e48e121ee5f98c230a032d458d1f3b572ad2a5796b93b1",
+ "outputs/ensemble_v10/VALIDATION_V10.csv": "2cd26b9ff49d2f4d60cf89f32b8868f9c23f22325961cf0677c2fa6249ce01cc",
+ "outputs/ensemble_v10/gates_v10.json": "f1cb066d9e432643375e3b9e282603f4559ea8e0c811b5ebeda628c7044e1271",
+ "outputs/ensemble_v10/oof_v10.npz": "967cea7a13e962aefd102a16d73e5c8f624a107157b0448a4411b1bc1d49ba67",
+ "outputs/ensemble_v10/submission_ensemble_v10.csv": "91fa5110adfab5d024ad0d156849a3d22c5d270a4269d1d35fcdf709d65ebacf",
+ "outputs/ensemble_v10/v9_preserved_before.json": "40c9567341df20bd6447b74d8175ebbb0622dd924b3b4b0519df64c17445b2f7",
+ "src/v10/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+ "src/v10/games.py": "b66d78842b248ea0e51de587abb28040db626a4dad39fdb5ff1b4ce1fe3ca82d",
+ "src/v10/report.py": "669c0b0bcd43c40ced49cf975e6541979cefd1afacc37c26da194d459aa86264",
+ "src/v10/run.py": "d1ec1eca66fe35d2b8cde21be15839d663aeae393c5257191e63187a8de506b4",
+ "src/v10/seasonal.py": "08b06d8659cc045b78f51b0c1fb0a2a40a822f7f4c5fc3c77eb1c014a6750843",
+ "src/v10/tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+ "src/v10/tests/test_v10.py": "8885a44906e3550fe48b9c92e9f09a6c77919d7d4f618bae198ef410d3664673",
+ "src/v10/weather.py": "3ea323c4e092066abee5d45051e1ce235590da4b679e408707585f4d5e3aa38b"
+}

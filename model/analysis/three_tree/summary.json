@@ -1,0 +1,68 @@
+{
+  "decomposition": {
+    "primary_log_mse": 0.06450204707676938,
+    "ensemble_log_mse": 0.06678782667885452,
+    "extra_log_mse": 0.0022857796020851473,
+    "rmsle_relative_increase_percent": 1.756440520827507,
+    "log_mse_relative_increase_percent": 3.543731874687084,
+    "weighted_single_log_mse": 0.06818214786481291,
+    "weighted_single_excess_over_primary": 0.003680100788043539,
+    "diversity_credit": 0.0013943211859583915,
+    "primary_error_times_adjustment_twice": 0.0012863521346137307,
+    "adjustment_squared_mean": 0.0009994274674714227,
+    "variance_difference": -0.0007204070056219467,
+    "squared_bias_difference": 0.0030061866077071026,
+    "audit_directional_derivatives_from_primary": {
+      "xgboost": 0.001630038288443725,
+      "catboost": 0.005880721378602935
+    },
+    "primary_is_audit_simplex_optimum": true,
+    "audit_optimum_note": "Posthoc geometry diagnosis only; no audit-based weight plan is deployed."
+  },
+  "paired_date_bootstrap": {
+    "resamples": 5000,
+    "unit": "date (paired same-date samples for both models)",
+    "delta_rmsle": 0.004460876466111485,
+    "ci95": [
+      0.0031430421070911324,
+      0.005846595028439561
+    ],
+    "note": "Descriptive conditional interval within this previously examined period. Adjacent dates can be dependent; not a future-performance guarantee."
+  },
+  "weight_fit_diagnostics_only": [
+    {
+      "diagnostic_fit": "current_all_development",
+      "fit_rows": 314334,
+      "lightgbm_large": 0.5,
+      "xgboost": 0.3891159419804635,
+      "catboost": 0.11088405801953646,
+      "fit_rmsle": 0.34271531312973147,
+      "reused_fold3_rmsle": 0.25843340859659486
+    },
+    {
+      "diagnostic_fit": "warm_development_only",
+      "fit_rows": 307746,
+      "lightgbm_large": 0.5355564578700931,
+      "xgboost": 0.0,
+      "catboost": 0.46444354212990685,
+      "fit_rmsle": 0.2643895158871943,
+      "reused_fold3_rmsle": 0.2623905917483456
+    },
+    {
+      "diagnostic_fit": "development_fold2_only",
+      "fit_rows": 157194,
+      "lightgbm_large": 0.5,
+      "xgboost": 9.032244608594944e-18,
+      "catboost": 0.49999999999999994,
+      "fit_rmsle": 0.21669379391938223,
+      "reused_fold3_rmsle": 0.2632769392078513
+    }
+  ],
+  "active_model_changed": false,
+  "evaluation_context": {
+    "status": "reused_validation_after_prior_diagnostics",
+    "policy_selection_has_seen_audit": true,
+    "weight_fit_uses_audit": false,
+    "note": "Model selection and removal of bias calibration follow prior fold-3 diagnostics and the user request. Weights use folds 1 and 2 only. Fold 3 is a reused comparison, not a fresh holdout."
+  }
+}

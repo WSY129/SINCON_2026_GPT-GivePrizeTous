@@ -1,0 +1,3013 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0"/>
+		<meta name="Robots" content="index,nofollow"/>
+		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		
+		
+
+
+
+
+
+
+
+
+
+<script src="/script/jquery-latest.js"></script>
+<script src="/script/hrBar.js"></script>
+<script src="/script/jquery-1.4.2.min.js"></script>  
+<script>
+	if(navigator.userAgent.match("MSIE 7.0") || navigator.userAgent.match("MSIE 6.0") || navigator.userAgent.match("MSIE 5.0")){
+		location.href = "/sptNotice.jsp"
+	}
+
+ 	$().ready(function(){
+ 		
+		$(document).bind('keydown',function(e){
+			if ( e.keyCode == 123 /* F12 */) {
+				e.preventDefault();
+				e.returnValue = false;
+				
+			}
+		});
+		
+		//메인 메뉴 토글 활성화
+		if($('#gnb')){
+			$('#gnb > ul > li > a ').mouseover(activeMainMenu);
+			$('#gnb > ul > li > a ').focus(activeMainMenu);
+		}	
+
+ 	});
+
+	function activeMainMenu(){
+		$('#gnb > ul > li').removeClass('hover');
+		$('#gnb > ul > li').removeClass('on');
+		$(this).parent().addClass('hover');
+	}	
+		
+</script>
+
+
+<script>
+
+/*document.oncontextmenu = function anonymous() { alert('마우스 오른쪽 버튼은 사용하실 수 없습니다'); return false; }
+if('msgirls' != 'apple' && 'msgirls' != 'call'){
+	document.onselectstart=function(){return false;}
+}*/
+
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function MM_showHideLayers() { //v6.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) if ((obj=MM_findObj(args[i]))!=null) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+function MM_showHideLayers2() {
+  var i,p,v,obj,args=MM_showHideLayers2.arguments;
+  for (i=0; i<(args.length-2); i+=3) if ((obj=MM_findObj(args[i]))!=null) { v=args[i+2];
+	if (obj.style) { obj=obj.style; v=(v=='show')?'':(v=='none')?'none':v; }
+	obj.display=v;}
+}
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+
+  window.open(theURL,winName,features);
+
+}
+// 엔터 클릭시 실행되는 펑션 각 페이지에서 필요한 매소드 재정의
+function Load()
+{
+    if(event.keyCode==13)
+    {   
+       	enterDown();
+    }
+}
+
+function enterDown()
+{
+	//searchStr에 포커스가 있으면 검색 실행
+	//goSearch();
+}
+
+// KeyUp 이벤트
+function keyUp()
+{
+	return;
+}
+
+// 검색결과 페이지
+function goSearch()
+{
+	var forms = document.searchForm;
+	
+	if( forms.searchStr.value == null || forms.searchStr.value == "" )
+	{
+		alert("검색어를 입력하세요");
+		forms.searchStr.focus();
+		return false;
+	} 
+	
+	window.open("", "search", "width=720 height=600 scrollbars=yes");
+	forms.method = "POST";
+	forms.target = "search";
+	forms.action = "/search.do";
+	forms.submit();
+}
+
+// 메인홈페이지
+//홈페이지 내 검색
+function goSearch4(reqType)
+{
+	
+	var forms = "";
+	
+	if(reqType =="1")
+	{
+		forms = document.searchForm;
+		if( forms.searchStr.value == null || forms.searchStr.value == "" )
+		{
+			
+			alert("검색어를 입력하세요");
+			forms.searchStr.focus();
+			return false;
+		}
+	}
+	else
+	{
+		forms = document.searchFormM;
+		if( forms.searchStr.value == null || forms.searchStr.value == "" )
+		{
+			alert("검색어를 입력하세요");
+			forms.searchStr.focus();
+			return false;
+		}
+	}
+	
+	forms.method = "POST";
+	forms.target = "search";
+	forms.action = "/search.do";
+	forms.submit();
+}
+
+// 에듀넷 검색
+function goSearch7(reqType)
+{
+	
+	const regex = /^[a-z|A-Z]+$/;
+	var forms = "";
+	
+	if(reqType =="1")
+	{
+		forms = document.siteSearchForm;
+		
+		
+		forms.svc_version.value = forms.svc_version.value.replaceAll("&", "&amp;");
+		forms.svc_version.value = forms.svc_version.value.replaceAll("\"", "&quot;");
+		forms.svc_version.value = forms.svc_version.value.replaceAll("'", "&apos;");
+		forms.svc_version.value = forms.svc_version.value.replaceAll("<", "&lt;");
+		forms.svc_version.value = forms.svc_version.value.replaceAll(">", "&gt;");
+		forms.svc_version.value = forms.svc_version.value.replaceAll("\r", "<br>");
+		forms.svc_version.value = forms.svc_version.value.replaceAll("\n", "<p>");
+		
+		if(!regex.test(forms.eb_flag.value)){
+			alert("올바르지 않은 접근입니다.");
+			return false;
+		}
+		
+		if( forms.kwd.value == null || forms.kwd.value == "" )
+		{
+			
+			alert("검색어를 입력하세요");
+			forms.kwd.focus();
+			return false;
+		}
+	}
+	else
+	{
+		forms = document.siteSearchFormM;
+		if( forms.kwd.value == null || forms.kwd.value == "" )
+		{
+			alert("검색어를 입력하세요");
+			forms.kwd.focus();
+			return false;
+		}
+	}
+	
+	var link="https://www.edunet.net/nsearch/search/search.do?kwd="+forms.kwd.value;
+	window.open(link);
+}
+
+// 기본 값 초기화
+function goSearch2(flag) {
+	
+	if(flag=='')
+		flag="미사용";
+
+	var data=flag;
+	sessionStorage.setItem("search", flag);
+	
+	var data2=sessionStorage.getItem("search3");
+
+	if(data == '에듀넷 검색'){
+			document.getElementById("home_search2").style.display="none";
+			document.getElementById("search_option4").disabled='disabled';
+	}
+	else if(data == '홈페이지 검색'){
+			document.getElementById("edu_search2").style.display="none";
+			document.getElementById("search_option4").disabled='disabled';
+	}
+	else if(data == '전체'){
+		
+		if(data2!=null){
+			if(data2=='홈페이지 검색'){
+				document.getElementById("edu_search2").style.display="none";
+				document.getElementsByName("Psearch_option")[0].options[0].selected=1;
+			}
+			else {
+				document.getElementById("home_search2").style.display="none";
+				document.getElementsByName("Psearch_option")[0].options[1].selected=1;
+			}
+		}
+		else{
+			document.getElementById("edu_search2").style.display="none";
+			document.getElementsByName("Psearch_option")[0].options[0].selected=1;
+		}
+	}
+	else{
+		document.getElementById("box_search_0").style.display="none";
+	}
+}
+
+// pc용 선택 옵션 체크
+function goSearch3() {
+	
+	var data=document.getElementById("search_option4").value;
+	sessionStorage.setItem("search", "전체");
+	sessionStorage.setItem("search3", data);
+	
+	if(data == '에듀넷 검색'){
+			document.getElementById("home_search2").style.display="none";
+			document.getElementById("edu_search2").style.display="block";
+	}
+	if(data == '홈페이지 검색'){
+			document.getElementById("edu_search2").style.display="none";
+			document.getElementById("home_search2").style.display="block";
+	}
+}
+
+// 모바일용 선택 옵션 체크
+function goSearch5() {
+	var data=document.getElementsByName("search_option")[0].value;
+	sessionStorage.setItem("search", "전체");
+	
+	if(data == '에듀넷 검색'){
+		document.getElementsByName("searchFormM")[0].style.display="none";
+		document.getElementsByName("search_option")[0].options[0].selected=1;
+		document.getElementsByName("siteSearchFormM")[0].style.display="block";
+	}
+	if(data == '홈페이지 검색'){
+		document.getElementsByName("searchFormM")[0].style.display="block";
+		document.getElementsByName("search_option2")[0].options[1].selected=1;
+		document.getElementsByName("siteSearchFormM")[0].style.display="none";
+	}
+}
+
+//모바일용 선택 옵션 체크2
+function goSearch6() {
+	var data=document.getElementsByName("search_option2")[0].value;
+	sessionStorage.setItem("search", "전체");
+	
+	if(data == '에듀넷 검색'){
+		document.getElementsByName("searchFormM")[0].style.display="none";
+		document.getElementsByName("search_option")[0].options[0].selected=1;
+		document.getElementsByName("siteSearchFormM")[0].style.display="block";
+	}
+	if(data == '홈페이지 검색'){
+		document.getElementsByName("searchFormM")[0].style.display="block";
+		document.getElementsByName("search_option2")[0].options[1].selected=1;
+		document.getElementsByName("siteSearchFormM")[0].style.display="none";
+	}
+}
+
+// 모바일 검색
+
+// 기본 값 설정
+function start_sub(){
+	var s = sessionStorage.getItem("search");
+	var s2 = sessionStorage.getItem("search3");
+		
+	if(s2==null)
+		s2='홈페이지 검색';
+	
+	if(s == '에듀넷 검색'){
+		document.getElementById("home_search2").style.display="none";
+		document.getElementsByName("search_option3")[0].options[0].selected=1;
+		document.getElementsByName("search_option3")[0].disabled='disabled';
+	}
+	else if(s == '홈페이지 검색'){
+		document.getElementById("edu_search2").style.display="none";
+		document.getElementsByName("search_option3")[0].options[1].selected=1;
+		document.getElementsByName("search_option3")[0].disabled='disabled';
+	}
+	else if(s == '전체'){
+		if(s2 == '홈페이지 검색'){
+			document.getElementById("edu_search2").style.display="none";
+			document.getElementsByName("search_option3")[0].options[1].selected=1;
+		}
+		else{
+			document.getElementById("home_search2").style.display="none";
+			document.getElementsByName("search_option3")[0].options[0].selected=1;
+		}
+	}
+	else{
+		document.getElementById("box_search_0").style.display="none";
+	}
+	
+}
+
+// 홈페이지 내 검색
+function goSearch9(reqType)
+{
+	var forms = "";
+	
+	if(reqType =="1")
+	{
+		forms = document.searchForm;
+		if( forms.searchStr.value == null || forms.searchStr.value == "" )
+		{
+			alert("검색어를 입력하세요");
+			forms.searchStr.focus();
+			return false;
+		}
+	}
+	else
+	{
+		forms = document.searchFormM;
+		if( forms.searchStr.value == null || forms.searchStr.value == "" )
+		{
+			alert("검색어를 입력하세요");
+			forms.searchStr.focus();
+			return false;
+		}
+	}
+	
+	forms.method = "POST";
+	forms.target = "search";
+	forms.action = "/search.do";
+	forms.submit();
+}
+
+//에듀넷 검색
+function goSearch10(reqType)
+{
+	
+	var forms = "";
+	
+	
+	if(reqType =="1")
+	{
+		forms = document.siteSearchForm;
+		
+		if(forms.kwd.value != null){
+			  forms.kwd.value = forms.kwd.value.replaceAll("<","&lt;");
+			  forms.kwd.value = forms.kwd.value.replaceAll(">","&gt;");
+		}		
+		
+		if( forms.kwd.value == null || forms.kwd.value == "" )
+		{
+			
+			alert("검색어를 입력하세요");
+			forms.kwd.focus();
+			return false;
+		}
+	}
+	else
+	{
+		forms = document.siteSearchFormM;
+		if( forms.kwd.value == null || forms.searchStr2.value == "" )
+		{
+			alert("검색어를 입력하세요");
+			forms.kwd.focus();
+			return false;
+		}
+	}
+	
+	var link="https://www.edunet.net/nsearch/search/search.do?kwd="+forms.kwd.value;
+	window.open(link);
+}
+
+// pc용 선택 옵션 체크
+function goSearch8() {
+	var data=document.getElementById("search_option3").value;
+	sessionStorage.setItem("search3", data);
+
+	if(data == '에듀넷 검색'){
+			document.getElementById("home_search2").style.display="none";
+			document.getElementById("edu_search2").style.display="block";
+	}
+	if(data == '홈페이지 검색'){
+			document.getElementById("edu_search2").style.display="none";
+			document.getElementById("home_search2").style.display="block";
+	}
+}
+
+
+//================= 미니리스트 마우스오버 =====================
+function selMiniList(listID, listNum)
+{
+	for(i=1;i<10;i++)
+	{
+		var id = listID+i;
+		if(document.getElementById(id) != null)
+			document.getElementById(id).style.display = "none";
+	}
+	var id = listID+listNum;
+	document.getElementById(id).style.display = "block";
+}
+//================= 미니리스트 마우스오버 =====================
+
+
+
+//================= 탭버튼 =====================
+
+/************************************
+*	buttonType	=	img / text		*
+*	contentYN	=	Y / N			*
+*	id			=	id값			*
+************************************/
+
+
+
+
+
+//================= 팝업관련 =====================
+function getCookieKL( name ) 
+{
+	var nameOfCookie = name + "=";
+	var x = 0;
+	while ( x <= document.cookie.length ) 
+	{
+		var y = (x+nameOfCookie.length);
+		if ( document.cookie.substring( x, y ) == nameOfCookie ) 
+		{
+			if ( (endOfCookie=document.cookie.indexOf( ";", y )) == -1 )
+				endOfCookie = document.cookie.length;
+			return unescape( document.cookie.substring( y, endOfCookie ) ); 
+		}
+		x = document.cookie.indexOf( " ", x ) + 1;
+		if ( x == 0 )
+			break; 
+	}
+	return ""; 
+}
+//리스트팝업존 메인에서만 열리도록 설정
+var openPopCount = "N";
+var openPopL = "N";
+var openPopN = "N";
+
+openPopCount = "Y";
+function popupList()
+{
+	if(getCookieKL("msgirlsA") != "popupA")
+		window.open("/popupA.do?popType=A", "popupA", "width=357 height=477");
+}
+//================= 팝업관련 =====================
+
+
+
+
+
+
+
+
+//================= 개인정보보호등 =====================
+function privacy()
+{
+	if(!confirm("개인정보처리방침을 여시겠습니까?"))
+		return;
+	window.open("/priPrivacy.do?s=msgirls", "privacy", "width=800, height=600, scrollbars=yes");
+}
+function email() 
+{
+	if(!confirm("이메일주소수집거부을 여시겠습니까?"))
+		return;
+	window.open("/email.do?s=msgirls", "email", "width=710 height=600 scrolls=no");
+}
+function copyright()
+{
+	if(!confirm("저작권지침 및 신고을 여시겠습니까?"))
+		return;
+	window.open("/copyright.do?s=msgirls", "copyright", "width=710 height=600 scrolls=no");
+}
+function priPrivacy()
+{
+	if(!confirm("개인정보처리방침을 여시겠습니까?"))
+		return;
+	window.open("/priPrivacy.do?s=msgirls", "priPrivacy", "width=850, height=600, scrollbars=yes");
+}
+//================= 개인정보보호등 =====================
+	
+
+
+
+
+
+
+
+
+
+//================= 교육기부 ============================
+function eduLink(){
+	document.getElementById("eduLink").style.display="none";
+	document.getElementById("eduLink2").style.display="block";
+	document.getElementById("eduLink3").style.display="block";
+}
+//================= 교육기부 ============================
+
+	
+
+
+
+
+
+
+
+
+//================= 메뉴관련 =====================
+function leftMenuView(idx)
+{ 
+	var str = "" + idx;
+
+	for(i=100; i<150; i++)
+	{
+		if(document.getElementById("LMenu" + i))
+		{
+			hide_menu = document.getElementById("LMenu"+i);
+			// 3자리 이상 idx일때 양끝 하나씩 잘라낸것과 일치하는것은 바로 상위 메뉴이므로 감추지 않는다.
+			if(str.length >= 3 && isPrnt(str, i))
+			{
+				hide_menu.style.display = 'block';
+			}
+			else
+			{
+				hide_menu.style.display = 'none';
+			}
+		}
+	}
+	subMenu = document.getElementById("LMenu"+idx);
+	if(subMenu != null)
+		subMenu.style.display = 'block'; 
+}
+
+function isPrnt(str, idx)
+{
+	var subStr = str.substring(1,str.length-1);
+	if(parseInt(subStr) == idx)
+		return true;
+
+	if(subStr.length >= 3 && isPrnt(subStr, idx))
+		return true;
+
+	return false;
+}
+
+function viewSiteMap(url){
+ 	if(document.getElementById("layerSiteMap").style.visibility == "hidden") 
+ 	{
+  		document.getElementById("layerSiteMap").style.visibility = "visible";
+  		document.getElementById("SiteMapFrm").src =url;  
+ 	}
+ 	else
+ 	{
+  		document.getElementById("layerSiteMap").style.visibility = "hidden";
+ 	}
+}
+
+var prevIdx = 0;
+function subMenuView(idx)
+{ 
+	hide_menu = document.getElementById("subMenu"+prevIdx);
+	if(hide_menu != null && hide_menu.style.display  == 'block')
+		hide_menu.style.display = 'none';
+				
+	subMenu = document.getElementById("subMenu"+idx);
+	if(subMenu != null)
+	{
+		subMenu.style.display = 'block'; 
+		prevIdx = idx
+	}
+}
+
+//================= 메뉴관련 =====================
+function isValidSN(jumin1, jumin2)
+{
+	var ssn1 = jumin1;
+	var ssn2 = jumin2;
+	var ssn=ssn1+ssn2;
+	a = new Array(13);
+	for (var i=0; i < 13; i++) 
+	{
+		a[i] = parseInt(ssn.charAt(i));
+	}
+	var k = 11 - (((a[0] * 2) + (a[1] * 3) + (a[2] * 4) + (a[3] * 5) + (a[4] * 6) + (a[5] * 7) + (a[6] * 8) + (a[7] * 9) + (a[8] * 2) + (a[9] * 3) + (a[10] * 4) + (a[11] * 5)) % 11);
+	if (k > 9)
+	{
+		k -= 10;
+	}
+	if (k == a[12])
+		return true;
+	else
+		return false;	
+}
+function goLogin()
+{
+	location.href="https://ptlogin.ice.go.kr/login.do?rtUrl=http://msgirls.icems.kr&sessID=XICIpyRxLaw5LTqyL1jCLlYuqIbj2h0DBRLM2UH5bcrRDpNmTqla1l3Ab9CO2agO.amV1c19kb21haW4vaWNlU2NobC0xMDE=&loginNeisCD=E100000623";
+}
+
+function goTestLogin()
+{
+	location.href="https://ptlogin.ice.go.kr/loginTest.do?rtUrl=http://msgirls.icems.kr&sessID=XICIpyRxLaw5LTqyL1jCLlYuqIbj2h0DBRLM2UH5bcrRDpNmTqla1l3Ab9CO2agO.amV1c19kb21haW4vaWNlU2NobC0xMDE=&loginNeisCD=E100000623";
+}
+
+function goJoin()
+{
+	location.href="https://ptlogin.ice.go.kr/join1.do?rtUrl=http://msgirls.icems.kr&sessID=XICIpyRxLaw5LTqyL1jCLlYuqIbj2h0DBRLM2UH5bcrRDpNmTqla1l3Ab9CO2agO.amV1c19kb21haW4vaWNlU2NobC0xMDE=&loginNeisCD=E100000623";
+}
+/*function tempLogin(usrID, usrPW)
+{
+	var forms = document.tmpForm;
+	forms.ciKey.value = usrID;
+	forms.certiKey.value = usrPW;
+	forms.action = "/login.do";	
+	forms.submit();
+}
+
+function goMsg()
+{
+	//alert("서비스 준비중입니다");
+	var forms = document.tmpForm;
+
+	forms.target = "tmpFrm";
+	forms.action = "/msg.do";
+	forms.submit();
+	
+}*/
+
+function siteMap()
+{
+	window.open("/sitemap.do","login","width=900 height=620 scrollbars=yes");
+}
+
+function chgInfo()
+{
+	/*var forms = document.tmpForm;
+	
+	forms.target = "tmpFrm";
+	forms.action = "https://ptlogin.ice.go.kr/login/login/chgInfoPop.jsp";
+	forms.submit();*/
+
+	window.open("https://ptlogin.ice.go.kr/chgInfo.do?rtUrl=http://msgirls.icems.kr&sessID=XICIpyRxLaw5LTqyL1jCLlYuqIbj2h0DBRLM2UH5bcrRDpNmTqla1l3Ab9CO2agO.amV1c19kb21haW4vaWNlU2NobC0xMDE=&loginNeisCD=E100000623&s=msgirls","chgInfoMem","width=1050, height=850");
+
+}
+
+//총관리자가 수정한 날짜에 마이페이지가 열리도록 수정
+
+/*function chgMemDataInfo()
+{
+	var forms = document.chMebForm;
+	
+	forms.target = "chMebFrm";
+	forms.action = "/login/login/chgInfoPop.jsp";
+	forms.submit();
+}*/
+
+//학교 교가 
+function playMugic(num){
+	var url =  + "/UserFiles/" + sysID + "/pullo.mp3";
+		if(num == "1"){
+				ie_player.FileName = url;
+				ie_player.AutoStart = true;
+				ie_player.play()
+		}else{
+				ie_player.FileName = url;
+				ie_player.AutoStart = true;
+				ie_player.stop()
+		}
+	}
+
+// 자료관리자등에서 사용할 직원찾기
+function empSrch(reqUsrID, reqUsrNM, reqDeptCD, reqDeptNM, reqEMail, reqPhone)
+{
+	var url = "/sub/dje/dataMng/empSrch.jsp?usrID="+reqUsrID+"&usrNM="+reqUsrNM+"&deptCD="+reqDeptCD+"&deptNM="+reqDeptNM+"&email="+reqEMail+"&phone="+reqPhone;
+	window.open(url, "empSrch", "width=550, height=500, scrollbars=yes");
+}
+
+// 권한설정 창 오픈
+function popupAuth(url, ele)
+{
+	var cnts = eval("document."+ele).value;
+	url = url+"?Ele="+ele+"&Cnts="+cnts;
+
+	window.open(url, '','width=400,height=500, scrollbars=yes, resizable=yes');
+}
+
+//템플릿설정 창 오픈
+function popupTemp(url, ele)
+{	
+	var cnts = eval("document.authForm."+ele).value;
+	url = url+"?Ele="+ele+"&Cnts="+cnts;
+	
+	window.open(url, '','width=1000,height=540, scrollbars=yes, resizable=yes');
+}
+
+function popupTemp2(url, ele)
+{	
+	var cnts = eval("document.authForm."+ele).value;
+	url = url+"?Ele="+ele+"&Cnts="+cnts;
+	
+	window.open(url, '','width=500,height=540, scrollbars=yes, resizable=yes');
+}
+
+function allSrch(reqUsrID, reqUsrNM, reqDeptCD, reqDeptNM, reqEMail, reqPhone)
+{
+	var url = "/sub/dje/dataMng/allSrch.jsp?usrID="+reqUsrID+"&usrNM="+reqUsrNM+"&deptCD="+reqDeptCD+"&deptNM="+reqDeptNM+"&email="+reqEMail+"&phone="+reqPhone;
+	window.open(url, "empSrch", "width=550, height=500, scrollbars=yes");
+}
+
+// 스트링의 str1에 해당하는 문자열을 str2로 바꾼다.
+// 사용법.
+
+String.prototype.replaceAll = function(str1, str2)
+{
+  	var temp_str = "";
+
+  	if (this.trim() != "" && str1 != str2)
+  	{
+    	temp_str = this.trim();
+
+   	 	while (temp_str.indexOf(str1) > -1)
+    	{
+      		temp_str = temp_str.replace(str1, str2);
+    	}
+  	}
+  return temp_str;
+}
+
+// 문자열을 한번 바꾼다.
+function replace(msrc,sstr,rstr) {
+       var idx,sleft,sright;
+
+       msrc+="";
+       sstr+="";
+       rstr+="";
+       idx=msrc.indexOf(sstr);
+       if (idx > -1) {
+              sleft = msrc.substring(0,idx) + rstr;
+              sright = msrc.substring(idx+sstr.length);
+              return sleft + replace(sright,sstr,rstr);
+       } else {
+              return msrc;
+       }
+}
+
+//================= 날짜 선택 =====================
+  function Popup_Date(reqRY, reqCallBack)
+  {
+    var wWidth = 300;
+    var wHeight = 300;
+    var wTop = ((screen.height - 100) - wHeight) / 2 ;
+    var wLeft = (screen.width - wWidth) / 2;
+
+    var wTarget = 'KLFRAME_CALENDAR';
+    var wAddr =  '/script/calendar/calenadarM.jsp';
+
+    wAddr = wAddr + '?R=' + reqRY
+    wAddr = wAddr + '&T=S'
+	if(reqCallBack != null)
+		wAddr += '&CallBack=' + reqCallBack;
+
+    wNewWin = window.open(wAddr, wTarget,'toolbar=no,menubar=no,location=no,directories=no,status=no,scrollbars=no,resizable=yes,width='+wWidth+',height='+wHeight+',top='+wTop+',left='+wLeft+'');
+    wNewWin.focus();
+  }
+  
+  function Popup_Period(reqR, reqIdx)
+  {
+    var wWidth = 300;
+    var wHeight = 300;
+    var wTop = ((screen.height - 100) - wHeight) / 2 ;
+    var wLeft = (screen.width - wWidth) / 2;
+
+    var wTarget = 'KLFRAME_CALENDAR';
+    var wAddr =  '/script/calendar/calenadarM.jsp';
+
+    wAddr = wAddr + '?R=' + reqR
+    wAddr = wAddr + '&Idx=' + reqIdx
+    wAddr = wAddr + '&T=P'
+
+    wNewWin = window.open(wAddr, wTarget,'toolbar=no,menubar=no,location=no,directories=no,status=no,scrollbars=no,resizable=yes,width='+wWidth+',height='+wHeight+',top='+wTop+',left='+wLeft+'');
+    wNewWin.focus();
+  }
+  //================= 날짜 선택 =====================
+
+//================= 팝업창 컨트롤 관련 =====================
+function setCookieKL( name, value, expiredays ) 
+{
+	var todayDate = new Date();
+	todayDate.setDate( todayDate.getDate() + expiredays );
+	document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + todayDate.toGMTString() + ";" 
+}
+
+function getCookieKL( name ) 
+{
+	var nameOfCookie = name + "=";
+	var x = 0;
+	while ( x <= document.cookie.length ) 
+	{
+		var y = (x+nameOfCookie.length);
+		if ( document.cookie.substring( x, y ) == nameOfCookie ) 
+		{
+			if ( (endOfCookie=document.cookie.indexOf( ";", y )) == -1 )
+				endOfCookie = document.cookie.length;
+			return unescape( document.cookie.substring( y, endOfCookie ) ); 
+		}
+		x = document.cookie.indexOf( " ", x ) + 1;
+		if ( x == 0 )
+			break; 
+	}
+	return ""; 
+}
+
+function open_layer(frameName, name, seq)
+{
+	document.all[name].style.visibility = "visible";
+	eval("document."+frameName).location.replace('/popupL.do?popType=L&seq='+seq);
+} 
+
+function closeLayer(name)
+{
+	document.all[name].style.visibility = "hidden";
+}
+
+function closeLayerDay(name)
+{
+	document.all[name].style.visibility = "hidden";
+	setCookieKL( name, "done" , 1);
+}
+
+function closeWin(name)
+{
+	self.close();
+}
+
+function closeWinDay(name)
+{
+	self.close();
+	setCookieKL( name, "done" , 1);
+}
+//================= 팝업창 컨트롤 관련 =====================
+
+// 프레임 사이즈 조절
+function selfResize(reqDiv, reqFrm)
+{ 
+	dataobj = document.getElementById(reqDiv) //
+
+    dataobj.style.top=0 
+    dataobj.style.left=0 
+
+    pagelength=dataobj.offsetHeight
+    pagewidth=dataobj.offsetWidth
+
+    parent.document.getElementById(reqFrm).height=pagelength  
+    parent.document.getElementById(reqFrm).width=pagewidth 
+} 
+
+// 우편번호 검색
+function openZipcode(reqZip, reqAddr1)
+{
+	var url = "/sub/common/zipcode.jsp?zipNM="+reqZip+"&addrNM="+reqAddr1;
+	window.open(url,'','width=450,height=350,scrollbars=yes');
+}
+
+
+// 필수입력오류체크
+function cmnErrCertChk(reqForm, reqName, reqFoucs)
+{
+	if(reqForm.value == "")
+	{
+		alert(reqName +" 입력해주세요");
+		reqForm.value = "";
+		if(reqForm != null && reqFoucs != "N")
+			reqForm.focus();
+		return false;
+	}
+	return true;
+}
+
+// 숫자입력오류체크
+function numErrChk(reqForm)
+{
+	if(isNaN(reqForm.value) || reqForm.value=="")
+	{
+		alert("숫자만 입력할수 있습니다");
+		reqForm.value = "0";
+		reqForm.focus();
+		return false;
+	}
+	return true;
+}
+
+
+// 학교 스케줄 실행
+function scheduleInfo()
+{
+	window.open("/schedule/list.do","schedule","width=1375, height=400");
+}
+
+
+function CheckEMail (emailStr) 
+{  
+	// 전자메일 패턴. 사용자이름@도메인 의 형식을 검사함  
+	var emailPat=/^(.+)@(.+)$/;
+	// 포함되지 말아야할 특수문자들 ( ) < > @ , ; : \ " . [ ]  
+	var specialChars="\\(\\)<>@,;:\\\\\\\"\\.\\[\\]";  
+	// 포함될 수 있는 특수문자들 (나머지)  
+	var validChars="\[^\\s" + specialChars + "\]";  
+	// 아래의 경우는 사용자 이름에 따옴표가 있는 경우. RFC표준사항임  
+	var quotedUser="(\"[^\"]*\")"; 
+	// 도메인 대신 IP를 사용할 수있음  
+	// 예를 들어 laday@[210.120.253.10]은 올바른 메일 주소 "[", "]"이 반드시 필요 
+	var ipDomainPat=/^\[(\d{1,3})\.(\d{1,3})\.(\d{1,3})\.(\d{1,3})\]$/;  
+	// 기본적인 아토믹에 해당됨  
+	var atom=validChars + '+';  
+	// 사용자로 사용될 수 있는 문자를 나타냄  
+	var word="(" + atom + "|" + quotedUser + ")";  
+	// 사용자의 패턴을 나타냄. 위의 워드가 .단위로 여러개 올 수있음  
+	var userPat=new RegExp("^" + word + "(\\." + word + ")*$");  
+	// 아래의 것은 일반적인 도메인 패턴에 해당됨  
+	var domainPat=new RegExp("^" + atom + "(\\." + atom +")*$");  
+	// @을 기준으로 사용자와 도메인으로 나눔. 편의를 위함  
+	var matchArray=emailStr.match(emailPat);  
+	if (matchArray==null) 
+	{    
+	// 두개 이상 또는 @이 아예 없는 경우   
+		alert("메일주소 형식이 잘못되어 있습니다 (공백 및 @과 .을 확인해 보세요)");    
+		return false; 
+	}  
+	var user=matchArray[1];  
+	var domain=matchArray[2];  
+	// 사용자 부분이 제대로 되었는지 검사  
+	if (user.match(userPat)==null) 
+	{    
+		alert("메일 아이디가 올바르지 않습니다");    
+		return false;  
+	} 
+	// 도메인 부분이 IP로 되어 있는 경우 
+	var IPArray=domain.match(ipDomainPat);  
+	if (IPArray!=null) 
+	{    
+		for (var i=1;i<=4;i++) 
+		{      
+			if (IPArray[i]>255) 
+			{        
+				alert("IP 주소 형식이 올바르지 않습니다");        
+				return false;      
+			}    
+		}    
+		return true;  
+	}  
+	// 도메인 이름이 심볼릭 네임인 경우 올바르지 않음  
+	var domainArray=domain.match(domainPat);  
+	if (domainArray==null) 
+	{    
+		alert("도메인 형식이 올바르지 않습니다");   
+		return false; 
+	}  
+	// 도메인 형식 검사에 통과했더라도, 마지막 세개 또는 두개의 문자(com, net, kr등등)  
+	// 까지 올바른지 검사. 최상위 도메인은 반드시 세글자 아니면 두 글자임  
+	var atomPat=new RegExp(atom,"g");  
+	var domArr=domain.match(atomPat);  
+	var len=domArr.length;  
+	if (domArr[domArr.length-1].length<2 ||    domArr[domArr.length-1].length>3) 
+	{    
+		alert("도메인 주소의 마지막 필드는 반드시 세글자 도메인 또는 두글자 나라이어야 합니다.");    
+		return false; 
+	}  
+	// 호스트이름이 있는지 검사  
+	if (len<2) 
+	{    
+		alert("호스트 이름이 존재하지 않습니다. 호스트 이름은 반드시 2글자 이상이어야 합니다");    
+		return false;  
+	}  
+	
+	return true;
+}	
+//-->
+
+/* var nowZoom = 100; // 현재비율
+ var maxZoom = 500; // 최대비율(500으로하면 5배 커진다)
+ var minZoom = 100; // 최소비율*/
+
+var nowZoom = 1; 
+var maxZoom = 2; 
+var minZoom = 1; 
+var reduceMinZoom = 0.5;
+
+ // +, - 키를 입력하면 화면 확대, 축소를 한다.
+ document.onkeypress = getKey;
+
+ function getKey(keyStroke) {
+	  isNetscape = (document.layers);
+	  eventChooser = (isNetscape) ? keyStroke.which : event.keyCode;
+	  which = String.fromCharCode(eventChooser).toLowerCase();
+	  which2 = eventChooser;
+
+	  var el = event.srcElement;
+
+	  if ((el.tagName != "INPUT") && (el.tagName != "TEXTAREA")) {
+	   if (which == "+") {
+	    zoomIn();
+	   } else if (which == "-") {
+	    zoomOut();
+	   }
+	  }
+	 }
+ 
+ //화면 기본.
+function zoomInit() {
+ if (nowZoom < maxZoom) {
+  nowZoom = 1;
+ } else {
+  return;
+ }
+
+ document.getElementById("wrap").style.transformOrigin = "50% 0%";
+ document.getElementById("wrap").style.transform = "scale("+nowZoom + ")";
+}	 
+
+//화면 키운다.
+function zoomIn() {
+ if (nowZoom < maxZoom) {
+  nowZoom += 0.05;
+ } else {
+  return;
+ }
+
+ document.getElementById("wrap").style.transformOrigin = "50% 0%";
+ document.getElementById("wrap").style.transform = "scale("+nowZoom + ")";
+}
+
+
+function zoomOut() {
+ if (nowZoom > reduceMinZoom) {
+  nowZoom -= 0.05; 
+ } else {
+  return;
+ }
+	 document.getElementById("wrap").style.transformOrigin = "50% 0%";
+	 document.getElementById("wrap").style.transform = "scale("+nowZoom + ")";
+}
+
+/*function reduceScreen() {
+	if (nowZoom > reduceMinZoom) {
+		nowZoom -= 0.05; 
+	} else {
+		return;
+	}
+	
+	 document.getElementById("wrap").style.transformOrigin = "50% 0%";
+	 document.getElementById("wrap").style.transform = "scale("+nowZoom + ")";
+}*/
+
+   function goPrint() {
+	 window.print(); 
+  }
+
+ // 메뉴바로가기
+ function quickMenu(obj)
+ {
+	var strUrlMenu = obj.options[obj.selectedIndex].value;
+	if(strUrlMenu != "")
+		location.href = strUrlMenu;
+ }
+ //사이트바로가기
+ function quickSite(obj)
+ {
+	var strUrlSite = obj.options[obj.selectedIndex].value;
+	if(strUrlSite != "")
+		window.open(strUrlSite);
+ }
+ 
+ //iframe 백그라운 설정
+ onload = function() {
+  var theframes = document.getElementsByTagName('iframe');
+  for(var i = 0; i < theframes.length; i++)
+  {
+   theframes[i].setAttribute("allowTransparency", "ture");
+  }
+ }
+ 
+
+function chkMenuAuth(auth){
+	if( auth == "2" )
+		alert("회원만 열람할 수 있는 메뉴입니다. 회원가입후 이용하세요.");
+	else if (auth == "3" )
+		alert("학부모만 열람할 수 있는 메뉴입니다.");
+	else if (auth == "4" )
+		alert("학생만 열람할 수 있는 메뉴입니다.");
+	else if (auth == "1" )
+		alert("실명인증후 열람할 수 있는 메뉴입니다. 아이핀 로그인 후 이용하세요.");
+	else if (auth == "5")
+		alert("교직원만 열람할 수 있는 메뉴입니다. 교직원 로그인 후 이용하세요.");
+	else if (auth == "6" )
+		alert("메뉴열람 권한이 없습니다.");
+	else if (auth == "7" )
+		alert("메뉴열람 권한이 없습니다.");
+}
+
+//파일다운로드
+/*function fileDown(fileNM, filePath)
+{
+	var forms = document.fileDownForm;
+	forms.saveName.value = fileNM;
+	forms.filePath.value = filePath;
+	forms.action ="/boardCnts/fileDown.do";
+	forms.submit();
+}*/
+
+
+
+
+
+
+//팝업존 스탑 
+function stopPopup() {
+   clearInterval(popupInt);
+}
+
+
+
+
+//팝업존 스탑 
+function stopBanner() {
+   clearInterval(popupInt);
+}
+
+$(document).ready( function() {$("thumbImg").css("display","block"); } );
+
+
+
+	if(window.location.href.match('www')){
+		var chgUrl = window.location.href.replace('www.','');
+		location.href = chgUrl;
+	}
+
+</script>
+
+<script>
+	function ckClick(e){
+		e.stopPropagation();
+	}
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    var visitDateInput = document.getElementById("visitDate");
+
+    if (visitDateInput) {
+        var isDatepickerLoaded = false;
+
+        visitDateInput.addEventListener("click", function () {
+            if (!isDatepickerLoaded) {
+                $("#visitDate").datepicker({
+                    dateFormat: 'yy/mm/dd',
+                    minDate: new Date(new Date().setDate(new Date().getDate() + 7)),
+                    maxDate: new Date(new Date().setDate(new Date().getDate() + 31)),
+                    closeText: '닫기',
+                    prevText: '이전 달',
+                    nextText: '다음 달',
+                    currentText: '오늘',
+                    yearRange: 'c-100:c+10',
+                    monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
+                    monthNamesShort: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
+                    dayNames: ['일','월','화','수','목','금','토'],
+                    dayNamesShort: ['일','월','화','수','목','금','토'],
+                    dayNamesMin: ['일','월','화','수','목','금','토'],
+                    weekHeader: 'Wk',
+                    firstDay: 0,
+                    isRTL: false,
+                    buttonImageOnly: true,
+                    showMonthAfterYear: true,
+                    showButtonPanel: true,
+                    changeMonth: true,
+                    changeYear: true
+                });
+                isDatepickerLoaded = true;
+            }
+
+            $("#visitDate").datepicker("show");
+        });
+    }
+});
+</script>
+
+<!--<form name="tmpForm" method="post">
+	<input type="hidden" name="rtUrl" value="https://msgirls.icems.kr" />
+	<input type="hidden" name="sessID" value="XICIpyRxLaw5LTqyL1jCLlYuqIbj2h0DBRLM2UH5bcrRDpNmTqla1l3Ab9CO2agO.amV1c19kb21haW4vaWNlU2NobC0xMDE=" />
+	<input type="hidden" name="neisCD" value="E100000623" />
+	<input type="hidden" name="ciKey" value="" />
+	<input type="hidden" name="certiKey" value="" />
+	<input type="hidden" name="myPage" value="pass" />
+	<input type="hidden" name="sysID" value="msgirls" /> 
+</form>-->
+
+<!--<form name="chMebForm" method="post">
+	<input type="hidden" name="rtUrl" value="https://msgirls.icems.kr" />
+	<input type="hidden" name="sessID" value="XICIpyRxLaw5LTqyL1jCLlYuqIbj2h0DBRLM2UH5bcrRDpNmTqla1l3Ab9CO2agO.amV1c19kb21haW4vaWNlU2NobC0xMDE=" />
+	<input type="hidden" name="neisCD" value="E100000623" />
+	<input type="hidden" name="ciKey" value="" />
+	<input type="hidden" name="certiKey" value="" />
+	<input type="hidden" name="myPage" value="null" /> 
+</form>-->
+<!--<form name="fileDownForm" method="post">
+	<input type="hidden" name="saveName" />
+	<input type="hidden" name="filePath" />
+</form>-->
+		
+
+<script>
+
+// 게시판 등록
+function submitMgt(reqURL, reqMode)
+{
+	var form = document.authForm;
+	if(form.title.value == "")
+	{
+		alert("제목을 입력해주세요");
+		form.title.focus();
+		return;
+	}
+	if(form.col1Width.value=="") form.col1Width.value = 0;
+	if(form.col2Width.value=="") form.col2Width.value = 0;
+	if(form.col3Width.value=="") form.col3Width.value = 0;
+	if(form.col4Width.value=="") form.col4Width.value = 0;
+	if(form.col5Width.value=="") form.col5Width.value = 0;
+	if(form.col6Width.value=="") form.col6Width.value = 0;
+	if(form.col7Width.value=="") form.col7Width.value = 0;
+	if(form.col8Width.value=="") form.col8Width.value = 0;
+	if(form.col9Width.value=="") form.col9Width.value = 0;
+	if(form.col10Width.value=="") form.col10Width.value = 0;
+	if(form.col11Width.value=="") form.col11Width.value = 0;
+	if(form.col12Width.value=="") form.col12Width.value = 0;
+	if(form.col13Width.value=="") form.col13Width.value = 0;
+	if(form.col14Width.value=="") form.col14Width.value = 0;
+	if(form.col15Width.value=="") form.col15Width.value = 0;
+	/*
+	if(form.titleImgPath.value != "" || form.hasTitleImg.value != "")
+	{
+		if(form.titleImgWidth.value == "")
+		{
+			alert("타이틀 이미지 Width를 입력해주세요");
+			form.titleImgWidth.focus();
+			return;
+		}
+		if(form.titleImgHeight.value == "")
+		{
+			alert("타이틀 이미지 Height를 입력해주세요");
+			form.titleImgHeight.focus();
+			return;
+		}
+		if(isNaN(form.titleImgWidth.value))
+		{
+			alert("타이틀 이미지 Width는 숫자만 입력하실수 있습니다");
+			form.titleImgWidth.value = "";
+			form.titleImgWidth.focus();
+			return;
+		}
+		if(isNaN(form.titleImgHeight.value))
+		{
+			alert("타이틀 이미지 Height는 숫자만 입력하실수 있습니다");
+			form.titleImgHeight.value = "";
+			form.titleImgHeight.focus();
+			return;
+		}
+	}
+	else
+	{
+		form.titleImgWidth.value = 0;
+		form.titleImgHeight.value = 0;
+	}
+	*/
+	if(form.listWidth.value == "")
+	{
+		alert("리스트 Width를 입력해주세요");
+		form.listWidth.focus();
+		return;
+	}
+	if(form.viewWidth.value == "")
+	{
+		alert("뷰 Width를 입력해주세요");
+		form.viewWidth.focus();
+		return;
+	}
+	if(isNaN(form.listWidth.value))
+	{
+		alert("리스트 Width는 숫자만 입력하실수 있습니다");
+		form.listWidth.value = "";
+		form.listWidth.focus();
+		return;
+	}
+	if(isNaN(form.viewWidth.value))
+	{
+		alert("뷰 Height는 숫자만 입력하실수 있습니다");
+		form.viewWidth.value = "";
+		form.viewWidth.focus();
+		return;
+	}
+	if(form.pageSize.value == "")
+	{
+		alert("페이지 사이즈를 입력해주세요");
+		form.pageSize.focus();
+		return;
+	}
+	if(isNaN(form.pageSize.value))
+	{
+		alert("페이지사이즈는 숫자만 입력하실수 있습니다");
+		form.pageSize.value = "";
+		form.pageSize.focus();
+		return;
+	}
+	if(form.replyType.value == "L" && (form.replyBoardID.value == "" || form.replyBoardID.value == "0"))
+	{
+		alert("댓글게시판 아이디를 입력해주세요");
+		form.replyBoardID.focus();
+		return;
+	}
+	if(form.replyType.value == "L" && isNaN(form.replyBoardID.value))
+	{
+		alert("댓글게시판 아이디는 숫자만 입력하실수 있습니다");
+		form.replyBoardID.value = "";
+		form.replyBoardID.focus();
+		return;
+	}
+	if(form.replyType.value != "L" && form.replyBoardID.value != "" && form.replyBoardID.value != "0")
+	{
+		alert("리스트형 댓글이 아닌데 게시판  아이디를 입력하셨습니다\n확인해주세요");
+		form.replyBoardID.focus();
+		return;
+	}
+
+	
+	for(i=1;i<16;i++)
+	{
+		var colNM 		= "form.col"+i+"NM.value";
+		var colWidth 	= "form.col"+i+"Width.value";
+		var colListView = "form.col"+i+"ListView.checked";
+		
+		if(eval(colNM) != "" && eval(colWidth) == "" && eval(colListView) == true)
+		{
+			alert(i+"번째 컬럼의 사이즈를 지정해주세요");
+			eval("form.col"+i+"Width").focus();
+			return;
+		}
+	}
+	
+	var result 	= "";
+	for(j=0;j<24;j++)
+	{
+		var listOrd = "form.ListOrd" + j + ".value";
+		var listView = "form.col" + (j+1) + "ListView.checked";
+		// 확장 컬럼중 ListOrd값이 없거나 리스트 표시가 체크되있지 않을경우
+		if(j < 15 && (eval(listOrd) == "" || eval(listView) != true))
+			result += "0;";
+		// 번호의 ListOrd값이 없거나 컬럼명이 없을 경우
+		else if(j == 15 && (eval(listOrd) == "" || form.viewNum.value == ""))
+			result += "0;";
+		// 작성자의 ListOrd값이 없거나 컬럼명이 없을 경우
+		else if(j == 16 && (eval(listOrd) == "" || form.viewRegUsr.value == ""))
+			result += "0;";
+		// 작성일의 ListOrd값이 없거나 컬럼명이 없을 경우
+		else if(j == 17 && (eval(listOrd) == "" || form.viewRegDate.value == ""))
+			result += "0;";
+		// 조회수의 ListOrd값이 없거나 컬럼명이 없을 경우
+		else if(j == 18 && (eval(listOrd) == "" || form.viewCnt.value == ""))
+			result += "0;";
+		// 제목의 ListOrd값이 없거나 컬럼명이 없을 경우
+		else if(j == 19 && (eval(listOrd) == "" || form.subjectNM.value == ""))
+			result += "0;";
+		// 내용1의 ListOrd값이 없거나 컬럼명이 없을 경우
+		else if(j == 20 && (eval(listOrd) == "" || form.cnts1NM.value == ""))
+			result += "0;";
+		// 내용2의 ListOrd값이 없거나 컬럼명이 없을 경우
+		else if(j == 21 && (eval(listOrd) == "" || form.cnts2NM.value == ""))
+			result += "0;";
+		// 내용3의 ListOrd값이 없거나 컬럼명이 없을 경우
+		else if(j == 22 && (eval(listOrd) == "" || form.cnts3NM.value == ""))
+			result += "0;";
+		else if(j == 23 && (eval(listOrd) == "" || form.fileListNM.value == ""))
+			result += "0;";
+		else
+			result += eval(listOrd) + ";";		
+	}
+	form.listOrd.value = result;
+	
+	// 동일한 ListOrd값이 있는지 확인
+	for(l=0;l<23;l++)
+	{
+		var listOrd = "form.ListOrd" + l + ".value";
+		// 값이 0이면 패스
+		if(eval(listOrd) == 0) continue; 
+		// 공백이어도 패스
+		if(eval(listOrd) == "") continue; 
+		
+		for(k=0;k<13;k++)
+		{
+			// 자기자신은 패스
+			if(l == k) continue;
+						
+			var listOrd2 = "form.ListOrd" + k + ".value";
+
+			if(eval(listOrd) == eval(listOrd2))
+			{
+				alert("동일한 리스트 순서값이 존재합니다");
+				eval("form.ListOrd" + k).focus();
+
+				return;
+			}
+		}
+	}
+	
+	if(form.secYN.value == "Y" && form.secAuth.value == "A")
+	{
+		alert("비밀글 권한 설정을 해야합니다");
+		return;
+	}
+	
+	if(form.mgtAuth.value == "A")
+	{
+		alert("게시판관리 권한 설정을 해야합니다");
+		return;
+	}
+
+	var msg = "생성하시겠습니까?";
+	if(reqMode == "M")
+		msg = "수정하시겠습니까?";
+	if(confirm(msg))
+	{
+		fn_getHtmlValueEx('keditor');
+		fn_getSummary('keditor');
+		form.action = reqURL;
+		form.submit();
+	}
+}
+
+//raonkediter
+function fn_getSummary(editorID) {
+    var fn_callback = function (paramObj){
+    	document.authForm.authSummary.value = paramObj.strData.replace(/\n/g, " ").substr(0, 200);
+    };
+
+    RAONKEDITOR.GetHtmlContents({
+        type: 'text',
+        callback: fn_callback
+    }, editorID);
+}
+
+function fn_getHtmlValueEx(editorID) {
+    var fn_callback = function (paramObj){
+        document.authForm.descs.value = paramObj.strData;
+    };
+
+    RAONKEDITOR.GetHtmlContents({
+        type: 'body',
+        callback: fn_callback
+    }, editorID);
+}
+
+function RAONKEDITOR_CustomAction(editorId, paramObj) {	        
+	if(paramObj.strCmd == "c_youtube"){
+    	var _editor = RAONKEDITOR.getEditor(editorId);
+    	_editor._FRAMEWIN.RAONK_EDITOR.prototype.dialog.show('/board/raonkeditor/pages/', 'youtube.html');
+    }
+}
+
+// 댓글타입 변경시 게시판 아이디 변경
+function onChgReply()
+{
+	var form = document.authForm;
+	if(form.replyType.value != "L")
+	{
+		form.replyBoardID.value = "0";
+	}
+}
+
+// 게시판 관리에서 listWidth설정시 하단의 baseListWidth 설정
+function setBaseListWidth()
+{
+	var form = document.authForm;
+	form.baseListWidth.value = form.listWidth.value;
+}
+
+// 게시판 관리에서 현재 설정된 각컬럼의 listWidth의 합을 보여준다.
+function sumListWidth()
+{
+	var form = document.authForm;
+	var total = 240;
+	for(i=1;i<16;i++)
+	{
+		var colNM 		= "form.col"+i+"NM.value";
+		var colWidth 	= "form.col"+i+"Width.value";
+		var colListView = "form.col"+i+"ListView.checked";
+		
+		if(eval(colNM) != "" && eval(colWidth) != "" && eval(colListView) == true && !isNaN(eval(colWidth)))
+		{
+			total += parseInt(eval(colWidth));
+		}
+	}
+	form.setListWidth.value = total;
+}
+
+// 게시판 삭제
+function deleteMgt(reqURL)
+{
+	var form = document.authForm;
+	if(confirm("삭제하시겠습니까?"))
+	{
+		form.action = reqURL;
+		form.submit();
+	}
+}
+
+// 댓글 등록
+function regReply(upURL)
+{
+	if(document.boardForm.regID.value == "")
+	{
+		alert("댓글을 등록하시려면 로그인하셔야합니다")
+		return false;
+	}
+	/*
+	if(document.boardForm.subject.value == "")
+	{
+		alert("제목을 입력해주세요");
+		document.boardForm.subject.focus();
+		return false;
+	}
+	*/
+	if(document.boardForm.cnts.value == "")
+	{
+		alert("내용을 입력해 주세요.");
+		document.boardForm.cnts.focus();
+		return false;
+	}
+	
+	if (document.boardForm.cnts.value.length > 1000)
+	{
+		alert("내용은 최대 1000자까지 입력할 수 있습니다.\n현재 입력된 글자 수: " + document.boardForm.cnts.value.length + "자");
+		document.boardForm.cnts.focus();
+		return false;
+	}	
+	
+	document.boardForm.action = upURL;
+	document.boardForm.submit();
+}
+
+function checkBox(checked){
+    var result = document.getElementById("secCommentREYN");
+    if( checked.checked==true ){
+		result.value = "Y"
+    }else {
+		result.value = "N"
+    }
+ }
+
+// 대댓글 등록
+
+$(document).ready(function(){
+	$(document).on('click', '.btn_reply', function(){
+		$(this).parents('.comment_area').find('.write2').remove();
+		if($('.secretCommnet').css("display") == "block"){
+			$(this).parent().parent('li').append('<div class=\"write2\"><textarea placeholder=\"내용과 무관한 글은 임의로 삭제될 수 있습니다.\"></textarea><a class=\"btn_submit recomment\" href=\"javascript:void(0);\"><span>등록</span></a><br/><input type=\"checkbox\" name=\"secCommentREYN\" id=\"secCommentREYN\" onchange=\"checkBox(this)\" title=\"비밀댓글 체크박스\" value=\"\"> 비밀댓글설정</div>');
+		}else{
+			$(this).parent().parent('li').append('<div class=\"write2\"><textarea placeholder=\"내용과 무관한 글은 임의로 삭제될 수 있습니다.\"></textarea><a class=\"btn_submit recomment\" href=\"javascript:void(0);\"><span>등록</span></a></div>');
+		}
+		$(this).parent().parent('li').find('textArea').focus();
+	});
+	
+	
+	$(document).on('click', '.recomment', function(){
+		if($(this).siblings('textArea').val() == ''){
+			alert('내용을 입력해 주세요.');
+			$(this).siblings('textArea').focus();
+			return;
+		} else if ($(this).siblings('textarea').val().length > 1000) {
+		alert('내용은 최대 1000자까지 입력할 수 있습니다.\n현재 입력된 글자 수: ' + $(this).siblings('textarea').val().length + '자');
+		$(this).siblings('textarea').focus();
+		return;
+		}else{
+			$('.comment_area').css({'opacity': '0.6', 'pointer-events': 'none'});
+			var $me = $(this);
+			$.ajax({
+				method: 'POST',
+				url: '/boardCnts/recommentInsert.do',
+				data: {replySeq: $(this).parent('div').siblings('.replySeq').val(), cnts: $(this).siblings('textArea').val(), boardSeq: $('input[name=boardSeq]').val(), secYN : $('input[name=secCommentREYN]').val()},
+				success: function(rtUrl){
+					var lct = location.href.replaceAll('updateCnt.do', 'view.do');
+					$('.comment_area').load(lct + ' .comment_area > *', function(){
+						$('.comment_area').removeAttr('style');
+					});
+					if(rtUrl === "/wfResult.do"){
+						window.location.href = "/wfResult.do";
+					}
+				},
+				error: function(){
+					alert('댓글 등록에 실패했습니다.');
+					$me.parent('div.write2').removeAttr('style');
+				}
+			});
+		}
+	});
+	
+	$(document).on('click', '.delRecomment', function(){
+		if(!confirm('삭제하시겠습니까?')) return;
+
+		$('.comment_area').css({'opacity': '0.6', 'pointer-events': 'none'});
+		
+		var $me2 = $(this);
+		$.ajax({
+			method: 'POST',
+			url: '/boardCnts/recommentDelete.do',
+			data: {seq: $(this).parent('div').parent('li').find('.replySeq').val()},
+			success: function(){
+				$me2.parent().parent('li').slideUp(200, function(){
+					var lct = location.href.replaceAll('updateCnt.do', 'view.do');
+					$('.comment_area').load(lct + ' .comment_area > *', function(){
+						$('.comment_area').removeAttr('style');
+					});
+				})
+			},
+			error: function(){
+				alert('삭제에 실패했습니다.');
+				$me2.parent().parent('li').removeAttr('style');
+			}
+		});
+	});
+});
+
+
+// 댓글 삭제
+function delReply(reqURL, reqSeq)
+{
+	var form = document.boardForm;
+
+	if(confirm("삭제하시겠습니까?"))
+	{
+		form.replySeq.value = reqSeq;
+		form.action = reqURL;
+		form.submit();
+	}
+}
+
+// 게시판 관리에서 컬럼 타입 변경시
+function chgColType(colID, divID)
+{
+	if(document.getElementById(colID).value == 2 || document.getElementById(colID).value == 8 || document.getElementById(colID).value == 9 || document.getElementById(colID).value == 12)
+		document.getElementById(divID).style.display = 'block';
+	else
+		document.getElementById(divID).style.display = 'none';
+}
+
+function CheckEMail (emailStr) 
+{  
+	// 전자메일 패턴. 사용자이름@도메인 의 형식을 검사함  
+	var emailPat=/^(.+)@(.+)$/;
+	// 포함되지 말아야할 특수문자들 ( ) < > @ , ; : \ " . [ ]  
+	var specialChars="\\(\\)<>@,;:\\\\\\\"\\.\\[\\]";  
+	// 포함될 수 있는 특수문자들 (나머지)  
+	var validChars="\[^\\s" + specialChars + "\]";  
+	// 아래의 경우는 사용자 이름에 따옴표가 있는 경우. RFC표준사항임  
+	var quotedUser="(\"[^\"]*\")"; 
+	// 도메인 대신 IP를 사용할 수있음  
+	// 예를 들어 laday@[210.120.253.10]은 올바른 메일 주소 "[", "]"이 반드시 필요 
+	var ipDomainPat=/^\[(\d{1,3})\.(\d{1,3})\.(\d{1,3})\.(\d{1,3})\]$/;  
+	// 기본적인 아토믹에 해당됨  
+	var atom=validChars + '+';  
+	// 사용자로 사용될 수 있는 문자를 나타냄  
+	var word="(" + atom + "|" + quotedUser + ")";  
+	// 사용자의 패턴을 나타냄. 위의 워드가 .단위로 여러개 올 수있음  
+	var userPat=new RegExp("^" + word + "(\\." + word + ")*$");  
+	// 아래의 것은 일반적인 도메인 패턴에 해당됨  
+	var domainPat=new RegExp("^" + atom + "(\\." + atom +")*$");  
+	// @을 기준으로 사용자와 도메인으로 나눔. 편의를 위함  
+	var matchArray=emailStr.match(emailPat);  
+	if (matchArray==null) 
+	{    
+	// 두개 이상 또는 @이 아예 없는 경우   
+		alert("메일주소 형식이 잘못되어 있습니다 (@과 .을 확인해 보세요)");    
+		return false; 
+	}  
+	var user=matchArray[1];  
+	var domain=matchArray[2];  
+	// 사용자 부분이 제대로 되었는지 검사  
+	if (user.match(userPat)==null) 
+	{    
+		alert("메일 아이디가 올바르지 않습니다");    
+		return false;  
+	} 
+	// 도메인 부분이 IP로 되어 있는 경우 
+	var IPArray=domain.match(ipDomainPat);  
+	if (IPArray!=null) 
+	{    
+		for (var i=1;i<=4;i++) 
+		{      
+			if (IPArray[i]>255) 
+			{        
+				alert("IP 주소 형식이 올바르지 않습니다");        
+				return false;      
+			}    
+		}    
+		return true;  
+	}  
+	// 도메인 이름이 심볼릭 네임인 경우 올바르지 않음  
+	var domainArray=domain.match(domainPat);  
+	if (domainArray==null) 
+	{    
+		alert("도메인 형식이 올바르지 않습니다");   
+		return false; 
+	}  
+	// 도메인 형식 검사에 통과했더라도, 마지막 세개 또는 두개의 문자(com, net, kr등등)  
+	// 까지 올바른지 검사. 최상위 도메인은 반드시 세글자 아니면 두 글자임  
+	var atomPat=new RegExp(atom,"g");  
+	var domArr=domain.match(atomPat);  
+	var len=domArr.length;  
+	if (domArr[domArr.length-1].length<2 ||    domArr[domArr.length-1].length>3) 
+	{    
+		alert("도메인 주소의 마지막 필드는 반드시 세글자 도메인 또는 두글자 나라이어야 합니다.");    
+		return false; 
+	}  
+	// 호스트이름이 있는지 검사  
+	if (len<2) 
+	{    
+		alert("호스트 이름이 존재하지 않습니다. 호스트 이름은 반드시 2글자 이상이어야 합니다");    
+		return false;  
+	}  
+	
+	return true;
+}
+
+// 인쇄
+function printView(url)
+{
+	window.open(url, "print", "width=750, height=700, scrollbars=yes");
+}
+
+function openNotice() 
+{
+	var forms = document.boardForm;
+	
+	window.open('','noticePop','width=1024, height=768');
+	forms.target='noticePop';
+	forms.action='/boardCnts/notice.do';
+	forms.submit();
+}
+
+
+
+
+
+//PIC_LINK 이미지 확대 스크립트
+function picLinkImg(title,url)
+{
+	var winW		=	screen.width * 0.6;
+	var winH		=	screen.height * 0.6;
+	
+	var picLink = window.open(title,"이미지확대","width=800,height=700,scrollvars=yes,left=50,top=50");
+	picLink.document.write("<head><title>"+title+"</title></head><div id=\"picLink\" style=\"width:100%;height:100%;margin:0px;padding:0px;\"><a href=\"javascript:close();\" style=\"border:0\" title=\"닫기\"><img src=\""+url+"\" onError=\"this.src='/images/comm/miniList/no_image_list.gif'\" style=\"width:100%;height:100%;margin:0px;padding:0px;\" title=\"클릭 시 창이 닫힙니다.\"/></a></div>");
+}
+
+
+</script>
+
+
+
+		<script language="JavaScript" src="/script/call.js"></script>
+		<LINK href="/css/print.css" rel="stylesheet" type="text/css" media="print" />
+		<LINK href="/css/common.css" rel="stylesheet" type="text/css"  media="screen" />
+		<link rel="stylesheet" href="/css/template/common/2021/basic.css" media="all"/><!-- 공통 -->
+		<link rel="stylesheet" href="/css/template/common/2021/con_com.css" media="all"/><!-- 공통 -->
+		<link rel="stylesheet" href="/css/template/common/2021/board.css" media="all"/><!-- 공통 -->
+		<link rel="stylesheet" href="/css/template/00943/layout.css" media="all"/>
+		<link rel="stylesheet" href="/css/template/00943/quickMenu.css" media="all"/><!-- 퀵메뉴 추가 css -->
+		<link rel="stylesheet" href="/css/template/00943/sub.css" media="all"/>
+		
+		<!--<link rel="stylesheet" href="/mobile/css/mobile.css" type="text/css" />-->
+		<script type="text/javascript" src="/css/template/00943/js/jquery-3.1.1.min.js"></script>
+		<script src="/css/template/00943/js/jquery.min.js?x=1"></script>
+		<script type="text/javascript" src="/css/template/00943/js/common.js"></script>
+		<script type="text/javascript" src="/css/template/00943/js/jquery.bxslider.js"></script>
+		<script type="text/javascript" src="/css/template/00943/js/slick-1.8.1/slick/slick.js"></script>
+		<script type="text/javascript" src="/css/template/00943/js/sub.js"></script>
+		<title>행사일정 ＜ 학교마당</title>
+	</head>
+	<body>
+		<div id="skipArea"><a href="#gnb">메인메뉴 바로가기</a> <a href="#container">본문으로 바로가기</a> </div>
+			<div id="wrap">
+				 
+
+
+
+
+
+
+
+
+	<!-- web -->
+		<div class="area_header">
+       <!-- 헤더-->
+		<header id="header">
+			<div class="top">
+				<h1><a href="/main.do"><img src="/images/template/00943/common/logo.png?x=202209"  alt="만수여자중학교" /></a></h1>
+				<ul class="top_menu">
+					<!-- 로그인 후 -->
+					
+					
+					<!-- 로그인 전 -->
+					
+						
+							<li><a href="/main.do" title="홈">홈</a></li>
+							<li><a href="https://ptlogin.ice.go.kr/join1.do" title="회원가입">회원가입</a></li>
+							<li><a href="#login" onClick="javascript:goLogin()" title="로그인페이지로 이동">로그인</a></li>
+							<li><a href="#siteMap" onClick="javascript:siteMap()" title="새창이동">사이트맵</a></li>
+						
+						
+					
+					
+					<li class="size_set">
+						<a href="#ZoomOut" onClick="zoomOut();return false;"  class="minus"><span class="sr-only">화면 축소</span></a>
+						<a href="#ZoomIn" onClick="zoomIn();return false;"  class="plus" ><span class="sr-only">화면 확대</span></a>
+						<!--<button type="button" class="btnZoomReset" onClick="zoomInit();return false;" onkeypress="" title="기본설정"><span>기본설정</span></button>-->
+					</li>			
+				</ul>
+					<div id="box_search_0" class="box_search_0">
+					<label for="search_option3" class="hid">검색 조건을 선택합니다.</label>
+							 <select class="search" name="search_option3" id="search_option3" onChange="goSearch8();">
+									<option>에듀넷 검색</option>
+								 	<option>홈페이지 검색</option>
+							 </select>
+							<div id="home_search2">
+									<form class="home_search" id="searchForm" name="search" action="/search/front/Search.jsp" method="post" onSubmit="return false">
+										<div class="SearchInput" style="display:none;">
+											<input type="search" name="queryMain" id="queryMain" onKeyUp="javascript:doInMobile();" placeholder="검색어입력" title="검색어입력">
+											<a href="javascript:doEduSearchMobile();" title="검색" class="search_btn"><img src="/images/template/common/con_com/search.png" alt="검색"/></a> 
+										</div>
+										<input type="text" name="qt" id="query" class="iptTxt" onKeyUp="javascript:doIn();" title="검색어 입력" placeholder="검색어를 입력해주세요"/>
+										<button onClick="javascript:doEduSearch();"><span class="hid">검색</span></button>
+									</form>
+							</div>
+							<div id="edu_search2">		
+									<form class="edu_search" name="siteSearchForm"  id="topSearchForm" method="post">
+											<label for="topSearch_2" class="hid">검색</label>
+											<fieldset>
+											<span class="window"><input type="text" id="kwd" placeholder="검색어를 입력해주세요" name="kwd" autocomplete="on" title="검색어 입력" class="input_text" accesskey="s" style="ime-mode:active;" /></span>
+											<input type="hidden" id="prog_id2" name="prog_id" value="prog_id"/>
+											<input type="hidden" id="mainCallFlag2" name="mainCallFlag" value="y"/>
+											<input type="hidden" id="eb_flag2" name="eb_flag" value="y"/>
+											<input type="hidden" id="svc_version2" name="svc_version" value="2.0"/>
+											<button onClick="javascript:goSearch10('1');return false;" title="검색"><span class="hid">검색</span></button>
+											</fieldset>
+									</form>
+							</div>
+						<script>
+							/*function doIn() {
+								if (event.keyCode == 13) doEduSearch();
+							}
+							
+							function doInMobile() {
+								if (event.keyCode == 13) doEduSearchMobile();
+							}*/
+							
+							function doEduSearch() {
+								var searchForm = document.search; 
+							
+								if (document.search.qt.value == "") {
+									alert("검색어를 입력하세요.");
+									document.search.qt.focus();
+									return;
+								}
+
+								document.search.action = "/search/front/Search.jsp?sysId=msgirls&sysNu=00943";
+								document.search.submit();
+							}
+							
+							function doEduSearchMobile() {
+								var searchForm = document.search; 
+						
+								if (document.search.queryMain.value == "") {
+									alert("검색어를 입력하세요.");
+									document.search.queryMain.focus();
+									return;
+								}
+								
+								document.search.qt.value = document.search.queryMain.value;					
+
+								document.search.action = "/search/front/Search.jsp?sysId=msgirls&sysNu=00943";
+								document.search.submit();				
+							}
+						</script>  
+							<script>
+							  $(function () {
+								$('a[target="_blank"]').each(function () {
+								  var $link = $(this);
+								  var title = $link.attr('title');
+								  var text = $link.text().trim();
+
+
+								  if (title === '회원가입' || text === '회원가입') {
+									// title이 '회원가입'인 경우 target 제거
+									$link.removeAttr('target');
+								  } else {
+									// 그 외는 noopener noreferrer 추가
+									var rel = $link.attr('rel') || '';
+									if (!rel.includes('noopener')) {
+									  $link.attr('rel', (rel + ' noopener noreferrer').trim());
+									}
+								  }
+								});
+							  });
+							</script>
+	 				</div>
+	 				
+	 				<script>
+	 					start_sub();
+	 				</script>
+					
+				<hr />
+			  </div>
+									<div id="web">
+						<nav id="webNavi">
+							<ul id="gnb">
+								<li class='mNavi'><a href='/sub/info.do?m=0101&s=msgirls'  title='학교소개'>학교소개</a>
+									<ul class="box">
+										<li><a href='/sub/info.do?m=0101&s=msgirls'  title='학교장 인사'>학교장 인사</a></li>
+										<li><a href='/sub/info.do?m=0102&s=msgirls'  title='학교 연혁'>학교 연혁</a></li>
+										<li><a href='/sub/info.do?m=0103&s=msgirls'  title='교육 목표'>교육 목표</a></li>
+										<li><a href='/sub/info.do?m=0104&s=msgirls'  title='학교 현황'>학교 현황</a></li>
+										<li><a href='/sub/info.do?m=0105&s=msgirls'  title='학교 상징'>학교 상징</a></li>
+										<li><a href='javascript:chkMenuAuth(2)'  title='교직원 소개'>교직원 소개</a></li>
+										<li><a href='/sub/info.do?page=0107&m=0107&s=msgirls'  title='오시는 길'>오시는 길</a></li>
+										<li><a href='/boardCnts/list.do?boardID=260115&m=0170&s=msgirls'  title='학교CI'>학교CI</a></li>
+									</ul>
+								</li>
+								<li class='mNavi'><a href='/boardCnts/list.do?boardID=28601&m=0201&s=msgirls'  title='학교마당'>학교마당</a>
+									<ul class="box">
+										<li><a href='/boardCnts/list.do?boardID=28601&m=0201&s=msgirls'  title='공지사항'>공지사항</a></li>
+										<li><a href='/boardCnts/list.do?boardID=28602&m=0202&s=msgirls'  title='가정통신문'>가정통신문</a></li>
+										<li><a href='/schdList.do?m=0207&s=msgirls'  title='행사일정'>행사일정</a></li>
+										<li><a href='javascript:chkMenuAuth(2)'  title='학교사진'>학교사진</a></li>
+										<li><a href='/foodlist.do?m=020506&s=msgirls'  title='급식'>급식</a></li>
+										<li><a href='https://read365.edunet.net/'  target="_blank" rel='noopener noreferrer'  title='학교도서관(새창)'>학교도서관&nbsp;&nbsp;&nbsp;<img src="/images/template/common/common/new_target_on.png" alt="새창" class="over"/></a></li>
+										<li><a href='/CRAmtList.do?m=020801&s=msgirls'  title='교실예약'>교실예약</a></li>
+										<li><a href='/ds/roomList.do?m=020901&s=msgirls'  title='토론게시판'>토론게시판</a></li>
+										<li><a href='/classFormation.do?m=0210&s=msgirls'  title='반편성조회'>반편성조회</a></li>
+										<li><a href='/passMan.do?m=0211&s=msgirls'  title='합격자조회'>합격자조회</a></li>
+									</ul>
+								</li>
+								<li class='mNavi'><a href='javascript:chkMenuAuth(1)'  title='학생마당'>학생마당</a>
+									<ul class="box">
+										<li><a href='javascript:chkMenuAuth(2)'  title='교과학습자료실'>교과학습자료실</a></li>
+										<li><a href='javascript:chkMenuAuth(2)'  title='정기고사기출문제방'>정기고사기출문제방</a></li>
+										<li><a href='javascript:chkMenuAuth(2)'  title='인성 및 복지'>인성 및 복지</a></li>
+										<li><a href='javascript:chkMenuAuth(2)'  title='봉사활동'>봉사활동</a></li>
+										<li><a href='javascript:chkMenuAuth(2)'  title='교육복지'>교육복지</a></li>
+										<li><a href='javascript:chkMenuAuth(2)'  title='동아리활동'>동아리활동</a></li>
+										<li><a href='javascript:chkMenuAuth(2)'  title='방과후학교'>방과후학교</a></li>
+										<li><a href='https://www.ice.go.kr/ice/cm/cntnts/cntntsView.do?mi=11719&cntntsId=1086'  target="_blank" rel='noopener noreferrer'  title='성희롱고충상담창구(새창)'>성희롱고충상담창구&nbsp;&nbsp;&nbsp;<img src="/images/template/common/common/new_target_on.png" alt="새창" class="over"/></a></li>
+										<li><a href='/reportList/main.do?m=0409&s=msgirls'  title='과제물제출'>과제물제출</a></li>
+										<li><a href='/vote/vsList.do?m=041001&s=msgirls'  title='온라인투표'>온라인투표</a></li>
+										<li><a href='javascript:chkMenuAuth(5)'  title='연수지명부'>연수지명부</a></li>
+									</ul>
+								</li>
+								<li class='mNavi'><a href='/boardCnts/list.do?boardID=28617&m=0603&s=msgirls'  title='학교행정마당'>학교행정마당</a>
+									<ul class="box">
+										<li><a href='/boardCnts/list.do?boardID=264853&amp;m=06010101&s=msgirls'  title='운동부'>운동부</a></li>
+										<li><a href='/boardCnts/list.do?boardID=28617&m=0603&s=msgirls'  title='학교재정정보공개'>학교재정정보공개</a></li>
+										<li><a href='https://www.ice.go.kr/people/irf/selectIJAAHHP0029List.do?mi=12574&schInstNm=만수여자중학교'  target="_blank" rel='noopener noreferrer'  title='학교회계(예·결산서)(새창)'>학교회계(예·결산서)&nbsp;&nbsp;&nbsp;<img src="/images/template/common/common/new_target_on.png" alt="새창" class="over"/></a></li>
+										<li><a href='https://www.ice.go.kr/people/irf/selectIJAAHHP0060List.do?mi=12590&schInstNm=만수여자중학교'  target="_blank" rel='noopener noreferrer'  title='학교발전기금(새창)'>학교발전기금&nbsp;&nbsp;&nbsp;<img src="/images/template/common/common/new_target_on.png" alt="새창" class="over"/></a></li>
+										<li><a href='/boardCnts/list.do?boardID=28619&m=0605&s=msgirls'  title='클린서비스현장게시판'>클린서비스현장게시판</a></li>
+										<li><a href='/boardCnts/list.do?boardID=28620&m=0606&s=msgirls'  title='학교운영위원회'>학교운영위원회</a></li>
+										<li><a href='https://www.ice.go.kr/contract/ir/selectCntrInfoList.do?mi=11307&schFsclY=ALL&schCntrInstNm=만수여자중학교'  target="_blank" rel='noopener noreferrer'  title='계약과정정보공개(새창)'>계약과정정보공개&nbsp;&nbsp;&nbsp;<img src="/images/template/common/common/new_target_on.png" alt="새창" class="over"/></a></li>
+										<li><a href='/visit/Finsert.do?m=060401&s=msgirls'  title='방문예약'>방문예약</a></li>
+										<li><a href='/rept/list.do?m=0607&s=msgirls'  title='영수증출력'>영수증출력</a></li>
+									</ul>
+								</li>
+								<li class='mNavi'><a href='/sub/info.do?m=5201&s=msgirls'  title='정보공개'>정보공개</a>
+									<ul class="box">
+										<li><a href='/sub/info.do?m=5201&s=msgirls'  title='정보공개제도'>정보공개제도</a></li>
+										<li><a href='/boardCnts/list.do?boardID=47073&m=5202&s=msgirls'  title='사전정보공개'>사전정보공개</a></li>
+										<li><a href='/boardCnts/list.do?boardID=28618&m=5203&s=msgirls'  title='정보목록'>정보목록</a></li>
+										<li><a href='http://www.open.go.kr'  target="_blank" rel='noopener noreferrer'  title='정보공개청구(새창)'>정보공개청구&nbsp;&nbsp;&nbsp;<img src="/images/template/common/common/new_target_on.png" alt="새창" class="over"/></a></li>
+										<li><a href='/piaList.do?m=5205&s=msgirls'  title='공공데이터개방'>공공데이터개방</a></li>
+										<li><a href='/boardCnts/list.do?boardID=250297&m=5206&s=msgirls'  title='학교평가'>학교평가</a></li>
+									</ul>
+								</li>
+								<li class='mNavi'><a href='/boardCnts/list.do?boardID=281215&m=0801&s=msgirls'  title='진로교육'>진로교육</a>
+									<ul class="box">
+										<li><a href='/boardCnts/list.do?boardID=281215&m=0801&s=msgirls'  title='공지사항'>공지사항</a></li>
+										<li><a href='javascript:chkMenuAuth(2)'  title='진로상담'>진로상담</a></li>
+										<li><a href='https://cyberjinro.ice.go.kr/main'  target="_blank" rel='noopener noreferrer'  title='진로진학정보센터(새창)'>진로진학정보센터&nbsp;&nbsp;&nbsp;<img src="/images/template/common/common/new_target_on.png" alt="새창" class="over"/></a></li>
+										<li><a href='http://www.career.go.kr/cnet/front/main/main.do?m=0804&s=msgirls'  title='커리어넷'>커리어넷</a></li>
+										<li><a href='http://www.work.go.kr/jobMain.do'  target="_blank" rel='noopener noreferrer'  title='한국직업정보시스템(새창)'>한국직업정보시스템&nbsp;&nbsp;&nbsp;<img src="/images/template/common/common/new_target_on.png" alt="새창" class="over"/></a></li>
+										<li><a href='javascript:chkMenuAuth(2)'  title='갤러리'>갤러리</a></li>
+										<li><a href='/schdl/main.do?m=0801&s=msgirls'  title='교사인트라넷'>교사인트라넷</a></li>
+									</ul>
+								</li>
+								<li class='mNavi'><a href='javascript:chkMenuAuth(2)'  title='자유학기제'>자유학기제</a>
+									<ul class="box">
+										<li><a href='javascript:chkMenuAuth(2)'  title='기획 운영'>기획 운영</a></li>
+										<li><a href='/boardCnts/list.do?boardID=257777&m=100201&s=msgirls'  title='교과선택프로그램'>교과선택프로그램</a></li>
+										<li><a href='javascript:chkMenuAuth(2)'  title='진로탐색활동'>진로탐색활동</a></li>
+										<li><a href='javascript:chkMenuAuth(2)'  title='홍보'>홍보</a></li>
+									</ul>
+								</li>
+								<li class='mNavi'><a href='javascript:chkMenuAuth(5)'  title='산업안전보건'>산업안전보건</a>
+									<ul class="box">
+										<li><a href='javascript:chkMenuAuth(5)'  title='정보나눔방'>정보나눔방</a></li>
+										<li><a href='javascript:chkMenuAuth(5)'  title='의견청취방'>의견청취방</a></li>
+										<li><a href='/sub/info.do?m=0701&s=msgirls'  title='테스트'>테스트</a></li>
+									</ul>
+								</li>
+								<li class='mNavi'><a href='/boardCnts/list.do?boardID=295969&m=25&s=msgirls'  title='동영상 게시판'>동영상 게시판</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					</header>
+				</div>
+<div id="tablet">
+<div id="mNavi">
+<div id="mtitle"><a href="#">메뉴닫기</a></div>
+<nav id="mgnb">
+<div class="snb">
+<ul>
+<li><a href="/main.do">홈</a></li>
+<li><a href="#login" onClick="javascript:goLogin()">로그인</a></li>
+<li><a href="https://ptlogin.ice.go.kr/join1.do" target="_blank">회원가입</a></li>
+<li><a href="#siteMap" onClick="javascript:siteMap()" title="새창이동">사이트맵</a></li>
+</ul>
+</div>
+<ul>
+							<li>
+								<a href='/sub/info.do?m=0101&s=msgirls'  class="dep">학교소개</a>
+									<ul>
+										<li><a href='/sub/info.do?m=0101&s=msgirls' >학교장 인사</a></li>
+										<li><a href='/sub/info.do?m=0102&s=msgirls' >학교 연혁</a></li>
+										<li><a href='/sub/info.do?m=0103&s=msgirls' >교육 목표</a></li>
+										<li><a href='/sub/info.do?m=0104&s=msgirls' >학교 현황</a></li>
+										<li><a href='/sub/info.do?m=0105&s=msgirls' >학교 상징</a></li>
+										<li><a href='javascript:chkMenuAuth(2)' >교직원 소개</a></li>
+										<li><a href='/sub/info.do?page=0107&m=0107&s=msgirls' >오시는 길</a></li>
+										<li><a href='/boardCnts/list.do?boardID=260115&m=0170&s=msgirls' >학교CI</a></li>
+									</ul>
+							</li>
+							<li>
+								<a href='/boardCnts/list.do?boardID=28601&m=0201&s=msgirls'  class="dep">학교마당</a>
+									<ul>
+										<li><a href='/boardCnts/list.do?boardID=28601&m=0201&s=msgirls' >공지사항</a></li>
+										<li><a href='/boardCnts/list.do?boardID=28602&m=0202&s=msgirls' >가정통신문</a></li>
+										<li><a href='/schdList.do?m=0207&s=msgirls' >행사일정</a></li>
+										<li><a href='javascript:chkMenuAuth(2)' >학교사진</a></li>
+										<li class="row"><a href='/foodlist.do?m=020506&s=msgirls' class="dep2">급식</a>
+										<ul>
+										<li><a href='/foodlist.do?m=020506&s=msgirls' >이달의식단</a></li>
+										<li><a href='/boardCnts/list.do?boardID=28624&m=020502&s=msgirls' >급식게시판</a></li>
+										<li><a href='javascript:chkMenuAuth(2)' >영양상담 및 건의사항</a></li>
+										<li><a href='https://ns.eat.co.kr/goToCtpvPage.jsp?gTctpvCd=4'  target='_blank' rel='noopener noreferrer' >공공급식전자조달시스템</a></li>
+										</ul>
+										</li>
+										<li><a href='https://read365.edunet.net/'  target='_blank' rel='noopener noreferrer' >학교도서관</a></li>
+										<li class="row"><a href='/CRAmtList.do?m=020801&s=msgirls' class="dep2">교실예약</a>
+										<ul>
+										<li><a href='/crInfo/main.do?m=020801&s=msgirls' >목록</a></li>
+										<li><a href='/CRAmtList.do?m=020802&s=msgirls' >예약</a></li>
+										<li><a href='/crAmt/srch.do?m=020803&s=msgirls' >예약신청목록</a></li>
+										<li><a href='/crAdmin/main.do?m=020804&s=msgirls' >예약확인 및 승인</a></li>
+										</ul>
+										</li>
+										<li class="row"><a href='/ds/roomList.do?m=020901&s=msgirls' class="dep2">토론게시판</a>
+										<ul>
+										<li><a href='/ds/roomList.do?m=020901&s=msgirls' >토론목록</a></li>
+										<li><a href='/ds/roomMList.do?m=020902&s=msgirls' >토론관리</a></li>
+										</ul>
+										</li>
+										<li><a href='/classFormation.do?m=0210&s=msgirls' >반편성조회</a></li>
+										<li><a href='/passMan.do?m=0211&s=msgirls' >합격자조회</a></li>
+									</ul>
+							</li>
+							<li>
+								<a href='javascript:chkMenuAuth(1)'  class="dep">학생마당</a>
+									<ul>
+										<li class="row"><a href='javascript:chkMenuAuth(2)' class="dep2">교과학습자료실</a>
+										<ul>
+										<li><a href='javascript:chkMenuAuth(2)' >국어</a></li>
+										<li><a href='/boardCnts/list.do?boardID=201028&m=040202&s=msgirls' >도덕</a></li>
+										<li><a href='/boardCnts/list.do?boardID=201029&m=040203&s=msgirls' >사회</a></li>
+										<li><a href='/boardCnts/list.do?boardID=201030&m=040204&s=msgirls' >수학</a></li>
+										<li><a href='/boardCnts/list.do?boardID=201031&m=040205&s=msgirls' >과학</a></li>
+										<li><a href='/boardCnts/list.do?boardID=201032&m=040206&s=msgirls' >기술가정</a></li>
+										<li><a href='/boardCnts/list.do?boardID=201033&m=040207&s=msgirls' >체육</a></li>
+										<li><a href='/boardCnts/list.do?boardID=201034&m=040208&s=msgirls' >음악</a></li>
+										<li><a href='/boardCnts/list.do?boardID=201035&m=040209&s=msgirls' >미술</a></li>
+										<li><a href='/boardCnts/list.do?boardID=201036&m=040210&s=msgirls' >영어</a></li>
+										<li><a href='/boardCnts/list.do?boardID=201037&m=040211&s=msgirls' >한문</a></li>
+										<li><a href='/boardCnts/list.do?boardID=201038&m=040212&s=msgirls' >중국어</a></li>
+										<li><a href='/boardCnts/list.do?boardID=201039&m=040213&s=msgirls' >과제방</a></li>
+										</ul>
+										</li>
+										<li class="row"><a href='javascript:chkMenuAuth(2)' class="dep2">정기고사기출문제방</a>
+										<ul>
+										<li><a href='javascript:chkMenuAuth(2)' >국어</a></li>
+										<li><a href='/boardCnts/list.do?boardID=201463&m=040302&s=msgirls' >도덕</a></li>
+										<li><a href='/boardCnts/list.do?boardID=201464&m=040303&s=msgirls' >사회</a></li>
+										<li><a href='/boardCnts/list.do?boardID=201465&m=040304&s=msgirls' >수학</a></li>
+										<li><a href='/boardCnts/list.do?boardID=201466&m=040305&s=msgirls' >과학</a></li>
+										<li><a href='/boardCnts/list.do?boardID=201467&m=040306&s=msgirls' >기술가정</a></li>
+										<li><a href='/boardCnts/list.do?boardID=201468&m=040307&s=msgirls' >체육</a></li>
+										<li><a href='/boardCnts/list.do?boardID=201469&m=040308&s=msgirls' >음악</a></li>
+										<li><a href='/boardCnts/list.do?boardID=201470&m=040309&s=msgirls' >미술</a></li>
+										<li><a href='/boardCnts/list.do?boardID=201471&m=040310&s=msgirls' >영어</a></li>
+										<li><a href='/boardCnts/list.do?boardID=201472&m=040311&s=msgirls' >한문</a></li>
+										<li><a href='/boardCnts/list.do?boardID=201473&m=040312&s=msgirls' >일본어</a></li>
+										</ul>
+										</li>
+										<li><a href='javascript:chkMenuAuth(2)' >인성 및 복지</a></li>
+										<li><a href='javascript:chkMenuAuth(2)' >봉사활동</a></li>
+										<li><a href='javascript:chkMenuAuth(2)' >교육복지</a></li>
+										<li><a href='javascript:chkMenuAuth(2)' >동아리활동</a></li>
+										<li><a href='https://www.ice.go.kr/ice/cm/cntnts/cntntsView.do?mi=11719&cntntsId=1086'  target='_blank' rel='noopener noreferrer' >성희롱고충상담창구</a></li>
+										<li><a href='javascript:chkMenuAuth(2)' >방과후학교</a></li>
+										<li><a href='/reportList/main.do?m=0409&s=msgirls' >과제물제출</a></li>
+										<li class="row"><a href='/vote/vsList.do?m=041001&s=msgirls' class="dep2">온라인투표</a>
+										<ul>
+										<li><a href='/vote/vsList.do?m=041001&s=msgirls' >투표하기</a></li>
+										</ul>
+										</li>
+										<li><a href='javascript:chkMenuAuth(5)' >연수지명부</a></li>
+									</ul>
+							</li>
+							<li>
+								<a href='/boardCnts/list.do?boardID=28617&m=0603&s=msgirls'  class="dep">학교행정마당</a>
+									<ul>
+										<li class="row"><a href='/boardCnts/list.do?boardID=264853&amp;m=06010101&s=msgirls' class="dep2">운동부</a>
+										<ul>
+										<li><a href='/boardCnts/list.do?boardID=264853&amp;m=06010101&s=msgirls' >펜싱부</a></li>
+										</ul>
+										</li>
+										<li><a href='/boardCnts/list.do?boardID=28617&m=0603&s=msgirls' >학교재정정보공개</a></li>
+										<li><a href='https://www.ice.go.kr/people/irf/selectIJAAHHP0029List.do?mi=12574&schInstNm=만수여자중학교'  target='_blank' rel='noopener noreferrer' >학교회계(예·결산서)</a></li>
+										<li><a href='https://www.ice.go.kr/people/irf/selectIJAAHHP0060List.do?mi=12590&schInstNm=만수여자중학교'  target='_blank' rel='noopener noreferrer' >학교발전기금</a></li>
+										<li><a href='/boardCnts/list.do?boardID=28619&m=0605&s=msgirls' >클린서비스현장게시판</a></li>
+										<li><a href='/boardCnts/list.do?boardID=28620&m=0606&s=msgirls' >학교운영위원회</a></li>
+										<li><a href='https://www.ice.go.kr/contract/ir/selectCntrInfoList.do?mi=11307&schFsclY=ALL&schCntrInstNm=만수여자중학교'  target='_blank' rel='noopener noreferrer' >계약과정정보공개</a></li>
+										<li class="row"><a href='/visit/Finsert.do?m=060401&s=msgirls' class="dep2">방문예약</a>
+										<ul>
+										<li><a href='/visit/Finsert.do?m=060401&s=msgirls' >방문예약</a></li>
+										<li><a href='/visit/srch.do?m=060402&s=msgirls' >예약확인</a></li>
+										<li><a href='/visit/main.do?m=060403&s=msgirls' >방문예정현황</a></li>
+										<li><a href='/visit/Admin.do?m=060404&s=msgirls' >예약승인 및 관리</a></li>
+										</ul>
+										</li>
+										<li><a href='/rept/list.do?m=0607&s=msgirls' >영수증출력</a></li>
+									</ul>
+							</li>
+							<li>
+								<a href='/sub/info.do?m=5201&s=msgirls'  class="dep">정보공개</a>
+									<ul>
+										<li><a href='/sub/info.do?m=5201&s=msgirls' >정보공개제도</a></li>
+										<li><a href='/boardCnts/list.do?boardID=47073&m=5202&s=msgirls' >사전정보공개</a></li>
+										<li><a href='/boardCnts/list.do?boardID=28618&m=5203&s=msgirls' >정보목록</a></li>
+										<li><a href='http://www.open.go.kr'  target='_blank' rel='noopener noreferrer' >정보공개청구</a></li>
+										<li><a href='/piaList.do?m=5205&s=msgirls' >공공데이터개방</a></li>
+										<li><a href='/boardCnts/list.do?boardID=250297&m=5206&s=msgirls' >학교평가</a></li>
+									</ul>
+							</li>
+							<li>
+								<a href='/boardCnts/list.do?boardID=281215&m=0801&s=msgirls'  class="dep">진로교육</a>
+									<ul>
+										<li><a href='/boardCnts/list.do?boardID=281215&m=0801&s=msgirls' >공지사항</a></li>
+										<li><a href='javascript:chkMenuAuth(2)' >진로상담</a></li>
+										<li><a href='https://cyberjinro.ice.go.kr/main'  target='_blank' rel='noopener noreferrer' >진로진학정보센터</a></li>
+										<li><a href='http://www.career.go.kr/cnet/front/main/main.do?m=0804&s=msgirls' >커리어넷</a></li>
+										<li><a href='http://www.work.go.kr/jobMain.do'  target='_blank' rel='noopener noreferrer' >한국직업정보시스템</a></li>
+										<li class="row"><a href='/schdl/main.do?m=0801&s=msgirls' class="dep2">교사인트라넷</a>
+										<ul>
+										<li><a href='/schdl/main.do?m=080701&s=msgirls' >인트라넷</a></li>
+										<li><a href='/schdl/dept/main.do?m=080702&s=msgirls' >부서관리</a></li>
+										</ul>
+										</li>
+										<li><a href='javascript:chkMenuAuth(2)' >갤러리</a></li>
+									</ul>
+							</li>
+							<li>
+								<a href='javascript:chkMenuAuth(2)'  class="dep">자유학기제</a>
+									<ul>
+										<li><a href='javascript:chkMenuAuth(2)' >기획 운영</a></li>
+										<li class="row"><a href='/boardCnts/list.do?boardID=257777&m=100201&s=msgirls' class="dep2">교과선택프로그램</a>
+										<ul>
+										<li><a href='javascript:chkMenuAuth(2)' >인문사회 선택</a></li>
+										<li><a href='javascript:chkMenuAuth(2)' >탐구선택</a></li>
+										<li><a href='javascript:chkMenuAuth(2)' >예술체육 선택</a></li>
+										</ul>
+										</li>
+										<li><a href='javascript:chkMenuAuth(2)' >진로탐색활동</a></li>
+										<li><a href='javascript:chkMenuAuth(2)' >홍보</a></li>
+									</ul>
+							</li>
+							<li>
+								<a href='javascript:chkMenuAuth(5)'  class="dep">산업안전보건</a>
+									<ul>
+										<li><a href='javascript:chkMenuAuth(5)' >정보나눔방</a></li>
+										<li><a href='javascript:chkMenuAuth(5)' >의견청취방</a></li>
+									</ul>
+							</li>
+							<li>
+								<a href='/boardCnts/list.do?boardID=295969&m=25&s=msgirls'  class="dep">동영상 게시판</a>
+							</li>
+</ul>
+</nav>
+</div>
+<div id="tabletHeader">
+<div id="tabletLogo"><a href="/main.do"><img src="/images/template/00943/common/logo.gif?x=1" alt=""/></a></div>
+</div>
+<div id="tabletGnb">
+<div id="menuOpen"><a href="#"><img src="/images/template/00943/common/btn_menu_t.gif" alt="메뉴열기" /></a></div>
+</div>
+<div style="display:none;" class="search_hide">
+<div id="tabletSearch">
+	<div id="searchOpen"><a href="#"><img src="/images/template/00943/common/btn_search_t.png" alt="검색열기"/></a></div>
+</div>
+<div id="mSearch">
+ <div id="edu_search">
+	<form name="searchFormM" id="searchFrm" method="POST">
+	<div class="con">
+		<p>
+		<label for="search_option" class="hid"></label>	    <select name="search_option"  id="search_option" onchange="goSearch5();">		 <option selected="selected">홈페이지 검색</option>		 <option>에듀넷 검색</option>		</select>			<input type="text" id="topSearch_1" name="searchStr" class="inputText" title="통합 검색어" placeholder="검색어를 입력해주세요" style="ime-mode:active;"/>
+			<button class="btnSearch" id="searchTextBtn" onClick="javascript:goSearch4();return false;"><span>검색</span></button>
+		</p>
+		<button class="btnSearchClose" type="button"><span>통합검색 닫기</span></button>
+	</div>
+	</form>
+	<form style="display:none" class="edu_search" name="siteSearchFormM" id="searchFrm2" method="POST">
+	<div class="con">
+	<p>
+		<label for="search_option2" class="hid"></label>		<select name="search_option2" id="search_option2" onchange="goSearch6();">		 <option>홈페이지 검색</option>		 <option selected="selected">에듀넷 검색</option>		</select>		<input type="text" class="inputText" id="topSearch" placeholder="검색어를 입력해주세요" name="kwd" autocomplete="on" title="검색어 입력" tabindex="1" accesskey="s" style="ime-mode:active;" />		 <input type="hidden" id="prog_id" name="prog_id" value="prog_id"/>
+		 <input type="hidden" id="mainCallFlag" name="mainCallFlag" value="y"/>		 <input type="hidden" id="eb_flag" name="eb_flag" value="y"/>		 <input type="hidden" id="svc_version" name="svc_version" value="2.0"/>			<button onClick="javascript:goSearch7();return false;" class="btnSearch" id="searchTextBtn2"><span>검색</span></button>
+	</p>
+	<button class="btnSearchClose" type="button"><span>통합검색 닫기</span></button>
+	</div>
+	</form>
+ </div>
+</div>
+</div></div>
+
+			<hr />
+			<!-- /메인메뉴끝 -->
+
+
+
+			<div class="box_mot_1"> 
+				<!-- 컨테이너 -->
+				<div id="sub_container"> 
+					<!-- 비주얼 -->
+					<div class="S_visual">
+						<p><img src="/images/template/00943/sub/S_visual.png?x=3" alt="올바른 심성, 바른 행동, 남다른 재능 만수여자중학교에 오신것을 환영합니다."/></p>
+					</div>
+					<!-- //비주얼 -->
+					<div class="sub_content"> 	
+						
+
+
+
+
+
+<!-- 왼쪽메뉴시작 -->
+<section id="sideContent2">
+		<h1>학교마당</h1>
+	<nav class="sideNavi">
+<ul id='left_menu' >
+<li>
+	<a href='/boardCnts/list.do?boardID=28601&m=0201&s=msgirls' title='공지사항' >
+<span class="depth0">공지사항</span></a>
+</li>
+<li>
+	<a href='/boardCnts/list.do?boardID=28602&m=0202&s=msgirls' title='가정통신문' >
+<span class="depth0">가정통신문</span></a>
+</li>
+<li>
+	<a href='/schdList.do?m=0207&s=msgirls' title='행사일정' >
+<span class="depth0_on">행사일정</span></a>
+</li>
+<li>
+	<a href='javascript:chkMenuAuth(2)' title='학교사진' >
+<span class="depth0">학교사진</span></a>
+</li>
+<li>
+	<a href='#moveTab' onClick=" javascript:leftMenuView(115);return false; " onKeyPress='' title='급식' >
+<span class="depth0_dep">급식</span></a>
+	<ul id='LMenu115' class='lock'>
+<li>
+	<a href='/foodlist.do?m=020506&s=msgirls' title='이달의식단' >
+<span class="depth1">이달의식단</span></a>
+</li>
+<li>
+	<a href='/boardCnts/list.do?boardID=28624&m=020502&s=msgirls' title='급식게시판' >
+<span class="depth1">급식게시판</span></a>
+</li>
+<li>
+	<a href='javascript:chkMenuAuth(2)' title='영양상담 및 건의사항' >
+<span class="depth1">영양상담 및 건의사항</span></a>
+</li>
+<li>
+ <a href='https://ns.eat.co.kr/goToCtpvPage.jsp?gTctpvCd=4' target='_blank' title='공공급식전자조달시스템(새창)' rel='noopener noreferrer' >
+<span class="depth1">공공급식전자조달시스템</span></a>
+</li>
+  </ul>
+</li>
+<li>
+ <a href='https://read365.edunet.net/' target='_blank' title='학교도서관(새창)' rel='noopener noreferrer' >
+<span class="depth0">학교도서관</span></a>
+</li>
+<li>
+	<a href='#moveTab' onClick=" javascript:leftMenuView(117);return false; " onKeyPress='' title='교실예약' >
+<span class="depth0_dep">교실예약</span></a>
+	<ul id='LMenu117' class='lock'>
+<li>
+	<a href='/crInfo/main.do?m=020801&s=msgirls' title='목록' >
+<span class="depth1">목록</span></a>
+</li>
+<li>
+	<a href='/CRAmtList.do?m=020802&s=msgirls' title='예약' >
+<span class="depth1">예약</span></a>
+</li>
+<li>
+	<a href='/crAmt/srch.do?m=020803&s=msgirls' title='예약신청목록' >
+<span class="depth1">예약신청목록</span></a>
+</li>
+<li>
+	<a href='/crAdmin/main.do?m=020804&s=msgirls' title='예약확인 및 승인' >
+<span class="depth1">예약확인 및 승인</span></a>
+</li>
+  </ul>
+</li>
+<li>
+	<a href='#moveTab' onClick=" javascript:leftMenuView(118);return false; " onKeyPress='' title='토론게시판' >
+<span class="depth0_dep">토론게시판</span></a>
+	<ul id='LMenu118' class='lock'>
+<li>
+	<a href='/ds/roomList.do?m=020901&s=msgirls' title='토론목록' >
+<span class="depth1">토론목록</span></a>
+</li>
+<li>
+	<a href='/ds/roomMList.do?m=020902&s=msgirls' title='토론관리' >
+<span class="depth1">토론관리</span></a>
+</li>
+  </ul>
+</li>
+<li>
+	<a href='/classFormation.do?m=0210&s=msgirls' title='반편성조회' >
+<span class="depth0">반편성조회</span></a>
+</li>
+<li>
+	<a href='/passMan.do?m=0211&s=msgirls' title='합격자조회' >
+<span class="depth0">합격자조회</span></a>
+</li>
+</ul>
+</nav>
+<script>leftMenuView(1);</script>
+</section>
+<!--/왼쪽메뉴끝-->
+
+
+						<!-- sub Content -->
+						<section id="subContent">
+							
+
+
+
+
+
+<p id="location">	<a href="/main.do"><img src="/images/template/00943/sub/icoHome.gif" alt="메인페이지"/></a> > <a href='/boardCnts/list.do?boardID=28601&m=0201&s=msgirls'>학교마당</a> > <a href='/schdList.do?m=0207&s=msgirls'>행사일정</a></p>
+<div class="box_line_map">
+	<div class="box_line_map_1 clearfix">
+	<p> <span class="sp_home">HOME</span> <span class="span_gt">&gt;</span> <span class="txt">학교마당</span> <span class="span_gt">&gt;</span> </p>
+			<div class="box_line_map_2"> <a href="#wrap">행사일정<span class="sp_img"></span></a>
+				<div class="box_snb_1">
+					<ul class="ul_snb_2">
+						<li><a href="/boardCnts/list.do?boardID=28601&m=0201&s=msgirls" >공지사항</a></li>
+						<li><a href="/boardCnts/list.do?boardID=28602&m=0202&s=msgirls" >가정통신문</a></li>
+						<li class="on"><a href="/schdList.do?m=0207&s=msgirls" >행사일정</a></li>
+						<li><a href="javascript:chkMenuAuth(2)" >학교사진</a></li>
+						<li><a href="/foodlist.do?m=020506&s=msgirls" >급식</a></li>
+						<li><a href="https://read365.edunet.net/"  target='_blank' rel='noopener noreferrer' >학교도서관</a></li>
+						<li><a href="/CRAmtList.do?m=020801&s=msgirls" >교실예약</a></li>
+						<li><a href="/ds/roomList.do?m=020901&s=msgirls" >토론게시판</a></li>
+						<li><a href="/classFormation.do?m=0210&s=msgirls" >반편성조회</a></li>
+						<li><a href="/passMan.do?m=0211&s=msgirls" >합격자조회</a></li>
+					</ul>
+				</div>
+			</div>
+	</div>
+</div>
+
+							<hr/>
+							<!-- 서브 페이지 내용 -->
+							<div class="subContent_body">  
+								<div class="snsBox2">
+									<button type="button" class="btnPrint" onClick="goPrint();return false;"><span>인쇄</span></button>
+									<!--<button type="button" class="btnZoomIn" onClick="zoomIn();return false;" onkeypress="" title="확대"><span>확대</span></button>
+									<button type="button" class="btnZoomOut" onClick="zoomOut();return false;" onkeypress="" title="축소"><span>축소</span></button>-->
+								</div>
+								<h2 id="pageTitle">행사일정</h2>
+							     <!-- 페이지뷰 -->
+                                <div>
+                                	<div class="hr"></div>
+									<div id="all-scroll">
+										<div class="page">
+                                        
+
+
+
+
+
+
+
+
+<LINK href="/css/schdList.css" rel="stylesheet" type="text/css"  media="screen" />
+<script language="javascript">
+	$(document).on("click", "a.cal-item", function(e){
+	  e.preventDefault();
+	  var $a = $(this);
+	  setData($a.data("seq"), $a.data("sdate"), $a.data("edate"), $a.data("subject"), $a.data("dept"));
+	});
+	function setData(reqSeq, reqSDate, reqEDate, reqSubject, reqDeptNM)
+	{
+		var forms = document.calForm;
+		calForm.seq.value = reqSeq;
+		calForm.sdate.value = reqSDate;
+		calForm.edate.value = reqEDate;
+		calForm.subject.value = reqSubject;
+		calForm.deptNM.value = reqDeptNM;
+		
+		const calSub = document.getElementById("calSubject");
+		calSub.focus()
+	}
+
+	function insData()
+	{
+		var forms = document.calForm;
+		forms.seq.value = "0";
+		if(forms.sdate.value == "")
+		{
+			alert("시작일을 선택해 주세요");
+			forms.sdate.focus();
+			return;
+		}
+		if(forms.edate.value == "")
+		{
+			alert("종료일을  선택해 주세요");
+			forms.edate.focus();
+			return;
+		}
+		if(forms.sdate.value > forms.edate.value)
+		{
+			alert("종료일이 시작일보다 빠릅니다.");
+			forms.edate.focus();
+			return;
+		}
+		if(forms.subject.value == "")
+		{
+			alert("내용을 입력해주세요");
+			forms.subject.focus();
+			return;
+		}
+		forms.action = "/schdlCal/insert.do";
+		forms.target = "schdlCalFrm";
+		forms.submit();
+	}
+	function modData()
+	{
+		var forms = document.calForm;
+		if(forms.seq.value == "" || forms.seq.value == "0")
+		{
+			alert("수정할 업무를  선택해주세요");
+			return;
+		}
+		if(forms.sdate.value == "")
+		{
+			alert("시작일을 선택해주세요");
+			forms.sdate.focus();
+			return;
+		}
+		if(forms.sdate.value == "")
+		{
+			alert("종료일을  선택해주세요");
+			forms.edate.focus();
+			return;
+		}
+		if(forms.sdate.value > forms.edate.value)
+		{
+			alert("종료일이 시작일보다 빠릅니다.");
+			forms.edate.focus();
+			return;
+		}
+		if(forms.subject.value == "")
+		{
+			alert("내용을 입력해주세요");
+			forms.subject.focus();
+			return;
+		} 
+		if(forms.deptNM.value == "ALL"){
+			alert("수정할 수 없는 일정입니다.");
+			return;
+		}
+		if(!confirm("수정하시겠습니까?")) return;
+		forms.action = "/schdlCal/modify.do";
+		forms.target = "schdlCalFrm";
+		forms.submit();
+	}
+	function delData()
+	{
+		var forms = document.calForm;
+		if(forms.seq.value == "")
+		{
+			alert("삭제할 업무를  선택해주세요");
+			return;
+		} 
+		if(forms.deptNM.value == "ALL"){
+			alert("삭제할 수 없는 일정입니다.");
+			return;
+		}
+		if(!confirm("삭제하시겠습니까?")) return;
+		forms.action = "/schdlCal/delete.do";
+		forms.target = "schdlCalFrm";
+		forms.submit();
+	}
+
+	//우클릭 방지
+	document.oncontextmenu = function anonymous() { alert('마우스 오른쪽 버튼은 사용하실 수 없습니다'); return false } ;
+
+	function chgDate(sec){
+		var forms = document.calForm;
+		forms.section.value=sec;
+		forms.action = "/schdList.do?section=" +  sec+ "&m=0207&s=msgirls";
+		forms.submit();
+		
+	}	
+	
+	function upload(file){		
+		if($("input[name='excelFile']").val() == '') {
+			alert("파일을 등록해주세요.");
+			return false;
+		}
+		
+		var extArry = file.files[0].name.split(".");			
+		var ext = extArry[extArry.length-1].toLowerCase();
+
+		if(ext != "xlsx"){
+			alert("첨부할 수 없는 확장자가 포함되어 있습니다.\n\n허용 확장자: xlsx");
+			file.outerHTML=file.outerHTML;
+			return;
+		}
+		
+		if(!confirm("등록하시겠습니까?")) return;
+		$("#upBtn span").html("등록중");
+		$("#upBtn").attr("onClick", "null");
+		document.calForm.seq.value=0;
+		document.calForm.action="/schdlCal/excelUp.do?&m=0207&s=msgirls";
+		document.calForm.submit();
+	}
+	
+	$(document).ready(function(){
+		
+		$('.list_blue').each(function(){
+			if($(this).outerHeight(true)>=148){
+				$(this).attr('tabindex','0');
+			}else{
+				$(this).removeAttr('tabindex');
+			}
+		})	
+	});
+
+	
+</script>	
+<form name="calForm" id="calForm" method="post" enctype="multipart/form-data">
+	<input type="hidden" name="section" value="2"/>
+	<input type="hidden" name="seq"/>
+	<input type="hidden" name="deptNM"/>
+	<input type="hidden" name="workType" value="H"/>
+	<!-- 내용시작 -->
+	<div>
+		<div class="hr"></div>
+	    <div class="calendar_wrap">
+	        <div class="calendar_txt">
+	            <p class="cal_txt"><strong>만수여자중학교</strong> 행사일정을 알려드립니다!</p>
+	            <ul class="calendar_btn">
+	                <li>
+						
+						
+	                    <select id="schdYear" name="year" title="학교행사일정 년도선택">
+							<option value="2025" selected>2025</option>
+							<option value="2026" >2026</option> 
+							<option value="2027" >2027</option> 
+	                    </select>
+	                </li>
+	                <li class="blue"><a href="#" onClick="javascript:chgDate(1);">1학기</a></li>
+	                <li class="blue"><a href="#" onClick="javascript:chgDate(2);" title="선택됨">2학기</a></li>
+	            </ul>
+	        </div>
+	        
+	        <br>      
+			<div class="calendar">  <div class="date"> <span>2025년 9월</span>    <table class="calendar_table"  cellpadding="0" cellspacing="0" border="0">
+	<caption>2025년 9월의 달력 테이블입니다.</caption>	<colgroup>		<col width="10%"/>		<col width="10%"/>		<col width="10%"/>		<col width="10%"/>		<col width="10%"/>		<col width="10%"/>		<col width="10%"/>	</colgroup>	<thead>		<tr>			<th scope="col">일</th>			<th scope="col">월</th>			<th scope="col">화</th>			<th scope="col">수</th>			<th scope="col">목</th>			<th scope="col">금</th>			<th scope="col">토</th>		</tr>	</thead><tr>
+<td class="invisible">&nbsp;</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td class="sat">6</td>
+</tr>
+<tr style='height:25px;'>
+<td class="sun">7</td>
+<td>8</td>
+<td>9</td>
+<td>10</td>
+<td>11</td>
+<td>12</td>
+<td class="sat">13</td>
+</tr>
+<tr style='height:25px;'>
+<td class="sun">14</td>
+<td>15</td>
+<td>16</td>
+<td>17</td>
+<td>18</td>
+<td>19</td>
+<td class="sat">20</td>
+</tr>
+<tr style='height:25px;'>
+<td class="sun">21</td>
+<td>22</td>
+<td>23</td>
+<td>24</td>
+<td>25</td>
+<td>26</td>
+<td class="sat">27</td>
+</tr>
+<tr style='height:25px;'>
+<td class="sun">28</td>
+<td>29</td>
+<td>30</td>
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+</table>
+  </div>  <dl class="event">    <dt>행사내용</dt>    <dd>      <ul tabindex="0" class="list_blue"><li id='date2025/09_s1523711'>29일~30일 : 2학기 1회고사(1, 2학년)</li><li id='date2025/09_s1523713'>30일 : 진로박람회(3학년)</li>      </ul>    </dd>  </dl></div><div class="calendar">  <div class="date"> <span>2025년 10월</span>    <table class="calendar_table"  cellpadding="0" cellspacing="0" border="0">
+	<caption>2025년 10월의 달력 테이블입니다.</caption>	<colgroup>		<col width="10%"/>		<col width="10%"/>		<col width="10%"/>		<col width="10%"/>		<col width="10%"/>		<col width="10%"/>		<col width="10%"/>	</colgroup>	<thead>		<tr>			<th scope="col">일</th>			<th scope="col">월</th>			<th scope="col">화</th>			<th scope="col">수</th>			<th scope="col">목</th>			<th scope="col">금</th>			<th scope="col">토</th>		</tr>	</thead><tr>
+<td class="invisible">&nbsp;</td>
+<td class="invisible">&nbsp;</td>
+<td class="invisible">&nbsp;</td>
+<td>1</td>
+<td>2</td>
+<td class="sun">3</td>
+<td class="sat">4</td>
+</tr>
+<tr style='height:25px;'>
+<td class="sun">5</td>
+<td class="sun">6</td>
+<td class="sun">7</td>
+<td class="sun">8</td>
+<td class="sun">9</td>
+<td>10</td>
+<td class="sat">11</td>
+</tr>
+<tr style='height:25px;'>
+<td class="sun">12</td>
+<td>13</td>
+<td>14</td>
+<td>15</td>
+<td>16</td>
+<td>17</td>
+<td class="sat">18</td>
+</tr>
+<tr style='height:25px;'>
+<td class="sun">19</td>
+<td>20</td>
+<td>21</td>
+<td>22</td>
+<td>23</td>
+<td>24</td>
+<td class="sat">25</td>
+</tr>
+<tr style='height:25px;'>
+<td class="sun">26</td>
+<td>27</td>
+<td>28</td>
+<td>29</td>
+<td>30</td>
+<td>31</td>
+<td>&nbsp;</td></tr>
+</table>
+  </div>  <dl class="event">    <dt>행사내용</dt>    <dd>      <ul tabindex="0" class="list_blue"><li id='date2025/10_s1523715'>02일 : 진로체험(1, 2, 3학년)</li><li id='date2025/10_s1523717'>10일 : 재량휴업일</li><li id='date2025/10_s1523719'>14일 : 동아리활동</li><li id='date2025/10_s1523721'>15일 : 스포츠체험(1, 2, 3학년)</li>      </ul>    </dd>  </dl></div><div class="calendar">  <div class="date"> <span>2025년 11월</span>    <table class="calendar_table"  cellpadding="0" cellspacing="0" border="0">
+	<caption>2025년 11월의 달력 테이블입니다.</caption>	<colgroup>		<col width="10%"/>		<col width="10%"/>		<col width="10%"/>		<col width="10%"/>		<col width="10%"/>		<col width="10%"/>		<col width="10%"/>	</colgroup>	<thead>		<tr>			<th scope="col">일</th>			<th scope="col">월</th>			<th scope="col">화</th>			<th scope="col">수</th>			<th scope="col">목</th>			<th scope="col">금</th>			<th scope="col">토</th>		</tr>	</thead><tr>
+<td class="invisible">&nbsp;</td>
+<td class="invisible">&nbsp;</td>
+<td class="invisible">&nbsp;</td>
+<td class="invisible">&nbsp;</td>
+<td class="invisible">&nbsp;</td>
+<td class="invisible">&nbsp;</td>
+<td class="sat">1</td>
+</tr>
+<tr style='height:20px;'>
+<td class="sun">2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+<td class="sat">8</td>
+</tr>
+<tr style='height:20px;'>
+<td class="sun">9</td>
+<td>10</td>
+<td>11</td>
+<td>12</td>
+<td>13</td>
+<td>14</td>
+<td class="sat">15</td>
+</tr>
+<tr style='height:20px;'>
+<td class="sun">16</td>
+<td>17</td>
+<td>18</td>
+<td>19</td>
+<td>20</td>
+<td>21</td>
+<td class="sat">22</td>
+</tr>
+<tr style='height:20px;'>
+<td class="sun">23</td>
+<td>24</td>
+<td>25</td>
+<td>26</td>
+<td>27</td>
+<td>28</td>
+<td class="sat">29</td>
+</tr>
+<tr style='height:20px;'>
+<td class="sun">30</td>
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+</table>
+  </div>  <dl class="event">    <dt>행사내용</dt>    <dd>      <ul tabindex="0" class="list_blue"><li id='date2025/11_s1523723'>03일~05일 : 2학기 1회고사(3학년)</li><li id='date2025/11_s1523725'>12일 : 4교시 수업</li><li id='date2025/11_s1523727'>13일 : 재량휴업일(수능)</li><li id='date2025/11_s1523729'>18일 : 동아리활동</li>      </ul>    </dd>  </dl></div><div class="calendar">  <div class="date"> <span>2025년 12월</span>    <table class="calendar_table"  cellpadding="0" cellspacing="0" border="0">
+	<caption>2025년 12월의 달력 테이블입니다.</caption>	<colgroup>		<col width="10%"/>		<col width="10%"/>		<col width="10%"/>		<col width="10%"/>		<col width="10%"/>		<col width="10%"/>		<col width="10%"/>	</colgroup>	<thead>		<tr>			<th scope="col">일</th>			<th scope="col">월</th>			<th scope="col">화</th>			<th scope="col">수</th>			<th scope="col">목</th>			<th scope="col">금</th>			<th scope="col">토</th>		</tr>	</thead><tr>
+<td class="invisible">&nbsp;</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td class="sat">6</td>
+</tr>
+<tr style='height:25px;'>
+<td class="sun">7</td>
+<td>8</td>
+<td>9</td>
+<td>10</td>
+<td>11</td>
+<td>12</td>
+<td class="sat">13</td>
+</tr>
+<tr style='height:25px;'>
+<td class="sun">14</td>
+<td>15</td>
+<td>16</td>
+<td>17</td>
+<td>18</td>
+<td>19</td>
+<td class="sat">20</td>
+</tr>
+<tr style='height:25px;'>
+<td class="sun">21</td>
+<td>22</td>
+<td>23</td>
+<td>24</td>
+<td class="sun">25</td>
+<td>26</td>
+<td class="sat">27</td>
+</tr>
+<tr style='height:25px;'>
+<td class="sun">28</td>
+<td>29</td>
+<td>30</td>
+<td>31</td>
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+</table>
+  </div>  <dl class="event">    <dt>행사내용</dt>    <dd>      <ul tabindex="0" class="list_blue"><li id='date2025/12_s1523731'>12일~16일 : 2학기 2회고사(1, 2학년)</li><li id='date2025/12_s1523733'>19일 : 합창제(동아리)</li><li id='date2025/12_s1523735'>24일 : 학생회장 선거</li><li id='date2025/12_s1523737'>29일 : 선배와의 만남</li><li id='date2025/12_s1523739'>30일 : 동아리 부스체험</li><li id='date2025/12_s1523741'>31일 : 하늘마당제(동아리)</li>      </ul>    </dd>  </dl></div><div class="calendar">  <div class="date"> <span>2026년 1월</span>    <table class="calendar_table"  cellpadding="0" cellspacing="0" border="0">
+	<caption>2026년 1월의 달력 테이블입니다.</caption>	<colgroup>		<col width="10%"/>		<col width="10%"/>		<col width="10%"/>		<col width="10%"/>		<col width="10%"/>		<col width="10%"/>		<col width="10%"/>	</colgroup>	<thead>		<tr>			<th scope="col">일</th>			<th scope="col">월</th>			<th scope="col">화</th>			<th scope="col">수</th>			<th scope="col">목</th>			<th scope="col">금</th>			<th scope="col">토</th>		</tr>	</thead><tr>
+<td class="invisible">&nbsp;</td>
+<td class="invisible">&nbsp;</td>
+<td class="invisible">&nbsp;</td>
+<td class="invisible">&nbsp;</td>
+<td class="sun">1</td>
+<td>2</td>
+<td class="sat">3</td>
+</tr>
+<tr style='height:25px;'>
+<td class="sun">4</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+<td>8</td>
+<td>9</td>
+<td class="sat">10</td>
+</tr>
+<tr style='height:25px;'>
+<td class="sun">11</td>
+<td>12</td>
+<td>13</td>
+<td>14</td>
+<td>15</td>
+<td>16</td>
+<td class="sat">17</td>
+</tr>
+<tr style='height:25px;'>
+<td class="sun">18</td>
+<td>19</td>
+<td>20</td>
+<td>21</td>
+<td>22</td>
+<td>23</td>
+<td class="sat">24</td>
+</tr>
+<tr style='height:25px;'>
+<td class="sun">25</td>
+<td>26</td>
+<td>27</td>
+<td>28</td>
+<td>29</td>
+<td>30</td>
+<td class="sat">31</td>
+</tr>
+</table>
+  </div>  <dl class="event">    <dt>행사내용</dt>    <dd>      <ul tabindex="0" class="list_blue"><li id='date2026/01_s1523743'>05일 : 사정회</li><li id='date2026/01_s1523745'>09일 : 3학년 졸업식 
+1, 2학년 종업식</li>      </ul>    </dd>  </dl></div><div class="calendar">  <div class="date"> <span>2026년 2월</span>    <table class="calendar_table"  cellpadding="0" cellspacing="0" border="0">
+	<caption>2026년 2월의 달력 테이블입니다.</caption>	<colgroup>		<col width="10%"/>		<col width="10%"/>		<col width="10%"/>		<col width="10%"/>		<col width="10%"/>		<col width="10%"/>		<col width="10%"/>	</colgroup>	<thead>		<tr>			<th scope="col">일</th>			<th scope="col">월</th>			<th scope="col">화</th>			<th scope="col">수</th>			<th scope="col">목</th>			<th scope="col">금</th>			<th scope="col">토</th>		</tr>	</thead><tr>
+<td class="sun">1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+<td class="sat">7</td>
+</tr>
+<tr style='height:31px;'>
+<td class="sun">8</td>
+<td>9</td>
+<td>10</td>
+<td>11</td>
+<td>12</td>
+<td>13</td>
+<td class="sat">14</td>
+</tr>
+<tr style='height:31px;'>
+<td class="sun">15</td>
+<td class="sun">16</td>
+<td class="sun">17</td>
+<td class="sun">18</td>
+<td>19</td>
+<td>20</td>
+<td class="sat">21</td>
+</tr>
+<tr style='height:31px;'>
+<td class="sun">22</td>
+<td>23</td>
+<td>24</td>
+<td>25</td>
+<td>26</td>
+<td>27</td>
+<td class="sat">28</td>
+</tr>
+</table>
+  </div>  <dl class="event">    <dt>행사내용</dt>    <dd>      <ul class="list_blue">      </ul>    </dd>  </dl></div>
+		</div>
+	</div>
+		
+	
+		<p class="txt_c" style="margin-top:25px;"><b>행사일정은 학교 사정상 변경될 수 있습니다.</b></p>
+	
+	<!-- /내용끝 -->
+
+ <!--권한이 없거나, 모바일일 경우 등록부분 안보이도록-->
+<input type="hidden" title="시작날짜" name="sdate" />
+<input type="hidden" title="끝날짜" name="edate" />
+<input type="hidden" title="제목" name="subject" />
+
+<iframe name="schdlCalFrm" width="0" height="0" style="display:none" title="행사일정"></iframe>
+</form>	
+<br/>
+				
+                                        </div>
+									</div>
+                                </div>
+								<!-- //페이지뷰 --> 
+							</div>
+						<!-- //서브 페이지 내용 끝 --> 
+						</section>
+						<!-- //sub Content 끝 --> 
+					</div>
+				</div>
+				<!-- //컨테이너 --> 
+				 
+
+
+
+
+
+
+
+
+
+<script>
+	function  updateAddr(){
+		var forms = document.footerFrm;
+		forms.action = "/updateAddress.do";
+		forms.submit();
+	}
+</script>
+
+		<!-- footer -->
+		<footer id="footer">
+			<div class="container">
+				<div class="footer_link">
+					<ul>
+						<li class="point"><a href="#privacy" onClick="javascript:priPrivacy()" title="개인정보처리방침"><span class="font_orange" >개인정보처리방침</span></a></li>
+						<li><a href="#copyright" onClick="javascript:copyright()" title="저작권지침 및 신고">저작권지침 및 신고</a></li>
+						<li><a href="#email" onClick="javascript:email()" title="이메일주소수집거부">이메일주소수집거부</a></li>
+						  <li><a href="/sub/info.do?page=9999&m=35&s=msgirls" title="110화상수화통역서비스">110화상수화통역서비스</a></li>
+						<li id="eduLink"><a href="https://www.ice.go.kr/intro/nanum/intro.html" target="_blank" title="학생봉사/교육기부">학생봉사/교육기부</a></li>
+						<li><a href="/apple/urlfileMgt/filedown.do?fileSeq=39b0e6ca0e9e1f16e0018fbc2cc2ed63" title="운영지침">학교통합홈페이지 운영지침</a></li>
+					</ul>
+				</div>
+				<address>
+					
+					<pre></pre>
+				</address>
+				<div class="visitant">
+					<h2>방문자 통계</h2>
+					<ul>
+						<li class="today"><strong>Today</strong>326명</li>
+						<li class="total"><strong>Total</strong>2,452,214명</li>
+					</ul>
+				</div>
+				<p class="copyright">Copyright(C) 만수여자중학교. All Rights Reserved.</p>
+				<a href="#" class="btn_top"><img src="/images/template/00943/common/btn_top.png" alt="맨위로 가기"/></a>
+			</div>
+		</footer>
+		<!-- // footer -->
+				</div>
+			</div>
+	</body>
+</html>	
